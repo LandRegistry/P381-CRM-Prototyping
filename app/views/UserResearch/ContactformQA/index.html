@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5">
+      <h1 class="govuk-heading-xl">
+        Introduction
+      </h1>
+      <p>
+        To get your question to the right person to help you, please answer the following questions. We will need some information from you so we can send you a response by email.
+      </p>
+    </div>
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <h3 class="govuk-heading-m">In what capacity are you contacting HM Land Registry?</h3>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                Member of Public - you are acting on behalf of yourself or others as private individuals
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                Business Customer - you are acting as a representative on behalf of a business or corporate body
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}
