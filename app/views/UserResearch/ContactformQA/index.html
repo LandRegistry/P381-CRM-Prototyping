@@ -5,10 +5,14 @@
   GOV.UK Prototype Kit
 {% endblock %}
 
+
+
 {% block content %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full govuk-!-padding-bottom-5">
+  
+
       <h1 class="govuk-heading-xl">
         Introduction
       </h1>
@@ -18,19 +22,19 @@
     </div>
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
       <h3 class="govuk-heading-m">In what capacity are you contacting HM Land Registry?</h3>
-
+      <form class="form" action="public-or-business-choice" method="post">
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <div class="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+              <input class="govuk-radios__input" id="public-business-1" name="public-business" type="radio" value="public-customer">
+              <label class="govuk-label govuk-radios__label" for="public-business-1">
                 Member of Public - you are acting on behalf of yourself or others as private individuals
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              <input class="govuk-radios__input" id="public-business-2" name="public-business" type="radio" value="business-customer">
+              <label class="govuk-label govuk-radios__label" for="public-business-2">
                 Business Customer - you are acting as a representative on behalf of a business or corporate body
               </label>
             </div>
@@ -38,12 +42,16 @@
       
         </fieldset>
       </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+      </form>
     </div>
 
     <div  class="govuk-grid-column-full">
-      <button class="govuk-button" data-module="govuk-button">
-        Next step
-      </button>
+
     </div>
 
 
