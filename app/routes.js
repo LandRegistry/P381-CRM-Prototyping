@@ -10,11 +10,11 @@ router.post('/UserResearch/ContactformQA/public-or-business-choice', function(re
 switch(introductionChoice)
 {
     case 'public-customer':
-        res.redirect('/UserResearch/ContactformQA/Public/');
+        res.redirect('/UserResearch/ContactformQA/Public/index');
         break;
 
     case 'business-customer':
-        res.redirect('/UserResearch/ContactformQA/Business/');
+        res.redirect('/UserResearch/ContactformQA/Business/index');
         break; 
         
     default:
