@@ -1,0 +1,106 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option1-option7-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Official Copies enquiry
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-option7-1" name="public-option1-option7" type="radio" value="whats-happening">
+              <label class="govuk-label govuk-radios__label" for="public-option1-option7-1">
+                What's happening with my application?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-option7-2" name="public-option1-option7" type="radio" value="cancel-application">
+              <label class="govuk-label govuk-radios__label" for="public-option1-option7-2">
+                I need to cancel my application
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-option7-3" name="public-option1-option7" type="radio" value="cheque-returned">
+                <label class="govuk-label govuk-radios__label" for="public-option1-option7-3">
+                    I have had a cheque returned
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-option7-4" name="public-option1-option7" type="radio" value="wrong-document">
+                <label class="govuk-label govuk-radios__label" for="public-option1-option7-4">
+                    I have received a wrong document
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-option7-5" name="public-option1-option7" type="radio" value="document-not-received">
+                <label class="govuk-label govuk-radios__label" for="public-option1-option7-5">
+                    I have not received a document
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option7-6" name="public-option1-option7" type="radio" value="cannot-open-print">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option7-6">
+                I cannot open and or print a received result
+            </label>
+        </div>
+    
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option7-7" name="public-option1-option7" type="radio" value="page-missing">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option7-7">
+                A page or plan is missing
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option7-8" name="public-option1-option7" type="radio" value="black-and-white">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option7-8">
+                A plan is in black and white and colour references are referred to
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option7-9" name="public-option1-option7" type="radio" value="something-else-relating">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option7-9">
+                Or something else relating to Official Copies
+            </label>
+        </div>
+        
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}

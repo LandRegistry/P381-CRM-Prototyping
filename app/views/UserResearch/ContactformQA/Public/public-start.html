@@ -1,0 +1,120 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <form class="form" action="public-start-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    What do you need to contact HM Land Registry about?
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-start-1" name="public-start" type="radio" value="application-in-progress">
+              <label class="govuk-label govuk-radios__label" for="public-start-1">
+                An application in progress or completed
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-start-2" name="public-start" type="radio" value="query-about-letter">
+              <label class="govuk-label govuk-radios__label" for="public-start-2">
+                I have a query about a letter received from HM Land Registry
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-start-3" name="public-start" type="radio" value="application-help">
+                <label class="govuk-label govuk-radios__label" for="public-start-3">
+                    I need help to make an application for registration
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-start-4" name="public-start" type="radio" value="information-about-land">
+                <label class="govuk-label govuk-radios__label" for="public-start-4">
+                    I need to find out information about land and/or property
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-start-5" name="public-start" type="radio" value="help-with-find-a-property">
+                <label class="govuk-label govuk-radios__label" for="public-start-5">
+                    I have used or need help with Find A Property
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-start-6" name="public-start" type="radio" value="help-with-search-land">
+            <label class="govuk-label govuk-radios__label" for="public-start-6">
+                I have used or need help with Search land and property information
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-start-7" name="public-start" type="radio" value="local-office-appointment">
+            <label class="govuk-label govuk-radios__label" for="public-start-7">
+                I would like to make an Appointment at a local office
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-start-8" name="public-start" type="radio" value="help-with-digital-mortgage">
+            <label class="govuk-label govuk-radios__label" for="public-start-8">
+                I have used or need help with Digital Mortgage Service
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-start-9" name="public-start" type="radio" value="help-with-property-alert">
+            <label class="govuk-label govuk-radios__label" for="public-start-9">
+                I have used or need help with Property Alert
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-start-10" name="public-start" type="radio" value="bankruptcy">
+            <label class="govuk-label govuk-radios__label" for="public-start-10">
+                Bankruptcy
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-start-11" name="public-start" type="radio" value="report-registration-fraud">
+            <label class="govuk-label govuk-radios__label" for="public-start-11">
+                I want to report Registration Fraud
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-start-12" name="public-start" type="radio" value="price-paid-information">
+            <label class="govuk-label govuk-radios__label" for="public-start-12">
+                Price paid information
+            </label>
+        </div>
+    </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+
+
+  </div>
+
+{% endblock %}

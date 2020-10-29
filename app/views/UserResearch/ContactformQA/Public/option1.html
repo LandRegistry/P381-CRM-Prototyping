@@ -1,0 +1,97 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <form class="form" action="public-option1-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Your enquiry relates to an application in progress or completed
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-1" name="public-option1" type="radio" value="application-to-update">
+              <label class="govuk-label govuk-radios__label" for="public-option1-1">
+                Application was to update the register
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-2" name="public-option1" type="radio" value="application-new-lease">
+              <label class="govuk-label govuk-radios__label" for="public-option1-2">
+                Application was for a new lease
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-3" name="public-option1" type="radio" value="application-transfer-part">
+                <label class="govuk-label govuk-radios__label" for="public-option1-3">
+                    Application was a Transfer of part
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-4" name="public-option1" type="radio" value="application-first-registration">
+                <label class="govuk-label govuk-radios__label" for="public-option1-4">
+                    Application was a First Registration of land
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-5" name="public-option1" type="radio" value="application-official-search">
+                <label class="govuk-label govuk-radios__label" for="public-option1-5">
+                    Application was for an Official Search
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-6" name="public-option1" type="radio" value="application-official-copies">
+            <label class="govuk-label govuk-radios__label" for="public-option1-6">
+                Application was for Official Copies
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-7" name="public-option1" type="radio" value="application-official-copies-document">
+            <label class="govuk-label govuk-radios__label" for="public-option1-7">
+                Application was for Official Copies Document
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-8" name="public-option1" type="radio" value="application-search-index-map">
+            <label class="govuk-label govuk-radios__label" for="public-option1-8">
+                Application was a Search of the Index Map
+            </label>
+        </div>
+        
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+      </form>
+    </div>
+
+  </div>
+
+{% endblock %}
