@@ -1,0 +1,59 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <form class="form" action="public-option1-option1-reqnotreceived-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Requisition not received
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-option1-reqnotreceived-1" name="public-option1-option1-reqnotreceived" type="radio" value="i-have-access">
+              <label class="govuk-label govuk-radios__label" for="public-option1-option1-reqnotreceived-1">
+                I have access to portal and I am the person whom the warning of cancellation was issued
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-option1-reqnotreceived-2" name="public-option1-option1-reqnotreceived" type="radio" value="i-do-not-have-access">
+              <label class="govuk-label govuk-radios__label" for="public-option1-option1-reqnotreceived-2">
+                I do not have access to portal or the warning of cancellation was issued to someone else
+              </label>
+            </div>
+                    
+          </div>
+      
+        </fieldset>
+    </div>
+
+    <button type="submit" class="govuk-button" data-module="govuk-button">
+      Next step
+    </button>
+
+  </form>
+    </div>
+
+  </div>
+
+{% endblock %}

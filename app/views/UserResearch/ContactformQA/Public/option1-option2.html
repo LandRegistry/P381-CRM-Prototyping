@@ -1,0 +1,111 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option1-option2-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Register change or create enquiry
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-option2-1" name="public-option1-option2" type="radio" value="whats-happening">
+              <label class="govuk-label govuk-radios__label" for="public-option1-option2-1">
+                What's happening with my application?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option1-option2-2" name="public-option1-option2" type="radio" value="need-more-time">
+              <label class="govuk-label govuk-radios__label" for="public-option1-option2-2">
+                I need more time to respond to a letter or email
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-option2-3" name="public-option1-option2" type="radio" value="expedite-my-application">
+                <label class="govuk-label govuk-radios__label" for="public-option1-option2-3">
+                    I want to expedite my application
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-option2-4" name="public-option1-option2" type="radio" value="cancel-my-application">
+                <label class="govuk-label govuk-radios__label" for="public-option1-option2-4">
+                    I need to cancel my application
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option1-option2-5" name="public-option1-option2" type="radio" value="i-have-a-question">
+                <label class="govuk-label govuk-radios__label" for="public-option1-option2-5">
+                    I have a question on a letter or email received from HMLR
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option2-6" name="public-option1-option2" type="radio" value="i-have-responded">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option2-6">
+                I have responded to your requisition, but not heard from you
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option2-7" name="public-option1-option2" type="radio" value="warning-of-cancellation">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option2-7">
+                I have received a warning of cancellation letter but have no record of a requisition
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option2-8" name="public-option1-option2" type="radio" value="question-on-a-notice">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option2-8">
+                I have a question on a notice received from HMLR
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option2-9" name="public-option1-option2" type="radio" value="incorrect-application">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option2-9">
+                My application has been completed, but is incorrect
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option1-option2-10" name="public-option1-option2" type="radio" value="or-something-else">
+            <label class="govuk-label govuk-radios__label" for="public-option1-option2-10">
+                Or something else
+            </label>
+        </div>
+        
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}
