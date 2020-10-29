@@ -653,6 +653,222 @@ router.post('/UserResearch/ContactformQA/Public/public-option2-option4-option1-c
 
 
 
+// Radio buttons Public/option3 "What do you need help with?" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-choice', function(req, res) {
+
+    const publicOption3Choice = req.session.data['public-option3']
+
+    switch (publicOption3Choice) {
+        case 'update-contact-address':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option1');
+            break;
+
+        case 'change-name':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option2');
+            break;
+
+        case 'someone-has-died':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3');
+            break;
+
+        case 'updating-ownership':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option4');
+            break;
+
+        case 'registering-property':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option5');
+            break;
+
+        case 'interest-in-property':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option6');
+            break;
+
+        case 'registration-fees':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option7');
+            break;
+
+        case 'stamp-duty':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option8');
+            break;
+
+        case 'something-else':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option9');
+            break;
+
+            default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+
+// Radio buttons Public/option3-option3-option1 "Bereavement guide - Registered with HMLR?" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-choice', function(req, res) {
+
+    const publicOption3Option3Option1Choice = req.session.data['public-option3-option3-option1']
+
+    switch (publicOption3Option3Option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option2');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option3-option3-option1-option1 "Bereavement guide - Transfer / assent or sale" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option1Choice = req.session.data['public-option3-option3-option1-option1']
+
+    switch (publicOption3Option3Option1Option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option1');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option2');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option3-option3-option1-option1-option1 "Bereavement guide - Joint ownership" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option1Option1Choice = req.session.data['public-option3-option3-option1-option1-option1']
+
+    switch (publicOption3Option3Option1Option1Option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option1-option1');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option1-option2');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// Radio buttons Public/option3-option3-option1-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option1-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option1Option1Option1Choice = req.session.data['public-option3-option3-option1-option1-option1-option1']
+
+    switch (publicOption3Option3Option1Option1Option1Option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option1-option1-option1');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option1-option1-option2');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option3-option3-option1-option1-option1-option1-option1 "Bereavement information" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option1-option1-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option1Option1Option1Option1Choice = req.session.data['public-option3-option3-option1-option1-option1-option1-option1']
+
+    switch (publicOption3Option3Option1Option1Option1Option1Option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/form5');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/enquiry-complete');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option3-option3-option1-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option2-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option1Option1Option2Choice = req.session.data['public-option3-option3-option1-option1-option1-option2']
+
+    switch (publicOption3Option3Option1Option1Option1Option2Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option1-option2-option1');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option1-option1-option2-option2');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// Radio buttons Public/option3-option3-option1-option1-option1-option2-option1 "Bereavement information" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option2-option1-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option1Option1Option2Option1Choice = req.session.data['public-option3-option3-option1-option1-option1-option2-option1']
+
+    switch (publicOption3Option3Option1Option1Option1Option2Option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/form5');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/enquiry-complete');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option3-option3-option1-option1-option1-option2-option2 "Bereavement information" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option2-option2-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option1Option1Option2Option2Choice = req.session.data['public-option3-option3-option1-option1-option1-option2-option2']
+
+    switch (publicOption3Option3Option1Option1Option1Option2Option2Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/form5');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/enquiry-complete');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
 
 
 module.exports = router

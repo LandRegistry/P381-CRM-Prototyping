@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5">
+  
+
+      <h1 class="govuk-heading-xl">
+        Bereavement guide
+      </h1>
+      <h3 class="govuk-heading-m">This guide is provided to help you find out:</h3>
+        
+        <ul class='govuk-body'>
+            <li>what forms you'll need to complete</li>
+            <li>what documents you'll need to send</li>
+            <li>how much it costs</li>
+        </ul>
+<br>
+    <p>
+        We'll ask up to 4 questions to help give you the right information</p>
+    </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5">
+        
+        <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/ContactformQA/Public/option3-option3-option1.html'">
+        Next step
+      </button>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
