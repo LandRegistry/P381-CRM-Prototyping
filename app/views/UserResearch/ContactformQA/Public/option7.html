@@ -1,0 +1,33 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5">
+  
+
+      <h1 class="govuk-heading-xl">
+        Information
+      </h1>
+      <p>
+        The information you require is available at <a href="https://help.landregistry.gov.uk/app/contactus_appointment" target="_blank">our Appointment enquiry form</a></p>
+        </div>
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5">
+        <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/ContactformQA/Public/enquiry-complete.html'">
+            Next step
+          </button>
+
+    </div>
+</div>
+
+{% endblock %}

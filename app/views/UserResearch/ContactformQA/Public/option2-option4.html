@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <form class="form" action="public-option2-option4-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    What does the letter header refer to?
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option2-option4-1" name="public-option2-option4" type="radio" value="a-notice">
+              <label class="govuk-label govuk-radios__label" for="public-option2-option4-1">
+                A notice
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option2-option4-2" name="public-option2-option4" type="radio" value="requisition-letter">
+              <label class="govuk-label govuk-radios__label" for="public-option2-option4-2">
+                A requisiton letter (C90) 
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option2-option4-3" name="public-option2-option4" type="radio" value="bankruptcy-letter">
+                <label class="govuk-label govuk-radios__label" for="public-option2-option4-3">
+                    Banruptcy letter (B10a)
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option2-option4-4" name="public-option2-option4" type="radio" value="something-else">
+                <label class="govuk-label govuk-radios__label" for="public-option2-option4-4">
+                    Or Something else
+                </label>
+            </div>
+    
+        
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+      </form>
+    </div>
+
+  </div>
+
+{% endblock %}

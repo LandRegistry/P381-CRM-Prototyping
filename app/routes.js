@@ -33,47 +33,47 @@ router.post('/UserResearch/ContactformQA/Public/public-start-choice', function(r
             break;
 
         case 'query-about-letter':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option2');
             break;
 
         case 'application-help':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option3');
             break;
 
         case 'information-about-land':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option4');
             break;
 
         case 'help-with-find-a-property':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option5');
             break;
 
         case 'help-with-search-land':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option6');
             break;
 
         case 'local-office-appointment':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option7');
             break;
 
         case 'help-with-digital-mortgage':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
             break;
 
         case 'help-with-property-alert':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
             break;
 
         case 'bankruptcy':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
             break;
 
         case 'report-registration-fraud':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option11');
             break;
 
         case 'price-paid-information':
-            res.redirect('/UserResearch/ContactformQA/Business/index');
+            res.redirect('/UserResearch/ContactformQA/Public/option12');
             break;
 
         default:
@@ -563,6 +563,96 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option1-reqnotrec
             break;
     }
 })
+
+
+
+// Radio buttons Public/option2 "Your enquiry is about a letter received from HM Land Registry" 
+router.post('/UserResearch/ContactformQA/Public/public-option2-choice', function(req, res) {
+
+    const publicOption2Choice = req.session.data['public-option2']
+
+    switch (publicOption2Choice) {
+        case 'more-time-requisition':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+        case 'more-time-notice':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+        case 'no-document':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+        case 'unclear-letter':
+            res.redirect('/UserResearch/ContactformQA/Public/option2-option4');
+            break;
+
+        case 'object-to-application':
+            res.redirect('/UserResearch/ContactformQA/Public/form3');
+            break;
+
+        case 'unbranded-envelope':
+            res.redirect('/UserResearch/ContactformQA/Public/form3');
+            break;
+
+            default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option2-option4 "What does the letter header refer to?" 
+router.post('/UserResearch/ContactformQA/Public/public-option2-option4-choice', function(req, res) {
+
+    const publicOption2option4Choice = req.session.data['public-option2-option4']
+
+    switch (publicOption2option4Choice) {
+        case 'a-notice':
+            res.redirect('/UserResearch/ContactformQA/Public/option2-option4-option1');
+            break;
+
+        case 'requisition-letter':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+        case 'bankruptcy-letter':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+        case 'something-else':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+            default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// Radio buttons Public/option2-option4-option1 "Does the notice give a deadline to reply?" 
+router.post('/UserResearch/ContactformQA/Public/public-option2-option4-option1-choice', function(req, res) {
+
+    const publicOption2option4option1Choice = req.session.data['public-option2-option4-option1']
+
+    switch (publicOption2option4option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/form4');
+            break;
+
+            default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+
 
 
 module.exports = router
