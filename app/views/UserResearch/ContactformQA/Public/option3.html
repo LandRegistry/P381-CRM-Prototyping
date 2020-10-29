@@ -1,0 +1,107 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <form class="form" action="public-option3-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    What do you need help with?
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option3-1" name="public-option3" type="radio" value="update-contact-address">
+              <label class="govuk-label govuk-radios__label" for="public-option3-1">
+                Updating a contact address
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option3-2" name="public-option3" type="radio" value="change-name">
+              <label class="govuk-label govuk-radios__label" for="public-option3-2">
+                Change someone's name on a property record 
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option3-3" name="public-option3" type="radio" value="someone-has-died">
+                <label class="govuk-label govuk-radios__label" for="public-option3-3">
+                    Dealing with land and property when someone has died
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option3-4" name="public-option3" type="radio" value="updating-ownership">
+                <label class="govuk-label govuk-radios__label" for="public-option3-4">
+                    Updating ownership of the whole or part of the property or land
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option3-5" name="public-option3" type="radio" value="registering-property">
+                <label class="govuk-label govuk-radios__label" for="public-option3-5">
+                    Registering property or land for the first time, including leases
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option3-6" name="public-option3" type="radio" value="interest-in-property">
+            <label class="govuk-label govuk-radios__label" for="public-option3-6">
+                Registering or removing an interest in property or land  (joint tenancy/tenants in common/restrictions/notices/home rights)
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option3-7" name="public-option3" type="radio" value="registration-fees">
+            <label class="govuk-label govuk-radios__label" for="public-option3-7">
+                Registration Fees
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option3-8" name="public-option3" type="radio" value="stamp-duty">
+            <label class="govuk-label govuk-radios__label" for="public-option3-8">
+                Stamp Duty Land Tax or Land Transfer Tax
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option3-9" name="public-option3" type="radio" value="something-else">
+            <label class="govuk-label govuk-radios__label" for="public-option3-9">
+                Or something else about a proposed application
+            </label>
+        </div>
+       
+        
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+      </form>
+    </div>
+
+  </div>
+
+{% endblock %}
