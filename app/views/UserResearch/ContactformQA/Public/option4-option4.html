@@ -1,0 +1,106 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option4-option4-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Find a Property - fee enquiry
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option4-option4-1" name="public-option4-option4" type="radio" value="how-much">
+              <label class="govuk-label govuk-radios__label" for="public-option4-option4-1">
+                How much does it cost to use Find a Property services?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option4-option4-2" name="public-option4-option4" type="radio" value="what-cards">
+              <label class="govuk-label govuk-radios__label" for="public-option4-option4-2">
+                What cards can I use?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option4-option4-3" name="public-option4-option4" type="radio" value="refund">
+                <label class="govuk-label govuk-radios__label" for="public-option4-option4-3">
+                    What do I do to get a refund?
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option4-option4-4" name="public-option4-option4" type="radio" value="world-pay">
+                <label class="govuk-label govuk-radios__label" for="public-option4-option4-4">
+                    Where can I find my World Pay Transaction ID number?
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option4-option4-5" name="public-option4-option4" type="radio" value="vat-receipt">
+                <label class="govuk-label govuk-radios__label" for="public-option4-option4-5">
+                    Can I obtain a VAT receipt for my transactions?
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option4-option4-6" name="public-option4-option4" type="radio" value="declining-my-cards">
+            <label class="govuk-label govuk-radios__label" for="public-option4-option4-6">
+                WorldPay is declining my cards despite accepting in the past
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option4-option4-7" name="public-option4-option4" type="radio" value="already-paid">
+            <label class="govuk-label govuk-radios__label" for="public-option4-option4-7">
+                I have already paid but the relevant information was not sent to me
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option4-option4-8" name="public-option4-option4" type="radio" value="do-i-get-charged">
+            <label class="govuk-label govuk-radios__label" for="public-option4-option4-8">
+                At what point do I get charged for a download?
+            </label>
+        </div>
+           
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option4-option4-9" name="public-option4-option4" type="radio" value="personal-information">
+            <label class="govuk-label govuk-radios__label" for="public-option4-option4-9">
+                Will my personal information be safe?
+            </label>
+        </div>
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}
