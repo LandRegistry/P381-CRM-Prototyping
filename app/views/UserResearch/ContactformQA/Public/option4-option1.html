@@ -1,0 +1,92 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option4-option1-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Find a Property - information held
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option4-option1-1" name="public-option4-option1" type="radio" value="information-find-property">
+              <label class="govuk-label govuk-radios__label" for="public-option4-option1-1">
+                What information is available through Find a Property?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option4-option1-2" name="public-option4-option1" type="radio" value="how-long-update">
+              <label class="govuk-label govuk-radios__label" for="public-option4-option1-2">
+                How long does it take for Land Registry to update information?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option4-option1-3" name="public-option4-option1" type="radio" value="what-property-details">
+                <label class="govuk-label govuk-radios__label" for="public-option4-option1-3">
+                    What property details can I get from a title register and title plan?
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option4-option1-4" name="public-option4-option1" type="radio" value="property-search-reveal">
+                <label class="govuk-label govuk-radios__label" for="public-option4-option1-4">
+                    What information can a property search reveal?
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option4-option1-5" name="public-option4-option1" type="radio" value="can-i-look">
+                <label class="govuk-label govuk-radios__label" for="public-option4-option1-5">
+                    Can I look at anyone's property and will they be able to look at mine? I object to anyone seeing how much I paid for my property.
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option4-option1-6" name="public-option4-option1" type="radio" value="urgent-information">
+            <label class="govuk-label govuk-radios__label" for="public-option4-option1-6">
+                The information is urgent and I need it now. Can I be given information over the telephone?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option4-option1-7" name="public-option4-option1" type="radio" value="telephone-number">
+            <label class="govuk-label govuk-radios__label" for="public-option4-option1-7">
+                Does the information include the telephone number of the owner of the property?
+            </label>
+        </div>
+                
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}
