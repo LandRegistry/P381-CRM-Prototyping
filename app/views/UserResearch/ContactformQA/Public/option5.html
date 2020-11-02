@@ -1,0 +1,85 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option5-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Find a Property enquiry
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-1" name="public-option5" type="radio" value="find-a-property-service">
+              <label class="govuk-label govuk-radios__label" for="public-option5-1">
+                I want to learn more about the Find a Property service
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-2" name="public-option5" type="radio" value="property-search-function">
+              <label class="govuk-label govuk-radios__label" for="public-option5-2">
+                I have a problem using the Property Search function
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-3" name="public-option5" type="radio" value="map-enquiry-function">
+                <label class="govuk-label govuk-radios__label" for="public-option5-3">
+                    I have a problem using the Map Enquiry function
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-4" name="public-option5" type="radio" value="costs-fees">
+                <label class="govuk-label govuk-radios__label" for="public-option5-4">
+                    I have a question about costs / fees
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-5" name="public-option5" type="radio" value="problem-setting-up">
+                <label class="govuk-label govuk-radios__label" for="public-option5-5">
+                    I have a problem with setting up my account or accessing the service
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-6" name="public-option5" type="radio" value="problem-downloading">
+            <label class="govuk-label govuk-radios__label" for="public-option5-6">
+                I can access the services but have a problem with downloading information
+            </label>
+        </div>
+               
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}

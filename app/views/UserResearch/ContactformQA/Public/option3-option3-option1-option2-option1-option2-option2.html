@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-8">
+  
+
+      <h1 class="govuk-heading-xl">
+        Bereavement information
+      </h1>
+      <p>
+        The article Report the death of a joint owner of unregistered land or property  from our knowledge base will help you:<br>
+         <a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/31" target="_blank">Click here to view it in a new window</a></p>
+        
+
+         <h3 class="govuk-heading-m">
+    How did we arrive at this recommendation?
+</h3>
+<ul class='govuk-body'>
+    <li>The land or property of the person who died is not registered with us.</li>
+    <li>The transfer is not to a beneficiary of the person who died.</li>
+    <li>The person who died was a joint owner of the land or property.</li>
+    <li>The surviving owner does not want to transfer the land or property.</li>
+</ul>
+
+</div>
+
+<div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+    <form class="form" action="public-option3-option3-option1-option2-option1-option2-option2-choice" method="post">
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <div id="changed-name-hint" class="govuk-hint">
+            Having reviewed this information, do you still have a query?
+          </div>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option3-option3-option1-option2-option1-option2-option2-1" name="public-option3-option3-option1-option2-option1-option2-option2" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="public-option3-option3-option1-option2-option1-option2-option2-1">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option3-option3-option1-option2-option1-option2-option2-2" name="public-option3-option3-option1-option2-option1-option2-option2" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="public-option3-option3-option1-option2-option1-option2-option2-2">
+                No
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+    </div>
+
+    <button type="submit" class="govuk-button" data-module="govuk-button">
+      Next step
+    </button>
+
+    </form>
+</div>
+</div>
+
+{% endblock %}

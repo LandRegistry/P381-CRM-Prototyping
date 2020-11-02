@@ -1,0 +1,124 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option5-option5-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Find a Property - setting up access and issues
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+              <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option5-1" name="public-option5-option5" type="radio" value="having-problems">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option5-1">
+                I am having problems creating my account
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option5-2" name="public-option5-option5" type="radio" value="activation-email">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option5-2">
+                I am having problems relating to the activation email
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option5-3" name="public-option5-option5" type="radio" value="create-account">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option5-3">
+                    I’m trying to create an account, but I get a message saying that my email address has already been used
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option5-4" name="public-option5-option5" type="radio" value="unable-to-login">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option5-4">
+                    I am unable to login, the system doesn’t recognise my password/username or my account is locked
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option5-5" name="public-option5-option5" type="radio" value="remember-my-username">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option5-5">
+                    I can’t login as I’m unable to remember my username
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option5-6" name="public-option5-option5" type="radio" value="forgotten-my-password">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option5-6">
+                I am unable to login - I know my username but have forgotten my password
+            </label>
+        </div>
+               
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option5-7" name="public-option5-option5" type="radio" value="activation-link">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option5-7">
+                The activation link doesn’t work, what can I do?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option5-8" name="public-option5-option5" type="radio" value="password-incorrectly">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option5-8">
+                I entered my password incorrectly / have reset my password, but it still will not let me log in
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option5-9" name="public-option5-option5" type="radio" value="message-account-deleted">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option5-9">
+                Why am I getting a message saying my account has been deleted?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option5-10" name="public-option5-option5" type="radio" value="username-not-acceptable">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option5-10">
+                I’m getting a message saying that the username is not acceptable
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option5-11" name="public-option5-option5" type="radio" value="something-else">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option5-11">
+                Or something else about setting up or accessing the Find a Property service
+            </label>
+        </div>
+        
+        
+        
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}

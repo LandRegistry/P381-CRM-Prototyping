@@ -991,6 +991,67 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
+// Radio buttons Public/option3-option3-option1-option2-option1-option2 "Bereavement guide - Surviving owner intentions" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option2-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option2Option1Option2Choice = req.session.data['public-option3-option3-option1-option2-option1-option2']
+
+    switch (publicOption3Option3Option1Option2Option1Option2Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option2-option1-option2-option1');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/option3-option3-option1-option2-option1-option2-option2');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// Radio buttons Public/option3-option3-option1-option2-option1-option2-option1 "Bereavement information" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option2-option1-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option2Option1Option2Option1Choice = req.session.data['public-option3-option3-option1-option2-option1-option2-option1']
+
+    switch (publicOption3Option3Option1Option2Option1Option2Option1Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/form5');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/enquiry-complete');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option3-option3-option1-option2-option1-option2-option2 "Bereavement information" 
+router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option2-option2-choice', function(req, res) {
+
+    const publicOption3Option3Option1Option2Option1Option2Option2Choice = req.session.data['public-option3-option3-option1-option2-option1-option2-option2']
+
+    switch (publicOption3Option3Option1Option2Option1Option2Option2Choice) {
+        case 'yes':
+            res.redirect('/UserResearch/ContactformQA/Public/form5');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/ContactformQA/Public/enquiry-complete');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
 // Radio buttons Public/option3-option3-option1-option2-option1-option1 "Bereavement guide - Surviving owner intentions" 
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option1-choice', function(req, res) {
 
@@ -1404,6 +1465,349 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option5-choice', 
             res.redirect('/UserResearch/ContactformQA/Public/form6');
             break;
             
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+
+// Radio buttons Public/option5 "Find a Property enquiry" 
+router.post('/UserResearch/ContactformQA/Public/public-option5-choice', function(req, res) {
+
+    const publicOption5Choice = req.session.data['public-option5']
+
+    switch (publicOption5Choice) {
+        case 'find-a-property-service':
+            res.redirect('/UserResearch/ContactformQA/Public/option5-option1');
+            break;
+
+        case 'property-search-function':
+            res.redirect('/UserResearch/ContactformQA/Public/option5-option2');
+            break;
+
+        case 'map-enquiry-function':
+            res.redirect('/UserResearch/ContactformQA/Public/option5-option3');
+            break;
+
+        case 'costs-fees':
+            res.redirect('/UserResearch/ContactformQA/Public/option5-option4');
+            break;
+
+        case 'problem-setting-up':
+            res.redirect('/UserResearch/ContactformQA/Public/option5-option5');
+            break;
+
+        case 'problem-downloading':
+            res.redirect('/UserResearch/ContactformQA/Public/option5-option6');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option5-option1 "Find a Property - information held" 
+router.post('/UserResearch/ContactformQA/Public/public-option5-option1-choice', function(req, res) {
+
+    const publicOption5Option1Choice = req.session.data['public-option5-option1']
+
+    switch (publicOption5Option1Choice) {
+        case 'what-information':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'how-long-update':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'what-property-details':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'property-search-information':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'can-i-look':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'urgent-information':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'telephone-number':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;     
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+
+
+// Radio buttons Public/option5-option2 "Find a Property - Property Search" 
+router.post('/UserResearch/ContactformQA/Public/public-option5-option2-choice', function(req, res) {
+
+    const publicOption5Option2Choice = req.session.data['public-option5-option2']
+
+    switch (publicOption5Option2Choice) {
+        case 'what-do-i-need':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'several-email-addresses':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'no-pdf-software':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'make-an-enquiry':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'what-about-land':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'need-information':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'something-else':
+            res.redirect('/UserResearch/ContactformQA/Public/form7');
+            break;     
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option5-option3 "Find a Property - map enquiry" 
+router.post('/UserResearch/ContactformQA/Public/public-option5-option3-choice', function(req, res) {
+
+    const publicOption5Option3Choice = req.session.data['public-option5-option3']
+
+    switch (publicOption5Option3Choice) {
+        case 'help-me':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'cannot-use-tool':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'zoom-in':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'move-around':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'find-properties-button':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'button-not-working':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'which-information':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;   
+            
+        case 'radius-search':
+                res.redirect('/UserResearch/ContactformQA/Public/form6');
+                break; 
+
+        case 'cannot-locate':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;   
+            
+        case 'something-else':
+                res.redirect('/UserResearch/ContactformQA/Public/form7');
+                break; 
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option5-option4 "Find a Property - fee enquiry" 
+router.post('/UserResearch/ContactformQA/Public/public-option5-option4-choice', function(req, res) {
+
+    const publicOption5Option4Choice = req.session.data['public-option5-option4']
+
+    switch (publicOption5Option4Choice) {
+        case 'how-much-does-it':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'what-cards':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'refund':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'transaction-id':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'wordlpay':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'already-paid':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'charged-for-download':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;   
+            
+        case 'personal-information':
+                res.redirect('/UserResearch/ContactformQA/Public/form6');
+                break; 
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option5-option5 "Find a Property - fee enquiry" 
+router.post('/UserResearch/ContactformQA/Public/public-option5-option5-choice', function(req, res) {
+
+    const publicOption5Option5Choice = req.session.data['public-option5-option5']
+
+    switch (publicOption5Option5Choice) {
+        case 'having-problems':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'activation-email':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'create-account':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'unable-to-login':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'remember-my-username':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'forgotten-my-password':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'activation-link':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;   
+            
+        case 'password-incorrectly':
+                res.redirect('/UserResearch/ContactformQA/Public/form6');
+                break; 
+
+        case 'message-account-deleted':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'username-not-acceptable':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;   
+            
+        case 'something-else':
+                res.redirect('/UserResearch/ContactformQA/Public/form7');
+                break; 
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// Radio buttons Public/option5-option6 "Find a Property - download issues" 
+router.post('/UserResearch/ContactformQA/Public/public-option5-option6-choice', function(req, res) {
+
+    const publicOption5Option6Choice = req.session.data['public-option6-option5']
+
+    switch (publicOption5Option6Choice) {
+        case 'trouble-printing':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'register-and-plan':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'not-received':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'failed-download':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'error-message':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'deleted-files':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'register-twice':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;   
+            
+        case 'bought-information':
+                res.redirect('/UserResearch/ContactformQA/Public/form6');
+                break; 
+
+        case 'bought-the-register':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;
+
+        case 'problem-with-pdf':
+            res.redirect('/UserResearch/ContactformQA/Public/form6');
+            break;   
+            
+        case 'obtain-historical':
+                res.redirect('/UserResearch/ContactformQA/Public/form6');
+                break; 
+        
+         case 'buy-a-copy':
+                res.redirect('/UserResearch/ContactformQA/Public/form6');
+                break; 
+        
+         case 'something-else':
+                res.redirect('/UserResearch/ContactformQA/Public/form7');
+                break; 
+
         default:
             //This is a catch all for none of the above
             break;
