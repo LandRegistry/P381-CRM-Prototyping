@@ -1,0 +1,95 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Your details
+              </h1>
+            </legend>
+          
+<p><a id="chat-ccl-link" href="javascript: void(0);" data-bind="
+                  attr: { 'aria-disabled': disableLink, 'aria-label': strings.linkAriaLabel },
+                  click: clickLink" aria-label="Live chat opens in a new window">
+                  <span data-bind="html: RESOURCE.FA_COMMENT_O, visible: showLinkIcon"><svg class="fa fa-comment-o" width="16" height="16" viewBox="0 0 1792 1792">
+          <path d="M896 384q-204 0-381.5 69.5t-282 187.5-104.5 255q0 112 71.5 213.5t201.5 175.5l87 50-27 96q-24 91-70 172 152-63 275-171l43-38 57 6q69 8 130 8 204 0 381.5-69.5t282-187.5 104.5-255-104.5-255-282-187.5-381.5-69.5zm896 512q0 174-120 321.5t-326 233-450 85.5q-70 0-145-8-198 175-460 242-49 14-114 22h-5q-15 0-27-10.5t-16-27.5v-1q-3-4-.5-12t2-10 4.5-9.5l6-9 7-8.5 8-9q7-8 31-34.5t34.5-38 31-39.5 32.5-51 27-59 26-76q-157-89-247.5-220t-90.5-281q0-174 120-321.5t326-233 450-85.5 450 85.5 326 233 120 321.5z"></path>
+        </svg>
+        </span>
+                  <span data-bind="visible: showLinkText, text: strings.linkText">Live Chat</span> 
+                </a> <br>Chat with a member of our support team. There are agents available, with no expected wait.
+              </p>
+            <p></p>
+            <p>Otherwise please provide your details to allow us to log this enquiry</p>
+            
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="first-name">
+                First name
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="first-name" name="first-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="last-name">
+                  Last name
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="last-name" name="last-name" type="text">
+              </div>
+          
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="email-address">
+                Email address
+              </label>
+              <div id="waste-hint" class="govuk-hint">
+                We'll use this address to contact you
+              </div>
+              <input class="govuk-input govuk-!-width-one-half" id="email-address" name="email-address" type="text"></div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="email-address">
+                  Re-type email address
+                </label>
+
+                <input class="govuk-input govuk-!-width-one-half" id="email-address" name="email-address" type="text"></div>
+            
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="more-detail">
+                        Tell us about your query in as much detail as you can
+                      </label>
+                    <textarea class="govuk-textarea  govuk-!-width-two-thirds" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="file-upload-1">
+                      Upload a file
+                    </label>
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+
+          </fieldset>
+
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/ContactformQA/Public/Submitted.html'">
+        Submit
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}

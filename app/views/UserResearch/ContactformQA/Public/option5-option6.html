@@ -1,0 +1,138 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option5-option6-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Find a Property - download issues
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+              <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option6-1" name="public-option5-option6" type="radio" value="trouble-printing">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option6-1">
+                I am having trouble printing my download
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option6-2" name="public-option5-option6" type="radio" value="register-and-plan">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option6-2">
+                I wish to purchase a register and plan and the plan is not available
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option6-3" name="public-option5-option6" type="radio" value="not-received">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option6-3">
+                    Why have I not received the title register and/or title plan and/or Flood Risk Indicator?
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option6-4" name="public-option5-option6" type="radio" value="failed-download">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option6-4">
+                    What do I do when my download appears to have failed?
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option6-5" name="public-option5-option6" type="radio" value="error-message">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option6-5">
+                    I’ve already paid for this, but an error message appeared. Please send me the information by post
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-6" name="public-option5-option6" type="radio" value="deleted-files">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-6">
+                I have deleted the files for the register / title plan or forgot to save, could you please re-issue the link?
+            </label>
+        </div>
+               
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-7" name="public-option5-option6" type="radio" value="register-twice">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-7">
+                I purchased the same document and/or register twice
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-8" name="public-option5-option6" type="radio" value="bought-information">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-8">
+                I bought information for ‘Property A’ but received documents for ‘Property B’, please send me the correct documents.
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-9" name="public-option5-option6" type="radio" value="bought-the-register">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-9">
+                I bought the register / title plan for the freehold title, but wanted the leasehold (or vice versa), can you send me the right one?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-10" name="public-option5-option6" type="radio" value="problem-with-pdf">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-10">
+                There is a problem with my PDF download, e.g. it’s blank or unreadable, what can I do?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-11" name="public-option5-option6" type="radio" value="obtain-historical">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-11">
+                How do I obtain historical information on a piece of land or property?
+            </label>
+        </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-12" name="public-option5-option6" type="radio" value="buy-a-copy">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-12">
+                I want to buy a copy or copies of a document or deed referred to in the register
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option6-13" name="public-option5-option6" type="radio" value="something-else">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option6-13">
+                Or something else about downloading from Find a Property
+            </label>
+        </div>
+        
+              
+                
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}

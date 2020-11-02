@@ -1,0 +1,93 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option5-option2-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Find a Property - Property Search
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option2-1" name="public-option5-option2" type="radio" value="what-do-i-need">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option2-1">
+                What do I need to use the Property Search functionality?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option2-2" name="public-option5-option2" type="radio" value="several-email-addresses">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option2-2">
+                I use several email addresses; will this cause a problem?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option2-3" name="public-option5-option2" type="radio" value="no-pdf-software">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option2-3">
+                    I don't have PDF software - how can I access information?
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option2-4" name="public-option5-option2" type="radio" value="make-an-enquiry">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option2-4">
+                    What information do I need to make an enquiry?
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option2-5" name="public-option5-option2" type="radio" value="what-about-land">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option2-5">
+                    What about land with no postal address or partial address?
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option2-6" name="public-option5-option2" type="radio" value="need-information">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option2-6">
+                I need to find information on more than one property, why isn’t there a ‘shopping basket’ facility?
+            </label>
+        </div>
+               
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option2-7" name="public-option5-option2" type="radio" value="something-else">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option2-7">
+                Or something else about the Property Search function
+            </label>
+        </div>
+
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}

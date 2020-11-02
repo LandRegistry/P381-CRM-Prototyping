@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="public-option5-option3-choice" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-7">
+                    Find a Property - Property Search
+                </h1>
+                
+              </legend>
+
+              <div>
+                <h3 class="govuk-heading-m">Select one option</h3>
+              </div>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option3-1" name="public-option5-option3" type="radio" value="help-me">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option3-1">
+                How can Map Enquiry help me?
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="public-option5-option3-2" name="public-option5-option3" type="radio" value="cannot-use-tool">
+              <label class="govuk-label govuk-radios__label" for="public-option5-option3-2">
+                I've looked at the search tips but still cannot use this tool
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option3-3" name="public-option5-option3" type="radio" value="zoom-in">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option3-3">
+                    How do I zoom in?
+                </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option3-4" name="public-option5-option3" type="radio" value="move-around">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option3-4">
+                    How do I move around the map and/or aerial photos to find the area I am interested in?
+                </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="public-option5-option3-5" name="public-option5-option3" type="radio" value="find-properties-button">
+                <label class="govuk-label govuk-radios__label" for="public-option5-option3-5">
+                    I can’t see the 'Find properties' button
+                </label>
+            </div>
+        
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option3-6" name="public-option5-option3" type="radio" value="button-not-working">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option3-6">
+                The 'Find properties' button isn’t working / is ‘greyed out’
+            </label>
+        </div>
+               
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option3-7" name="public-option5-option3" type="radio" value="which-information">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option3-7">
+                How do I know which information is applicable to the property I am interested in?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option3-8" name="public-option5-option3" type="radio" value="radius-search">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option3-8">
+                What is radius search and how do I use it?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option3-9" name="public-option5-option3" type="radio" value="cannot-locate">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option3-9">
+                I can’t locate the land I’m interested in using the Map Enquiry search tool, what can I do?
+            </label>
+        </div>
+
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="public-option5-option3-10" name="public-option5-option3" type="radio" value="something-else">
+            <label class="govuk-label govuk-radios__label" for="public-option5-option3-10">
+                Or something else about the Map Enquiry function
+            </label>
+        </div>
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Next step
+      </button>
+
+    </form>
+    </div>
+
+  </div>
+
+{% endblock %}
