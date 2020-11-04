@@ -2,9 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit <script src= 
-  "https://code.jquery.com/jquery-1.12.4.min.js"> 
-      </script> 
+  GOV.UK Prototype Kit 
 {% endblock %}
 
 
@@ -28,7 +26,7 @@
         <li>how to correct a mistake on your title plan</li>
     </ul>
 
-    <button type="submit" class="govuk-button" data-module="govuk-button">
+    <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/CommonBoundary/page2.html'">
         Start now
       </button>
 
@@ -48,35 +46,8 @@
         <p>We only deal with land and property in England and Wales.<br> There are different rules for <a href="https://www.ros.gov.uk/our-registers/land-register-of-scotland" target="_blank">Scotland</a> and 
     <a href="https://www.finance-ni.gov.uk/articles/lps-registration-offices" target="_blank">Northern Ireland</a></p>
 
-
     </div>
-
-
-
     </div>
-
-
-
   </div>
-
-
-  <script type="text/javascript"> 
-    $(document).ready(function() { 
-        $('input[type="radio"]').click(function() { 
-            var inputValue = $(this).attr("value"); 
-            var targetBox = $("." + inputValue); 
-            $(".contentbox").not(targetBox).hide(); 
-            $(targetBox).show(); 
-        }); 
-    }); 
-</script> 
-
-<style type="text/css"> 
-    .contentbox { 
-        padding: 0px; 
-        display: none;  
-        width: 100%; 
-    } 
-</style> 
 
 {% endblock %}
