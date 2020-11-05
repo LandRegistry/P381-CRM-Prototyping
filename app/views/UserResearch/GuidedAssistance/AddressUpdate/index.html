@@ -1,0 +1,56 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/index.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-5">
+  
+
+      <h1 class="govuk-heading-xl">
+        Change your contact address on property records
+      </h1>
+<div class="govuk-body govuk-!-margin-bottom-9">
+      <h3 class="govuk-heading-s">Use this tool to find out:</h3>
+
+      <ul class="govuk-body govuk-!-margin-bottom-4">
+        <li>what forms you'll need to complete</li>
+        <li>what documents you'll need to send</li>
+    </ul>
+
+    <p class="govuk-body govuk-!-margin-bottom-5">
+        You'll answer 4 questions.
+    </p>
+
+    <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/AddressUpdate/page2.html'">
+        Start now
+      </button>
+
+    </div>
+
+    <div class="govuk-body govuk-!-margin-bottom-9">
+        <h3 class="govuk-heading-l">Before you start</h3>
+
+        <h3 class="govuk-heading-s"><a href="https://www.gov.uk/search-property-information-land-registry" target="_blank">Search for property information</a> if you don't know:</h3>
+        
+        <ul class="govuk-body govuk-!-margin-bottom-5">  
+            <li>if it's registered with HM Land Registry</li>
+            <li>whether it's owned jointly or by one person</li>
+        </ul>
+
+        <p>We only deal with land and property in England and Wales.<br> There are different rules for <a href="https://www.ros.gov.uk/our-registers/land-register-of-scotland" target="_blank">Scotland</a> and 
+    <a href="https://www.finance-ni.gov.uk/articles/lps-registration-offices" target="_blank">Northern Ireland</a></p>
+
+    </div>
+    </div>
+  </div>
+
+{% endblock %}
