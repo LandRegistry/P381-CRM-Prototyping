@@ -1,0 +1,243 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">
+    Update your name on property records
+</h1>
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="boundarymatters-choice" method="post">
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+               
+                <div>
+                  <h3 class="govuk-heading-m">Is the property registered?</h3>
+               </div>
+
+               <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-1" id="content-1">
+                     <label class="govuk-label govuk-radios__label" for="content-1">
+                     Yes
+                     </label>
+                  </div>
+
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-2" id="content-2">
+                     <label class="govuk-label govuk-radios__label" for="content-2">
+                     No
+                     </label>
+                  </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-3" id="content-3">
+                    <label class="govuk-label govuk-radios__label" for="content-3">
+                    Don't know
+                    </label>
+                 </div>
+               </div>
+            </fieldset>
+        </div>
+      </form>
+    </div>
+</div>
+
+    <div class="govuk-grid-row content-1 contentbox">
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+            <hr style="margin-bottom:25px;">
+            <h3 class="govuk-heading-s">Why do you need to change your name on your property register?</h3>
+            
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        Divorce or end of civil partnership
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">
+                        Please consult the following information:
+                    </h3>
+                    <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/214" target="_blank">                                
+                        Change your name on the property register after divorce or the end of a civil partnership</a></p>
+                </div>
+            </details>
+            
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        Marriage or civil partnership
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">
+                        Please consult the following information:
+                    </h3>
+                    <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/213" target="_blank">                                
+                        Change your name on the property register after marriage or civil partnership</a></p>
+                </div>
+            </details>
+               
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        Change of name by deed poll
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">
+                        Please consult the following information:
+                    </h3>
+                    <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/215" target="_blank">                                
+                        Update the property register after a change of name by deed poll</a></p>
+                </div>
+            </details>         
+               
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        Correct a spelling error
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">
+                        Please consult the following information:
+                    </h3>
+                    <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/216" target="_blank">                                
+                        Update your name on the property register to correct a spelling error</a></p>
+                </div>
+            </details>  
+               
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        Gender change
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">
+                        Please consult the following information:
+                    </h3>
+                    <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/217" target="_blank">                                
+                        Update your name on the property register after changing gender</a></p>
+                </div>
+            </details> 
+               
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        To match passport or driving licence
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">
+                        Please consult the following information:
+                    </h3>
+                    <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/218" target="_blank">                                
+                        Change your name on the property register to match your passport or driver’s licence</a></p>
+                </div>
+            </details> 
+               
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                        Ownership has changed
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">
+                        Please consult the following information:
+                    </h3>
+                    <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/228" target="_blank">                                
+                        Change the name on the property register to the new owner’s name</a></p>
+                </div>
+            </details> 
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class=" govuk-grid-row content-2 contentbox">
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+            <hr style="margin-bottom:25px;">
+
+            <h3 class="govuk-heading-s" style="
+            margin-bottom: 10px;
+        ">Please consult the following information:</h3>
+                <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/227" target="_blank">
+                    Change the owner’s name or address on an unregistered property</a></p>
+
+        </div>
+    </div>
+
+    <div class=" govuk-grid-row content-3 contentbox">
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+            <hr style="margin-bottom:25px;">
+    
+            <h3 class="govuk-heading-s" style="
+            margin-bottom: 10px;
+        ">Please consult the following information:</h3>
+                <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/229" target="_blank">
+                    Search for property information</a></p>
+    
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript"> 
+        $(document).ready(function() { 
+            $('input[type="radio"]').click(function() { 
+                var inputValue = $(this).attr("value"); 
+                var targetBox = $("." + inputValue); 
+                $(".contentbox").not(targetBox).hide(); 
+                $(targetBox).show(); 
+            }); 
+        }); 
+
+    </script> 
+
+    <script type="text/javascript"> 
+    $(document).ready(function(){
+    $(".toggle_container").hide(); 
+    $("button.reveal").click(function(){
+        $(this).toggleClass("active").next().slideToggle("fast");
+        
+        if ($.trim($(this).text()) === 'Show me more') {
+            $(this).text('Hide extra content');
+        } else {
+            $(this).text('Show me more');        
+        }
+        
+        return false; 
+    });
+    $("a[href='" + window.location.hash + "']").parent(".reveal").click();
+    });
+    </script> 
+
+    <style type="text/css"> 
+        .contentbox { 
+            padding: 0px; 
+            display: none;  
+            width: 100%; 
+        } 
+
+    </style> 
+
+
+
+
+
+{% endblock %}
