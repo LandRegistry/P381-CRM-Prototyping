@@ -1,0 +1,75 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/index.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5">
+  
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">
+        Deal with common boundary matters
+      </h1>
+
+      <div class="govuk-body govuk-!-margin-bottom-9">
+        There may be some boundary enquiries where HM Land Registry is unable to help because the matter falls outside of our responsibilities. In these instances we'll direct you to an organisation who we believe may be able to help.
+      </div>
+
+      <div class="govuk-body govuk-!-margin-bottom-9">
+            <h3 class="govuk-heading-m">Use this service to find out</h3>
+
+            <ul class="govuk-body">
+              <li>if we can help with your boundary enquiry</li>
+              <li>how to access and interpret any information we hold</li>
+              <li>what your options are when we are unable to help</li>
+              <li>how to correct a mistake on your title plan</li>
+          </ul>
+
+      </div>
+
+
+
+
+      <div class="govuk-body govuk-!-margin-bottom-6">
+          <h3 class="govuk-heading-m">Before you start, you will need to know</h3>
+          
+          <ul class="govuk-body">  
+            <li>if the property is registered with HM Land Registry</li>
+            <li>who owns the property</li>
+            <li>whether it's owned jointly or by one person</li>
+          </ul>
+
+          <p>If you do not know this information, you can <strong><a href="https://www.gov.uk/search-property-information-land-registry" target="_blank">search for property information here</a></strong>.</p>
+
+      </div>
+
+
+      <div class="govuk-!-margin-bottom-9">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/CommonBoundary/V2/page2.html'">
+        Start now
+      </button>
+    </div>
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" style="margin-top:7px;" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        We only deal with land and property in England and Wales. <br>There are different rules for <a href="https://www.ros.gov.uk/our-registers/land-register-of-scotland" target="_blank">Scotland</a> and 
+  <a href="https://www.finance-ni.gov.uk/articles/lps-registration-offices" target="_blank">Northern Ireland</a>
+      </strong>
+    </div>
+
+
+    </div>
+
+  </div>
+
+{% endblock %}
