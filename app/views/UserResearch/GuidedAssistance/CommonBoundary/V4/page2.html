@@ -16,14 +16,135 @@ GOV.UK Prototype Kit
 <div class="govuk-grid-row">
    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
       <form class="form" action="boundarymatters-choice" method="post">
-         <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-               
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
                 <div>
                   <h3 class="govuk-heading-m">What is your boundary enquiry?</h3>
                </div>
 
-               <div class="govuk-radios">
+               <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+
+
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="resolve" name="resolve" type="radio" value="text" data-aria-controls="conditional-resolve">
+                    <label class="govuk-label govuk-radios__label" for="resolve">
+                        I want help to resolve a boundary dispute
+                    </label>
+                  </div>
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-resolve">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="resolve-text">
+                        
+                        <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Talking to your neighbour</a> with a view to reaching an amicable agreement is usually the preferred thing to do. If you are unable to resolve a problem via an informal discussion, then you may wish to consider the possibility of entering into a formal boundary agreement with them about the position of the boundary or who is responsible for its maintenance. Land Registry can then note the agreement on the individual registers.</p>
+
+                        <p>Another potentially complex and costly option, particularly if agreement cannot be reached with your neighbour beforehand, is a process called 'determining the boundary', but it should not be thought of as a means to resolve a dispute.</p>
+                         
+                        <h3 class="govuk-heading-s govuk-!-margin-top-6">The Land Registry cannot help you</h3>
+                        
+                        <ul class="govuk-body govuk-!-margin-bottom-5">  
+                            <li>resolve or become involved in a boundary dispute</li>
+                            <li>enforce the contents of the register</li>
+                            <li>make someone comply with any covenants referred to on the register, for example, rebuild a wall</li>
+                        </ul>
+                
+                        <p>Ultimately, only the court or the Land Registration division of the Property Chamber can determine the exact position of a boundary or other disputed issue.</p>
+                        <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Try talking to your neighbour</a> to reach an amicable agreement. This could avoid other costly or complex options.</p>
+                
+                
+                        <h3 class="govuk-heading-s govuk-!-margin-top-6">Additional information:</h3>
+                
+                        <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                          <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                              I do not think an agreement is viable
+                            </span>
+                          </summary>
+                          <div class="govuk-details__text">
+                              <p>If you cannot come to an agreement, <a href="https://www.gov.uk/find-a-legal-adviser" target="_blank">get independent legal advice</a> on what options are available. We cannot offer legal advice or recommend a legal practitioner.</p>
+                
+                              <p>You may want to contact the Royal Institution of Chartered Surveyors (RICS). RICS members are professionally qualified surveyors and have considerable experience in advising on property disputes. <a href="https://www.rics.org/uk/products/dispute-resolution-service/" target="_blank">The Dispute Resolution Service (DRS) - RICS</a> is the world's largest provider of alternative dispute resolution services.</p>
+                              
+                              <p><a href="https://www.rics.org/uk/products/dispute-resolution-service/drs-services/neighbour-disputes-service/" target="_blank">Read about their neighbour dispute services and how to contact them.</a></p>
+                          </div>
+                      </details>
+                
+                        <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                          <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                              I would like to learn more about creating an agreement
+                            </span>
+                          </summary>
+                          <div class="govuk-details__text">
+                              <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Try talking to your neighbour</a> to reach an agreement. If you cannot resolve the problem with an informal discussion, you may be able to create a formal boundary agreement together.</p>
+                
+                              <h3 class="govuk-heading-s">This can cover:</h3>
+                  
+                              <ul class="govuk-body govuk-!-margin-bottom-5">  
+                                  <li>the position of the boundary</li>
+                                  <li>who is responsible for its maintenance</li>
+                              </ul>
+                                  
+                                  <p>You should get <a href="https://www.gov.uk/find-a-legal-adviser" target="_blank">independent legal advice</a> if you're thinking about making a boundary agreement. Land Registry cannot do this for you. <a href="https://www.gov.uk/your-property-boundaries" target="_blank">Find out how to create a formal boundary agreement.</a></p>
+                                  
+                                  <p>Once an agreement is made, you can apply for us to note the agreement on the individual property registers. This will record the agreement but will not determine or guarantee the exact line of the boundary. <a href="https://www.gov.uk/government/publications/boundary-agreements-and-determined-boundaries" target="_blank">Read more about boundary agreements and when they are appropriate</a>.</p>
+                                  
+                                  <p>You cannot use a boundary agreement to sell or give away part of your land to a neighbour.</p>
+                          </div>
+                        </details>
+                  
+                        <details class="govuk-details" data-module="govuk-details" style="govuk-!-padding-bottom-5">
+                          <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                              I would like to find out how to identify (determine) the precise boundary
+                            </span>
+                          </summary>
+                          <div class="govuk-details__text">
+                              <p>Unlike a general boundary, a determined boundary shows the exact line of the boundary of a registered estate. You should get independent legal advice before deciding if it's the right option for you.</p>
+                
+                                  <p>You should not use this process to try to resolve a disagreement about the exact location of a boundary. Your application may be referred to a tribunal if your neighbour does not agree with it.</p>
+                                  
+                                  <h3 class="govuk-heading-s">The exact line must be identified by the registered owner and (ideally) their neighbour before we can:</h3>
+                  
+                                  <ul class="govuk-body govuk-!-margin-bottom-5">  
+                                      <li>show the boundary as being a determined boundary</li>
+                                      <li>add details to the respective land or property registers</li>
+                                  </ul>
+                
+                                  <p>It is a complex, long and potentially expensive process if the boundaries are not agreed with neighbours beforehand. Sometimes this can have implications on future sales of the property.</p>
+                
+                                  <h3 class="govuk-heading-s" style="
+                                  margin-bottom: 10px;
+                              ">Please consult the following information:</h3>
+                                      <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/360" target="_blank">
+                                          How to apply for a determined boundary</a></p>
+                          </div>
+                      </details>
+                    
+                    </div>
+            
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   <div class="govuk-radios__item">
                      <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-1" id="content-1">
                      <label class="govuk-label govuk-radios__label" for="content-1">
@@ -52,12 +173,25 @@ GOV.UK Prototype Kit
                     </label>
                  </div>
 
+
+
+
                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-5" id="content-5">
-                    <label class="govuk-label govuk-radios__label" for="content-5">
-                    I want advice about planning permissions
+                    <input class="govuk-radios__input" id="planning" name="planning" type="radio" value="text" data-aria-controls="conditional-planning">
+                    <label class="govuk-label govuk-radios__label" for="planning">
+                      I want advice about planning permission
                     </label>
-                 </div>
+                  </div>
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-planning">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="planning-text">
+                        <p style="padding-left:20px; font-weight:600;">Follow our guidance on <a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/364" target="_blank">planning permission</a></p>
+                      </label></div>
+            
+                  </div>
+
+
+
 
                  <div class="govuk-radios__item">
                     <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-6" id="content-6">
@@ -94,94 +228,24 @@ GOV.UK Prototype Kit
    </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="govuk-grid-row content-1 contentbox">
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
         <hr style="margin-bottom:25px;">
 
-        <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Talking to your neighbour</a> with a view to reaching an amicable agreement is usually the preferred thing to do. If you are unable to resolve a problem via an informal discussion, then you may wish to consider the possibility of entering into a formal boundary agreement with them about the position of the boundary or who is responsible for its maintenance. Land Registry can then note the agreement on the individual registers.</p>
-
-        <p>Another potentially complex and costly option, particularly if agreement cannot be reached with your neighbour beforehand, is a process called 'determining the boundary', but it should not be thought of as a means to resolve a dispute.</p>
-         
-        <h3 class="govuk-heading-s govuk-!-margin-top-6">The Land Registry cannot help you</h3>
         
-        <ul class="govuk-body govuk-!-margin-bottom-5">  
-            <li>resolve or become involved in a boundary dispute</li>
-            <li>enforce the contents of the register</li>
-            <li>make someone comply with any covenants referred to on the register, for example, rebuild a wall</li>
-        </ul>
-
-        <p>Ultimately, only the court or the Land Registration division of the Property Chamber can determine the exact position of a boundary or other disputed issue.</p>
-        <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Try talking to your neighbour</a> to reach an amicable agreement. This could avoid other costly or complex options.</p>
-
-
-        <h3 class="govuk-heading-s govuk-!-margin-top-6">Additional information:</h3>
-
-        <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              I do not think an agreement is viable
-            </span>
-          </summary>
-          <div class="govuk-details__text">
-              <p>If you cannot come to an agreement, <a href="https://www.gov.uk/find-a-legal-adviser" target="_blank">get independent legal advice</a> on what options are available. We cannot offer legal advice or recommend a legal practitioner.</p>
-
-              <p>You may want to contact the Royal Institution of Chartered Surveyors (RICS). RICS members are professionally qualified surveyors and have considerable experience in advising on property disputes. <a href="https://www.rics.org/uk/products/dispute-resolution-service/" target="_blank">The Dispute Resolution Service (DRS) - RICS</a> is the world's largest provider of alternative dispute resolution services.</p>
-              
-              <p><a href="https://www.rics.org/uk/products/dispute-resolution-service/drs-services/neighbour-disputes-service/" target="_blank">Read about their neighbour dispute services and how to contact them.</a></p>
-          </div>
-      </details>
-
-        <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              I would like to learn more about creating an agreement
-            </span>
-          </summary>
-          <div class="govuk-details__text">
-              <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Try talking to your neighbour</a> to reach an agreement. If you cannot resolve the problem with an informal discussion, you may be able to create a formal boundary agreement together.</p>
-
-              <h3 class="govuk-heading-s">This can cover:</h3>
-  
-              <ul class="govuk-body govuk-!-margin-bottom-5">  
-                  <li>the position of the boundary</li>
-                  <li>who is responsible for its maintenance</li>
-              </ul>
-                  
-                  <p>You should get <a href="https://www.gov.uk/find-a-legal-adviser" target="_blank">independent legal advice</a> if you're thinking about making a boundary agreement. Land Registry cannot do this for you. <a href="https://www.gov.uk/your-property-boundaries" target="_blank">Find out how to create a formal boundary agreement.</a></p>
-                  
-                  <p>Once an agreement is made, you can apply for us to note the agreement on the individual property registers. This will record the agreement but will not determine or guarantee the exact line of the boundary. <a href="https://www.gov.uk/government/publications/boundary-agreements-and-determined-boundaries" target="_blank">Read more about boundary agreements and when they are appropriate</a>.</p>
-                  
-                  <p>You cannot use a boundary agreement to sell or give away part of your land to a neighbour.</p>
-          </div>
-        </details>
-  
-        <details class="govuk-details" data-module="govuk-details" style="govuk-!-padding-bottom-5">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              I would like to find out how to identify (determine) the precise boundary
-            </span>
-          </summary>
-          <div class="govuk-details__text">
-              <p>Unlike a general boundary, a determined boundary shows the exact line of the boundary of a registered estate. You should get independent legal advice before deciding if it's the right option for you.</p>
-
-                  <p>You should not use this process to try to resolve a disagreement about the exact location of a boundary. Your application may be referred to a tribunal if your neighbour does not agree with it.</p>
-                  
-                  <h3 class="govuk-heading-s">The exact line must be identified by the registered owner and (ideally) their neighbour before we can:</h3>
-  
-                  <ul class="govuk-body govuk-!-margin-bottom-5">  
-                      <li>show the boundary as being a determined boundary</li>
-                      <li>add details to the respective land or property registers</li>
-                  </ul>
-
-                  <p>It is a complex, long and potentially expensive process if the boundaries are not agreed with neighbours beforehand. Sometimes this can have implications on future sales of the property.</p>
-
-                  <h3 class="govuk-heading-s" style="
-                  margin-bottom: 10px;
-              ">Please consult the following information:</h3>
-                      <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/360" target="_blank">
-                          How to apply for a determined boundary</a></p>
-          </div>
-      </details>
 
             
   </div>
@@ -413,7 +477,7 @@ GOV.UK Prototype Kit
         <hr style="margin-bottom:25px;">
 
 
-        <p>Follow our <b><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/364" target="_blank">guidance on planning permission</a></b></p>
+        <p>Follow our guidance on <b><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/364" target="_blank">planning permission</a></b></p>
 
 
     </div>
@@ -424,8 +488,11 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
         <hr style="margin-bottom:25px;">
 
-<p>Follow our <b><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/365" target="_blank">guidance on overhanging branches</a></b></p>
-
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/365" target="_blank">
+            Overhanging branches</a></p>
 
     </div>
 </div>
@@ -435,7 +502,12 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
         <hr style="margin-bottom:25px;">
 
-        <p>Follow our <b><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/366" target="_blank">guidance on drains and sewers</a></b></p>
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/366" target="_blank">
+            Drains and sewers</a></p>
+
 
     </div>
 </div>
@@ -444,7 +516,11 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
         <hr style="margin-bottom:25px;">
 
-        <p>Follow our <b><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/367" target="_blank">guidance on noisy neighbours and fly-tipping</a></b></p>
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/367" target="_blank">
+            Noisy neighbours and fly-tipping</a></p>
 
     </div>
 </div>
@@ -454,52 +530,13 @@ GOV.UK Prototype Kit
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
         <hr style="margin-bottom:25px;">
 
-        <p>Follow our <b><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/368" target="_blank">guidance on boundaries</a></b></p>
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/368" target="_blank">
+            Background information</a></p>
 
     </div>
 </div>
-
-<script type="text/javascript"> 
-    $(document).ready(function() { 
-        $('input[type="radio"]').click(function() { 
-            var inputValue = $(this).attr("value"); 
-            var targetBox = $("." + inputValue); 
-            $(".contentbox").not(targetBox).hide(); 
-            $(targetBox).show(); 
-        }); 
-    }); 
-
-</script> 
-
-<script type="text/javascript"> 
-$(document).ready(function(){
-$(".toggle_container").hide(); 
-$("button.reveal").click(function(){
-    $(this).toggleClass("active").next().slideToggle("fast");
-    
-    if ($.trim($(this).text()) === 'Show me more') {
-        $(this).text('Hide extra content');
-    } else {
-        $(this).text('Show me more');        
-    }
-    
-    return false; 
-});
- $("a[href='" + window.location.hash + "']").parent(".reveal").click();
-});
-</script> 
-
-<style type="text/css"> 
-    .contentbox { 
-        padding: 0px; 
-        display: none;  
-        width: 100%; 
-    } 
-
-</style> 
-
-
-
-
 
 {% endblock %}
