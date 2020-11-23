@@ -1,0 +1,85 @@
+
+{% extends "layout_webforms.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+      <h1 class=" govuk-heading-xl">
+        Contact HM Land Registry: Large Scale Application
+      </h1>
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+        <fieldset class="govuk-fieldset">
+          
+            <p style="padding-right: 100px;">Large Scale Applications usually affect commercial clients such as banks, UK and oversea companies and other corporate bodies. Typically, they are based on a common deed, such as a bulk transfer or charge, or a change of name or address comprising:</p>
+
+              <ul class="govuk-body">
+                <li>more than 50 registered titles; or</li>
+                <li>more than 50 unregistered properties; or</li>
+                <li>any combination of registered and unregistered titles exceeding 50 in total.</li>
+            </ul>
+            
+              
+            <p>If your enquiry does not fall within the above then use Contact HM Land Registry: General Enquiry</p>
+            
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="first-name">
+                First / Given name(s)
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="first-name" name="first-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="last-name">
+                  Surname / Family name
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="last-name" name="last-name" type="text">
+              </div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="telephone-number">
+                  Telephone number
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel"></div>
+
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="email-address">
+                Email address
+              </label>
+              <div id="waste-hint" class="govuk-hint">
+                We'll use this address to contact you
+              </div>
+              <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="email-address">
+                  Re-type email address
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+
+
+
+
+          </fieldset>
+
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/Webforms/ManagedServices/V1_Submitted.html'">
+        Submit
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}

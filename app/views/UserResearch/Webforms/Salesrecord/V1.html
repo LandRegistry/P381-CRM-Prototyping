@@ -1,0 +1,152 @@
+
+{% extends "layout_webforms.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+      <h1 class=" govuk-heading-xl">
+        HM Land Registry: Feedback
+      </h1>
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+        <fieldset class="govuk-fieldset">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label form-label-bold form-label-bold" for="sort">
+              Category
+            </label>
+            <select class="govuk-select" id="sort" name="sort" style="width: 23ex;">
+              <option value="select" selected>*Select a category</option>
+              <option value="allcat">All Categories</option>
+              <option value="missing">Missing Sale</option>
+              <option value="typeerror">Property Type Error</option>
+              <option value="cvalueerror">Value Error</option>
+            </select>
+          </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="first-name">
+                First / Given name(s)
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="first-name" name="first-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="last-name">
+                  Surname / Family name
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="last-name" name="last-name" type="text">
+              </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="email-address">
+                Email address
+              </label>
+              <div id="waste-hint" class="govuk-hint">
+                We'll use this address to contact you
+              </div>
+              <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="email-address">
+                  Re-type email address
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold" for="telephone-number">
+                    Telephone number
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel"></div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold " for="address-detail">
+                    Address details to which your feedback relates
+                    </label>
+                  
+                  <textarea class="govuk-textarea govuk-input--width-30" id="address-detail" name="address-detail" rows="3" aria-describedby="address-detail-hint"></textarea>
+                </div>
+
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold" for="error-spotted">
+                    On which website was the error spotted?
+                  </label>
+                  <input class="govuk-input govuk-input--width-20" id="error-spotted" name="error-spotted" type="text">
+                </div>
+
+
+
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                    <label class="govuk-label form-label-bold" for="error-spotted">
+                      Date of sale
+                    </label>
+                    <div class="govuk-date-input" id="passport-issued">
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                            Day
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                            Month
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                      </div>
+                      <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                            Year
+                          </label>
+                          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                      </div>
+                    </div>
+                
+                  </fieldset>
+                </div>
+
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold" for="sales-value">
+                    Reported sales value
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="sales-value" name="sales-value" type="text">
+                </div>
+
+
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold" for="more-detail">
+                      Message
+                    </label>
+                  
+                  <textarea class="govuk-textarea govuk-input--width-30" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+          </fieldset>
+
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/Webforms/Salesrecord/V1_Submitted.html'">
+        Submit
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}
