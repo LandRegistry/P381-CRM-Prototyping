@@ -1,0 +1,121 @@
+
+{% extends "layout_webforms.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full" style="margin-top: -50px;">
+    <a href="http://landregistry.custhelp.com/app/contactus_general_w/" style="float:right; margin-top:5px;text-decoration:none;">Cymraeg</a>
+    <a href="http://landregistry.custhelp.com/app/contactus_general/" style="float:right; margin-top:5px;text-decoration:none;" id="yui_3_18_1_1_1606138237751_1302">English &nbsp;&nbsp; | &nbsp;&nbsp;</a>
+  </div>
+
+    <div class="govuk-grid-column-full">
+      <h1 class=" govuk-heading-xl">
+        Cysylltu â ni - Ymholiad cyffredinol
+      </h1>
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+        <fieldset class="govuk-fieldset">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label form-label-bold form-label-bold" for="sort">
+              Adran gwasanaethau
+            </label>
+            <select class="govuk-select" id="sort" name="sort" style="width: 23ex;">
+              <option value="select" selected>--</option>
+              <option value="916">Ymholiad</option>
+              <option value="1078">Feedback</option>
+              <option value="917">Find a Property</option>
+              <option value="918">Gwall pris a dalwyd am eiddo</option>
+              <option value="915">Apwyntiad</option>
+              <option value="974">Commercial Services</option>
+              <option value="1045">Event</option>
+              <option value="1137">Large Scale Application</option>
+              <option value="1159">Local Land Charges</option>
+              <option value="1160">Webinar</option>
+              <option value="1180">Managed Services</option>
+              <option value="1195">Search Land and Property</option>
+              <option value="1196">Business eServices</option>
+              <option value="1197">Contact Update</option>
+            </select>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label form-label-bold form-label-bold" for="gynnyrch">
+              Rheswm dros gysylltu â ni
+            </label>
+            <select class="govuk-select" id="gynnyrch" name="gynnyrch" style="width: 23ex;">
+              <option value="select" selected>*Dewiswch gynnyrch</option>
+            </select>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label form-label-bold form-label-bold" for="gategori">
+              Categori
+            </label>
+            <select class="govuk-select" id="gategori" name="gategori" style="width: 23ex;">
+              <option value="select" selected>*Dewiswch gategori</option>
+            </select>
+          </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="first-name">
+                Enw cyntaf
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="first-name" name="first-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="last-name">
+                  Cyfenw
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="last-name" name="last-name" type="text">
+              </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="email-address">
+                Cyfeiriad ebost
+              </label>
+              <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="email-address">
+                  Ailgofnodwch eich cyfeiriad ebost
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold " for="address-detail">
+                    Y cyfeiriad sy'n berthnasol i'ch ymholiad
+                    </label>
+                  
+                  <textarea class="govuk-textarea govuk-input--width-30" id="address-detail" name="address-detail" rows="3" aria-describedby="address-detail-hint"></textarea>
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold" for="more-detail">
+                    Neges
+                    </label>
+                  <textarea class="govuk-textarea govuk-input--width-30" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+          </fieldset>
+
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/Webforms/WelshContact/V1_Submitted.html'">
+        Cyflwyno
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}
