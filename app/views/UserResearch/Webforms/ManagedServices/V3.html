@@ -1,0 +1,103 @@
+
+{% extends "layout_webforms.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row" style="margin-top: -30px; margin-bottom: 20px;">
+    <div class="govuk-grid-column-full">
+        <img src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/organisation/logo/69/HMLR_logo.png" style="max-width: 150px;" >
+        <hr style="border-width: 0px;height: 3px;background-color: #accd40;
+">
+    </div>
+</div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class=" govuk-heading-xl">
+        Pre-submission Enquiry Service and Application Management Service
+      </h1>
+    </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h3 class="govuk-fieldset__heading">
+                Submit an enquiry
+              </h3>
+            </legend>
+          
+            <p>Use this form to attach your completed <b>PSS1</b> or <b>AMS1</b> application form, together with any accompanying documents.<br><br>
+
+              These services are available if you are a conveyancer and are acting for a client involved in a complex commercial transaction or infrastructure development.</p>
+            
+              <div class="govuk-form-group govuk-!-padding-top-6">
+                <label class="govuk-label form-label-bold" for="organisation-name">
+                  Organisation name
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="organisation-name" name="organisation-name" type="text">
+              </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="first-name">
+                First / Given name(s)
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="first-name" name="first-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="last-name">
+                  Surname / Family name
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="last-name" name="last-name" type="text">
+              </div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="telephone-number">
+                  Telephone number
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel"></div>
+
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="email-address">
+                Email address
+              </label>
+              <div id="waste-hint" class="govuk-hint">
+                We'll use this address to contact you
+              </div>
+              <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="email-address">
+                  Re-type email address
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label form-label-bold" for="file-upload-1">
+                      Attach completed forms <b>PSS1</b> or <b>AMS1</b> and any supporting documents
+                    </label>
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+
+          </fieldset>
+
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/Webforms/ManagedServices/V1_Submitted.html'">
+        Submit
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}
