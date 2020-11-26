@@ -5,6 +5,7 @@
   GOV.UK Prototype Kit
 {% endblock %}
 
+
 {% block content %}
 
 <style>
@@ -274,9 +275,12 @@ form {
     height: 40px;
     float: left;
     width: 86%;
+    max-width:260px;
     z-index: 10;
     border-radius: 0px;
     border: 2px solid #000;
+    font-size: 19px;
+    padding-left: 5px;
 }
 
 .form-search input[type="submit"] {
@@ -324,6 +328,14 @@ form {
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+.govuk-details {
+    margin-bottom: 10px;
+}
+
+.govuk-hint {
+    font-size: 16px;
+}
+
 </style>
 
 <div class="govuk-phase-banner" style="margin-top:-50px">
@@ -359,126 +371,129 @@ form {
 
 
 
+<a class="govuk-back-link" href="javascript: history.go(-1)" style="margin-top:0px;margin-bottom:30px;">Back</a>
 
 
 
-  <div class="govuk-grid-row">
 
-    <div class="govuk-grid-column-two-thirds">
-      <div>
-        <span class="pre-title">Member of public</span>
-        <span class="govuk-heading-l govuk-!-margin-bottom-4">Self-service support</span>
-      </div>
+  <div class="govuk-grid-row" style="padding-top:0px;">
 
-      <div class="sub-title govuk-!-margin-bottom-4">
-        Use this service to find a quick answer to your question
-      </div>
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l" style="margin-bottom: 40px;">
+                  <h1 class="govuk-fieldset__heading">
+                    Contact HM Land Registry
+                  </h1>
+                </legend>
+              
+                <div style="max-width:630px;">
+                    
+                <div class="govuk-grid-column-full" style="padding:0px;">
+                <div class="govuk-form-group" style="float:left;margin-right:30px;">
+                  <label class="govuk-label form-label-bold" for="first-name">
+                    First / Given name(s)
+                  </label>
+                  <input class="govuk-input" id="first-name" name="first-name" type="text" style="width: 300px;">
+                </div>
+    
+                <div class="govuk-form-group" style="float:left;margin-right:0px;">
+                    <label class="govuk-label form-label-bold" for="last-name">
+                        Surname / Family name
+                    </label>
+                    <input class="govuk-input" id="last-name" name="last-name" type="text" style="width: 300px;">
+                  </div>
+                </div>
 
-      <div class="govuk-inset-text">
-        We are operating as close to normal during the coronavirus (COVID-19) outbreak. We have more information on our <a href="covid19.html" target="_blank">dedicated Covid-19 information page</a>.
-      </div>
 
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
 
-            <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 29px;">
-              Categories
-            </h3>
+                
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold" for="email-address">
+                    Email address
+                  </label>
+                  <div id="waste-hint" class="govuk-hint">
+                    We'll only use this to contact you about your enquiry
+                  </div>
+                  <input class="govuk-input" id="email-address" name="email-address" type="text" style="width: 100%;"></div>
+              
+                  <div class="govuk-form-group">
+                    <label class="govuk-label form-label-bold" for="email-address">
+                      Re-type email address
+                    </label>
+    
+                    <input class="govuk-input" id="email-address" name="email-address" type="text" style="width: 100%;"></div>
+                
 
-            <div class="govuk-grid-column-one-half section-categories">
-              <ul class="categories">
-                <li><a href="Applications.html">Applications</a></li>
-                <li><a href="under-construction.html" target="_blank">Appointments</a></li>
-                <li><a href="under-construction.html" target="_blank">Bankruptcy</a></li>
-                <li><a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a></li>
-                <li><a href="under-construction.html" target="_blank">Digital Mortgage Service</a></li>
-                <li><a href="under-construction.html" target="_blank">Find A Property</a></li>
-              </ul>
+
+
+                    <div class="govuk-form-group" style="float:left;margin-right:30px;">
+                        <label class="govuk-label form-label-bold" for="first-name">
+                            Title number (optional)
+                        </label>
+                        <input class="govuk-input" id="first-name" name="first-name" type="text" style="width: 300px;">
+                      </div>
+          
+                      <div class="govuk-form-group" style="float:left;margin-right:0px;">
+                          <label class="govuk-label form-label-bold" for="last-name">
+                            HMLR reference (optional)
+                          </label>
+                          <input class="govuk-input" id="last-name" name="last-name" type="text" style="width: 300px;">
+                        </div>
+                      
+
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label form-label-bold" for="sort">
+                              What does your enquiry relate to?
+                            </label>
+                            <select class="govuk-select" id="sort" name="sort" style="width: 100%;">
+                              <option value="select" selected>*Select a category</option>
+                              <option value="allcat">Applications</option>
+                              <option value="missing">Appointments</option>
+                              <option value="typeerror">Bankruptcy</option>
+                              <option value="cvalueerror">Coronavirus (Covid-19)</option>
+                              <option value="allcat">Digital Mortgage Service</option>
+                              <option value="missing">Find A Property</option>
+                              <option value="typeerror">General enquiry</option>
+                              <option value="typeerror">Land and property information</option>
+                              <option value="cvalueerror">Letters from HM Land Registry</option>
+                              <option value="allcat">Price paid information</option>
+                              <option value="missing">Property Alert</option>
+                              <option value="typeerror">Registration Fraud</option>
+                              
+                            </select>
+                          </div>
+
+
+
+
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label form-label-bold" for="more-detail">
+                            How can we help you?
+                          </label>
+                          <div id="waste-hint" class="govuk-hint">
+                            The more detail you can provide, the quicker and easier it will be for us to help you.
+                          </div>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint" style="margin-bottom:0px;"></textarea>
+                      </div>
+    
+                      <div class="govuk-form-group">
+                        <label class="govuk-label form-label-bold" for="file-upload-1">
+                          Upload a file
+                        </label>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                      </div>
+    
+              </fieldset>
+    
+              <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/ContactformQA/Options/Wiki/V1/Submitted.html'">
+                Submit
+              </button>
             </div>
-
-            <div class="govuk-grid-column-one-half section-categories">
-              <ul class="categories">
-                <li><a href="under-construction.html" target="_blank">Land and property information</a></li>
-                <li><a href="under-construction.html" target="_blank">Letters from HM Land Registry</a></li>
-                <li><a href="under-construction.html" target="_blank">Price paid information</a></li>
-                <li><a href="under-construction.html" target="_blank">Property Alert</a></li>
-                <li><a href="under-construction.html" target="_blank">Registration Fraud</a></li>
-                <li><a href="under-construction.html" target="_blank">Suggest new category</a></li>
-              </ul>
-            </div>
-
-      </div>
-
-
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
-        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 29px;">
-          Common questions
-        </h3>
-
-        <div class="govuk-grid-column-full section-categories">
-          <ul class="categories">
-            <li><a href="under-construction.html" target="_blank">How do I expedite an application?</a></li>
-            <li><a href="under-construction.html" target="_blank">How do I change someone's name on a property record?</a></li>
-            <li><a href="under-construction.html" target="_blank">Is it free to use Find Property services?</a></li>
-            <li><a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a></li>
-            <li><a href="under-construction.html" target="_blank">Can I request more time to reply to a requisition?</a></li>
-            <li><a href="under-construction.html" target="_blank">What is a requisition?</a></li>
-          </ul>
         </div>
-
-      </div>
-
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
-        
-        <p>
-          If you're acting as a representative on behalf of a business or corporate body,  you should switch to <a href="under-construction.html" target="_blank">HM Land Registry's business user's self-service support</a>.
-        </p>
-
-      </div>
-
-  </div>
-
-      <div class="govuk-grid-column-one-third">
-
-        <div>
-              <a class="gem-c-transition-countdown gem-c-transition-countdown--cta govuk-link" data-module="track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="/transition" data-track-dimension="Check you’re ready for 2021" data-track-dimension-index="29" lang="en" dir="ltr" href="/transition">
-                <h2 class="gem-c-transition-countdown__title">Brexit transition</h2>
-              <p class="gem-c-transition-countdown__countdown">
-                <span class="gem-c-transition-countdown__countdown-number">2</span><span class="gem-c-transition-countdown__countdown-number">6</span> <span class="gem-c-transition-countdown__countdown-text">days to go</span>
-              </p>  <p class="gem-c-transition-countdown__text" style="margin-bottom: 0;">Check you’re ready for 2021</p>
-              </a>
         </div>
-
-
-        <div style="margin-bottom:10px;"> 
-          <form role="search" method="get" id="searchform" class="form-search" action="SearchResults.html">
-              <label class="govuk-visually-hidden" for="s">Search for:</label>
-              <div class="search-input-wrapper">
-                  <input type="search" value="" name="s" id="s" class="search-query" placeholder="">
-                  <input type="submit" id="searchsubmit" value="Search" class="btn">
-              </div>
-            </form>
-        </div>
-
-        <div style="padding-bottom:20px;padding-top:20px;">
-          <p>
-          <span style="font-size: 21px;font-weight: 600;">Popular searches</span><br>
-          <a href="Applications.html" class="popular-searches">Applications</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Appointments</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Coronavirus (Covid-19)</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Letters from HM Land Registry</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Registration fraud</a></p>
-        </div>
-
-
-
-      </div>
-
-
-
-
-
-
-
 
   </div>
 

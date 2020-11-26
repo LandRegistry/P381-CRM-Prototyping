@@ -274,9 +274,12 @@ form {
     height: 40px;
     float: left;
     width: 86%;
+    max-width:260px;
     z-index: 10;
     border-radius: 0px;
     border: 2px solid #000;
+    font-size: 19px;
+    padding-left: 5px;
 }
 
 .form-search input[type="submit"] {
@@ -324,6 +327,10 @@ form {
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+.govuk-details {
+    margin-bottom: 10px;
+}
+
 </style>
 
 <div class="govuk-phase-banner" style="margin-top:-50px">
@@ -362,80 +369,122 @@ form {
 
 
 
-  <div class="govuk-grid-row">
+  <div class="govuk-grid-row" style="padding-top:0px;">
 
-    <div class="govuk-grid-column-two-thirds">
-      <div>
-        <span class="pre-title">Member of public</span>
-        <span class="govuk-heading-l govuk-!-margin-bottom-4">Self-service support</span>
-      </div>
 
-      <div class="sub-title govuk-!-margin-bottom-4">
-        Use this service to find a quick answer to your question
-      </div>
 
-      <div class="govuk-inset-text">
-        We are operating as close to normal during the coronavirus (COVID-19) outbreak. We have more information on our <a href="covid19.html" target="_blank">dedicated Covid-19 information page</a>.
-      </div>
 
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
+      <div class="govuk-grid-column-two-thirds">
 
+        <div class="govuk-breadcrumbs" style="margin-top:0px;margin-bottom: 30px;">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="index.html">Member of public</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="Applications.html">Applications</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="Updating.html">Updating the register</a>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <span class="govuk-heading-l govuk-!-margin-bottom-4">Updating the register</span>
+          </div>
+
+          <div class="sub-title govuk-!-margin-bottom-6" style="padding-right:60px;">
+            You must tell HM Land Registry if anything in the register changes or it is incorrect.
+          </div>
+
+
+          <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
+
+            <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What is the register?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </div>
+              </details>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    How do I update or correct the register?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </div>
+              </details>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                   How do I change my name on the register?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </div>
+              </details>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    How do I return to my original surname on the register?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </div>
+              </details>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    How do I tell HM Land Registry that my mortgage is paid off?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </div>
+              </details>
+              <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    How do I transfer ownership of my property?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                </div>
+              </details>
+
+          </div>
+
+
+
+          <div class="govuk-grid-column-full govuk-!-padding-bottom-2" style="padding-left:0px; padding-right:0px;">
             <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 29px;">
-              Categories
-            </h3>
+                Need further help?
+              </h3>
+              <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/ContactformQA/Options/Wiki/V1/ContactUs.html'">
+               Contact us
+              </button>
 
-            <div class="govuk-grid-column-one-half section-categories">
-              <ul class="categories">
-                <li><a href="Applications.html">Applications</a></li>
-                <li><a href="under-construction.html" target="_blank">Appointments</a></li>
-                <li><a href="under-construction.html" target="_blank">Bankruptcy</a></li>
-                <li><a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a></li>
-                <li><a href="under-construction.html" target="_blank">Digital Mortgage Service</a></li>
-                <li><a href="under-construction.html" target="_blank">Find A Property</a></li>
-              </ul>
-            </div>
+          </div>
 
-            <div class="govuk-grid-column-one-half section-categories">
-              <ul class="categories">
-                <li><a href="under-construction.html" target="_blank">Land and property information</a></li>
-                <li><a href="under-construction.html" target="_blank">Letters from HM Land Registry</a></li>
-                <li><a href="under-construction.html" target="_blank">Price paid information</a></li>
-                <li><a href="under-construction.html" target="_blank">Property Alert</a></li>
-                <li><a href="under-construction.html" target="_blank">Registration Fraud</a></li>
-                <li><a href="under-construction.html" target="_blank">Suggest new category</a></li>
-              </ul>
-            </div>
+
+
+
+
+
+
+
 
       </div>
-
-
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
-        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 29px;">
-          Common questions
-        </h3>
-
-        <div class="govuk-grid-column-full section-categories">
-          <ul class="categories">
-            <li><a href="under-construction.html" target="_blank">How do I expedite an application?</a></li>
-            <li><a href="under-construction.html" target="_blank">How do I change someone's name on a property record?</a></li>
-            <li><a href="under-construction.html" target="_blank">Is it free to use Find Property services?</a></li>
-            <li><a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a></li>
-            <li><a href="under-construction.html" target="_blank">Can I request more time to reply to a requisition?</a></li>
-            <li><a href="under-construction.html" target="_blank">What is a requisition?</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
-        
-        <p>
-          If you're acting as a representative on behalf of a business or corporate body,  you should switch to <a href="under-construction.html" target="_blank">HM Land Registry's business user's self-service support</a>.
-        </p>
-
-      </div>
-
-  </div>
 
       <div class="govuk-grid-column-one-third">
 
@@ -460,23 +509,24 @@ form {
         </div>
 
         <div style="padding-bottom:20px;padding-top:20px;">
-          <p>
-          <span style="font-size: 21px;font-weight: 600;">Popular searches</span><br>
-          <a href="Applications.html" class="popular-searches">Applications</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Appointments</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Coronavirus (Covid-19)</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Letters from HM Land Registry</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Registration fraud</a></p>
-        </div>
-
-
+            <p>
+            <span style="font-size: 21px;font-weight: 600;">Categories</span><br>
+              <a href="Applications.html" class="popular-searches">Applications</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Appointments</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Bankruptcy</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Coronavirus (Covid-19)</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Digital Mortgage Service</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Find A Property</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Land and property information</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Letters from HM Land Registry</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Price paid information</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Property Alert</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Registration Fraud</a><br>
+              <a href="under-construction.html" target="_blank" class="popular-searches">Suggest new category</a>
+          </p>
+            </div>
 
       </div>
-
-
-
-
-
 
 
 
