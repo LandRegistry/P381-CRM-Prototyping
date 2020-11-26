@@ -274,9 +274,12 @@ form {
     height: 40px;
     float: left;
     width: 86%;
+    max-width:260px;
     z-index: 10;
     border-radius: 0px;
     border: 2px solid #000;
+    font-size: 19px;
+    padding-left: 5px;
 }
 
 .form-search input[type="submit"] {
@@ -324,6 +327,14 @@ form {
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+.govuk-details {
+    margin-bottom: 10px;
+}
+
+.govuk-hint {
+    font-size: 16px;
+}
+
 </style>
 
 <div class="govuk-phase-banner" style="margin-top:-50px">
@@ -362,123 +373,21 @@ form {
 
 
 
-  <div class="govuk-grid-row">
+  <div class="govuk-grid-row" style="padding-top:0px;">
 
-    <div class="govuk-grid-column-two-thirds">
-      <div>
-        <span class="pre-title">Member of public</span>
-        <span class="govuk-heading-l govuk-!-margin-bottom-4">Self-service support</span>
-      </div>
-
-      <div class="sub-title govuk-!-margin-bottom-4">
-        Use this service to find a quick answer to your question
-      </div>
-
-      <div class="govuk-inset-text">
-        We are operating as close to normal during the coronavirus (COVID-19) outbreak. We have more information on our <a href="covid19.html" target="_blank">dedicated Covid-19 information page</a>.
-      </div>
-
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
-
-            <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 29px;">
-              Categories
-            </h3>
-
-            <div class="govuk-grid-column-one-half section-categories">
-              <ul class="categories">
-                <li><a href="Applications.html">Applications</a></li>
-                <li><a href="under-construction.html" target="_blank">Appointments</a></li>
-                <li><a href="under-construction.html" target="_blank">Bankruptcy</a></li>
-                <li><a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a></li>
-                <li><a href="under-construction.html" target="_blank">Digital Mortgage Service</a></li>
-                <li><a href="under-construction.html" target="_blank">Find A Property</a></li>
-              </ul>
-            </div>
-
-            <div class="govuk-grid-column-one-half section-categories">
-              <ul class="categories">
-                <li><a href="under-construction.html" target="_blank">Land and property information</a></li>
-                <li><a href="under-construction.html" target="_blank">Letters from HM Land Registry</a></li>
-                <li><a href="under-construction.html" target="_blank">Price paid information</a></li>
-                <li><a href="under-construction.html" target="_blank">Property Alert</a></li>
-                <li><a href="under-construction.html" target="_blank">Registration Fraud</a></li>
-                <li><a href="under-construction.html" target="_blank">Suggest new category</a></li>
-              </ul>
-            </div>
-
-      </div>
-
-
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
-        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 29px;">
-          Common questions
-        </h3>
-
-        <div class="govuk-grid-column-full section-categories">
-          <ul class="categories">
-            <li><a href="under-construction.html" target="_blank">How do I expedite an application?</a></li>
-            <li><a href="under-construction.html" target="_blank">How do I change someone's name on a property record?</a></li>
-            <li><a href="under-construction.html" target="_blank">Is it free to use Find Property services?</a></li>
-            <li><a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a></li>
-            <li><a href="under-construction.html" target="_blank">Can I request more time to reply to a requisition?</a></li>
-            <li><a href="under-construction.html" target="_blank">What is a requisition?</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+            <h1 class="govuk-heading-xl">
+                Submission Complete
+              </h1>
+              <p>
+                You've submitted your form.
+            </p>
         
-        <p>
-          If you're acting as a representative on behalf of a business or corporate body,  you should switch to <a href="under-construction.html" target="_blank">HM Land Registry's business user's self-service support</a>.
-        </p>
+            <p>If you need to contact HM Land Registry about this, please quote reference number <b>LR-000769</b>.</p>
+            <p>Return to <a href="index.html" >Member of public Self-service</a> support page.</p>
 
-      </div>
-
-  </div>
-
-      <div class="govuk-grid-column-one-third">
-
-        <div>
-              <a class="gem-c-transition-countdown gem-c-transition-countdown--cta govuk-link" data-module="track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="/transition" data-track-dimension="Check you’re ready for 2021" data-track-dimension-index="29" lang="en" dir="ltr" href="/transition">
-                <h2 class="gem-c-transition-countdown__title">Brexit transition</h2>
-              <p class="gem-c-transition-countdown__countdown">
-                <span class="gem-c-transition-countdown__countdown-number">2</span><span class="gem-c-transition-countdown__countdown-number">6</span> <span class="gem-c-transition-countdown__countdown-text">days to go</span>
-              </p>  <p class="gem-c-transition-countdown__text" style="margin-bottom: 0;">Check you’re ready for 2021</p>
-              </a>
         </div>
-
-
-        <div style="margin-bottom:10px;"> 
-          <form role="search" method="get" id="searchform" class="form-search" action="SearchResults.html">
-              <label class="govuk-visually-hidden" for="s">Search for:</label>
-              <div class="search-input-wrapper">
-                  <input type="search" value="" name="s" id="s" class="search-query" placeholder="">
-                  <input type="submit" id="searchsubmit" value="Search" class="btn">
-              </div>
-            </form>
-        </div>
-
-        <div style="padding-bottom:20px;padding-top:20px;">
-          <p>
-          <span style="font-size: 21px;font-weight: 600;">Popular searches</span><br>
-          <a href="Applications.html" class="popular-searches">Applications</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Appointments</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Coronavirus (Covid-19)</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Letters from HM Land Registry</a><br>
-          <a href="under-construction.html" target="_blank" class="popular-searches">Registration fraud</a></p>
-        </div>
-
-
-
-      </div>
-
-
-
-
-
-
-
 
   </div>
 
