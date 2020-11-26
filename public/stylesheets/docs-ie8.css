@@ -118,7 +118,7 @@
 }
 
 .govuk-template {
-  background-color: #dee0e2;
+  background-color: #f3f2f1;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -2049,7 +2049,7 @@
   padding-bottom: 25px;
   border-top: 1px solid #b1b4b6;
   color: #0b0c0c;
-  background: #dee0e2;
+  background: #f3f2f1;
 }
 
 .govuk-footer__link:link, .govuk-footer__link:visited, .govuk-footer__link:hover, .govuk-footer__link:active {
