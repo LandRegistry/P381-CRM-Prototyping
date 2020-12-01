@@ -1,0 +1,107 @@
+
+{% extends "layout_webforms.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+      <h1 class=" govuk-heading-xl">
+        Commercial Services Enquiry
+      </h1>
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+        <fieldset class="govuk-fieldset">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label form-label-bold form-label-bold" for="sort">
+              Category
+            </label>
+            <select class="govuk-select" id="sort" name="sort" style="width: 23ex;">
+              <option value="select" selected>*Select a category</option>
+              <option value="1">All Categories</option>
+              <option value="2">Business Gateway</option>
+              <option value="3">Charge Validation</option>
+              <option value="4">Classic Data Matching</option>
+              <option value="5">Commercial & Corporate Ownership Data</option>
+              <option value="6">Data Sync</option>
+              <option value="7">Electronic Document Registration Service</option>
+              <option value="8">Find a Property</option>
+              <option value="9">Flood Risk Reports</option>
+              <option value="10">Illustrative Plans</option>
+              <option value="11">Map Search</option>
+              <option value="12">National Polygon Service</option>
+              <option value="13">Online Data Matching</option>
+              <option value="14">Online Owner Verification</option>
+              <option value="15">Overseas Companies Ownership Data</option>
+              <option value="16">Ownership and Extent Data</option>
+              <option value="17">Ownership Change Indicator</option>
+              <option value="18">Polygon/Polygon Plus</option>
+              <option value="19">Polygon Searchlight Monitoring</option>
+              <option value="20">PPC Searchlight Monitoring</option>
+              <option value="21">Property Portfolio Consolidator</option>
+              <option value="22">Volume Data Matching</option>
+              <option value="23">Volume Registers</option>
+            </select>
+          </div>
+
+
+
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="first-name">
+                First / Given name(s)
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="first-name" name="first-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="last-name">
+                  Surname / Family name
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="last-name" name="last-name" type="text">
+              </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label form-label-bold" for="email-address">
+                Email address
+              </label>
+              <div id="waste-hint" class="govuk-hint">
+                We'll use this address to contact you
+              </div>
+              <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label form-label-bold" for="email-address">
+                  Re-type email address
+                </label>
+                <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text"></div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label form-label-bold" for="more-detail">
+                      Message
+                    </label>
+                  
+                  <textarea class="govuk-textarea govuk-input--width-30" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+          </fieldset>
+
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/Webforms/Feedback/V1_Submitted.html'">
+        Submit
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}
