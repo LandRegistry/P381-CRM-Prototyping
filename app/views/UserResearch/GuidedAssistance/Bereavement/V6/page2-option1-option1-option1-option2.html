@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+<style>
+  .govuk-link:visited, a:visited, .app-step-nav-header__title:visited, .app-step-nav-related__link:visited {
+      color: #ffffff;
+  }
+
+  .govuk-panel {
+    padding:100px 35px;margin-bottom: 40px;
+  }
+
+  .govuk-link:link, a:link, .app-step-nav-header__title:link, .app-step-nav-related__link:link {
+    color: #ffffff;display: block;padding: 20px;
+}
+
+.govuk-link:hover, a:hover, .app-step-nav-header__title:hover, .app-step-nav-related__link:hover {
+    background: rgb(255 255 255 / 0.1);display: block;padding: 20px;
+}
+.govuk-hint {
+    font-weight: 600;
+    color: #0b0c0c;
+}
+  </style>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-8">
+  
+
+      <h1 class="govuk-heading-xl">
+        How to update property records when someone has died
+      </h1>
+      
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          We recommend that you visit
+        </h1>
+        <div class="govuk-panel__body" style="margin: auto;">
+          <a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/132" target="_blank">transfer property ownership to a third party</a>
+        </div>
+      </div>
+
+         <h3 class="govuk-heading-s govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+          We recommend this action because:
+</h3>
+<ul class='govuk-body'>
+    <li>the transfer is not to a beneficiary of the person who died</li>
+    <li>you want to transfer/assent or sell the land or property of the person who died</li>
+    <li>the person who died was a joint owner of the land or property</li>
+    <li>the land or property of the person who died is registered with us</li>
+</ul>
+
+</div>
+
+<div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+    <form class="form" action="bereavement-start-option1-option1-option1-option1-option2-choice" method="post">
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <div id="changed-name-hint" class="govuk-hint">
+            Having reviewed this information, do you still have a query?
+          </div>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="bereavement-start-option1-option1-option1-option1-option2-choice-1" name="bereavement-start-option1-option1-option1-option1-option2-choice" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="bereavement-start-option1-option1-option1-option1-option2-choice-1">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="bereavement-start-option1-option1-option1-option1-option2-choice-2" name="bereavement-start-option1-option1-option1-option1-option2-choice" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="bereavement-start-option1-option1-option1-option1-option2-choice-2">
+                No
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+    </div>
+
+    <button type="submit" class="govuk-button" data-module="govuk-button">
+      Next step
+    </button>
+
+    </form>
+</div>
+</div>
+
+{% endblock %}
