@@ -361,8 +361,31 @@ input.search-query {
 }
 
 .card {
-    background:red;
     display:block;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+}
+
+.question {
+    font-size: 22px;
+    font-weight:600;
+    margin-bottom: 3px;
+}
+
+.answer {
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:0px;
+}
+
+.subject {
+    font-size: 15px;
+    font-weight:400;
+    background:#ededed;
+    color:#000000;
+    padding:5px 10px;
+    display:inline-block;
+    border-radius:3px;
 }
 
 </style>
@@ -425,12 +448,12 @@ input.search-query {
               Search for a topic
             </h3>
 
-            <div class="form-group">
-                <input type="text" id="search" class="searchBox" autocomplete="off" />
+            <div class="form-group" style="padding-bottom:30px;">
+                <input type="text" id="search2" class="searchBox" autocomplete="off" />
             </div>
 
 
-            <div id="match-list">
+            <div class="govuk-grid-column-two-thirds" style="padding:0px;" id="match-list2">
 
             </div>
 

@@ -1,10 +1,10 @@
-const search = document.getElementById("search");
-const matchList = document.getElementById("match-list");
+const search = document.getElementById("search2");
+const matchList = document.getElementById("match-list2");
 
 // Search states.json and filter it
 
 const searchStates = async searchText => {
-  const res = await fetch("/public/data/states.json");
+  const res = await fetch("/public/data/questions.json");
   const states = await res.json();
 
   // Get matches to current textinput
@@ -12,7 +12,7 @@ const searchStates = async searchText => {
     // matches start of sentence based on the input, also contains the global and the case insensitive flags
     const regex = new RegExp(`^${searchText}`, "gi");
     // return array that matches those
-    return state.name.match(regex) || state.abbr.match(regex);
+    return state.question.match(regex) || state.subject.match(regex);
   });
   if (searchText.length === 0) {
     matches = [];
@@ -29,9 +29,9 @@ const outputHTML = matches => {
     const html = matches
       .map(
         match => `
-        <div class="card card-body mb-4">
-            <h4>${match.name} (${match.abbr}) <span class="text-primary">${match.capital}</span></h4>
-            <small>Lat: ${match.lat} / Long: ${match.long}</small>
+        <div class="card govuk-body">
+            <div class="question">${match.question}</div>
+            <div class="answer"> ${match.answer}</div>
         </div>
         `
       )
