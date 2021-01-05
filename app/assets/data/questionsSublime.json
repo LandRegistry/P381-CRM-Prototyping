@@ -1,0 +1,42 @@
+[
+    {
+		"subject": "Applications",
+		"title": "What is the register?",
+    "answer": "The Land Register contains more than 25 million titles showing evidence of ownership for more than 87% of the land mass of England and Wales."
+    },
+    {
+		"subject": "Applications",
+		"title": "How do I update or correct the register?",
+    "answer": " If anything in the register changes or it is incorrect you can <a href='https://www.google.com/url?q=https%3A%2F%2Fwww.gov.uk%2Fregistering-land-or-property-with-land-registry%2Fupdate-or-correct-the-register' target='_blank'>update or correct the register</a>."
+    },
+    {
+    "subject": "Applications",
+    "title": "How do I change my name on the register?",
+    "answer": "You must send HM Land Registry an <a href='#' target='_blank'>application to change the register</a> when you change your name. You do not have to pay anything to do this."
+    },
+    {
+    "subject": "Applications",
+    "title": "What are the registration fees?",
+    "answer": "Identify <a href='#' target='_blank'>which fees to pay</a> for HM Land Registry applications and services."
+    },
+    {
+    "subject": "Applications",
+    "title": "How can I find my deeds?",
+    "answer": "You may be able to <a href='#' target='_blank'>find out current and past information about a registered property</a>, such as its previous owners. The register may give more details about rights over adjoining land."
+    },
+    {
+    "subject": "Applications",
+    "title": "How do I search the register?",
+    "answer": "Find <a href='#' target='_blank'>information about a property in England or Wales</a>, even if you do not own it. Search by address to find the owner, how far its general boundaries extend and whether it’s at risk of flooding."
+    },
+    {
+    "subject": "Applications",
+    "title": "What is an official search?",
+    "answer": "An Official Search protects the title of the property for 30 business days (the priority period) to allow an applicant to lodge their application to purchase the property."
+    },
+    {
+      "subject": "Applications",
+      "title": "How do I search the index map?",
+      "answer": "The index map contains <a href='#' target='_blank'>information on all land and property</a> that’s registered or being registered with HM Land Registry. You should use it to find the title number of a property that doesn’t appear in a <a href='#' target='_blank'>search of the register</a>."
+      }
+]
