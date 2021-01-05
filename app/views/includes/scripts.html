@@ -9,6 +9,7 @@
 <script src="/public/javascripts/topics.js"></script>
 <script src="/public/javascripts/main-questions.js"></script>
 <script src="/public/javascripts/typeahead.js"></script>
+<script src="/public/javascripts/questions.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
 
@@ -24,8 +25,8 @@ prefetch: '/public/javascripts/questions.js'
 // passing in `null` for the `options` arguments will result in the default
 // options being used
 $('#prefetch .typeahead').typeahead(null, {
-name: 'questions',
-source: questions
+name: 'newQuestion',
+source: question
 });
 </script>
 
