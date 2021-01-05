@@ -541,7 +541,7 @@ $.getJSON(
     'https://lr-p381.herokuapp.com/public/data/questionsSublime.json?limit=100',
     function(result){
         index = [];
-        $.each(result.data.children, function(i, link){
+        $.each(result.data, function(i, link){
             index.push(link.data.title);
         });
         refresh_search();
