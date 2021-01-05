@@ -8,7 +8,27 @@
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/topics.js"></script>
 <script src="/public/javascripts/main-questions.js"></script>
+<script src="/public/javascripts/typeahead.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+
+<script>
+  var countries = new Bloodhound({
+datumTokenizer: Bloodhound.tokenizers.whitespace,
+queryTokenizer: Bloodhound.tokenizers.whitespace,
+// url points to a json file that contains an array of country names, see
+// https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json
+prefetch: 'https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json'
+});
+
+// passing in `null` for the `options` arguments will result in the default
+// options being used
+$('#prefetch .typeahead').typeahead(null, {
+name: 'countries',
+source: countries
+});
+</script>
+
 
 <script>
   $(document).ready(function() {
@@ -18,6 +38,9 @@
     });
   });
   </script>
+
+
+
 
 <script>
   (function($) {
@@ -44,6 +67,9 @@ SearchDropdown.prototype.render = function(decorated) {
 
 })(window.jQuery);
 </script>
+
+
+
 
 
 {% if useAutoStoreData %}

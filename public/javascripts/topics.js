@@ -90,7 +90,7 @@ const topics = () => [
     },
   ]
   
-  export default topics
+  
   
   // scam, government, central, contacted, contact
   // https://hackney.gov.uk/coronavirus-scams

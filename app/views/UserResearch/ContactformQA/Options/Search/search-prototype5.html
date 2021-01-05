@@ -387,14 +387,6 @@ input.search-query {
     display:inline-block;
     border-radius:3px;
 }
-ul.results
-        {
-            color:#888;
-        }
-        ul.results b
-        {
-            color:#000;
-        }
 
 </style>
 
@@ -456,11 +448,12 @@ ul.results
               Search for a topic
             </h3>
 
-            <div class="form-group">
-                    <input class="form-control searchBox"  autocomplete="off" type="text" name="search" placeholder="Search javascript links from Reddit" />
-            </div>
-            <ul class="results"></ul>
 
+            <div id="prefetch">
+                <input class="typeahead" type="text" placeholder="Countries">
+              </div>
+
+            </div>
 
       </div>
 
@@ -470,84 +463,7 @@ ul.results
 
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script>
-  
-    // Sore the titles in here
-    index = [];
-    
-    function fuzzy_match(text, search)
-    {
-        /*
-        Text is a title, search is the user's search
-        */
-        // remove spaces, lower case the search so the search is case insensitive
-        var search = search.replace(/\ /g, '').toLowerCase();
-        var tokens = [];
-        var search_position = 0;
-    
-        // Go through each character in the text
-        for (var n=0; n<text.length; n++)
-        {
-            var text_char = text[n];
-            // if we watch a character in the search, highlight it
-            if(search_position < search.length && text_char.toLowerCase() == search[search_position])
-            {
-                text_char = '<b>' + text_char + '</b>';
-                search_position += 1;
-            }
-            tokens.push(text_char);
-        }
-        // If are characters remaining in the search text, return an empty string to indicate no match
-        if (search_position != search.length)
-        {
-            return '';
-        }
-        return tokens.join('');
-    }
-    
-    function refresh_search()
-    {
-        var search = $('input[name=search]').val();
-        var results = [];
-    
-        /*
-            Create an array of <li> tags containing matched titles
-        */
-        $.each(index, function(i, title){
-            var result = fuzzy_match(title, search)
-            if(result){
-                results.push("<li>" + result + "</li>")
-            }
-        });
-    
-        var results_html = results.join('\n');
-        $("ul.results").html(results_html);
-    }
-    
-    $(function(){
 
-$('input[name=search]').keyup(function(){
-    /*
-    Refresh the search on every keypress in the search input
-    */
-    refresh_search();
-});
 
-/*
-    Get a list of titles from Reddit's REST interface
-*/
-$.getJSON(
-    'https://lr-p381.herokuapp.com/public/data/questionsSublime.json?limit=100',
-    function(result){
-        index = [];
-        $.each(result.data.children, function(i, link){
-            index.push(link.data.title);
-        });
-        refresh_search();
-    });
-
-});
-    </script>
 
 {% endblock %}
