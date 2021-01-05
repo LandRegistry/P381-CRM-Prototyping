@@ -14,7 +14,7 @@
 
 <script>
   var countries = new Bloodhound({
-datumTokenizer: Bloodhound.tokenizers.whitespace('question'),
+datumTokenizer: Bloodhound.tokenizers.whitespace,
 queryTokenizer: Bloodhound.tokenizers.whitespace,
 // url points to a json file that contains an array of country names, see
 // https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json
@@ -24,18 +24,8 @@ prefetch: '/public/data/countries.json'
 // passing in `null` for the `options` arguments will result in the default
 // options being used
 $('#prefetch .typeahead').typeahead(null, {
-name: 'search',
-templates: {
-  empty: [
-    '<div class="empty message">',
-    'unable to find any post that match the current query',
-    '</div>'
-    ].join('\n'),
-    suggestion: function(data) {
-      return '<p><strong> data.question</strong></p>';
-    }
-}
-
+name: 'countries',
+source: countries
 });
 </script>
 
