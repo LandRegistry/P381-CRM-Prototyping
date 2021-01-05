@@ -8,6 +8,8 @@
 {% block content %}
 
 
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
 <style>
   
 ul.horizontal {
@@ -326,41 +328,214 @@ form {
 }
 
 
-.container {
-  width: 60%;
-  margin: 10px auto;
-  background: #333;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4), 0 4px 4px rgba(0, 0, 0, 0.2);
+.search-input-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: relative;
 }
-.container input {
-  background: transparent;
-  border: 0;
-  font-size: 30px;
-  color: #fff;
-}
-.suggestions {
-  border-top: 2px solid #999;
-}
-.suggestions > div {
-  padding: 15px;
-  font-size: 20px;
-  color: #fff;
-  border-top: 1px solid #666;
-  cursor: pointer;
-}
-.suggestions > div:hover {
-  background-color: #1e4dd4;
-}
-.emphy {
-  width: 50%;
-  margin: 40px auto;
-  text-align: center;
-  color: #fff;
+
+input.search-query {
+    height: 40px;
+    width: 100%;
+    z-index: 10;
+    border-radius: 0px;
+    border: 2px solid #000;
+    max-width: 480px;
 }
 
 
+.card {
+    display:block;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+}
+
+.question {
+    font-size: 22px;
+    font-weight:600;
+    margin-bottom: 3px;
+}
+
+.answer {
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:0px;
+}
+
+.subject {
+    font-size: 15px;
+    font-weight:400;
+    background:#ededed;
+    color:#000000;
+    padding:5px 10px;
+    display:inline-block;
+    border-radius:3px;
+}
+ul.results
+        {
+            color:#888;
+        }
+        ul.results b
+        {
+            color:#000;
+        }
+
+
+
+
+
+
+
+
+
+        .select2-container--default .select2-results__option--group {
+    padding: 0;
+    font-family: arial;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #000000;
+    line-height: 39px;
+    font-family: arial;
+    font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:focus {
+    outline: none;
+}
+
+.select2-container {
+    outline: none;
+}
+
+.select2-container--default .select2-selection--single:focus{
+    outline: none;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #aaa;
+    font-family: arial;
+    font-size: 16px;
+}
+
+.select2-results__option {
+  padding: 6px 6px 6px 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 39px;
+    color: #000000;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    height: 39px;
+    background-image: url(/public/images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center left -2px;
+    background-size: 40px 40px;
+}
+
+.select2-container {
+    width: 500px !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+    width: 500px !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.form-label-bold {
+    font-weight: 600;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background-color: transparent;
+    background-size: contain;
+    border: none !important;
+    height: 20px !important;
+    width: 20px !important;
+    margin: auto !important;
+    top: 8px;
+    left: -5px;
+}
+
+.select2-search--dropdown {
+    padding: 0px;
+    border-bottom: 1px solid #000000;
+    position: absolute;
+    top: -38px;
+    width: 100%;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 0px solid #aaa;
+    font-family: arial;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 0px;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+outline:0;
+}
+
+.select2-dropdown {
+    border: 1px solid #000000;
+    border-radius: 0px;
+}
+
+.select2-container--default .select2-results__group {
+    padding: 6px 6px 6px 10px;
+}
+
+.searchBox {
+    width: 387px;
+    height: 35px;
+    font-size: 19px;
+    padding-left: 35px;
+    margin-top: 0px;
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 0px;
+    font-family: arial;
+    font-size: 16px;
+    outline: none !important;
+    position: relative;
+    background-image: url(/public/images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center left -2px;
+    background-size: 40px 40px;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #f1f1f1;
+    color: #0b0c0c;
+}
 
 </style>
 
@@ -416,18 +591,73 @@ form {
         We are operating as close to normal during the coronavirus (COVID-19) outbreak. We have more information on our <a href="covid19.html" target="_blank">dedicated Covid-19 information page</a>.
       </div>
 
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
+      <div class="govuk-grid-column-full govuk-!-padding-bottom-4" style="padding-left:0px; padding-right:0px;">
 
-            <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 29px;">
+            <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2" style="font-size: 30px;">
               Search for a topic
             </h3>
 
-            <div class="container">  
-                <input class="search-input" type="text" placeholder="Search here..." />
-                <div class="suggestions">
-                </div>
-              </div>
+            <div class="govuk-body govuk-!-padding-bottom-4" style="margin-bottom: 0px;">
 
+              <select id="cat" class="searchBox js-example-placeholder-single js-states form-control" onchange="location = this.value;">
+                <optgroup label="Common questions">
+                  <option style="padding:0px !important;"></option>
+                  <option value="#">How do I expedite an application?</option>
+                  <option value="#">How do I change someone's name on a property record?</option>
+                  <option value="#">Is it free to use Find Property services?</option>
+                  <option value="#">Coronavirus (Covid-19)</option>
+                  <option value="#">Can I request more time to reply to a requisition?</option>
+                  <option value="#">What is a requisition?</option>
+                </optgroup>
+
+                <optgroup label="Applications">
+                      <option value="#">What is the register?</option>
+                      <option value="#">How do I update or correct the register?</option>
+                      <option value="#">How do I change my name on the register?</option>
+                      <option value="#">What are the registration fees?</option>
+                      <option value="#">How can I find my deeds?</option>
+                      <option value="#">How do I search the register?</option>
+                      <option value="#">What is an official search?</option>
+                      <option value="#">What are official copies?</option>
+                      <option value="#">How do I search the index map?</option>
+                    </optgroup>
+              </select>
+          
+
+              <div  class="govuk-body" style="font-size:16px;padding-top:10px;">
+                Popular searches: <a href="under-construction.html" target="_blank">expedite applications</a>, <a href="under-construction.html" target="_blank">coronavirus</a>, <a href="under-construction.html" target="_blank">appointments</a>, <a href="under-construction.html" target="_blank">land searches</a>
+              </div>
+            </div>
+
+          <div class="govuk-grid-column-full govuk-!-padding-bottom-8" style="padding-left:0px; padding-right:0px;">
+            <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+              Common questions
+            </h3>
+    
+            <div class="govuk-grid-column-full section-categories">
+              <ul class="categories">
+                <li><a href="under-construction.html" target="_blank">How do I expedite an application?</a></li>
+                <li><a href="under-construction.html" target="_blank">How do I change someone's name on a property record?</a></li>
+                <li><a href="under-construction.html" target="_blank">Is it free to use Find Property services?</a></li>
+                <li><a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a></li>
+                <li><a href="under-construction.html" target="_blank">Can I request more time to reply to a requisition?</a></li>
+                <li><a href="under-construction.html" target="_blank">What is a requisition?</a></li>
+              </ul>
+            </div>
+    
+          </div>
+
+          
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
+        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+          Business customers
+        </h3>
+
+        <div class="govuk-grid-column-full section-categories">
+          <p>If you're acting as a representative on behalf of a business or corporate body, <br>you should switch to <a href="under-construction.html" target="_blank">HM Land Registry's business user's self-service support</a>.</p>
+        </div>
+
+      </div>
 
       </div>
 
@@ -436,5 +666,7 @@ form {
 
 
   </div>
+
+ 
 
 {% endblock %}
