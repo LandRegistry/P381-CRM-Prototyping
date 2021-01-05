@@ -10,7 +10,7 @@ const searchStates = async searchText => {
   // Get matches to current textinput
   let matches = states.filter(state => {
     // matches start of sentence based on the input, also contains the global and the case insensitive flags
-    const regex = new RegExp(`^${searchText}`, "gi");
+    const regex = new RegExp(`${searchText}`, "gi");
     // return array that matches those
     return state.question.match(regex) || state.subject.match(regex);
   });
@@ -32,6 +32,7 @@ const outputHTML = matches => {
         <div class="card govuk-body">
             <div class="question">${match.question}</div>
             <div class="answer"> ${match.answer}</div>
+            <div class="subject"> ${match.subject}</div>
         </div>
         `
       )
