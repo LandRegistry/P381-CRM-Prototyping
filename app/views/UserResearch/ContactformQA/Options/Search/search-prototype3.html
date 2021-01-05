@@ -538,14 +538,14 @@ ul.results
             Get a list of titles from Reddit's REST interface
         */
         $.getJSON(
-            'https://lr-p381.herokuapp.com/public/data/questionsSublime.json',
-            function(result){
-                index = [];
-                $.each(result.data.children, function(i, link){
-                    index.push(link.data.title);
-                });
-                refresh_search();
+        '/public/data/questionsSublime.json',
+        function(result){
+            index = [];
+            $.each(result.data.children, function(i, link){
+                index.push(link.data.title);
             });
+            refresh_search();
+        });
     
     });
     </script>
