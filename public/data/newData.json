@@ -1,0 +1,14 @@
+[
+    {
+    "name": "Andy",
+    "age": 35,
+    "isProgrammer": true,
+    "hobbies": ["Weight lifting", "Formula One", "Cooking"]
+},
+{
+    "name": "Lucy",
+    "age": 36,
+    "isProgrammer": false,
+    "hobbies": ["Rehab", "Netflix", "Cooking"]
+}
+]

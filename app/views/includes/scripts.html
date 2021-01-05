@@ -8,8 +8,42 @@
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/topics.js"></script>
 <script src="/public/javascripts/main-questions.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
+<script>
+  $(document).ready(function() {
+    $('#cat').select2({
+  placeholder: '',
+  allowClear: true
+    });
+  });
+  </script>
 
+<script>
+  (function($) {
+
+var Defaults = $.fn.select2.amd.require('select2/defaults');
+
+$.extend(Defaults.defaults, {
+    searchInputPlaceholder: 'Search...'
+});
+
+var SearchDropdown = $.fn.select2.amd.require('select2/dropdown/search');
+
+var _renderSearchDropdown = SearchDropdown.prototype.render;
+
+SearchDropdown.prototype.render = function(decorated) {
+
+    // invoke parent method
+    var $rendered = _renderSearchDropdown.apply(this, Array.prototype.slice.apply(arguments));
+
+    this.$search.attr('placeholder', this.options.get('searchInputPlaceholder'));
+
+    return $rendered;
+};
+
+})(window.jQuery);
+</script>
 
 
 {% if useAutoStoreData %}
