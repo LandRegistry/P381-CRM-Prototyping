@@ -362,16 +362,14 @@ input.search-query {
 
 .card {
     display: block;
-    border: 1px solid #dedede;
-    padding: 30px;
-    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
-    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
-    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
-    border-radius: 5px;
     max-width: 750px;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     text-align: left;
+    padding: 0px 40px 40px 40px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05);
 }
 
 .question {
@@ -381,7 +379,7 @@ input.search-query {
 }
 
 .answer {
-    font-size:18px;
+    font-size:17px;
     font-weight:400;
     margin-bottom:0px;
 }
@@ -416,8 +414,33 @@ font-weight:600;
 }
 
 .cardtitles {
-    margin-top: 30px;
+    margin-top: 0px;
+    font-size: 27px;
     margin-bottom: 5px;
+}
+
+.cardsubtitles {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+
+.categories a {
+  background: #F5F5F5;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: 17px;
+    text-align: center;
+}
+
+.categories a:focus {
+  background: #ffdd00;
 }
 
 </style>
@@ -460,7 +483,7 @@ font-weight:600;
 
   <div class="govuk-grid-row">
 
-    <div class="govuk-grid-column-full" style="text-align:center;">
+    <div class="govuk-grid-column-full" style="text-align:center;padding:0px;">
       <div>
         <span class="pre-title">Member of public</span>
         <span class="govuk-heading-l govuk-!-margin-bottom-4">Self-service support</span>
@@ -470,19 +493,38 @@ font-weight:600;
         Use this service to find a quick answer to your question
       </div>
 
-      <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;min-height: 300px;">
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
 
 
             <div class="form-group">
-                <input type="text" style="margin: auto; display: block; margin-bottom: 50px;" id="search3" class="searchBox" autocomplete="off" />
+                <input type="text" placeholder="Keyword, Form, Document, Service etc..." style="margin: auto; display: block; margin-bottom: 50px;" id="search3" class="searchBox" autocomplete="off" />
             </div>
 
             <div class="govuk-grid-column-full govuk-body" style="padding:0px;" id="match-list3">
             </div>
 
     
-          </div>
+        </div>
      
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;padding-bottom:100px !important;">
+
+            <div class="categories">
+                <a href="Applications.html">Applications</a></li>
+                <a href="under-construction.html" target="_blank">Bankruptcy</a>
+                <a href="under-construction.html" target="_blank">Coronavirus (Covid-19)</a>
+                <a href="under-construction.html" target="_blank">Digital Mortgage Service</a>
+                <a href="under-construction.html" target="_blank">Find A Property</a>
+                <a href="under-construction.html" target="_blank">Land and property information</a>
+                <a href="under-construction.html" target="_blank">Letters from HM Land Registry</a>
+                <a href="under-construction.html" target="_blank">Property Alert</a>
+                <a href="under-construction.html" target="_blank">Registration Fraud</a>
+                <a href="under-construction.html" target="_blank">Search house prices</a>
+                <a href="under-construction.html" target="_blank">Title deeds</a>
+                <a href="under-construction.html" target="_blank">Suggest new category</a>
+              </ul>
+            </div>
+
+      </div>
  
 
   </div>
@@ -535,17 +577,17 @@ const outputHTML = matches => {
             </div>
 
             <div class="${match.section_downloads}">
-                <div class="govuk-heading-m cardtitles">Documents</div>
-                <div class="downloadtext">${match.text_downloads}</div>
+                <div class="govuk-heading-m cardsubtitles">Documents</div>
+                <div class="answer">${match.text_downloads}</div>
             </div>  
 
             <div class="${match.section_feesandaddress}">
-                <div class="govuk-heading-m cardtitles">Fee and address</div>
+                <div class="govuk-heading-m cardsubtitles">Fee and address</div>
                 <div class="answer"> ${match.text_feesandaddress}</div>
             </div>  
             
             <div class="${match.section_moreinformation}">
-                <div class="govuk-heading-m cardtitles">More information</div>
+                <div class="govuk-heading-m cardsubtitles">More information</div>
                 <div class="answer"> ${match.text_moreinformation}</div>
             </div>  
 
