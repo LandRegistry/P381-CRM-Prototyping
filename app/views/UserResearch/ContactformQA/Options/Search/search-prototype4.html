@@ -362,16 +362,14 @@ input.search-query {
 
 .card {
     display: block;
-    border: 1px solid #dedede;
-    padding: 30px;
-    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
-    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
-    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
-    border-radius: 5px;
     max-width: 750px;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     text-align: left;
+    padding: 0px 40px 40px 40px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05);
 }
 
 .question {
@@ -381,7 +379,7 @@ input.search-query {
 }
 
 .answer {
-    font-size:18px;
+    font-size:17px;
     font-weight:400;
     margin-bottom:0px;
 }
@@ -416,9 +414,18 @@ font-weight:600;
 }
 
 .cardtitles {
-    margin-top: 30px;
+    margin-top: 0px;
+    font-size: 27px;
     margin-bottom: 5px;
 }
+
+.cardsubtitles {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+
+
 
 </style>
 
@@ -474,7 +481,7 @@ font-weight:600;
 
 
             <div class="form-group">
-                <input type="text" style="margin: auto; display: block; margin-bottom: 50px;" id="search3" class="searchBox" autocomplete="off" />
+                <input type="text" placeholder="Keyword, Form, Document, Service etc..." style="margin: auto; display: block; margin-bottom: 50px;" id="search3" class="searchBox" autocomplete="off" />
             </div>
 
             <div class="govuk-grid-column-full govuk-body" style="padding:0px;" id="match-list3">
@@ -535,17 +542,17 @@ const outputHTML = matches => {
             </div>
 
             <div class="${match.section_downloads}">
-                <div class="govuk-heading-m cardtitles">Documents</div>
-                <div class="downloadtext">${match.text_downloads}</div>
+                <div class="govuk-heading-m cardsubtitles">Documents</div>
+                <div class="answer">${match.text_downloads}</div>
             </div>  
 
             <div class="${match.section_feesandaddress}">
-                <div class="govuk-heading-m cardtitles">Fee and address</div>
+                <div class="govuk-heading-m cardsubtitles">Fee and address</div>
                 <div class="answer"> ${match.text_feesandaddress}</div>
             </div>  
             
             <div class="${match.section_moreinformation}">
-                <div class="govuk-heading-m cardtitles">More information</div>
+                <div class="govuk-heading-m cardsubtitles">More information</div>
                 <div class="answer"> ${match.text_moreinformation}</div>
             </div>  
 

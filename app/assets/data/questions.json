@@ -1,56 +1,156 @@
 [
-    {
-    "tags": "Coronavirus 18 24 37",
-		"subject": "Applications",
-		"question": "What is the register?",
-    "answer": "The Land Register contains more than 25 million titles showing evidence of ownership for more than 87% of the land mass of England and Wales."
-    },
-    {
-    "tags": "Coronavirus 18 7",
-		"subject": "Applications",
-		"question": "How do I update or correct the register?",
-    "answer": " If anything in the register changes or it is incorrect you can <a href='https://www.google.com/url?q=https%3A%2F%2Fwww.gov.uk%2Fregistering-land-or-property-with-land-registry%2Fupdate-or-correct-the-register' target='_blank'>update or correct the register</a>."
-    },
-    {
-    "tags": "1 34 24",
-    "subject": "Applications",
-    "question": "How do I change my name on the register?",
-    "answer": "You must send HM Land Registry an <a href='#' target='_blank'>application to change the register</a> when you change your name. You do not have to pay anything to do this."
-    },
-    {
-    "tags": "Coronavirus 18 24 44 55",
-    "subject": "Applications",
-    "question": "What are the registration fees?",
-    "answer": "Identify <a href='#' target='_blank'>which fees to pay</a> for HM Land Registry applications and services."
-    },
-    {
-    "tags": "Coronavirus 18 24 6",
-    "subject": "Applications",
-    "question": "How can I find my deeds?",
-    "answer": "You may be able to <a href='#' target='_blank'>find out current and past information about a registered property</a>, such as its previous owners. The register may give more details about rights over adjoining land."
-    },
-    {
-    "tags": "Coronavirus 18 24 44 33",
-    "subject": "Applications",
-    "question": "How do I search the register?",
-    "answer": "Find <a href='#' target='_blank'>information about a property in England or Wales</a>, even if you do not own it. Search by address to find the owner, how far its general boundaries extend and whether it’s at risk of flooding."
-    },
-    {
-    "tags": "Coronavirus 18 24 news",
-    "subject": "Applications",
-    "question": "What is an official search?",
-    "answer": "An Official Search protects the title of the property for 30 business days (the priority period) to allow an applicant to lodge their application to purchase the property."
-    },
-    {
-    "tags": "test",
-    "subject": "Applications",
-    "question": "How do I search the index map?",
-    "answer": "The index map contains <a href='#' target='_blank'>information on all land and property</a> that’s registered or being registered with HM Land Registry. You should use it to find the title number of a property that doesn’t appear in a <a href='#' target='_blank'>search of the register</a>."
-    },
-    {
-    "tags": "Coronavirus 18 24 testing",
-    "subject": "Applications",
-    "question": "How do I update my postcode?",
-    "answer": "To update your postcode or the postcode of another, please visit <a href='https://www.gov.uk/government/publications/updating-registered-owners-contact-address' target='_blank'>Update registered owners' contact address (COG1)</a>. "
-    }
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"What is the register?",
+     "answer":"The Land Register contains more than 25 million titles showing evidence of ownership for more than 87% of the land mass of England and Wales.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"How do I update or correct the register?",
+     "answer":" If anything in the register changes or it is incorrect you can <a href='https://www.google.com/url?q=https%3A%2F%2Fwww.gov.uk%2Fregistering-land-or-property-with-land-registry%2Fupdate-or-correct-the-register' target='_blank'>update or correct the register</a>.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"How do I change my name on the register?",
+     "answer":"You must send HM Land Registry an <a href='#' target='_blank'>application to change the register</a> when you change your name. You do not have to pay anything to do this.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"What are the registration fees?",
+     "answer":"Identify <a href='#' target='_blank'>which fees to pay</a> for HM Land Registry applications and services.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"How can I find my deeds?",
+     "answer":"You may be able to <a href='#' target='_blank'>find out current and past information about a registered property</a>, such as its previous owners. The register may give more details about rights over adjoining land.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"How do I search the register?",
+     "answer":"Find <a href='#' target='_blank'>information about a property in England or Wales</a>, even if you do not own it. Search by address to find the owner, how far its general boundaries extend and whether it’s at risk of flooding.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"What is an official search?",
+     "answer":"An Official Search protects the title of the property for 30 business days (the priority period) to allow an applicant to lodge their application to purchase the property.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"How do I search the index map?",
+     "answer":"The index map contains <a href='#' target='_blank'>information on all land and property</a> that’s registered or being registered with HM Land Registry. You should use it to find the title number of a property that doesn’t appear in a <a href='#' target='_blank'>search of the register</a>.",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"How do I update my postcode?",
+     "answer":"To update your postcode or the postcode of another, please visit <a href='https://www.gov.uk/government/publications/updating-registered-owners-contact-address' target='_blank'>Update registered owners' contact address (COG1)</a>. ",
+     "section_downloads":"no",
+     "image_downloads":null,
+     "text_downloads":null,
+     "section_feesandaddress":"no",
+     "text_feesandaddress":null,
+     "section_moreinformation":"no",
+     "text_moreinformation":null
+  },
+  {
+     "words":"OC1 Forms",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"Official copies of register or plan: registration (OC1)",
+     "answer":"Use this form to apply for official copies of the register or plan or a certificate in Form CI on a developing estate. If you want to apply for official copies of documents relating to a specific property or an approved form of charge, use <a href='https://www.gov.uk/government/publications/official-copies-of-documents-registration-oc2'>form OC2</a>.",
+     "section_downloads":"yes",
+     "image_downloads":null,
+     "text_downloads":"OC1 Form - MS Word Document, 90KB - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709859/OC1__2018-05-25_.doc'>Download</a><br>OC1 Form - PDF, 130KB, 3 pages - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/713414/OC1__2018-05-25_.pdf'>Download</a>",
+     "section_feesandaddress":"yes",
+     "text_feesandaddress":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
+     "section_moreinformation":"yes",
+     "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>."
+  },
+  {
+     "words":"OC2 Forms",
+     "subject":"Applications",
+     "section_questionanswer":"yes",
+     "question":"Official copies of documents: registration (OC2)",
+     "answer":"Use this form to apply for official copies of documents relating to a specific property or an approved form of charge. If you want to apply for official copies of the register or plan or a certificate in Form CI on a developing estate, use <a href='https://www.gov.uk/government/publications/official-copies-of-register-or-plan-registration-oc1'>form OC1</a>.",
+     "section_downloads":"yes",
+     "image_downloads":null,
+     "text_downloads":"OC2 Form - MS Word Document, 78K - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709860/OC2__2018-05-25_.doc'>Download</a><br>OC2 Form - PDF, 117KB, 2 pages - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/744886/OC2__2018-05-25_.pdf'>Download</a>",
+     "section_feesandaddress":"yes",
+     "text_feesandaddress":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
+     "section_moreinformation":"yes",
+     "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>."
+  }
 ]
