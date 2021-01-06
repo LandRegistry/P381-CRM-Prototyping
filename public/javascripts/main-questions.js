@@ -8,11 +8,11 @@ const searchStates = async searchText => {
   const states = await res.json();
 
   // Get matches to current textinput
-  let matches = states.filter(state => {
+  let matches = states.filter(question => {
     // matches start of sentence based on the input, also contains the global and the case insensitive flags
     const regex = new RegExp(`${searchText}`, "gi");
     // return array that matches those
-    return state.question.match(regex) || state.subject.match(regex);
+    return question.question.match(regex) || question.subject.match(regex) || question.tags.match(regex) || question.answer.match(regex);
   });
   if (searchText.length === 0) {
     matches = [];
