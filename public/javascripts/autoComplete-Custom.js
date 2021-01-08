@@ -73,6 +73,7 @@ const autoCompleteJS = new autoComplete({
       // Console log autoComplete data feedback
       console.log(feedback);
     },
+
   });
   
   
