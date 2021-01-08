@@ -7,13 +7,13 @@ const autoCompleteJS = new autoComplete({
         // Loading placeholder text
         document.querySelector("#autoComplete").setAttribute("placeholder", "Loading...");
         // Fetch External Data Source
-        const source = await fetch("/public/data/autoComplete-Data.json");
+        const source = await fetch("/public/data/questions.json");
         const data = await source.json();
         // Post Loading placeholder text
         document.querySelector("#autoComplete").setAttribute("placeholder", autoCompleteJS.placeHolder);
         // Returns Fetched data
         return data; },
-      key: ["food", "cities", "animals"],
+      key: ["words", "subject", "question"],
       results: (list) => {
         // Filter duplicates
         const filteredResults = Array.from(new Set(list.map((value) => value.match))).map((food) => {
@@ -26,8 +26,8 @@ const autoCompleteJS = new autoComplete({
     trigger: {
       event: ["input", "focus"],
     },
-    placeHolder: "Search for Food & Drinks!",
-    searchEngine: "strict",
+    placeHolder: "Keyword, Form, Document, Service etc...",
+    searchEngine: "loose",
     highlight: true,
     maxResults: 5,
     resultItem: {
@@ -38,7 +38,7 @@ const autoCompleteJS = new autoComplete({
         element.style = "display: flex; justify-content: space-between;";
         element.innerHTML = `<span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
           ${element.innerHTML}</span>
-          <span style="display: flex; align-items: center; font-size: 13px; font-weight: 100; text-transform: uppercase; color: rgba(0,0,0,.2);">
+          <span style="display: flex; align-items: center; font-size: 13px; font-weight: 100; text-transform: uppercase; color: rgba(0,0,0,.8);">
         ${key}</span>`;
       },
     },
@@ -49,7 +49,7 @@ const autoCompleteJS = new autoComplete({
       const result = document.createElement("li");
       result.setAttribute("class", "no_result");
       result.setAttribute("tabindex", "1");
-      result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color: rgba(0,0,0,.2);">Found No Results for "${dataFeedback.query}"</span>`;
+      result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color: rgba(0,0,0,.8);">Found No Results for "${dataFeedback.query}"</span>`;
       document.querySelector(`#${autoCompleteJS.resultsList.idName}`).appendChild(result);
     },
     onSelection: (feedback) => {
