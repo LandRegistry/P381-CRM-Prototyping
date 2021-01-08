@@ -34,11 +34,17 @@ const autoCompleteJS = new autoComplete({
       event: ["input", "focus"],
     },
 
+    sort: (a, b) => {                    // Sort rendered results ascendingly | (Optional)
+        if (a.match < b.match) return -1;
+        if (a.match > b.match) return 1;
+        return 0;
+    },
+
     placeHolder: "Keyword, Form, Document, Service etc...",
-    searchEngine: "strict",
+    searchEngine: "loose",
     highlight: true,
     threshold: 2,
-    maxResults: 10,
+    maxResults: 5,
 
     resultItem: {
       content: (data, element) => {
@@ -58,7 +64,7 @@ const autoCompleteJS = new autoComplete({
       const result = document.createElement("li");
       result.setAttribute("class", "no_result");
       result.setAttribute("tabindex", "1");
-      result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color: rgba(0,0,0,.8);">Found No Results for "${dataFeedback.query}"</span>`;
+      result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color:#0b0c0c;">Found No Results for "${dataFeedback.query}"</span>`;
       document.querySelector(`#${autoCompleteJS.resultsList.idName}`).appendChild(result);
     },
 
@@ -72,7 +78,7 @@ const autoCompleteJS = new autoComplete({
       document.querySelector("#autoComplete").value = '';
       // Console log autoComplete data feedback
       console.log(feedback.selection.value);
-      const html =`   <div class="card govuk-body">
+      const html =`   <div id="card" class="card govuk-body">
 
       <div class="${feedback.selection.value.section_questionanswer}">
           <div class="govuk-heading-m cardtitles" style="margin-top:0px;">${feedback.selection.value.question}</div>
