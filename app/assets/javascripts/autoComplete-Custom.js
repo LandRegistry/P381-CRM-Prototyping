@@ -18,7 +18,7 @@ const autoCompleteJS = new autoComplete({
         
         // Returns Fetched data
         return data; },
-      key: ["words", "subject", "question"],
+      key: ["words", "question"],
       results: (list) => {
 
         // Filter duplicates
@@ -69,7 +69,7 @@ const autoCompleteJS = new autoComplete({
       // Render selected choice to selection div
     //   document.querySelector(".selection").innerHTML = selection;
       // Replace Input value with the selected value
-      document.querySelector("#autoComplete").value = selection;
+      document.querySelector("#autoComplete").value = '';
       // Console log autoComplete data feedback
       console.log(feedback.selection.value);
       const html =`   <div class="card govuk-body">
