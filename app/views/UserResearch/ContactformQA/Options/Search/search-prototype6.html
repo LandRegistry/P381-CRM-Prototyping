@@ -458,6 +458,83 @@ font-weight:600;
     margin: 50px 0px;
 }
 
+.autoComplete_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 425px;
+}
+
+#autoComplete {
+    width: 425px;
+    height: 35px;
+    font-size: 19px;
+    padding-left: 35px;
+    margin-top: 0px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    font-family: arial;
+    font-size: 16px;
+    outline: none !important;
+    position: relative;
+    background-image: url(/public/images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center left -2px;
+    background-size: 40px 40px;
+    color: rgba(11,12,12,.5);
+}
+
+#autoComplete:hover {
+    color: #0b0c0c;
+}
+
+#autoComplete:focus {
+    border: 1px solid #000000;
+    color: #0b0c0c;
+}
+
+#autoComplete:hover::placeholder {
+    color: rgba(11,12,12,.8);
+}
+
+#autoComplete:focus::placeholder {
+  color: rgba(11,12,12,.5);
+  font-size:16px;
+  padding:0px;
+}
+
+#autoComplete::placeholder {
+  color: rgba(11,12,12,.5);
+}
+
+.no_result {
+    margin: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    color: #000000;
+    transition: all 0.1s ease-in-out;
+    border-radius: 0.35rem;
+    background-color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+#autoComplete_list {
+    margin-top: -1px;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px rgba(149, 157, 165, 0.15);
+    border: 1px solid #000000;
+}
+
+.autoComplete_highlighted {
+    color: #1d70b8;
+    font-weight: bold;
+}
+
 </style>
 
 <div class="govuk-phase-banner" style="margin-top:-50px">
