@@ -67,28 +67,40 @@ const autoCompleteJS = new autoComplete({
       // Prepare User's Selected Value
       const selection = feedback.selection.value[feedback.selection.key];
       // Render selected choice to selection div
-      document.querySelector(".selection").innerHTML = selection;
+    //   document.querySelector(".selection").innerHTML = selection;
       // Replace Input value with the selected value
       document.querySelector("#autoComplete").value = selection;
       // Console log autoComplete data feedback
-      console.log(feedback);
+      console.log(feedback.selection.value);
+      const html =`   <div class="card govuk-body">
+
+      <div class="${feedback.selection.value.section_questionanswer}">
+          <div class="govuk-heading-m cardtitles" style="margin-top:0px;">${feedback.selection.value.question}</div>
+          <div class="answer"> ${feedback.selection.value.answer}</div>
+      </div>
+    
+      <div class="${feedback.selection.value.section_downloads}">
+          <div class="govuk-heading-m cardsubtitles">Documents</div>
+          <div class="answer">${feedback.selection.value.text_downloads}</div>
+      </div>  
+    
+      <div class="${feedback.selection.value.section_feesandaddress}">
+          <div class="govuk-heading-m cardsubtitles">Fee and address</div>
+          <div class="answer"> ${feedback.selection.value.text_feesandaddress}</div>
+      </div>  
+      
+      <div class="${feedback.selection.value.section_moreinformation}">
+          <div class="govuk-heading-m cardsubtitles">More information</div>
+          <div class="answer"> ${feedback.selection.value.text_moreinformation}</div>
+      </div>  
+    
+    </div>
+    `;
+    document.querySelector(".selection").innerHTML = html;
     },
 
   });
   
   
-  
-  // Toggle event for search input
-  // showing & hiding results list onfocus/blur
-  ["focus", "blur"].forEach(function (eventType) {
-    document.querySelector("#autoComplete").addEventListener(eventType, function () {
-      // Hide results list & show other elements
-      if (eventType === "blur") {
-        action("dim");
-      } else if (eventType === "focus") {
-        // Show results list & hide other elements
-        action("light");
-      }
-    });
-  });
-  
+
+
