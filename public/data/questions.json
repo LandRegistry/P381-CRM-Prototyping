@@ -152,5 +152,47 @@
      "text_feesandaddress":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
      "section_moreinformation":"yes",
      "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>."
-  }
+  },
+  {
+   "words":"HM Land Registry phone number",
+   "subject":"Contact Details",
+   "section_questionanswer":"yes",
+   "question":"Phone HM Land Registry",
+   "answer":"We’re open Monday to Friday (excluding Bank Holidays), 8am to 5pm. <br><br>We have fewer advisers available due to the ongoing coronavirus (COVID-19) measures. Our service is usually quietest between 8am and 9am.<br><br>Read about our <a href='https://www.gov.uk/guidance/coronavirus-covid-19-impact-on-hm-land-registrys-services'>temporary support measures</a> and see our <a rel='external' href='https://help.landregistry.gov.uk/app/contactus_general'>help pages</a> for information on common queries. <a href='https://www.gov.uk/call-charges'>Find out about call charges</a><br><br><span class='govuk-heading-m cardsubtitles'>Contact centre</span><p>English language<br>0300 006 0411</p><p>Welsh language<br>0300 006 0422<br><br></p>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+   "section_feesandaddress":"no",
+   "text_feesandaddress":null,
+   "section_moreinformation":"yes",
+   "text_moreinformation":"You will hear a list of <a href='https://www.gov.uk/guidance/phone-menu-options-for-hm-land-registry'>options</a> when you phone us. Pick the appropriate option to speak to someone to help you with your query.<br><br>Customer support teams are trained in HM Land Registry casework procedures. They refer queries to our case owners only where necessary."
+},
+{
+   "words":"HM Land Registry postal address",
+   "subject":"Contact Details",
+   "section_questionanswer":"yes",
+   "question":"HM Land Registry address for applications",
+   "answer":"Send your applications and correspondence by post to our <a href='https://www.gov.uk/guidance/hm-land-registry-address-for-applications'>standard address</a>. If you are a portal or Business Gateway customer, you can send these electronically.<br><span class='govuk-heading-m cardsubtitles'>Address for members of the public</span><p>HM Land Registry Citizen Centre<br>PO Box 74<br>Gloucester<br>GL14 9BB</p><span class='govuk-heading-m cardsubtitles'>Royal Mail address for business customers</span><p>HM Land Registry<br>(Insert the name of your closest office)<br>PO Box 75<br>Gloucester<br>GL14 9BD</p><span class='govuk-heading-m cardsubtitles'>DX address for business customers</span><p>HM Land Registry<br>(Insert the name of your closest office)<br>DX 321601<br>Gloucester 33</p><span class='govuk-heading-m cardsubtitles'>Offices</span><p>Birkenhead<br>Coventry<br>Croydon<br>Durham<br>Gloucester<br>Hull<br>Fylde<br>Leicester<br>Nottingham<br>Peterborough<br> Plymouth<br>Swansea<br>Telford<br>Weymouth</p>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+   "section_feesandaddress":"no",
+   "text_feesandaddress":null,
+   "section_moreinformation":"yes",
+   "text_moreinformation":"Please use our standard addresses, unless:<ul><li>your application is:<ul><li>for Land Charges (including applications for a search of the index of proprietors’ names in form PN1)</li><li>for bankruptcy</li><li>for Agricultural Credits</li><li>the Procurement and Commercial Team</li><li>for Local Land Charges</li><li>to sign up to our Business e-services</li><li>to serve legal proceedings on the Chief Land Registrar</li></ul></li><li>we have told you to send your applications or correspondence to an alternative address</li></ul>"
+},
+{
+   "words":"Email HM Land Registry",
+   "subject":"Contact Details",
+   "section_questionanswer":"yes",
+   "question":"Contact us online",
+   "answer":"<p>Please use the below contact form to get in touch</P><div class='govuk-!-padding-bottom-3 govuk-!-padding-top-4'> <fieldset class='govuk-fieldset'> <div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='first-name'> First / Given name(s) </label> <input class='govuk-input govuk-input--width-10' id='first-name' name='first-name' type='text'> </div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='last-name'> Surname / Family name </label> <input class='govuk-input govuk-input--width-10' id='last-name' name='last-name' type='text'> </div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='email-address'> Email address </label> <div id='waste-hint' class='govuk-hint'> We'll use this address to contact you </div><input class='govuk-input govuk-input--width-20' id='email-address' name='email-address' type='text'></div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='email-address'> Re-type email address </label> <input class='govuk-input govuk-input--width-20' id='email-address' name='email-address' type='text'></div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='more-detail'> Message </label> <textarea class='govuk-textarea govuk-input--width-30' id='more-detail' name='more-detail' rows='5' aria-describedby='more-detail-hint'></textarea> </div></fieldset></div><div class=''><a class='govuk-button' href='/UserResearch/ContactformQA/Options/Search/search-prototype8b.html'>Submit</a>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+   "section_feesandaddress":"no",
+   "text_feesandaddress":null,
+   "section_moreinformation":"no",
+   "text_moreinformation":""
+}
 ]
