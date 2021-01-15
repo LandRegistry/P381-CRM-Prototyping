@@ -109,7 +109,7 @@ if(SpeechRecognition) {
       searchFormInput.value = transcript;
     }
     else {
-      if(transcript.toLowerCase().trim()==="go") {
+      if(transcript.toLowerCase().trim()==="search") {
         searchForm.submit();
       }
       else if(transcript.toLowerCase().trim()==="reset input") {
@@ -126,7 +126,7 @@ if(SpeechRecognition) {
     // }, 500);
   }
   
-  info.textContent = 'Voice Commands: "stop recording", "reset input", "go"';
+  info.textContent = 'Voice Commands: "stop recording", "reset input", "search"';
   
 }
 else {
