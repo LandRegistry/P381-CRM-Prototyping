@@ -1,0 +1,28 @@
+{
+    "words":"",
+    "subject":"Applications",
+    "section_questionanswer":"yes",
+    "question":"How do I update my postcode?",
+    "answer":"To update your postcode or the postcode of another, please visit <a href='https://www.gov.uk/government/publications/updating-registered-owners-contact-address' target='_blank'>Update registered owners' contact address (COG1)</a>. ",
+    "section_downloads":"no",
+    "image_downloads":null,
+    "text_downloads":null,
+    "section_feesandaddress":"no",
+    "text_feesandaddress":null,
+    "section_moreinformation":"no",
+    "text_moreinformation":null
+ },
+ {
+    "words":"OC2 Form",
+    "subject":"Applications",
+    "section_questionanswer":"yes",
+    "question":"Official copies of documents: registration (OC2)",
+    "answer":"Use this form to apply for official copies of documents relating to a specific property or an approved form of charge. If you want to apply for official copies of the register or plan or a certificate in Form CI on a developing estate, use <a href='https://www.gov.uk/government/publications/official-copies-of-register-or-plan-registration-oc1'>form OC1</a>.",
+    "section_downloads":"yes",
+    "image_downloads":null,
+    "text_downloads":"OC2 Form - MS Word Document, 78K - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709860/OC2__2018-05-25_.doc'>Download</a><br>OC2 Form - PDF, 117KB, 2 pages - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/744886/OC2__2018-05-25_.pdf'>Download</a>",
+    "section_feesandaddress":"yes",
+    "text_feesandaddress":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
+    "section_moreinformation":"yes",
+    "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>."
+ },
