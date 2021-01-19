@@ -1,0 +1,646 @@
+
+{% extends "layout_webforms.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+<style>
+  
+ul.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  margin-bottom:30px;
+}
+
+ul.horizontal li {
+  float: left;
+}
+
+ul.horizontal li a.active {
+  background-color:#1D70B8;
+  color:#ffffff;
+}
+ul.horizontal li a {
+  display: inline-block;
+  color: #1D70B8;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  padding: 0 15px;
+  line-height: 50px;
+  font-size:19px;
+}
+
+ul.horizontal li a:focus {
+  outline: 3px solid transparent;
+    color: #0b0c0c;
+    background-color: #fd0;
+    -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
+}
+
+ul.horizontal li a:hover {
+text-decoration: underline;;
+}
+
+.rightli {
+  float: right!Important;
+}
+
+.govuk-phase-banner {
+    border-bottom: 0px solid #b1b4b6;
+}
+
+.govuk-link:visited {
+    color: #4c2c92;
+}
+
+.govuk-link:link {
+    color: #1d70b8;
+}
+
+.gem-c-transition-countdown--cta {
+    background-color: #f3f2f1;
+    border-top: 0px solid #ff003b;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.gem-c-transition-countdown {
+    font-size: 19px;
+    line-height: 1.3157894737;
+}
+
+.gem-c-transition-countdown {
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.gem-c-transition-countdown__title {
+    margin-bottom: 15px;
+}
+
+.gem-c-transition-countdown__title {
+    color: #1e1348;
+}
+
+.gem-c-transition-countdown__title {
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.gem-c-transition-countdown__title {
+    font-weight: 700;
+    display: block;
+    margin-top: 0;
+}
+
+.gem-c-transition-countdown__countdown {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.gem-c-transition-countdown__countdown-number {
+    padding: 15px 5px 15px;
+}
+
+.gem-c-transition-countdown__countdown-number:first-child {
+    margin-right: 3px;
+}
+
+.gem-c-transition-countdown__countdown-number {
+    font-size: 80px;
+    line-height: .75;
+}
+
+.gem-c-transition-countdown__countdown-number {
+    font-weight: 700;
+    min-width: 50px;
+    text-align: center;
+    display: inline-block;
+    background: #1e1348;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.gem-c-transition-countdown__countdown-number:after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+    height: 3px;
+    background: #fff;
+    content: '';
+    width: 100%;
+    display: block;
+}
+
+.gem-c-transition-countdown__countdown-number:nth-child(2) {
+    margin-right: 10px;
+}
+
+.gem-c-transition-countdown__countdown-number {
+    font-size: 80px;
+    line-height: .75;
+}
+
+
+.gem-c-transition-countdown__countdown-text {
+    display: inline-block;
+    margin-bottom: 0;
+    height: 45px;
+    vertical-align: middle;
+    color: #1e1348;
+}
+
+
+.gem-c-transition-countdown__countdown-text {
+    height: 75px;
+    font-weight: 700;
+}
+
+.gem-c-transition-countdown__countdown-text {
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.gem-c-transition-countdown__text {
+    text-decoration: underline;
+}
+
+.pre-title {
+  color:#505A5F;
+  font-size:27px;
+  line-height:27px;
+  font-family: 'GDS Transport';
+  margin-bottom: 5px;
+    display: block;
+    margin-top:10px;
+}
+
+.main-title {
+  font-size:36px;
+  line-height:40px;
+  color:#0b0c0c;
+  font-family: 'GDS Transport';
+  font-weight:700;
+  margin-bottom: 20px;
+    display: block;
+}
+
+.sub-title {
+  font-size:24px;
+  line-height:30px;
+  color:#0b0c0c;
+  font-family: 'GDS Transport';
+    display: block;
+}
+
+.govuk-inset-text {
+  background-color: #F5F5F5;
+}
+
+.govuk-width-container {
+    max-width: 1100px;
+}
+
+.govuk-grid-column-one-third {
+    width: 33.3333%;
+    float: left;
+    max-width: 325px;
+    margin-left: 50px;
+}
+
+.section-categories {
+  padding:0px;
+}
+
+.categories {
+  display: block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    text-decoration: none;
+    font-size:19px;
+    line-height:35px;
+    color:#1d70b8;
+}
+
+.form-search {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+form {
+    margin: 0 0 30px;
+}
+
+.govuk-visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+}
+
+.form-search .search-input-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.form-search input.search-query {
+    height: 40px;
+    float: left;
+    width: 86%;
+    z-index: 10;
+    border-radius: 0px;
+    border: 2px solid #000;
+}
+
+.form-search input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding: 6px;
+    background: #1D70B8 url(/public/images/search-button.png) no-repeat 2px 50%;
+    text-indent: -5000px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.btn-secondary, .btn, .btn:visited {
+    background-color: #1D70B8;
+    color: #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    font-weight: 400;
+    overflow: visible;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popular-searches {
+  font-size: 16px;
+  line-height: 28px;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+
+.search-input-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+input.search-query {
+    height: 40px;
+    width: 100%;
+    z-index: 10;
+    border-radius: 0px;
+    border: 2px solid #000;
+    max-width: 480px;
+}
+
+.searchBox {
+    width: 387px;
+    height: 35px;
+    font-size: 19px;
+    padding-left: 35px;
+    margin-top: 0px;
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 0px;
+    font-family: arial;
+    font-size: 16px;
+    outline: none !important;
+    position: relative;
+    background-image: url(/public/images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center left -2px;
+    background-size: 40px 40px;
+}
+
+.card {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: left;
+    display: block;
+    border: 1px solid #d0d0d0;
+    padding: 50px;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
+    border-radius: 0px;
+}
+
+.question {
+    font-size: 22px;
+    font-weight:600;
+    margin-bottom: 3px;
+}
+
+.answer {
+    font-size:17px;
+    font-weight:400;
+    margin-bottom:0px;
+}
+
+.subject {
+    font-size: 15px;
+    font-weight:400;
+    background:#ededed;
+    color:#000000;
+    padding:5px 10px;
+    display:inline-block;
+    border-radius:3px;
+    margin-top:20px;
+}
+
+.downloadimage {
+    border: 1px solid #dedede;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.downloadlink {
+font-weight:600;
+}
+
+.yes {
+    display:block;
+}
+
+.no {
+    display:none;
+}
+
+.cardtitles {
+    margin-top: 0px;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.cardsubtitles {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+
+.categories a {
+  background: #F5F5F5;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: 17px;
+    text-align: center;
+}
+
+.categories a:focus {
+  background: #ffdd00;
+}
+
+.logo {
+    float:left !important;
+}
+
+.selection {
+    margin-top: 25vh;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffc6c6;
+    transition: var(--transition-1);
+    margin: 50px 0px;
+}
+
+.autoComplete_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 425px;
+}
+
+#autoComplete {
+    width: 425px;
+    height: 44px;
+    font-size: 19px;
+    padding-left: 35px;
+    margin-top: 0px;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    font-family: arial;
+    font-size: 16px;
+    outline: none !important;
+    position: relative;
+    background-image: url(/public/images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center left -2px;
+    background-size: 40px 40px;
+    color: rgba(11,12,12,.5);
+}
+
+#autoComplete:hover {
+    color: #0b0c0c;
+}
+
+#autoComplete:focus {
+    border: 2px solid #000000;
+    color: #0b0c0c;
+}
+
+#autoComplete:hover::placeholder {
+    color: #0b0c0c;
+}
+
+#autoComplete:focus::placeholder {
+  color: #0b0c0c;
+  font-size:16px;
+  padding:0px;
+}
+
+#autoComplete::placeholder {
+  color: #0b0c0c;
+}
+
+.autoComplete_result {
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    color: #212121;
+    transition: all 0.1s ease-in-out;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.1s ease;
+}
+
+.no_result {
+    margin: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    color: #000000;
+    transition: all 0.1s ease-in-out;
+    border-radius: 0.35rem;
+    background-color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+#autoComplete_list {
+    margin-top: -2px;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px rgba(149, 157, 165, 0.15);
+    border: 2px solid #000000;
+}
+
+.autoComplete_highlighted {
+    color: #1d70b8;
+    font-weight: bold;
+}
+
+.autoComplete_result:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.autoComplete_selected {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+#autoComplete::selection {
+    background-color: #1D70B8;
+    color:#ffffff;
+}
+
+#autoComplete:focus::selection {
+    background-color: #1D70B8;
+    color:#ffffff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+#card {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 0.25s ease-out 0s 1 fadeIn;
+}
+
+
+</style>
+
+<div class="govuk-phase-banner" style="margin-top:-50px">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full" style="text-align:center;padding:100px 0px 0px 0px; min-height:800px;">
+        <div>
+            <span><img style="height:60px;" src="/public/images/HMRC-Logo-Icon.png"></span>
+          <span class="pre-title">HM Land Registry</span>
+          <span class="govuk-heading-l govuk-!-margin-bottom-7">Self-service support</span>
+        </div>
+
+      <div class="sub-title govuk-!-margin-bottom-8">
+        Use this service to find a quick answer to your question
+      </div>
+
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
+
+
+            
+                <div class="autoComplete_wrapper govuk-body">
+                    <input id="autoComplete" type="text" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="2048" tabindex="1" role="combobox" aria-haspopup="true" aria-expanded="false" aria-controls="autoComplete_list" aria-autocomplete="both">
+               
+                </div>
+
+                <div class="selection govuk-body" style="opacity: 1;">
+                
+                    <h2 style="color:#0b0c0c;">Thank you for your enquiry.</h2>
+
+                </div>
+            
+
+    
+        </div>
+
+
+  </div>
+
+
+  </div>
+
+  <script src="/public/javascripts/autoComplete.min.js"></script>
+  <script src="/public/javascripts/autoComplete-Custom.js"></script>
+
+{% endblock %}
