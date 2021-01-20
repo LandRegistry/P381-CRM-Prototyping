@@ -184,7 +184,7 @@
        "answer":"Use this form to apply for official copies of the register or plan or a certificate in Form CI on a developing estate. If you want to apply for official copies of documents relating to a specific property or an approved form of charge, use <a href='https://www.gov.uk/government/publications/official-copies-of-documents-registration-oc2'>form OC2</a>.",
        "section_downloads":"yes",
        "image_downloads":null,
-       "text_downloads":"OC1 Form - MS Word Document, 90KB - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709859/OC1__2018-05-25_.doc'>Download</a><br>OC1 Form - PDF, 130KB, 3 pages - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/713414/OC1__2018-05-25_.pdf'>Download</a>",
+       "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709859/OC1__2018-05-25_.doc'>OC1 Form</a><span class='downloadSize'>MS Word, 90KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/713414/OC1__2018-05-25_.pdf'>OC1 Form</a><span class='downloadSize'>PDF, 130KB, 3 pages</span></div>",
    
        "section_informationOne":"yes",
        "title_informationOne":"Fees and Address",
@@ -206,8 +206,8 @@
        "answer":"Use this form to apply for official copies of documents relating to a specific property or an approved form of charge. If you want to apply for official copies of the register or plan or a certificate in Form CI on a developing estate, use <a href='https://www.gov.uk/government/publications/official-copies-of-register-or-plan-registration-oc1'>form OC1</a>.",
        "section_downloads":"yes",
        "image_downloads":null,
-       "text_downloads":"OC2 Form - MS Word Document, 78K - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709860/OC2__2018-05-25_.doc'>Download</a><br>OC2 Form - PDF, 117KB, 2 pages - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/744886/OC2__2018-05-25_.pdf'>Download</a>",
-       
+       "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709860/OC2__2018-05-25_.doc'>OC2 Form</a><span class='downloadSize'>MS Word, 78KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/744886/OC2__2018-05-25_.pdf'>OC2 Form</a><span class='downloadSize'>PDF, 117KB, 2 pages</span></div>",
+
        "section_informationOne":"yes",
        "title_informationOne":"Fees and Address",
        "text_informationOne":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
@@ -516,7 +516,7 @@
     "answer":"When a joint owner of a property dies, fill in form DJP to remove their name from the register. <a href='https://www.gov.uk/government/publications/deceased-joint-proprietor-djp'>form DJP</a>.",
     "section_downloads":"yes",
     "image_downloads":null,
-    "text_downloads":"DJP Form - MS Word Document, 97K - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/910216/DJP__2020-08-24_.doc'>Download</a><br>DJP Form - PDF, 183KB, 2 pages - <a <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/910219/DJP__2020-08-24_.pdf'>Download</a>",
+    "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/910216/DJP__2020-08-24_.doc'>DJP Form</a><span class='downloadSize'>MS Word, 97KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/910219/DJP__2020-08-24_.pdf'>DJP Form</a><span class='downloadSize'>PDF, 183KB, 2 pages</span></div>",
     
     "section_informationOne":"yes",
     "title_informationOne":"Address",
