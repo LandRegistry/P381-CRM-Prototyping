@@ -7,7 +7,6 @@
 
 <script src="/public/javascripts/application.js"></script>
 <script src="/public/javascripts/topics.js"></script>
-<script src="/public/javascripts/main-questions.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script src="https://kit.fontawesome.com/7e9076e15d.js" crossorigin="anonymous"></script>
 
@@ -109,7 +108,7 @@ if(SpeechRecognition) {
       searchFormInput.value = transcript;
     }
     else {
-      if(transcript.toLowerCase().trim()==="search") {
+      if(transcript.toLowerCase().trim()==="go") {
         searchForm.submit();
       }
       else if(transcript.toLowerCase().trim()==="reset input") {
@@ -126,7 +125,7 @@ if(SpeechRecognition) {
     // }, 500);
   }
   
-  info.textContent = 'Voice Commands: "stop recording", "reset input", "search"';
+  info.textContent = 'Voice Commands: "stop recording", "reset input", "go"';
   
 }
 else {
@@ -134,6 +133,12 @@ else {
   info.textContent = "Your Browser does not support Speech Recognition";
 }
 </script>
+
+
+
+
+
+
 
 
 

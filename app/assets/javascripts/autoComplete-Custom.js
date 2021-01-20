@@ -96,9 +96,9 @@ const autoCompleteJS = new autoComplete({
       </div>  
       
       <div class="${feedback.selection.value.section_moreinformation}">
-          <div class="govuk-heading-m cardsubtitles">More information</div>
+          <div class="govuk-heading-m cardsubtitles">Further information</div>
           <div class="answer"> ${feedback.selection.value.text_moreinformation}</div>
-      </div>  
+      </div>   
     
     </div>
     `;

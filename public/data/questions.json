@@ -112,20 +112,6 @@
      "text_moreinformation":null
   },
   {
-     "words":"",
-     "subject":"Applications",
-     "section_questionanswer":"yes",
-     "question":"How do I update my postcode?",
-     "answer":"To update your postcode or the postcode of another, please visit <a href='https://www.gov.uk/government/publications/updating-registered-owners-contact-address' target='_blank'>Update registered owners' contact address (COG1)</a>. ",
-     "section_downloads":"no",
-     "image_downloads":null,
-     "text_downloads":null,
-     "section_feesandaddress":"no",
-     "text_feesandaddress":null,
-     "section_moreinformation":"no",
-     "text_moreinformation":null
-  },
-  {
      "words":"OC1 Form",
      "subject":"Applications",
      "section_questionanswer":"yes",
@@ -196,18 +182,18 @@
    "text_moreinformation":""
 },
 {
-   "words":"",
+   "words":"Update registered owners' contact address (COG1)",
    "subject":"Applications",
    "section_questionanswer":"yes",
    "question":"How do I update my postcode?",
-   "answer":"To update your postcode or the postcode of another property, visit <a href='https://www.gov.uk/government/publications/updating-registered-owners-contact-address' target='_blank'>Update registered owners' contact address (COG1)</a>. ",
-   "section_downloads":"no",
+   "answer":"To update your postcode or the postcode of another property, fill in the <b>Updating registered owners' contact address</b> form below and send it to us.",
+   "section_downloads":"yes",
    "image_downloads":null,
-   "text_downloads":null,
+   "text_downloads":"Updating registered owners' contact address - MS Word Document, 106KB - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816500/COG1__2019-06-24_.doc'>Download</a><br>Updating registered owners' contact address - PDF, 451KB, 7 pages - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/809992/COG1__2019-06-24_.pdf'>Download</a><br>Guidance: help protect yourself from property fraud - PDF, 802KB, 11 pages - <a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/810775/Help_protect_yourself_from_property_fraud__English___June_2019_.pdf'>Download</a>",
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
-   "section_moreinformation":"no",
-   "text_moreinformation":null
+   "section_moreinformation":"yes",
+   "text_moreinformation":"<p>Use this form to ensure that the contact details we hold for you are up to date. This is important if your property is registered. You, the applicant must be one of the registered owners of the property whose address is being updated or act for them.</p><p>When we receive an application regarding your property, we may write to you about it. If your details are not up to date, you may not receive our letter or email.</p><p>You can provide us with three different addresses, including an email address and an address abroad. Download and complete this form to add an address or update your existing contact details. There is no charge for this service.</p><p>This form is only applicable to update the address of the registered owner(s).</p>"
 },
 {
    "words":"",

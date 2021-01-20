@@ -369,7 +369,7 @@ input.search-query {
     text-align: left;
     display: block;
     border: 1px solid #dedede;
-    padding: 50px;
+    padding: 50px 50px 25px 50px;
     box-shadow: 0 3px 6px rgba(149, 157, 165, 0.2);
     border-radius: 24px;
 }
@@ -409,8 +409,11 @@ font-weight:600;
 }
 
 .yes {
-    display:block;
-    width:100%;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #dedede;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 .no {
@@ -424,9 +427,23 @@ font-weight:600;
 }
 
 .cardsubtitles {
-    margin-top: 25px;
+    margin-top: 0px;
     margin-bottom: 5px;
     font-size: 19px;
+}
+
+.cardsubtitlesMedium {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+ol {
+    padding-inline-start: 17px
+}
+
+li {
+    padding-bottom: 5px;
 }
 
 .categories a {
@@ -690,8 +707,28 @@ font-weight:600;
 	}
 }
 
+.govuk-details {
+    margin-bottom: 0px;
+}
+
+
 p {
     font-size:17px;
+}
+
+.downloadItem {
+    padding:5px 0px 10px 0px;
+}
+
+.fa-file-download {
+    font-size: 18px;
+    padding-right: 8px;
+    color: #1d70b8;
+}
+
+.downloadSize {
+    font-size: 15px;
+    padding-left: 10px;
 }
 
 </style>
@@ -729,6 +766,9 @@ p {
                    <!-- <button type="button"><i class="fas fa-microphone"></i></button> -->
                 </div>
             </div>
+
+            
+
                 <div class="selection govuk-body" style="opacity: 1;"></div>
             
 
@@ -743,6 +783,7 @@ p {
   </div>
 
   <script src="/public/javascripts/autoComplete.min.js"></script>
-  <script src="/public/javascripts/autoComplete-Custom.js"></script>
+  <script src="/public/javascripts/autoComplete-CustomAdvanced.js"></script>
+
 
 {% endblock %}
