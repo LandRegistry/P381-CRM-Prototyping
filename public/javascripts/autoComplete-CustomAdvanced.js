@@ -62,9 +62,9 @@ const autoCompleteJS = new autoComplete({
     generateList(autoCompleteJS, dataFeedback, dataFeedback.results);
     // No Results List Item
     const result = document.createElement("li");
-    result.setAttribute("class", "no_result");
+    result.setAttribute("class", "no_result govuk-error-message");
     result.setAttribute("tabindex", "1");
-    result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color:#0b0c0c;">Found No Results for "${dataFeedback.query}"</span>`;
+    result.innerHTML = `<span style="display: flex; align-items: center;margin-bottom:0px;">No results found for "${dataFeedback.query}"</span>`;
     document.querySelector(`#${autoCompleteJS.resultsList.idName}`).appendChild(result);
   },
 
