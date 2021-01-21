@@ -483,12 +483,14 @@ li {
 .autoComplete_wrapper {
     position: relative;
     display: inline-block;
-    width: 500px;
+    max-width: 500px;
+    width:100%;
     margin-bottom: 0px;
 }
 
 #autoComplete {
-    width: 500px;
+    max-width: 500px;
+    width:100%;
     height: 44px;
     font-size: 19px;
     padding-left: 35px;
@@ -730,9 +732,65 @@ p {
     padding-left: 10px;
 }
 
+.searchPosition {
+  text-align:center;
+  padding:100px 0px 0px 0px; 
+  min-height:800px;
+}
+
+.betaPosition {
+  margin-top:-50px;
+}
+
+/* Mobile optimisations */
+
+@media only screen and (max-width: 600px) {
+  .searchPosition {
+  padding:25px 0px 0px 0px; 
+  min-height:500px;
+}
+
+.sub-title {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0px 25px;
+}
+
+#autoComplete_list {
+    margin: -2px 0px 0px 0px;
+}
+
+.selection {
+    margin: 0px;
+}
+
+.card {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: left;
+    display: block;
+    border: 0px solid #b1b4b6;
+    padding: 50px 25px 25px 25px;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    border-radius: 0px;
+}
+
+.betaPosition {
+  margin-top:-20px;
+}
+
+.govuk-header {
+    border-bottom: 1px solid #ffffff;
+}
+
+  }
+
 </style>
 
-<div class="govuk-phase-banner" style="margin-top:-50px">
+<div class="govuk-phase-banner betaPosition">
   <p class="govuk-phase-banner__content">
     <strong class="govuk-tag govuk-phase-banner__content__tag">
       beta
@@ -745,7 +803,7 @@ p {
 
   <div class="govuk-grid-row">
 
-    <div class="govuk-grid-column-full" style="text-align:center;padding:100px 0px 0px 0px; min-height:800px;">
+    <div class="govuk-grid-column-full searchPosition">
       <div>
           <span><img style="height:60px;" src="/public/images/HMRC-Logo-Icon.png"></span>
         <span class="pre-title">HM Land Registry</span>
@@ -759,7 +817,7 @@ p {
         <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
 
 
-            <div class="" >
+            <div style="padding:0px 25px;">
                 <div id="voiceSearch" class="autoComplete_wrapper govuk-body">
                     <input id="autoComplete" type="text" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="2048" tabindex="1" role="combobox" aria-haspopup="true" aria-expanded="false" aria-controls="autoComplete_list" aria-autocomplete="both">
                    <!-- <button type="button"><i class="fas fa-microphone"></i></button> -->
