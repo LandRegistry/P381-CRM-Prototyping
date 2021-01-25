@@ -5,7 +5,13 @@
   GOV.UK Prototype Kit
 {% endblock %}
 
+
 {% block content %}
+<style>
+  .js-enabled .govuk-accordion__section-content {
+    padding-bottom: 40px;
+  }
+  </style>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
@@ -164,6 +170,42 @@
 
                 </div>
           </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Business e-Services (Portal Sign-Up)
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top: 0px;">
+              <p class='govuk-body'>This user research and prototyping looks at the journey a user takes when tryign to signup to the portal.<p>
+              
+                <p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_Apply_Business_eservices" target="_blank">Live Version</a> - This is the existing live build being used at the moment<br>
+                  <a href="https://digital-asf1.herokuapp.com/iteration1/start" target="_blank">Old Prototype</a> - This is a close comparison to the Live Version - <b>Username:</b> hmlr <b>Password:</b> asf1<br></p>
+
+
+                  <h3 class="govuk-heading-s" style="margin-bottom:5px;padding-top: 20px;">Top level ideas that were discussed during the initial review of the live version</h3>
+                    <ul class='govuk-body'>
+                      <li>Updating the homepage to reflect the Guided Assistance UR - e.g. moving the start now button underneath the "Before you start" information </li>
+                      <li>Adding the ability to create a basic account (Username/Password) to enable Users to <b>save their progress</b> - as applying is complicated and there could be many delays/hurdles for the User to overcome</li>
+                      <li>Helping to set expectations - this would require relocating the summary page of what's been completed, to closer in the User's journey</li>
+                      <li>Grouping form fields where possible - this would enable the User to take fewer steps during signup</li>
+                      <li>Improving the UX by linking out to all forms/documents that are mentioned</li>
+                    </ul>
+
+                    <h2 class="govuk-heading-s" style="margin-bottom:5px;padding-top: 20px;">New prototypes</h3>
+                  <p>
+                  <a href="/UserResearch/PortalSignup/V1/index.html" target="_blank">Version 1.0</a> - Updated first page with layout and content order change<br>
+                  <a href="/UserResearch/PortalSignup/V1/index1-1.html" target="_blank">Version 1.0</a> - Updated first page with new GDS notification banner<br>
+                </p>
+
+
+                </div>
+          </div>
+
     </div>
   </div>
 
