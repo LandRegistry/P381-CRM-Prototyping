@@ -19,7 +19,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+
+       "section_helpful":"yes"
 
     },
     {
@@ -42,7 +44,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"",
@@ -64,7 +68,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"",
@@ -86,7 +92,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"",
@@ -108,7 +116,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"",
@@ -130,7 +140,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"",
@@ -152,7 +164,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"",
@@ -174,7 +188,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"OC1 Form",
@@ -196,7 +212,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
        "words":"OC2 Form",
@@ -218,7 +236,9 @@
 
        "section_informationThree":"no",
        "title_informationThree":null,
-       "text_informationThree":null
+       "text_informationThree":null,
+       
+       "section_helpful":"yes"
     },
     {
      "words":"Contact HM Land Registry by phone",
@@ -240,7 +260,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"Contact HM Land Registry by post",
@@ -262,7 +284,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"Email HM Land Registry",
@@ -284,7 +308,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"Update registered owners' contact address (COG1)",
@@ -307,7 +333,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
 
   },
   {
@@ -330,7 +358,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -352,7 +382,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -374,7 +406,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -396,7 +430,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -418,7 +454,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -440,7 +478,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -462,7 +502,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -484,7 +526,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -506,7 +550,9 @@
 
      "section_informationThree":"no",
      "title_informationThree":null,
-     "text_informationThree":null
+     "text_informationThree":null,
+       
+     "section_helpful":"yes"
   },
   {
     "words":"DJP Form",
@@ -528,6 +574,8 @@
 
     "section_informationThree":"no",
     "title_informationThree":null,
-    "text_informationThree":null
+    "text_informationThree":null,
+       
+    "section_helpful":"yes"
   }
   ]

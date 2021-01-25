@@ -11,7 +11,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -25,7 +26,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -39,7 +41,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -53,7 +56,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -67,7 +71,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -81,7 +86,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -95,7 +101,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"",
@@ -109,7 +116,8 @@
      "section_feesandaddress":"no",
      "text_feesandaddress":null,
      "section_moreinformation":"no",
-     "text_moreinformation":null
+     "text_moreinformation":null,
+     "section_helpful":"yes"
   },
   {
      "words":"OC1 Form",
@@ -123,7 +131,8 @@
      "section_feesandaddress":"yes",
      "text_feesandaddress":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
      "section_moreinformation":"yes",
-     "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>."
+     "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>.",
+     "section_helpful":"yes"
   },
   {
      "words":"OC2 Form",
@@ -137,7 +146,8 @@
      "section_feesandaddress":"yes",
      "text_feesandaddress":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
      "section_moreinformation":"yes",
-     "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>."
+     "text_moreinformation":"Read more information in <a href='https://www.gov.uk/government/publications/inspection-and-application-for-official-copies'>practice guide 11: inspection and application for official copies</a>.",
+     "section_helpful":"yes"
   },
   {
    "words":"HM Land Registry phone number",
@@ -151,7 +161,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"yes",
-   "text_moreinformation":"You will hear a list of <a href='https://www.gov.uk/guidance/phone-menu-options-for-hm-land-registry'>options</a> when you phone us. Pick the appropriate option to speak to someone to help you with your query.<br><br>Customer support teams are trained in HM Land Registry casework procedures. They refer queries to our case owners only where necessary."
+   "text_moreinformation":"You will hear a list of <a href='https://www.gov.uk/guidance/phone-menu-options-for-hm-land-registry'>options</a> when you phone us. Pick the appropriate option to speak to someone to help you with your query.<br><br>Customer support teams are trained in HM Land Registry casework procedures. They refer queries to our case owners only where necessary.",
+   "section_helpful":"yes"
 },
 {
    "words":"HM Land Registry postal address",
@@ -165,7 +176,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"yes",
-   "text_moreinformation":"Please use our standard addresses, unless:<ul><li>your application is:<ul><li>for Land Charges (including applications for a search of the index of proprietors’ names in form PN1)</li><li>for bankruptcy</li><li>for Agricultural Credits</li><li>the Procurement and Commercial Team</li><li>for Local Land Charges</li><li>to sign up to our Business e-services</li><li>to serve legal proceedings on the Chief Land Registrar</li></ul></li><li>we have told you to send your applications or correspondence to an alternative address</li></ul>"
+   "text_moreinformation":"Please use our standard addresses, unless:<ul><li>your application is:<ul><li>for Land Charges (including applications for a search of the index of proprietors’ names in form PN1)</li><li>for bankruptcy</li><li>for Agricultural Credits</li><li>the Procurement and Commercial Team</li><li>for Local Land Charges</li><li>to sign up to our Business e-services</li><li>to serve legal proceedings on the Chief Land Registrar</li></ul></li><li>we have told you to send your applications or correspondence to an alternative address</li></ul>",
+   "section_helpful":"yes"
 },
 {
    "words":"Email HM Land Registry",
@@ -179,7 +191,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":""
+   "text_moreinformation":"",
+   "section_helpful":"yes"
 },
 {
    "words":"Update registered owners' contact address (COG1)",
@@ -193,7 +206,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"yes",
-   "text_moreinformation":"<p>Use this form to ensure that the contact details we hold for you are up to date. This is important if your property is registered. You, the applicant must be one of the registered owners of the property whose address is being updated or act for them.</p><p>When we receive an application regarding your property, we may write to you about it. If your details are not up to date, you may not receive our letter or email.</p><p>You can provide us with three different addresses, including an email address and an address abroad. Download and complete this form to add an address or update your existing contact details. There is no charge for this service.</p><p>This form is only applicable to update the address of the registered owner(s).</p>"
+   "text_moreinformation":"<p>Use this form to ensure that the contact details we hold for you are up to date. This is important if your property is registered. You, the applicant must be one of the registered owners of the property whose address is being updated or act for them.</p><p>When we receive an application regarding your property, we may write to you about it. If your details are not up to date, you may not receive our letter or email.</p><p>You can provide us with three different addresses, including an email address and an address abroad. Download and complete this form to add an address or update your existing contact details. There is no charge for this service.</p><p>This form is only applicable to update the address of the registered owner(s).</p>",
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -207,7 +221,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -221,7 +236,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -235,7 +251,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -249,7 +266,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -263,7 +281,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -277,7 +296,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -291,7 +311,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -305,7 +326,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
    "words":"",
@@ -319,7 +341,8 @@
    "section_feesandaddress":"no",
    "text_feesandaddress":null,
    "section_moreinformation":"no",
-   "text_moreinformation":null
+   "text_moreinformation":null,
+   "section_helpful":"yes"
 },
 {
   "words":"DJP Form",
@@ -333,6 +356,7 @@
   "section_feesandaddress":"yes",
   "text_feesandaddress":"Send the completed form to <a href='https://www.gov.uk/guidance/hm-land-registry-address-for-applications#standard-addresses'</a> HM Land Registry, along with an official copy of the death certificate.</a>.",
   "section_moreinformation":"yes",
-  "text_moreinformation":"Read more information in: <a href='https://www.gov.uk/update-property-records-someone-dies'>Update a property record when someone dies.</a>."
+  "text_moreinformation":"Read more information in: <a href='https://www.gov.uk/update-property-records-someone-dies'>Update a property record when someone dies.</a>.",
+  "section_helpful":"yes"
 }
 ]

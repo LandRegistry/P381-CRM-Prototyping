@@ -365,11 +365,24 @@ input.search-query {
 .card {
     max-width: 750px;
     margin: auto;
+    margin-bottom: 0px;
+    text-align: left;
+    display: block;
+    border: 1px solid #b1b4b6;
+    border-bottom:0px;
+    padding: 50px 50px 40px 50px;
+    border-radius: 0px;
+}
+
+.card2 {
+    max-width: 750px;
+    margin: auto;
     margin-bottom: 40px;
     text-align: left;
     display: block;
     border: 1px solid #b1b4b6;
-    padding: 50px 50px 25px 50px;
+    border-top:0px;
+    padding: 0px 50px 10px 50px;
     -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.05);
@@ -788,6 +801,137 @@ p {
 
   }
 
+  .yes {
+    display: block;
+    width: 100%;
+    border-top: 0px solid #b1b4b6;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.helpfulSection {
+    margin-top: 20px;
+    border-top: 0px solid #b1b4b6;
+    padding-top: 20px;
+}
+
+.as {
+    margin-bottom: unset;
+    margin-top: unset;
+}
+
+
+.as .as-button {
+    background-color: #ffffff;
+    border: .0625rem solid #dadce0;
+    border-radius: .25rem;
+    color: #1a73e8;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1rem;
+    margin: .375rem .5rem .375rem 0;
+    min-width: 5.5rem;
+    padding: .625rem 0;
+    position: relative;
+    text-align: center;
+}
+
+.as .as-button:active {
+    background-color: #dadce0;
+}
+
+.as .as-button:before, .as .as-button:after {
+    background: currentColor;
+    border-radius: 4px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 15ms linear;
+}
+
+.as .as-button:before, .as .as-button:after {
+    background: currentColor;
+    border-radius: 4px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 15ms linear;
+}
+
+.as .as-button:hover::before {
+    opacity: .08;
+}
+
+.as .title {
+    color: #202124;
+    display: inline-block;
+    font-weight: 500;
+    padding: 1.125rem 0;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+}
+
+.as .how-improve {
+    color: #5f6368;
+    margin-bottom: 30px
+}
+
+.as .button-group {
+    display: inline;
+}
+
+.as form {
+    padding-top: 0;
+}
+
+.as:not(.rated) form, .as.rated .as-button, .as.submitted form {
+
+}
+
+.as .field:first-of-type {
+    margin-top: .25rem;
+}
+
+.as .field {
+    margin: .625rem 0;
+}
+
+.hcfe textarea {
+    font-size: .8125rem;
+    line-height: normal;
+}
+
+.as textarea {
+
+}
+
+
+
+
+.as .submit-button {
+    margin-top: 0;
+}
+
+.as .submit-button-target {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#yesDiv {
+    display:none;
+}
+
 </style>
 
 <div class="govuk-phase-banner betaPosition">
@@ -841,6 +985,31 @@ p {
 
   <script src="/public/javascripts/autoComplete.min.js"></script>
   <script src="/public/javascripts/autoComplete-CustomAdvanced.js"></script>
+
+
+  <script>
+      function yesDiv() {
+   document.getElementById('helpfulQuestion').style.display = "none";
+   document.getElementById('noAnswer').style.display = "none";
+ document.getElementById('yesAnswer').style.display = "block";
+}
+  </script>
+
+<script>
+    function noDiv() {
+ document.getElementById('helpfulQuestion').style.display = "none";
+ document.getElementById('noAnswer').style.display = "block";
+ document.getElementById('yesAnswer').style.display = "none";
+}
+</script>
+
+<script>
+    function submitFeedback() {
+ document.getElementById('helpfulQuestion').style.display = "none";
+ document.getElementById('noAnswer').style.display = "none";
+ document.getElementById('yesAnswer').style.display = "block";
+}
+</script>
 
 
 {% endblock %}

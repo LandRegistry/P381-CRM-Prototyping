@@ -104,10 +104,42 @@ const autoCompleteJS = new autoComplete({
       <div class="govuk-heading-m cardsubtitlesMedium">${feedback.selection.value.title_informationThree}</div>
       <div class="answer"> ${feedback.selection.value.text_informationThree}</div>
     </div>  
-    
 
-  
+    </div>
+
+    <div class="card2 govuk-body">
+
+    <div class="as">
+
+      <div id="helpfulQuestion">
+          <div class="how-improve" style="display: inline-block;padding: 8px 20px 8px 0px;">Was this helpful?</div>
+          <div class="button-group">
+            <button style="min-width:100px;display: inline-block;position: relative;" class="govuk-button govuk-button--secondary" value="Show yesDiv" type="button" onclick="yesDiv()">Yes</button>
+            <button style="min-width:100px;display: inline-block;position: relative;margin-left: 5px;" class="govuk-button govuk-button--secondary" value="Show noDiv" type="button" onclick="noDiv()">No</button>
+          </div>
+      </div>
+
+      <div id="yesAnswer" style="display:none;">
+          <div class="how-improve">Thanks for your feedback!</div>
+      </div>
+
+      <div id="noAnswer" style="display:none;">
+          <div class="how-improve">How can we improve it?</div>
+          <form data-stats-ve="20" style="margin-bottom:0px;">
+            <div class="field">
+              <textarea aria-label="How can we improve it?" name="article_feedback_comment" class="govuk-textarea" rows="5"></textarea>
+            </div>
+            <button class="submit-button govuk-button" type="button" value="Show submitFeedback" onclick="submitFeedback()">Submit<div class="submit-button-target"></div></button>
+          </form>
+      </div>
+
+    </div>
+
+
+  </div> 
+     
   </div>
+
   `;
   document.querySelector(".selection").innerHTML = html;
   },
