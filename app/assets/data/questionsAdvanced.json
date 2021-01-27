@@ -73,6 +73,30 @@
        "section_helpful":"yes"
     },
     {
+      "words":"AP1 Form",
+      "subject":"Applications",
+      "section_questionanswer":"yes",
+      "question":"How do I change my name on the register? - Improved",
+      "answer":"You must send HM Land Registry an application to change the register when you change your name. You do not have to pay anything to do this.<br><br>How to apply depends on which documents you can send that prove your name has changed. You’ll get back any official certificates you send in after the register has been updated.<br><br><b>Would you like to do this now?<b><br><br><a class='govuk-button' href='search-prototypeB.html'>Update name</a>",
+      "section_downloads":"no",
+      "image_downloads":null,
+      "text_downloads":null,
+
+      "section_informationOne":"no",
+      "title_informationOne":null,
+      "text_informationOne":null,
+
+      "section_informationTwo":"no",
+      "title_informationTwo":null,
+      "text_informationTwo":null,
+
+      "section_informationThree":"no",
+      "title_informationThree":null,
+      "text_informationThree":null,
+      
+      "section_helpful":"yes"
+   },
+    {
        "words":"",
        "subject":"Applications",
        "section_questionanswer":"yes",
