@@ -677,5 +677,380 @@
    "text_informationThree":null,
      
    "section_helpful":"yes"
+},
+{
+   "words":"",
+   "subject":"Definition",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"Caution against first registration",
+   "answer":"This is a means of protecting an interest in an unregistered estate affecting land. A caution can protect a wide variety of interests, for example, rentcharges and franchises.<br><br>For each caution there is a ‘caution title’ - a record, under a distinguishing number, of the details of the caution and of the declaration in support and of a plan showing the extent of the land affected by the caution.<br><br>A caution is not an actual registration of any estate in land. It is merely a means to trigger notification to the person who lodged the caution when an application for first registration is made.<br><br>There can be more than one caution in respect of the same property.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"First registration",
+   "answer":"An application to register unregistered land.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a Flood Risk Indicator?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Flood Risk Indicator?",
+   "answer":"The Flood Risk Indicator is a textual result indicating flood risk to registered land.<br><br>The Flood Risk Indicator combines Environment Agency flood data with HM Land Registry property data to provide our customers with a high level indication of whether the land they are interested in, is at risk of flooding.<br><br>The result is provided on a title-by-title basis for registered properties within England and Wales.<br><br>Please see: <a href='https://eservices.landregistry.gov.uk/eservices/FindAProperty/view/Info.do?page=floodrisk_one&id=p_indicator_link'>Flood Risk Indicator</a>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a Form SIM?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Form SIM",
+   "answer":"Used to make an application for a search on the index map.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What does Freehold mean?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Freehold",
+   "answer":"The nearest equivalent to absolute and permanent ownership. The Crown is the only absolute owner of land in England and Wales.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is the Index Map?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Index Map",
+   "answer":"A large scale map which shows whether a property in England and Wales is registered and, if so, the Title number(s). The Index Map will also reveal whether there are any ‘Cautions against First Registration’ affecting an unregistered property.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What does Leasehold mean?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Leasehold",
+   "answer":"Ownership for a fixed term of years. This can arise from a grant of a lease from a freehold or from an existing leasehold for a shorter period than that lease.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What does manor mean?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Manor",
+   "answer":"Following the implementation of the Land Registration Act 2002 in October 2003 it is no longer possible to register a lordship of a manor. However manor titles registered before the Land Registration Act 2002 will be available for inspection.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is an official copy?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Official copy",
+   "answer":"A copy of the title register, title plan (that are guaranteed as at the date and time stated on them) or document that is also guaranteed.<br><br>An official copy is admissible in evidence in a court to the same extent as the original. A person is entitled to be indemnified by the registrar if he or she suffers loss by reason of a mistake in an official copy.<br><br>PDF's of title plans, title registers and documents purchased through the 'Find a property' service are not official copies.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a Property enquiry?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Property enquiry",
+   "answer":"This is where you enquire about a property and we try and match the details of the address that you provide against our address database.<br><br>The postal addresses in our database are originally supplied by the Post Office (from their Postal Address File). We attach information to addresses from the registration details. We also add new properties when fresh registrations are made. Additionally, we receive details of new and amended properties from the Ordnance Survey. Your enquiry is matched against our database and records of more than 20 million registrations in England and Wales.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a rentcharge?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Rentcharge",
+   "answer":"A rentcharge is an annual sum payable for land in perpetuity or for a term of years which gives the owner of the rentcharge (the ‘rentowner’) specific rights if the sum is not paid.<br><br>After 21 August 1977 only certain rentcharges may be created. These are mainly ‘estate rentcharges’ created for the purpose of making a landowners personal covenants (for example a promise to maintain a fence) enforceable by the rentowner, or to secure payment for the provision of services or the carrying out of maintenance, repairs and the like by the rentowner. Any other rentcharges created before 22 August 1977 will (if not already extinguished) be extinguished on 22 July 2037.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a title number?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Title number",
+   "answer":"When a property is registered HM Land Registry gives it a unique reference number, called a ‘title number’. For example, a registration in Cambridgeshire may be allotted the Title number CB9988779.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a title plan?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Title plan",
+   "answer":"The title plan shows, usually by red edging, the general extent of the property registered under the title number shown. Title plans are prepared on the latest Ordnance Survey map available at the time of registration and are not updated as a matter of course. The plan does not normally show who owns boundary features, such as fences and hedges.<br><br>They may be updated to show later Ordnance Survey information where land has been sold from the title or if it becomes necessary during the registration process of other properties. In these circumstances the owner will be notified. To obtain an official copy you need to use <a href='https://www.gov.uk/government/publications/offcial-copies-of-register-or-plan-registration-oc1'>form OC1</a>.<br><br>It is always advisable to examine the title plan in conjunction with the title register information. This is because there may be entries in the title register which clarify the extent of the title (perhaps only the first floor flat is included) and colour references that are shown. The title plan may also contain references to such matters as registered leases and the routes of beneficial or adverse easements (such as rights of access).<br><br>The copy of the title plan obtained via this service is not an ‘official copy’. An official copy of the title plan is admissible in evidence in a court to the same extent as the original. A person is entitled to be indemnified by the registrar if he or she suffers loss by reason of a mistake in an official copy. You can obtain an official copy by post from HM Land Registry by downloading and completing a <a href='https://www.gov.uk/government/publications/offcial-copies-of-register-or-plan-registration-oc1'>form OC1</a>.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is the title register?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Title register",
+   "answer":"The title register contains the details relating to the property. Each title register is in three parts:<ul><li>property register - a description of the property and any rights that may benefit the property</li><li>proprietorship register - who owns the property and any restrictions upon their power to deal with the property</li><li>charges register - further information such as mortgages or rights that may adversely affect the property.</li></ul>The copy of the title register obtained via this service is not an ‘official copy'. An Official copy of the title register is admissible in evidence in a court to the same extent as the original. A person is entitled to be indemnified by the registrar if he or she suffers loss by reason of a mistake in an Official copy.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a title register extract?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Title register extract",
+   "answer":"This is a summary of information taken from the title register (which is being) downloaded from this service. It includes the:<ul><li>title number</li><li>address</li><li>price or value stated (for most transactions registered on or after 1st April 2000)</li><li>registered owner</li><li>lender of any registered charges (mortgages).</li></ul>A full copy of the title register accompanies the extract and you should read that in order to be sure that the summary is complete.<br><br>Neither the extract nor the accompanying title register is an ‘official copy’. An Official copy of the title register is admissible in evidence in a court to the same extent as the original. A person is entitled to be indemnified by the registrar if he or she suffers loss by reason of a mistake in an Official copy.<br><br>You can obtain an official copy by post from HM Land Registry by downloading and completing a <a href='https://www.gov.uk/government/publications/offcial-copies-of-register-or-plan-registration-oc1'>form OC1</a>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
 }
   ]
