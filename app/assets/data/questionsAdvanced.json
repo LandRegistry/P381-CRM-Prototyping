@@ -2,6 +2,7 @@
     {
        "words":"demo",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"What is the register?",
        "answer":"The Land Register contains more than 25 million titles showing evidence of ownership for more than 87% of the land mass of England and Wales.",
@@ -27,6 +28,7 @@
     {
        "words":"",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"How do I update or correct the register?",
        "answer":" If anything in the register changes or it is incorrect you can <a href='https://www.google.com/url?q=https%3A%2F%2Fwww.gov.uk%2Fregistering-land-or-property-with-land-registry%2Fupdate-or-correct-the-register' target='_blank'>update or correct the register</a>.",
@@ -51,6 +53,7 @@
     {
        "words":"",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"How do I change my name on the register?",
        "answer":"You must send HM Land Registry an <a href='#' target='_blank'>application to change the register</a> when you change your name. You do not have to pay anything to do this.",
@@ -75,6 +78,7 @@
     {
       "words":"AP1 Form",
       "subject":"Applications",
+      "tag_definition":"no",
       "section_questionanswer":"yes",
       "question":"How do I change my name on the register? - Improved",
       "answer":"You must send HM Land Registry an application to change the register when you change your name. You do not have to pay anything to do this.<br><br>How to apply depends on which documents you can send that prove your name has changed. You’ll get back any official certificates you send in after the register has been updated.<br><br><b>Would you like to do this now?<b><br><br><a class='govuk-button' href='search-prototypeB.html'>Update name</a>",
@@ -99,6 +103,7 @@
     {
        "words":"",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"What are the registration fees?",
        "answer":"Identify <a href='#' target='_blank'>which fees to pay</a> for HM Land Registry applications and services.",
@@ -123,6 +128,7 @@
     {
        "words":"",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"How can I find my deeds?",
        "answer":"You may be able to <a href='#' target='_blank'>find out current and past information about a registered property</a>, such as its previous owners. The register may give more details about rights over adjoining land.",
@@ -147,6 +153,7 @@
     {
        "words":"",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"How do I search the register?",
        "answer":"Find <a href='#' target='_blank'>information about a property in England or Wales</a>, even if you do not own it. Search by address to find the owner, how far its general boundaries extend and whether it’s at risk of flooding.",
@@ -171,6 +178,7 @@
     {
        "words":"",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"What is an official search?",
        "answer":"An Official Search protects the title of the property for 30 business days (the priority period) to allow an applicant to lodge their application to purchase the property.",
@@ -195,6 +203,7 @@
     {
        "words":"",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"How do I search the index map?",
        "answer":"The index map contains <a href='#' target='_blank'>information on all land and property</a> that’s registered or being registered with HM Land Registry. You should use it to find the title number of a property that doesn’t appear in a <a href='#' target='_blank'>search of the register</a>.",
@@ -219,6 +228,7 @@
     {
        "words":"OC1 Form",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"Official copies of register or plan: registration (OC1)",
        "answer":"Use this form to apply for official copies of the register or plan or a certificate in Form CI on a developing estate. If you want to apply for official copies of documents relating to a specific property or an approved form of charge, use <a href='https://www.gov.uk/government/publications/official-copies-of-documents-registration-oc2'>form OC2</a>.",
@@ -243,6 +253,7 @@
     {
        "words":"OC2 Form",
        "subject":"Applications",
+       "tag_definition":"no",
        "section_questionanswer":"yes",
        "question":"Official copies of documents: registration (OC2)",
        "answer":"Use this form to apply for official copies of documents relating to a specific property or an approved form of charge. If you want to apply for official copies of the register or plan or a certificate in Form CI on a developing estate, use <a href='https://www.gov.uk/government/publications/official-copies-of-register-or-plan-registration-oc1'>form OC1</a>.",
@@ -267,6 +278,7 @@
     {
      "words":"Contact HM Land Registry by phone",
      "subject":"Contact Details",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"Phone HM Land Registry",
      "answer":"We’re open Monday to Friday (excluding Bank Holidays), 8am to 5pm. <br><br>We have fewer advisers available due to the ongoing coronavirus (COVID-19) measures. Our service is usually quietest between 8am and 9am.<br><br>Read about our <a href='https://www.gov.uk/guidance/coronavirus-covid-19-impact-on-hm-land-registrys-services'>temporary support measures</a> and see our <a rel='external' href='https://help.landregistry.gov.uk/app/contactus_general'>help pages</a> for information on common queries. <a href='https://www.gov.uk/call-charges'>Find out about call charges</a><br><br><span class='govuk-heading-m cardsubtitles'>Contact centre</span><p>English language<br>0300 006 0411</p><p style='margin-bottom:0px;'>Welsh language<br>0300 006 0422</p>",
@@ -291,6 +303,7 @@
   {
      "words":"Contact HM Land Registry by post",
      "subject":"Contact Details",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"HM Land Registry address for applications",
      "answer":"Send your applications and correspondence by post to our <a href='https://www.gov.uk/guidance/hm-land-registry-address-for-applications'>standard address</a>. If you are a portal or Business Gateway customer, you can send these electronically.<img style='margin:30px 0px 30px 0px;width: 100%;' src='/public/images/map-location750.jpg'><span class='govuk-heading-m cardsubtitles'>Address for members of the public</span><p>HM Land Registry Citizen Centre<br>PO Box 74<br>Gloucester<br>GL14 9BB</p><span class='govuk-heading-m cardsubtitles'>Royal Mail address for business customers</span><p>HM Land Registry<br>(Insert the name of your closest office)<br>PO Box 75<br>Gloucester<br>GL14 9BD</p><span class='govuk-heading-m cardsubtitles'>DX address for business customers</span><p>HM Land Registry<br>(Insert the name of your closest office)<br>DX 321601<br>Gloucester 33</p><span class='govuk-heading-m cardsubtitles'>Offices</span><p>Birkenhead<br>Coventry<br>Croydon<br>Durham<br>Gloucester<br>Hull<br>Fylde<br>Leicester<br>Nottingham<br>Peterborough<br> Plymouth<br>Swansea<br>Telford<br>Weymouth</p>",
@@ -315,6 +328,7 @@
   {
      "words":"Email HM Land Registry",
      "subject":"Contact Details",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"Contact HM Land Registry online",
      "answer":"<p>Please use the below contact form to get in touch</p><fieldset class='govuk-fieldset'> <h3 class='govuk-heading-m' style='margin-bottom:10px; margin-top:20px;'> Your contact details </h3> <div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='organisation-name'> Organisation name </label> <input class='govuk-input' id='organisation-name' name='organisation-name' type='text'> </div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='first-name'> First / Given name(s) </label> <input class='govuk-input' id='first-name' name='first-name' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='last-name'> Surname / Family name </label> <input class='govuk-input' id='last-name' name='last-name' type='text'> </div></div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='email-address'> Email address </label> <input class='govuk-input' id='email-address' name='email-address' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='email-address'> Re-type email address </label> <input class='govuk-input' id='email-address' name='email-address' type='text'> </div></div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='telephone-number'> Telephone number </label> <input class='govuk-input' id='telephone-number' name='telephone-number' type='tel' autocomplete='tel'> </div><h3 class='govuk-heading-m govuk-!-padding-top-6' style='margin-bottom:10px; margin-top:20px;'> Your enquiry </h3> <p><b>Please choose a department and category that best suits your enquiry</b></p><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold form-label-bold' for='sort'> Department </label> <select class='govuk-select' id='sort' name='sort'> <option value='select' selected>*Select a department</option> <option value='1'>Department 1</option> <option value='2'>Department 2</option> <option value='3'>Department 3</option> <option value='4'>Department 4</option> <option value='5'>Department 5</option> <option value='6'>Department 6</option> <option value='7'>Department 7</option> <option value='8'>Department 8</option> <option value='9'>Department 9</option> <option value='10'>Department 10</option> </select> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold form-label-bold' for='sort'> Category </label> <select class='govuk-select' id='sort2' name='sort2'> <option value='select' selected>*Select a category</option> <option value='1'>Category 1</option> <option value='2'>Category 2</option> <option value='3'>Category 3</option> <option value='4'>Category 4</option> <option value='5'>Category 5</option> </select> </div></div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='first-name'> Title number (optional) </label> <input class='govuk-input' id='first-name' name='first-name' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='last-name'> HM Land Registry Reference (optional) </label> <input class='govuk-input' id='last-name' name='last-name' type='text'> </div></div><div class='' style='margin-right:30px;'> <label class='govuk-label form-label-bold' for='more-detail'> How can we help you? </label> <textarea class='govuk-textarea' id='more-detail' name='more-detail' rows='5' aria-describedby='more-detail-hint'></textarea> </div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='file-upload-1'> Upload a file (optional) </label> <input class='govuk-file-upload' id='file-upload-1' name='file-upload-1' type='file'> </div></fieldset></div> <a class='govuk-button' href='search-prototype10B.html'>Submit</a>",
@@ -339,6 +353,7 @@
   {
      "words":"Update registered owners' contact address (COG1)",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"How do I update my postcode?",
      "answer":"<p>There are two ways availble to update your postcode or the postcode of another property.</p> <ol><li><b>Online:</b> <a href='#'>Update postcode</a></li><li><b>By post:</b> Fill in the <b>Updating registered owners' contact address</b> form below and send it to us, using the addresses provided</li></ol>",
@@ -365,6 +380,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"How do I find out who owns a property?",
      "answer":"To find information about a property in England or Wales, even if you do not own it, visit <a href='https://www.gov.uk/search-property-information-land-registry' target='_blank'>Search for property information from HM Land Registry </a>. ",
@@ -389,6 +405,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"How do I find out how much a house has sold for?",
      "answer":"To find out how much a property sold for in England and Wales, visit <a href='https://www.gov.uk/search-house-prices' target='_blank'>Search sold property prices </a>. ",
@@ -413,6 +430,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"I want to know what my property boundaries are",
      "answer":"To find out about property boundaries, visit <a href='https://www.gov.uk/your-property-boundaries' target='_blank'>Search for boundary information </a>. ",
@@ -437,6 +455,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"How do I register my house?",
      "answer":"To find out how to register land or property with HM Land Registry, visit <a href='https://www.gov.uk/registering-land-or-property-with-land-registry' target='_blank'>Register land or property</a>. ",
@@ -461,6 +480,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"What are the HM Land Registry registration fees?",
      "answer":"To find out the fees for common applications, visit <a href='https://www.gov.uk/guidance/hm-land-registry-registration-services-fees' target='_blank'>HM Land Registry: Registration Services fees</a>. ",
@@ -485,6 +505,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"I want to download datasets from HM Land Registry ",
      "answer":"To access datasets about all registered land and property in England and Wales, visit <a href='https://use-land-property-data.service.gov.uk/' target='_blank'>Use land and property data</a>. ",
@@ -509,6 +530,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"I want to view HM Land Registry practice guides ",
      "answer":"To view all of the HM Land Registry practice guides, visit <a href='https://www.gov.uk/topic/land-registration/practice-guides' target='_blank'>Land registration: Practice guides</a>. ",
@@ -533,6 +555,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"I want to apply for a business e-services account",
      "answer":"To apply for a HM Land Registry Business e-services account, visit <a href='https://www.gov.uk/guidance/apply-for-hm-land-registry-business-e-services' target='_blank'>Apply for HM Land Registry Business e-services</a>. ",
@@ -557,6 +580,7 @@
   {
      "words":"",
      "subject":"Applications",
+     "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"How do I search for local land charges?",
      "answer":"To search for local land charges, visit <a href='https://search-local-land-charges.service.gov.uk/' target='_blank'>Search for local land charges</a>. ",
@@ -581,6 +605,7 @@
   {
     "words":"DJP Form",
     "subject":"Applications",
+    "tag_definition":"no",
     "section_questionanswer":"yes",
     "question":"How do I remove someone's name from the deeds if they've died?",
     "answer":"When a joint owner of a property dies, fill in form DJP to remove their name from the register. <a href='https://www.gov.uk/government/publications/deceased-joint-proprietor-djp'>form DJP</a>.",
@@ -601,5 +626,55 @@
     "text_informationThree":null,
        
     "section_helpful":"yes"
-  }
+  },
+  {
+   "words":"What does assent mean?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Assent",
+   "answer":"<span class='pronounceword'>/əˈsɛnt/</span><span>An Assent of land or property is the transfer of the legal ownership from the Estate of someone who has died, into the name of the new owner.</span>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What does beneficiary mean?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Beneficiary",
+   "answer":"<span class='pronounceword'>/bɛnɪˈfɪʃ(ə)ri/</span><span>A beneficiary is a person who is set to inherit from the property of someone who has died.</span>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+}
   ]
