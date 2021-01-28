@@ -497,12 +497,14 @@ li {
 .autoComplete_wrapper {
     position: relative;
     display: inline-block;
-    width: 500px;
+    width: 100%;
+    max-width:500px;
     margin-bottom:0px;
 }
 
 #autoComplete {
-    width: 500px;
+    width: 100%;
+    max-width:500px;;
     padding-left: 40px;
     margin-top: unset;
     font-size: 16px;
@@ -635,7 +637,8 @@ li {
 }
 
 .autoSearchBox {
-    width: 500px;
+    width: 100%;
+    max-width:500px;
     margin-top: 0px;
     font-family: arial;
     font-size: 16px;
@@ -943,22 +946,116 @@ width:100%;
     color: #1d70b8;
 }
 
+.searchPosition {
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+    min-height: 800px;
+}
+
+.betaPosition {
+  margin-top:-50px;
+}
+
+/* Mobile optimisations */
+
+@media only screen and (max-width: 600px) {
+  .searchPosition {
+  padding:25px 0px 0px 0px; 
+  min-height:500px;
+}
+
+.betaPosition {
+  margin-top:-20px;
+}
+
+.sub-title {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0px 25px;
+}
+
+#autoComplete_list {
+    margin: -2px 0px 0px 0px;
+}
+
+.selection {
+    margin: 0px;
+}
+
+.card {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: left;
+    display: block;
+    border: 0px solid #b1b4b6;
+    padding: 50px 0px 0px 0px;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    border-radius: 0px;
+}
+
+.betaPosition {
+  margin-top:-20px;
+}
+
+.govuk-header {
+    border-bottom: 1px solid #ffffff;
+}
+
+.card2 {
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: left;
+    display: block;
+    border: 0px solid #b1b4b6;
+    padding: 0px 0px 25px 0px;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    border-radius: 0px;
+}
+
+#autoComplete_list {
+    background: unset;
+}
+
+.as .how-improve {
+    margin-bottom: 10px !Important;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.govuk-button--secondary {
+    max-width: 100px;
+    float: left;
+    margin-right:25px;
+}
+.searchPosition {
+    padding: 25px 0px 0px 0px;
+    min-height: 500px;
+}
+
+}
+
+
 </style>
 
-<div class="govuk-phase-banner" style="margin-top:-50px">
-  <p class="govuk-phase-banner__content">
-    <strong class="govuk-tag govuk-phase-banner__content__tag">
-      beta
-    </strong>
-    <span class="govuk-phase-banner__text">
-      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-    </span>
-  </p>
-</div>
-
-  <div class="govuk-grid-row">
-
-    <div class="govuk-grid-column-full" style="text-align:center;padding:100px 0px 0px 0px; min-height:800px;">
+<div class="govuk-phase-banner betaPosition">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+  
+    <div class="govuk-grid-row">
+  
+      <div class="govuk-grid-column-full searchPosition">
       <div>
           <span><img style="height:60px;" src="/public/images/HMRC-Logo-Icon.png"></span>
         <span class="pre-title">HM Land Registry</span>
@@ -969,10 +1066,10 @@ width:100%;
         Use this service to find a quick answer to your question
       </div>
 
-        <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:0px; padding-right:0px;">
+        <div class="govuk-grid-column-full govuk-!-padding-bottom-6" style="padding-left:25px; padding-right:25px;">
 
 
-            <div class="autoSearchBox" >
+            <div class="autoSearchBox">
                 <div id="voiceSearch" class="autoComplete_wrapper govuk-body">
                     <input id="autoComplete" type="text" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="2048" tabindex="1" role="combobox" aria-haspopup="true" aria-expanded="false" aria-controls="autoComplete_list" aria-autocomplete="both">
                    <!-- <button type="button"><i class="fas fa-microphone"></i></button> -->
