@@ -80,6 +80,10 @@ const autoCompleteJS = new autoComplete({
     console.log(feedback.selection.value);
     const html =`   <div id="card" class="card govuk-body">
 
+    <div class="${feedback.selection.value.tag_definition}"  style="padding-top:0px !Important; border-top:0px !Important;padding-bottom:10px;">
+        <span class="definitionTag">Definition</span>
+    </div>
+
     <div class="${feedback.selection.value.section_questionanswer}" style="padding-top:0px !Important; border-top:0px !Important;">
         <div class="govuk-heading-m cardtitles" style="margin-top:0px;">${feedback.selection.value.question}</div>
         <div class="answer"> ${feedback.selection.value.answer}</div>
