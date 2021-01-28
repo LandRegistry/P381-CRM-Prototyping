@@ -55,7 +55,7 @@
        "subject":"Applications",
        "tag_definition":"no",
        "section_questionanswer":"yes",
-       "question":"How do I change my name on the register?",
+       "question":"How do I change my name on the register by post?",
        "answer":"You must send HM Land Registry an <a href='https://www.gov.uk/government/publications/change-the-register-ap1' target='_blank'>application to change the register</a> when you change your name. You do not have to pay anything to do this.",
        "section_downloads":"yes",
        "image_downloads":null,
@@ -64,7 +64,7 @@
        "section_informationOne":"no",
        "title_informationOne":null,
        "text_informationOne":null,
-       
+
        "section_informationTwo":"yes",
        "title_informationTwo":"Fee and address",
        "text_informationTwo":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-registration-services-fees' class='govuk-link'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses' class='govuk-link'>standard address</a>.",
@@ -80,9 +80,10 @@
       "subject":"Applications",
       "tag_definition":"no",
       "section_questionanswer":"yes",
-      "question":"How do I change my name on the register? V2",
-      "answer":"You must send HM Land Registry an application to change the register when you change your name. You do not have to pay anything to do this.<br><br>How to apply depends on which documents you can send that prove your name has changed. You’ll get back any official certificates you send in after the register has been updated.<span style='font-weight: 600;font-size:22px;margin-top:25px;display:block;'>Would you like to do this now?</span><span style='display: block;margin-top:8px;'><a class='govuk-button' style='font-size:18px;' href='search-prototypeB.html'>Update name</a></span>",
-      "section_downloads":"yes",
+      "question":"How do I change my name on the register?",
+      "answer":"You must send HM Land Registry an application to change the register when you change your name. You do not have to pay anything to do this.<br><br>How to apply depends on which documents you can send that prove your name has changed. You’ll get back any official certificates you send in after the register has been updated.<span style='font-weight: 600;font-size:22px;margin-top:25px;display:block;'>Would you like to do this now?</span><span style='display: block;margin-top:8px;'><a class='govuk-button' style='font-size:18px;' href='#'>Update name</a></span><span class='govuk-inset-text' style='display: block;margin-bottom: 0px;'>If you would prefer to apply for a name change by post, please visit <a href='https://www.gov.uk/government/publications/change-the-register-ap1'>Change the register (AP1)</a> for assistance .</span>",
+
+      "section_downloads":"no",
       "image_downloads":null,
       "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/882116/AP1-2020-04-28.pdf'>Change the register (AP1)</a><span class='downloadSize'>MS Word, 58KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/713414/OC1__2018-05-25_.pdf'>Change the register (AP1)</a><span class='downloadSize'>PDF, 259KB, 6 pages</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://www.gov.uk/government/publications/change-the-register-ap1/guidance-completing-form-ap1'>Guidance: completing form AP1</a><span class='downloadSize'>Website link</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/605125/Registered-land-checklist-HM-Land-Regisrty.31.03.17.pdf'>Checklist: applications for registered land</a><span class='downloadSize'>PDF, 45KB, 1 page</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i><a href='https://www.gov.uk/government/publications/change-the-register-ap1/checklist-applications-for-registered-land'>Checklist: applications for registered land</a><span class='downloadSize'>Website link</span></div>",
 
@@ -90,11 +91,11 @@
       "title_informationOne":null,
       "text_informationOne":null,
 
-      "section_informationTwo":"yes",
+      "section_informationTwo":"no",
       "title_informationTwo":"Fee and address",
       "text_informationTwo":"Send the completed form with the <a href='https://www.gov.uk/guidance/land-registry-registration-services-fees' class='govuk-link'>correct fee</a> to our <a href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses' class='govuk-link'>standard address</a>.",
 
-      "section_informationThree":"yes",
+      "section_informationThree":"no",
       "title_informationThree":"Video guidance",
       "text_informationThree":"<p>How to complete form (AP1)</p><iframe width='630' height='354' src='https://www.youtube.com/embed/BeWNb8XAn4c' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       
