@@ -677,5 +677,130 @@
    "text_informationThree":null,
      
    "section_helpful":"yes"
+},
+{
+   "words":"",
+   "subject":"Definition",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"Caution against first registration",
+   "answer":"This is a means of protecting an interest in an unregistered estate affecting land. A caution can protect a wide variety of interests, for example, rentcharges and franchises.<br><br>For each caution there is a ‘caution title’ - a record, under a distinguishing number, of the details of the caution and of the declaration in support and of a plan showing the extent of the land affected by the caution.<br><br>A caution is not an actual registration of any estate in land. It is merely a means to trigger notification to the person who lodged the caution when an application for first registration is made.<br><br>There can be more than one caution in respect of the same property.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"",
+   "subject":"Definition",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"First registration",
+   "answer":"An application to register unregistered land.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"Flood Risk Indicator",
+   "subject":"Definition",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"What is a Flood Risk Indicator?",
+   "answer":"The Flood Risk Indicator is a textual result indicating flood risk to registered land.<br><br>The Flood Risk Indicator combines Environment Agency flood data with HM Land Registry property data to provide our customers with a high level indication of whether the land they are interested in, is at risk of flooding.<br><br>The result is provided on a title-by-title basis for registered properties within England and Wales.<br><br>Please see: <a href='https://eservices.landregistry.gov.uk/eservices/FindAProperty/view/Info.do?page=floodrisk_one&id=p_indicator_link'>Flood Risk Indicator</a>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"Form SIM",
+   "subject":"Definition",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"What is a Form SIM?",
+   "answer":"Used to make an application for a search on the index map.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"Freehold",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"What does Freehold mean?",
+   "answer":"The nearest equivalent to absolute and permanent ownership. The Crown is the only absolute owner of land in England and Wales.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
 }
   ]
