@@ -1233,31 +1233,6 @@
    "subject":"Applications",
    "tag_definition":"no",
    "section_questionanswer":"yes",
-   "question":"How do I check the progress of my current applications to the Land Registry?",
-   "answer":"Business e-services customers, such as conveyancers, can<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'> check current applications</a> to HM Land Registry through the portal. ",
-   "section_downloads":"no",
-   "image_downloads":null,
-   "text_downloads":null,
-
-   "section_informationOne":"no",
-   "title_informationOne":null,
-   "text_informationOne":null,
-
-   "section_informationTwo":"no",
-   "title_informationTwo":null,
-   "text_informationTwo":null,
-
-   "section_informationThree":"no",
-   "title_informationThree":"",
-   "text_informationThree":"",
-   
-   "section_helpful":"yes"
-},
-{
-   "words":"",
-   "subject":"Applications",
-   "tag_definition":"no",
-   "section_questionanswer":"yes",
    "question":"How do i get my property deeds?",
    "answer":"You can apply for official copies of documents relating to a specific property by submitting <a target='_blank' href='https://www.gov.uk/government/publications/official-copies-of-documents-registration-oc2'>application form OC2 for official copies of documents.</a>",
    "section_downloads":"yes",
