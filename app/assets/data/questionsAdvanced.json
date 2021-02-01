@@ -1084,15 +1084,15 @@
    "tag_definition":"no",
    "section_questionanswer":"yes",
    "question":"How can I check the progress of my current applications to HM Land Registry?",
-   "answer":"Business e-services customers can  <a target='_blank'  href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'>check their current applications</a> to HM Land Registry through the portal.",
+   "answer":"Business e-services customers can <a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'>check their current applications</a> to HM Land Registry through the portal.",
    "section_downloads":"no",
    "image_downloads":null,
    "text_downloads":null,
 
-   "section_informationOne":"no",
-   "title_informationOne":null,
-   "text_informationOne":null,
-
+   "section_informationOne":"yes",
+   "title_informationOne":"Submit an application search",
+   "text_informationOne":"<a target='_blank'  href='https://eservices.landregistry.gov.uk/eservices/ECHOM_HomepageServices?utm_medium=GOV.UK&utm_source=website&utm_campaign=reply-to-requisition&utm_term=portalguide&utm_content=login-to-portal'>Login to portal</a><ol><li>Enter an HM Land Registry reference or Title Number. Use<ul><li>an HM Land Registry reference to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-details'>Application Details</a>’</li><li>a Title Number to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-list'>Application list</a>’</li></ul></li><li>Select ‘Submit’.</li><li>To view the current average completion times, select the link on the right-hand side.</li><li>To view information about our services, including application quality and speed of service, select the Service Standards data link on the right-hand side.</li></ol><p>Repeat as necessary and once all the required documents have been attached, press submit.</p><img style='margin:30px 0px 0px 0px;width: 100%;' src='/public/images/SearchScreen.png'>",
+   
    "section_informationTwo":"no",
    "title_informationTwo":null,
    "text_informationTwo":null,
