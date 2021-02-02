@@ -55,7 +55,7 @@
        "subject":"Applications",
        "tag_definition":"no",
        "section_questionanswer":"yes",
-       "question":"How do I change my name on the register by post?",
+       "question":"How do I change a name on the register by post?",
        "answer":"You must send HM Land Registry an  <a target='_blank'  href='https://www.gov.uk/government/publications/change-the-register-ap1' target='_blank'>application to change the register</a> when you change your name. You do not have to pay anything to do this.",
        "section_downloads":"yes",
        "image_downloads":null,
@@ -80,7 +80,7 @@
       "subject":"Applications",
       "tag_definition":"no",
       "section_questionanswer":"yes",
-      "question":"How do I change my name on the register? - Video Guide",
+      "question":"How do I change a name on the register? - Video Guide",
       "answer":"<div class='videocontainer'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/BeWNb8XAn4c' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>",
       "section_downloads":"no",
       "image_downloads":null,
@@ -105,7 +105,7 @@
       "subject":"Applications",
       "tag_definition":"no",
       "section_questionanswer":"yes",
-      "question":"How do I change my name on the register?",
+      "question":"How do I change a name on the register?",
       "answer":"You must send HM Land Registry an application to change the register when you change your name. You do not have to pay anything to do this.<br><br>How to apply depends on which documents you can send that prove your name has changed. You’ll get back any official certificates you send in after the register has been updated.<span style='font-weight: 600;font-size:22px;margin-top:25px;display:block;'>Would you like to do this now?</span><span style='display: block;margin-top:8px;'><a class='govuk-button' style='font-size:18px;' href='#'>Update name</a></span><span class='govuk-inset-text' style='display: block;margin-bottom: 0px;'>If you would prefer to apply for a name change by post, please visit  <a target='_blank'  href='https://www.gov.uk/government/publications/change-the-register-ap1'>Change the register (AP1)</a> for assistance .</span>",
 
       "section_downloads":"no",
@@ -1275,6 +1275,31 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
+   
+   "section_helpful":"yes"
+},
+{
+   "words":"",
+   "subject":"Applications",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"Transfer ownership of your property",
+   "answer":"You must tell HM Land Registry when you change the registered owner of your property, for example if you’re transferring it into another person’s name, or if you want to add your partner as a joint owner <ol><li><p>Download and fill in <a href='/government/publications/change-the-register-ap1'>an application to change the register</a>.</p></li><li><p>Fill in either a <a href='/government/publications/registered-titles-whole-transfer-tr1'>‘transfer of whole of registered title’ form</a>, if you’re transferring your whole property, or a <a href='/government/publications/registered-titles-part-transfer-tp1'>‘transfer of part of registered title’ form</a> if you’re only transferring part of your property.</p></li><li><p>Fill in a <a href='/government/publications/verify-identity-citizen-id1'>certificate of identity for a private individual</a>.</p></li><li><p>Find out the correct fee. <a href='/guidance/hm-land-registry-registration-services-fees#scale-2-fees'>Use the ‘Scale 2 fees’</a> if you’re transferring ownership of a property without selling it, for example as inheritance. <a rel='external' href='http://landregistry.data.gov.uk/fees-calculator.html'>Use the Land Registry fee calculator</a> if you’re transferring part or all of a property as a sale.</p></li><li><p>Send your documents, forms and fee to <a href='/guidance/land-registry-address-for-applications'>HM Land Registry</a>.</p></li></ol>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
    
    "section_helpful":"yes"
 }
