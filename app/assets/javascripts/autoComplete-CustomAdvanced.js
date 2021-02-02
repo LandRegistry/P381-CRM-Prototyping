@@ -18,7 +18,7 @@ const autoCompleteJS = new autoComplete({
       
       // Returns Fetched data
       return data; },
-    key: ["words", "question"],
+    key: ["words","question"],
     results: (list) => {
 
       // Filter duplicates
@@ -34,13 +34,19 @@ const autoCompleteJS = new autoComplete({
     event: ["input", "focus"],
   },
 
+  query: {                             // Query Interceptor               | (Optional)
+    manipulate: (query) => {
+      return query.replace("postage", "postcode");
+    }
+},
+
   sort: (a, b) => {                    // Sort rendered results ascendingly | (Optional)
       if (a.match < b.match) return -1;
       if (a.match > b.match) return 1;
       return 0;
   },
 
-  placeHolder: "Keyword, Form, Document, Service etc...",
+  placeHolder: "Keywords, Phrases, Forms, Documents, Service etc...",
   searchEngine: "loose",
   highlight: true,
   threshold: 2,
@@ -56,7 +62,8 @@ const autoCompleteJS = new autoComplete({
         ${element.innerHTML}</span>`;
     },
   },
-
+ 
+  
   noResults: (dataFeedback, generateList) => {
     // Generate autoComplete List
     generateList(autoCompleteJS, dataFeedback, dataFeedback.results);
