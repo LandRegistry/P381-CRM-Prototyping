@@ -357,7 +357,7 @@
      "tag_definition":"no",
      "section_questionanswer":"yes",
      "question":"Contact HM Land Registry online",
-     "answer":"<p>Please use the below contact form to get in touch</p><fieldset class='govuk-fieldset'> <h3 class='govuk-heading-m' style='margin-bottom:10px; margin-top:20px;'> Your contact details </h3> <div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='organisation-name'> Organisation name </label> <input class='govuk-input' id='organisation-name' name='organisation-name' type='text'> </div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='first-name'> First / Given name(s) </label> <input class='govuk-input' id='first-name' name='first-name' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='last-name'> Surname / Family name </label> <input class='govuk-input' id='last-name' name='last-name' type='text'> </div></div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='email-address'> Email address </label> <input class='govuk-input' id='email-address' name='email-address' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='email-address'> Re-type email address </label> <input class='govuk-input' id='email-address' name='email-address' type='text'> </div></div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='telephone-number'> Telephone number </label> <input class='govuk-input' id='telephone-number' name='telephone-number' type='tel' autocomplete='tel'> </div><h3 class='govuk-heading-m govuk-!-padding-top-6' style='margin-bottom:10px; margin-top:20px;'> Your enquiry </h3> <p><b>Please choose a department and category that best suits your enquiry</b></p><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold form-label-bold' for='sort'> Department </label> <select class='govuk-select' id='sort' name='sort'> <option value='select' selected>*Select a department</option> <option value='1'>General Inquiry</option> <option value='2'>Feedback</option> <option value='15'>Applications</option> <option value='3'>Find a property</option> <option value='4'>Price paid error for property</option> <option value='5'>Appointment</option> <option value='6'>Commercial services</option> <option value='7'>Event</option> <option value='8'>Large scale operation</option> <option value='9'>Local land charges</option> <option value='10'>Webinar</option> <option value='11'>Managed services</option> <option value='12'>Search land property</option> <option value='13'>Business eServices</option> <option value='14'>Contact update</option> </select> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold form-label-bold' for='sort'> Category </label> <select class='govuk-select' id='sort2' name='sort2'> <option value='select' selected>*Select a category</option> <option value='1'>Category 1</option> <option value='2'>Category 2</option> <option value='3'>Category 3</option> <option value='4'>Category 4</option> <option value='5'>Category 5</option> </select> </div></div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='first-name'> Title number (optional) </label> <input class='govuk-input' id='first-name' name='first-name' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='last-name'> HM Land Registry Reference (optional) </label> <input class='govuk-input' id='last-name' name='last-name' type='text'> </div></div><div class='' style='margin-right:30px;'> <label class='govuk-label form-label-bold' for='more-detail'> How can we help you? </label> <textarea class='govuk-textarea' id='more-detail' name='more-detail' rows='5' aria-describedby='more-detail-hint'></textarea> </div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='file-upload-1'> Upload a file (optional) </label> <input class='govuk-file-upload' id='file-upload-1' name='file-upload-1' type='file'> </div></fieldset></div> <a class='govuk-button' href='search-prototype10B.html'>Submit</a>",
+     "answer":"<p>Please use the below contact form to get in touch</p><fieldset class='govuk-fieldset'> <h3 class='govuk-heading-m' style='margin-bottom:10px; margin-top:20px;'> Your contact details </h3> <div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='organisation-name'> Organisation name </label> <input class='govuk-input' id='organisation-name' name='organisation-name' type='text'> </div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='first-name'> First / Given name(s) </label> <input class='govuk-input' id='first-name' name='first-name' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='last-name'> Surname / Family name </label> <input class='govuk-input' id='last-name' name='last-name' type='text'> </div></div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='email-address'> Email address </label> <input class='govuk-input' id='email-address' name='email-address' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='email-address'> Re-type email address </label> <input class='govuk-input' id='email-address' name='email-address' type='text'> </div></div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='telephone-number'> Telephone number </label> <input class='govuk-input' id='telephone-number' name='telephone-number' type='tel' autocomplete='tel'> </div><h3 class='govuk-heading-m govuk-!-padding-top-6' style='margin-bottom:10px; margin-top:20px;'> Your enquiry </h3> <p><b>Please choose a department and category that best suits your enquiry</b></p><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold form-label-bold' for='sort'> Department </label> <select class='govuk-select' id='sort' name='sort'> <option value='select' selected>*Select a department</option> <option value='1'>General Inquiry</option> <option value='2'>Feedback</option> <option value='15'>Applications</option> <option value='3'>Find a property</option> <option value='4'>Price paid error for property</option> <option value='5'>Appointment</option> <option value='6'>Commercial services</option> <option value='7'>Event</option> <option value='8'>Large scale operation</option> <option value='9'>Local land charges</option> <option value='10'>Webinar</option> <option value='11'>Managed services</option> <option value='12'>Search land property</option> <option value='13'>Business eServices</option> <option value='14'>Contact update</option> </select> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold form-label-bold' for='sort'> Category (optional) </label> <select class='govuk-select' id='sort2' name='sort2'> <option value='select' selected>*Select a category</option> <option value='1'>Category 1</option> <option value='2'>Category 2</option> <option value='3'>Category 3</option> <option value='4'>Category 4</option> <option value='5'>Category 5</option> </select> </div></div><div> <div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='first-name'> Title number (optional) </label> <input class='govuk-input' id='first-name' name='first-name' type='text'> </div><div class='govuk-form-group sidebyside'> <label class='govuk-label form-label-bold' for='last-name'> HM Land Registry Reference (optional) </label> <input class='govuk-input' id='last-name' name='last-name' type='text'> </div></div><div class='' style='margin-right:30px;'> <label class='govuk-label form-label-bold' for='more-detail'> How can we help you? </label> <textarea class='govuk-textarea' id='more-detail' name='more-detail' rows='5' aria-describedby='more-detail-hint'></textarea> </div><div class='govuk-form-group'> <label class='govuk-label form-label-bold' for='file-upload-1'> Upload a file (optional) </label> <input class='govuk-file-upload' id='file-upload-1' name='file-upload-1' type='file'> </div></fieldset></div> <a class='govuk-button' href='search-prototype10B.html'>Submit</a>",
      "section_downloads":"no",
      "image_downloads":null,
      "text_downloads":null,
@@ -377,7 +377,7 @@
      "section_helpful":"yes"
   },
   {
-     "words":"Update registered owners' contact address (COG1)",
+     "words":"Change postcode",
      "subject":"Applications",
      "tag_definition":"no",
      "section_questionanswer":"yes",
@@ -1084,14 +1084,39 @@
    "tag_definition":"no",
    "section_questionanswer":"yes",
    "question":"How can I check the progress of my current applications to HM Land Registry?",
-   "answer":"Business e-services customers can <a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'>check their current applications</a> to HM Land Registry through the portal.",
+   "answer":"<div class='govuk-heading-m cardsubtitlesMedium' style='margin-top:30px;'>Members of the public</div>We recommend that you conatct your solicitors to check the status of your application. There may be a delay with your application due to the Covid-19 pandemic.<br><br>If you have already tried this, please search for <b>'Contact HM Land Registry online'</b> and complete the online form, selecting the <b>'Applications'</b> department from the dropdown menu.",
    "section_downloads":"no",
    "image_downloads":null,
    "text_downloads":null,
 
    "section_informationOne":"yes",
-   "title_informationOne":"Submit an application search",
-   "text_informationOne":"<a target='_blank'  href='https://eservices.landregistry.gov.uk/eservices/ECHOM_HomepageServices?utm_medium=GOV.UK&utm_source=website&utm_campaign=reply-to-requisition&utm_term=portalguide&utm_content=login-to-portal'>Login to portal</a><ol><li>Enter an HM Land Registry reference or Title Number. Use<ul><li>an HM Land Registry reference to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-details'>Application Details</a>’</li><li>a Title Number to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-list'>Application list</a>’</li></ul></li><li>Select ‘Submit’.</li><li>To view the current average completion times, select the link on the right-hand side.</li><li>To view information about our services, including application quality and speed of service, select the Service Standards data link on the right-hand side.</li></ol><p>Repeat as necessary and once all the required documents have been attached, press submit.</p><img style='margin:30px 0px 0px 0px;width: 100%;' src='/public/images/SearchScreen.png'>",
+   "title_informationOne":"Business customers",
+   "text_informationOne":"Business e-services customers can <a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'>check their current applications</a> to HM Land Registry through the portal.<div class='govuk-heading-m cardsubtitlesMedium' style='margin-top:30px;'>Submit an application search</div><a target='_blank'  href='https://eservices.landregistry.gov.uk/eservices/ECHOM_HomepageServices?utm_medium=GOV.UK&utm_source=website&utm_campaign=reply-to-requisition&utm_term=portalguide&utm_content=login-to-portal'>Login to portal</a><ol><li>Enter an HM Land Registry reference or Title Number. Use<ul><li>an HM Land Registry reference to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-details'>Application Details</a>’</li><li>a Title Number to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-list'>Application list</a>’</li></ul></li><li>Select ‘Submit’.</li><li>To view the current average completion times, select the link on the right-hand side.</li><li>To view information about our services, including application quality and speed of service, select the Service Standards data link on the right-hand side.</li></ol><p>Repeat as necessary and once all the required documents have been attached, press submit.</p><img style='margin:30px 0px 0px 0px;width: 100%;' src='/public/images/SearchScreen.png'>",
+   
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":"",
+   "text_informationThree":"",
+   
+   "section_helpful":"yes"
+},
+{
+   "words":"New house/home application progress",
+   "subject":"Applications",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"What is the progress of my application?",
+   "answer":"<div class='govuk-heading-m cardsubtitlesMedium' style='margin-top:30px;'>Members of the public</div>We recommend that you conatct your solicitors to check the status of your application. There may be a delay with your application due to the Covid-19 pandemic.<br><br>If you have already tried this, please search for <b>'Contact HM Land Registry online'</b> and complete the online form, selecting the <b>'Applications'</b> department from the dropdown menu.",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"yes",
+   "title_informationOne":"Business customers",
+   "text_informationOne":"Business e-services customers can <a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'>check their current applications</a> to HM Land Registry through the portal.<div class='govuk-heading-m cardsubtitlesMedium' style='margin-top:30px;'>Submit an application search</div><a target='_blank'  href='https://eservices.landregistry.gov.uk/eservices/ECHOM_HomepageServices?utm_medium=GOV.UK&utm_source=website&utm_campaign=reply-to-requisition&utm_term=portalguide&utm_content=login-to-portal'>Login to portal</a><ol><li>Enter an HM Land Registry reference or Title Number. Use<ul><li>an HM Land Registry reference to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-details'>Application Details</a>’</li><li>a Title Number to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-list'>Application list</a>’</li></ul></li><li>Select ‘Submit’.</li><li>To view the current average completion times, select the link on the right-hand side.</li><li>To view information about our services, including application quality and speed of service, select the Service Standards data link on the right-hand side.</li></ol><p>Repeat as necessary and once all the required documents have been attached, press submit.</p><img style='margin:30px 0px 0px 0px;width: 100%;' src='/public/images/SearchScreen.png'>",
    
    "section_informationTwo":"no",
    "title_informationTwo":null,
@@ -1279,7 +1304,33 @@
    "section_helpful":"yes"
 },
 {
-   "words":"",
+   "words":"A family member has passed away",
+   "subject":"Applications",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"You may need to transfer ownership of your property",
+   "answer":"You must tell HM Land Registry when you change the registered owner of your property, for example if you’re transferring it into another person’s name, or if you want to add your partner as a joint owner <ol><li><p>Download and fill in <a href='https://www.gov.uk/government/publications/change-the-register-ap1'>an application to change the register</a>.</p></li><li><p>Fill in either a <a href='https://www.gov.uk/government/publications/registered-titles-whole-transfer-tr1'>‘transfer of whole of registered title’ form</a>, if you’re transferring your whole property, or a <a href='https://www.gov.uk/government/publications/registered-titles-part-transfer-tp1'>‘transfer of part of registered title’ form</a> if you’re only transferring part of your property.</p></li><li><p>Fill in a <a href='https://www.gov.uk/government/publications/verify-identity-citizen-id1'>certificate of identity for a private individual</a>.</p></li><li><p>Find out the correct fee. <a href='https://www.gov.uk/guidance/hm-land-registry-registration-services-fees#scale-2-fees'>Use the ‘Scale 2 fees’</a> if you’re transferring ownership of a property without selling it, for example as inheritance. <a rel='external' href='http://landregistry.data.gov.uk/fees-calculator.html'>Use the Land Registry fee calculator</a> if you’re transferring part or all of a property as a sale.</p></li><li><p>Send your documents, forms and fee to <a href='https://www.gov.uk/guidance/land-registry-address-for-applications'>HM Land Registry</a>.</p></li></ol>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+   
+   "section_helpful":"yes"
+},
+
+{
+   "words":"Update property ownership",
    "subject":"Applications",
    "tag_definition":"no",
    "section_questionanswer":"yes",
@@ -1302,8 +1353,33 @@
    "text_informationThree":null,
    
    "section_helpful":"yes"
+},
+{
+   "words":"New postcode change",
+   "subject":"Applications",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"How to change a postcode",
+   "answer":"<p>There are two ways availble to update your postcode or the postcode of another property.</p> <ol><li><b>Online:</b>  <a target='_blank'  href='#'>Update postcode</a></li><li><b>By post:</b> Fill in the <b>Updating registered owners' contact address</b> form below and send it to us, using the addresses provided</li></ol>",
+   "section_downloads":"yes",
+   "image_downloads":null,
+   "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816500/COG1__2019-06-24_.doc'>Updating registered owners' contact address</a><span class='downloadSize'>MS Word, 106KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/809992/COG1__2019-06-24_.pdf'>Updating registered owners' contact address</a><span class='downloadSize'>PDF, 451KB, 7 pages</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/810775/Help_protect_yourself_from_property_fraud__English___June_2019_.pdf'>Guidance: help protect yourself from property fraud</a><span class='downloadSize'>PDF, 802KB, 11 pages</span></div>",
+  
+   
+   "section_informationOne":"yes",
+   "title_informationOne":"Addresses",
+   "text_informationOne":"<details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> Address for members of the public </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry Citizen Centre<br>PO Box 74<br>Gloucester<br>GL14 9BB</p></div></details><details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> Royal Mail address for business customers </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry<br>(Insert the name of your closest office)<br>PO Box 75<br>Gloucester<br>GL14 9BD</p></div></details><details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> DX address for business customers </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry<br>(Insert the name of your closest office)<br>DX 321601<br>Gloucester 33</p><p><span class='govuk-heading-m cardsubtitles'>Offices</span></p><p>Birkenhead<br>Coventry<br>Croydon<br>Durham<br>Gloucester<br>Hull<br>Fylde<br>Leicester<br>Nottingham<br>Peterborough<br>Plymouth<br>Swansea<br>Telford<br>Weymouth</p></div></details>",
+
+   "section_informationTwo":"yes",
+   "title_informationTwo":"Further information",
+   "text_informationTwo":"<p>Use this form to ensure that the contact details we hold for you are up to date. This is important if your property is registered. You, the applicant must be one of the registered owners of the property whose address is being updated or act for them.</p><p>When we receive an application regarding your property, we may write to you about it. If your details are not up to date, you may not receive our letter or email.</p><p>You can provide us with three different addresses, including an email address and an address abroad. Download and complete this form to add an address or update your existing contact details. There is no charge for this service.</p><p>This form is only applicable to update the address of the registered owner(s).</p>",
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+
 }
-
-
 
   ]
