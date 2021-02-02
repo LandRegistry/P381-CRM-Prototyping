@@ -1277,6 +1277,31 @@
    "text_informationThree":"",
    
    "section_helpful":"yes"
+},
+{
+   "words":"",
+   "subject":"Applications",
+   "tag_definition":"no",
+   "section_questionanswer":"yes",
+   "question":"Transfer ownership of your property",
+   "answer":"You must tell HM Land Registry when you change the registered owner of your property, for example if you’re transferring it into another person’s name, or if you want to add your partner as a joint owner <ol><li><p>Download and fill in <a href='/government/publications/change-the-register-ap1'>an application to change the register</a>.</p></li><li><p>Fill in either a <a href='/government/publications/registered-titles-whole-transfer-tr1'>‘transfer of whole of registered title’ form</a>, if you’re transferring your whole property, or a <a href='/government/publications/registered-titles-part-transfer-tp1'>‘transfer of part of registered title’ form</a> if you’re only transferring part of your property.</p></li><li><p>Fill in a <a href='/government/publications/verify-identity-citizen-id1'>certificate of identity for a private individual</a>.</p></li><li><p>Find out the correct fee. <a href='/guidance/hm-land-registry-registration-services-fees#scale-2-fees'>Use the ‘Scale 2 fees’</a> if you’re transferring ownership of a property without selling it, for example as inheritance. <a rel='external' href='http://landregistry.data.gov.uk/fees-calculator.html'>Use the Land Registry fee calculator</a> if you’re transferring part or all of a property as a sale.</p></li><li><p>Send your documents, forms and fee to <a href='/guidance/land-registry-address-for-applications'>HM Land Registry</a>.</p></li></ol>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+   
+   "section_helpful":"yes"
 }
 
 
