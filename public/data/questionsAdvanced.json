@@ -1,6 +1,6 @@
 [
     {
-       "words":"demo",
+       "words":"",
        "subject":"Applications",
        "tag_definition":"no",
        "section_questionanswer":"yes",
@@ -25,6 +25,31 @@
        "section_helpful":"yes"
 
     },
+    {
+      "words":"Death",
+      "subject":"Applications",
+      "tag_definition":"no",
+      "section_questionanswer":"yes",
+      "question":"Update property records when someone dies",
+      "answer":"How you update the property records when someone dies depends on whether they were the joint or sole owner of a property.<br><br>Check the property records if you don’t know:<ul><li>who owns a property</li><li>whether it’s owned jointly or solely</li></ul>",
+      "section_downloads":"no",
+      "image_downloads":null,
+      "text_downloads":null,
+   
+      "section_informationOne":"yes",
+      "title_informationOne":"When a joint owner dies",
+      "text_informationOne":"When a joint owner of a property dies, fill in <a target='_blank'  href='https://www.gov.uk/government/publications/deceased-joint-proprietor-djp' target='_blank'>form DJP</a> to remove their name from the register.<br><br>Send the completed form to <a target='_blank'  href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses' target='_blank'>HM Land Registry</a>, along with an official copy of the death certificate.",
+   
+      "section_informationTwo":"yes",
+      "title_informationTwo":"When a sole owner dies",
+      "text_informationTwo":"When the sole owner of a property has died, the property is normally transferred to either:<ul><li>the person inheriting the property (known as ‘the beneficiary’)</li><li>a third party, for example someone buying the property</li></ul>",
+   
+      "section_informationThree":"no",
+      "title_informationThree":null,
+      "text_informationThree":null,
+      
+      "section_helpful":"yes"
+   },
     {
        "words":"",
        "subject":"Applications",
@@ -1381,5 +1406,4 @@
    "section_helpful":"yes"
 
 }
-
   ]
