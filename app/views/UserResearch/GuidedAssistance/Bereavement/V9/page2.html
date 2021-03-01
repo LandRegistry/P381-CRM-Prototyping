@@ -1,0 +1,1036 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">How to update property records when someone has died</h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+      <form class="form" action="" method="post">
+         <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+               <div>
+                  <h3 class="govuk-heading-m">Is the land or property of the person who died registered with HM Land Registry?
+                  </h3>
+               </div>
+               <div class="govuk-radios" id="myRadioGroup">
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" type="radio" name="question1" value="A" id="Q1A">
+                     <label class="govuk-label govuk-radios__label" for="Q1A">
+                     Yes
+                     </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" type="radio" name="question1" value="B" id="Q1B">
+                     <label class="govuk-label govuk-radios__label" for="Q1B">
+                     No
+                     </label>
+                  </div>
+               </div>
+            </fieldset>
+         </div>
+      </form>
+   </div>
+</div>
+<div class="govuk-grid-row desc" id="question1A">
+   <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <hr style="margin-bottom:25px;">
+      <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+        Do you want to transfer/assent or sell the land or property of the person who died?
+      </h3>
+      <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;max-width: 95%;">
+         An Assent of land or property is the transfer of the legal ownership from the Estate of someone who has died, into the name of the new owner.
+       </div>
+      <div class="govuk-radios" id="myRadioGroup2">
+         <div class="govuk-radios__item">
+            <input class="govuk-radios__input" type="radio" name="question2" value="A" id="Q2A">
+            <label class="govuk-label govuk-radios__label" for="Q2A">
+            Yes
+            </label>
+         </div>
+         <div class="govuk-radios__item">
+            <input class="govuk-radios__input" type="radio" name="question2" value="B" id="Q2B">
+            <label class="govuk-label govuk-radios__label" for="Q2B">
+            No
+            </label>
+         </div>
+         <div class="govuk-grid-row desc2" id="question2A">
+            <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+               <hr style="margin-bottom:25px;">
+               <h3 class="govuk-heading-m">
+                Was the person who died a joint owner of the land or property?
+               </h3>
+               <!-- <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;max-width:94%;">
+                  You can own a property as either <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.gov.uk%2Fjoint-property-ownership%2C" target="_self">joint tenants or tenants in common</a>. The type of ownership affects what you can do with the property if one owner dies. 
+                </div> -->
+               <div class="govuk-radios" id="myRadioGroup3">
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" type="radio" name="question3" value="A" id="Q3A">
+                     <label class="govuk-label govuk-radios__label" for="Q3A">
+                     Yes
+                     </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" type="radio" name="question3" value="B" id="Q3B">
+                     <label class="govuk-label govuk-radios__label" for="Q3B">
+                     No
+                     </label>
+                  </div>
+                  <div class="govuk-grid-row desc3" id="question3A">
+                     <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                        <hr style="margin-bottom:25px;">
+                        <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                            Is the transfer to a beneficiary of the person who died?
+                        </h3>
+                        <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;">
+                           A beneficiary is a person who is set to inherit  from the property of someone who has died.
+                         </div>
+                        <div class="govuk-radios" id="myRadioGroup3">
+                           <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" type="radio" name="question4" value="A" id="Q4A">
+                              <label class="govuk-label govuk-radios__label" for="Q4A">
+                              Yes
+                              </label>
+                           </div>
+                           <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" type="radio" name="question4" value="B" id="Q4B">
+                              <label class="govuk-label govuk-radios__label" for="Q4B">
+                              No
+                              </label>
+                           </div>
+                           <div class="govuk-grid-row desc4" id="question4A">
+                              <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                 <hr class="govuk-!-margin-bottom-8">
+                                 <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_self">transfer land or property to the surviving owner and a beneficiary</a>
+                                  </div>
+
+                                     <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                      We recommend this action because:
+                            </h3>
+                            <ul class='govuk-body'>
+                                <li>the land or property of the person who died is registered with us</li>
+                                <li>you want to transfer/assent or sell the land or property of the person who died</li>
+                                <li>the person who died was a joint owner of the land or property</li>
+                                <li>the transfer is to a beneficiary of the person who died</li>
+                            </ul>
+
+                            <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                If you require further information:
+                            </h3>
+                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                Contact us
+                              </button> -->
+
+                              </div>
+                           </div>
+                           <div class="govuk-grid-row desc4" id="question4B">
+                              <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                 <hr class="govuk-!-margin-bottom-8">
+                                 <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/132" target="_self">transfer property ownership to a third party</a>
+                                  </div>
+                                     <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                      We recommend this action because:
+                            </h3>
+                            <ul class='govuk-body'>
+                                <li>the transfer is not to a beneficiary of the person who died</li>
+                                <li>you want to transfer/assent or sell the land or property of the person who died</li>
+                                <li>the person who died was a joint owner of the land or property</li>
+                                <li>the land or property of the person who died is registered with us</li>
+                            </ul>
+<!-- 
+                            <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                If you require further information:
+                            </h3>
+                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                Contact us
+                              </button> -->
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="govuk-grid-row desc3" id="question3B">
+                     <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                        <hr style="margin-bottom:25px;">
+                        <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                            Is the transfer to a beneficiary of the person who died?
+                        </h3>
+                        <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;">
+                           A beneficiary is a person who is set to inherit  from the property of someone who has died.
+                         </div>
+                        <div class="govuk-radios" id="myRadioGroup5">
+                           <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" type="radio" name="question5" value="A" id="Q5A">
+                              <label class="govuk-label govuk-radios__label" for="Q5A">
+                              Yes
+                              </label>
+                           </div>
+                           <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" type="radio" name="question5" value="B" id="Q5B">
+                              <label class="govuk-label govuk-radios__label" for="Q5B">
+                              No
+                              </label>
+                           </div>
+                           <div class="govuk-grid-row desc5" id="question5A">
+                              <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                 <hr class="govuk-!-margin-bottom-8">
+                                 <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_self">transfer property to the beneficiary after the sole owner has died</a>
+                                  </div>
+                            
+                                     <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                      We recommend this action because:
+                            </h3>
+                            <ul class='govuk-body'>
+                                <li>the person who died was not a joint owner of the land or property</li>
+                                <li>the transfer is to a beneficiary of the person who died</li>
+                                <li>the land or property of the person who died is registered with us</li>
+                                <li>you want to transfer/assent or sell the land or property of the person who died</li>
+                            </ul>
+                            
+                            <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                If you require further information:
+                            </h3>
+                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                Contact us
+                              </button> -->
+
+                            </div>
+                              </div>
+                           </div>
+                           <div class="govuk-grid-row desc5" id="question5B">
+                              <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                 <hr class="govuk-!-margin-bottom-8">
+                                 <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_self">transfer property to a third party after the death of a sole owner</a>
+                                  </div>
+                               
+                                     <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                      We recommend this action because:
+                            </h3>
+                            <ul class='govuk-body'>
+                                <li>The person who died was not a joint owner of the land or property.</li>
+                                <li>The transfer is not to a beneficiary of the person who died.</li>
+                                <li>The land or property of the person who died is registered with us.</li>
+                                <li>You want to transfer/assent or sell the land or property of the person who died.</li>
+                            </ul>
+                            
+                            <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                If you require further information:
+                            </h3>
+                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                Contact us
+                              </button> -->
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="govuk-grid-row desc2" id="question2B">
+            <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+               <hr style="margin-bottom:25px;">
+               <h3 class="govuk-heading-m">
+                  Was the person who died a joint owner of the land or property?
+                 </h3>
+                 <!-- <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;max-width:94%;">
+                    You can own a property as either <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.gov.uk%2Fjoint-property-ownership%2C" target="_self">joint tenants or tenants in common</a>. The type of ownership affects what you can do with the property if one owner dies. 
+                  </div> -->
+               <div class="govuk-radios" id="myRadioGroup6">
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" type="radio" name="question6" value="A" id="Q6A">
+                     <label class="govuk-label govuk-radios__label" for="Q6A">
+                     Yes
+                     </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" type="radio" name="question6" value="B" id="Q6B">
+                     <label class="govuk-label govuk-radios__label" for="Q6B">
+                     No
+                     </label>
+                  </div>
+                  <div class="govuk-grid-row desc6" id="question6A">
+                     <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                        <hr class="govuk-!-margin-bottom-8">
+                        <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/29" target="_self">remove a joint owner who has died from the property record</a>
+                         </div>
+                   
+                            <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                             We recommend this action because:
+                   </h3>
+                   
+                   <ul class='govuk-body'>
+                       <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                       <li>the person who died was a joint owner of the land or property</li>
+                       <li>the land or property of the person who died is registered with us</li>
+                   </ul>
+                    
+                    <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                        If you require further information:
+                    </h3>
+                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                        Contact us
+                      </button> -->
+
+                     </div>
+                  </div>
+                  <div class="govuk-grid-row desc6" id="question6B">
+                     <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                        <hr style="margin-bottom:25px;">
+                                <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                                    Are you the personal representative of the person who died?
+                               </h3>
+                               <div class="govuk-radios" id="myRadioGroup7">
+                                  <div class="govuk-radios__item">
+                                     <input class="govuk-radios__input" type="radio" name="question7" value="A" id="Q7A">
+                                     <label class="govuk-label govuk-radios__label" for="Q7A">
+                                     Yes
+                                     </label>
+                                  </div>
+                                  <div class="govuk-radios__item">
+                                     <input class="govuk-radios__input" type="radio" name="question7" value="B" id="Q7B">
+                                     <label class="govuk-label govuk-radios__label" for="Q7B">
+                                     No
+                                     </label>
+                                  </div>
+                                  <div class="govuk-grid-row desc7" id="question7A">
+                                     <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                        <hr class="govuk-!-margin-bottom-8">
+                                        <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/24" target="_self">register yourself as the personal representative after the death of a sole property owner</a>
+                                        </div>
+                                          
+                                  
+                                           <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                            We recommend this action because:
+                                  </h3>
+                                  <ul class='govuk-body'>
+                                      <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                      <li>the person who died was not a joint owner of the land or property</li>
+                                      <li>the land or property of the person who died is registered with us</li>
+                                      <li>tou are the personal representative of the person who died</li>
+                                  </ul>
+                                    
+                            <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                If you require further information:
+                            </h3>
+                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                Contact us
+                              </button> -->
+
+                                     </div>
+                                  </div>
+                                  <div class="govuk-grid-row desc7" id="question7B">
+                                     <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                        <hr  class="govuk-!-margin-bottom-8">
+                                        <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/26" target="_self">report the death of a sole property owner</a>
+                                        </div>
+                                  
+                                           <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                            We recommend this action because:
+                                  </h3>
+                                  <ul class='govuk-body'>
+                                      <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                      <li>the person who died was not a joint owner of the land or property</li>
+                                      <li>you are not the personal representative of the person who died</li>
+                                      <li>the land or property of the person who died is registered with us</li>
+                                  </ul>
+
+                                    <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                        If you require further information:
+                                    </h3>
+                                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                        Contact us
+                                      </button> -->
+        
+                                     </div>
+                                  </div>
+                               </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="govuk-grid-row desc" id="question1B">
+      <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+         <hr style="margin-bottom:25px;">
+         <h3 class="govuk-heading-m">
+            Was the person who died a joint owner of the land or property?
+           </h3>
+           <!-- <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;">
+              You can own a property as either <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.gov.uk%2Fjoint-property-ownership%2C" target="_self">joint tenants or tenants in common</a>. The type of ownership affects what you can do with the property if one owner dies. 
+            </div> -->
+         <div class="govuk-radios" id="myRadioGroup2">
+            <div class="govuk-radios__item">
+               <input class="govuk-radios__input" type="radio" name="question8" value="A" id="Q8A">
+               <label class="govuk-label govuk-radios__label" for="Q8A">
+               Yes
+               </label>
+            </div>
+            <div class="govuk-radios__item">
+               <input class="govuk-radios__input" type="radio" name="question8" value="B" id="Q8B">
+               <label class="govuk-label govuk-radios__label" for="Q2B">
+               No
+               </label>
+            </div>
+            <div class="govuk-grid-row desc8" id="question8A">
+               <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                  <hr style="margin-bottom:25px;">
+                  <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                     Is the transfer to a beneficiary of the person who died?
+                 </h3>
+                 <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;">
+                    A beneficiary is a person who is set to inherit  from the property of someone who has died.
+                  </div>
+                  <div class="govuk-radios" id="myRadioGroup9">
+                     <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" type="radio" name="question9" value="A" id="Q9A">
+                        <label class="govuk-label govuk-radios__label" for="Q9A">
+                        Yes
+                        </label>
+                     </div>
+                     <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" type="radio" name="question9" value="B" id="Q9B">
+                        <label class="govuk-label govuk-radios__label" for="Q9B">
+                        No
+                        </label>
+                     </div>
+                     <div class="govuk-grid-row desc9" id="question9A">
+                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                           <hr style="margin-bottom:25px;">
+                           <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                              Does the surviving owner want to transfer the land or property?
+                           </h3>
+                           <div class="govuk-radios" id="myRadioGroup10">
+                              <div class="govuk-radios__item">
+                                 <input class="govuk-radios__input" type="radio" name="question10" value="A" id="Q10A">
+                                 <label class="govuk-label govuk-radios__label" for="Q10A">
+                                 Yes
+                                 </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                 <input class="govuk-radios__input" type="radio" name="question10" value="B" id="Q10B">
+                                 <label class="govuk-label govuk-radios__label" for="Q10B">
+                                 No
+                                 </label>
+                              </div>
+                              <div class="govuk-grid-row desc10" id="question10A">
+                                 <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                    <hr class="govuk-!-margin-bottom-8">
+                                    <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/154" target="_self">transfer unregistered land or property to the surviving owner and a beneficiary</a>
+                                     </div>
+                               
+                                        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                         We recommend this action because:
+                               </h3>
+                               <ul class='govuk-body'>
+                                   <li>the land or property of the person who died is not registered with us</li>
+                                   <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                   <li>the transfer is to a beneficiary of the person who died</li>
+                                   <li>the person who died was a joint owner of the land or property</li>
+                                   <li>the surviving owner wants to transfer the land or property</li>
+                               </ul>
+   
+                               <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                   If you require further information:
+                               </h3>
+                               <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                   Contact us
+                                 </button> -->
+   
+                                 </div>
+                              </div>
+                              <div class="govuk-grid-row desc10" id="question10B">
+                                 <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                    <hr class="govuk-!-margin-bottom-8">
+                                    <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;"  href="https://help.landregistry.gov.uk/app/answers/detail/a_id/31" target="_self">report the death of a joint owner of unregistered land or property</a>
+                                     </div>
+                                      
+                               
+                                        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                         We recommend this action because:
+                               </h3>
+                               <ul class='govuk-body'>
+                                   <li>the land or property of the person who died is not registered with us</li>
+                                   <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                   <li>the transfer is to a beneficiary of the person who died</li>
+                                   <li>the person who died was a joint owner of the land or property</li>
+                                   <li>the surviving owner does not want to transfer the land or property</li>
+                               </ul>
+   
+                               <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                   If you require further information:
+                               </h3>
+                               <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                   Contact us
+                                 </button> -->
+   
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="govuk-grid-row desc9" id="question9B">
+                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                           <hr style="margin-bottom:25px;">
+                           <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                              Does the surviving owner want to transfer the land or property?
+                           </h3>
+                           <div class="govuk-radios" id="myRadioGroup11">
+                              <div class="govuk-radios__item">
+                                 <input class="govuk-radios__input" type="radio" name="question11" value="A" id="Q11A">
+                                 <label class="govuk-label govuk-radios__label" for="Q11A">
+                                 Yes
+                                 </label>
+                              </div>
+                              <div class="govuk-radios__item">
+                                 <input class="govuk-radios__input" type="radio" name="question11" value="B" id="Q11B">
+                                 <label class="govuk-label govuk-radios__label" for="Q11B">
+                                 No
+                                 </label>
+                              </div>
+                              <div class="govuk-grid-row desc11" id="question11A">
+                                 <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                    <hr class="govuk-!-margin-bottom-8">
+                                    <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/204" target="_self">transfer unregistered land or property to the surviving owner and a third party</a>
+                                     </div>
+                               
+                                        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                         We recommend this action because:
+                               </h3>
+                               <ul class='govuk-body'>
+                                   <li>the land or property of the person who died is not registered with us</li>
+                                   <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                   <li>the transfer is not to a beneficiary of the person who died</li>
+                                   <li>the person who died was a joint owner of the land or property</li>
+                                   <li>the surviving owner wants to transfer the land or property</li>
+                               </ul>
+                               
+                               <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                   If you require further information:
+                               </h3>
+                               <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                   Contact us
+                                 </button> -->
+   
+                               </div>
+                                 </div>
+                              </div>
+                              <div class="govuk-grid-row desc11" id="question11B">
+                                 <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                    <hr class="govuk-!-margin-bottom-8">
+                                    <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/31" target="_self">report the death of a joint owner of unregistered land or property</a>
+                                     </div>
+                               
+                                        <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                         We recommend this action because:
+                               </h3>
+                               <ul class='govuk-body'>
+                                   <li>the land or property of the person who died is not registered with us</li>
+                                   <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                   <li>the transfer is not to a beneficiary of the person who died</li>
+                                   <li>the person who died was a joint owner of the land or property</li>
+                                   <li>the surviving owner does not want to transfer the land or property</li>
+                               </ul>
+                               
+                               <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                   If you require further information:
+                               </h3>
+                               <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                   Contact us
+                                 </button> -->
+   
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="govuk-grid-row desc8" id="question8B">
+               <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                  <hr style="margin-bottom:25px;">
+                  <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                     Is the transfer to a beneficiary of the person who died?
+                 </h3>
+                 <div id="changed-name-hint" class="govuk-hint" style="margin-top: -10px; margin-bottom: 25px;">
+                    A beneficiary is a person who is set to inherit  from the property of someone who has died.
+                  </div>
+                  <div class="govuk-radios" id="myRadioGroup12">
+                     <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" type="radio" name="question12" value="A" id="Q12A">
+                        <label class="govuk-label govuk-radios__label" for="Q12A">
+                        Yes
+                        </label>
+                     </div>
+                     <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" type="radio" name="question12" value="B" id="Q12B">
+                        <label class="govuk-label govuk-radios__label" for="Q12B">
+                        No
+                        </label>
+                     </div>
+
+
+                     <div class="govuk-grid-row desc12" id="question12A">
+                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                           <hr style="margin-bottom:25px;">
+                                   <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                                    Do you want to transfer the land or property?
+                                  </h3>
+                                  <div class="govuk-radios" id="myRadioGroup13">
+                                     <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" type="radio" name="question13" value="A" id="Q13A">
+                                        <label class="govuk-label govuk-radios__label" for="Q13A">
+                                        Yes
+                                        </label>
+                                     </div>
+                                     <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" type="radio" name="question13" value="B" id="Q13B">
+                                        <label class="govuk-label govuk-radios__label" for="Q13B">
+                                        No
+                                        </label>
+                                     </div>
+                                     <div class="govuk-grid-row desc13" id="question13A">
+                                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                           <hr class="govuk-!-margin-bottom-8">
+                                           <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/33" target="_self">transfer unregistered land or property to the beneficiary after the death of a sole owner</a>
+                                           </div>
+                                     
+                                              <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                               We recommend this action because:
+                                     </h3>
+                                     <ul class='govuk-body'>
+                                         <li>the land or property of the person who died is not registered with us</li>
+                                         <li>the person who died was not a joint owner of the land or property</li>
+                                         <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                         <li>the transfer is to a beneficiary of the person who died</li>
+                                         <li>you want to transfer the land or property</li>
+                                     </ul>
+                                       
+                               <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                   If you require further information:
+                               </h3>
+                               <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                   Contact us
+                                 </button> -->
+   
+                                        </div>
+                                     </div>
+                                     <div class="govuk-grid-row desc13" id="question13B">
+                                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                           <hr  class="govuk-!-margin-bottom-8">
+                                           <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/32" target="_self">register a property after the sole owner has died and register yourself as a personal representative</a>.
+                                           </div>
+                                     
+                                           <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                               We recommend this action because:
+                                     </h3>
+                                     <ul class='govuk-body'>
+                                         <li>the land or property of the person who died is not registered with us</li>
+                                         <li>the person who died was not a joint owner of the land or property</li>
+                                         <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                         <li>the transfer is to a beneficiary of the person who died</li>
+                                         <li>you do not want to transfer the land or property</li>
+                                     </ul>
+   
+                                       <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                           If you require further information:
+                                       </h3>
+                                       <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                           Contact us
+                                         </button> -->
+           
+                                        </div>
+                                     </div>
+                                  </div>
+                        </div>
+                     </div>
+
+
+                     <div class="govuk-grid-row desc12" id="question12B">
+                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                           <hr style="margin-bottom:25px;">
+                                   <h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                                       Are you the personal representative of the person who died?
+                                  </h3>
+                                  <div class="govuk-radios" id="myRadioGroup14">
+                                     <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" type="radio" name="question14" value="A" id="Q14A">
+                                        <label class="govuk-label govuk-radios__label" for="Q14A">
+                                        Yes
+                                        </label>
+                                     </div>
+                                     <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" type="radio" name="question14" value="B" id="Q14B">
+                                        <label class="govuk-label govuk-radios__label" for="Q14B">
+                                        No
+                                        </label>
+                                     </div>
+                                     <div class="govuk-grid-row desc14" id="question14A">
+                                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                           <hr class="govuk-!-margin-bottom-8">
+                                           <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/34" target="_self">transfer unregistered land or property to a third party after the death of a sole owner</a>
+                                           </div>
+                                     
+                                              <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                               We recommend this action because:
+                                     </h3>
+                                     <ul class='govuk-body'>
+                                         <li>the land or property of the person who died is not registered with us</li>
+                                         <li>the person who died was not a joint owner of the land or property</li>
+                                         <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                         <li>the transfer is not to a beneficiary of the person who died</li>
+                                         <li>you want to transfer the land or propert.</li>
+                                     </ul>
+                                       
+                               <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                   If you require further information:
+                               </h3>
+                               <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                   Contact us
+                                 </button> -->
+   
+                                        </div>
+                                     </div>
+                                     <div class="govuk-grid-row desc14" id="question14B">
+                                        <div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+                                           <hr  class="govuk-!-margin-bottom-8">
+                                           <div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                 background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                 padding: 40px 20px;text-align: center;">
+                                 <h1 style="margin-bottom: 5px;font-size: 45px;">
+                                    We recommend that you visit
+                                 </h1>
+
+                                    <a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/32" target="_self">register a property after the sole owner has died and register yourself as a personal representative</a>
+                                           </div>
+                                     
+                                              <h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                               We recommend this action because:
+                                     </h3>
+                                     <ul class='govuk-body'>
+                                         <li>the land or property of the person who died is not registered with us</li>
+                                         <li>the person who died was not a joint owner of the land or property</li>
+                                         <li>you do not want to transfer/assent or sell the land or property of the person who died</li>
+                                         <li>the transfer is not to a beneficiary of the person who died</li>
+                                         <li>you do not want to transfer the land or property</li>
+                                     </ul>
+   
+                                       <!-- <h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                           If you require further information:
+                                       </h3>
+                                       <button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">
+                                           Contact us
+                                         </button> -->
+           
+                                        </div>
+                                     </div>
+                                  </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+</div>
+
+<script>
+   $(document).ready(function() {
+       $("input[name$='question1']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc").hide();
+           $("#question1" + test).show();
+       });
+   });
+   
+   $(document).ready(function() {
+       $("input[name$='question2']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc2").hide();
+           $("#question2" + test).show();
+       });
+   });
+   
+   $(document).ready(function() {
+       $("input[name$='question3']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc3").hide();
+           $("#question3" + test).show();
+       });
+   });
+   
+   $(document).ready(function() {
+       $("input[name$='question4']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc4").hide();
+           $("#question4" + test).show();
+       });
+   });
+   
+   $(document).ready(function() {
+       $("input[name$='question5']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc5").hide();
+           $("#question5" + test).show();
+       });
+   });
+   
+   $(document).ready(function() {
+       $("input[name$='question6']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc6").hide();
+           $("#question6" + test).show();
+       });
+   });
+
+   $(document).ready(function() {
+       $("input[name$='question7']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc7").hide();
+           $("#question7" + test).show();
+       });
+   });
+
+   
+   $(document).ready(function() {
+       $("input[name$='question8']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc8").hide();
+           $("#question8" + test).show();
+       });
+   });
+
+   
+   $(document).ready(function() {
+       $("input[name$='question9']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc9").hide();
+           $("#question9" + test).show();
+       });
+   });
+
+   $(document).ready(function() {
+       $("input[name$='question10']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc10").hide();
+           $("#question10" + test).show();
+       });
+   });
+
+   $(document).ready(function() {
+       $("input[name$='question11']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc11").hide();
+           $("#question11" + test).show();
+       });
+   });
+
+   $(document).ready(function() {
+       $("input[name$='question12']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc12").hide();
+           $("#question12" + test).show();
+       });
+   });
+
+   $(document).ready(function() {
+       $("input[name$='question13']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc13").hide();
+           $("#question13" + test).show();
+       });
+   });
+
+   $(document).ready(function() {
+       $("input[name$='question14']").click(function() {
+           var test = $(this).val();
+   
+           $("div.desc14").hide();
+           $("#question14" + test).show();
+       });
+   });
+   
+</script>
+
+
+<style>
+   .desc {
+   display:none;
+   }
+   .desc2 {
+   display:none;
+   }
+   .desc3 {
+   display:none;
+   }
+   .desc4 {
+   display:none;
+   }
+   .desc5 {
+   display:none;
+   }
+   .desc6 {
+   display:none;
+   }
+   .desc7 {
+   display:none;
+   }
+   .desc8 {
+   display:none;
+   }
+   .desc9 {
+   display:none;
+   }
+   .desc10 {
+   display:none;
+   }
+   .desc11 {
+   display:none;
+   }
+   .desc12 {
+   display:none;
+   }
+   .desc13 {
+   display:none;
+   }
+   .desc14 {
+   display:none;
+   }
+
+
+</style>
+
+
+{% endblock %}

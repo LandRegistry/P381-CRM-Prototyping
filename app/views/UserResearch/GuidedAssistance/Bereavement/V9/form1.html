@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Your details
+              </h1>
+            </legend>
+          
+            
+            
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="first-name">
+                First name
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="first-name" name="first-name" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="last-name">
+                  Last name
+                </label>
+                <input class="govuk-input govuk-input--width-10" id="last-name" name="last-name" type="text">
+              </div>
+          
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="email-address">
+                Email address
+              </label>
+              <div id="waste-hint" class="govuk-hint">
+                We'll use this address to contact you
+              </div>
+              <input class="govuk-input govuk-!-width-one-half" id="email-address" name="email-address" type="text"></div>
+          
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="email-address">
+                  Re-type email address
+                </label>
+
+                <input class="govuk-input govuk-!-width-one-half" id="email-address" name="email-address" type="text"></div>
+            
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="more-detail">
+                        Tell us about your query in as much detail as you can
+                      </label>
+                    <textarea class="govuk-textarea  govuk-!-width-two-thirds" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                  </div>
+
+          </fieldset>
+
+    </div>
+
+    <div  class="govuk-grid-column-full">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V9/form-submitted.html'">
+
+        Submit
+      </button>
+    </div>
+
+
+  </div>
+
+{% endblock %}
