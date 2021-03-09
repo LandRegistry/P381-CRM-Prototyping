@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-3">
+
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                What is your organisation's name?
+              </h1>
+            </legend>
+          
+            <div class="govuk-form-group">
+              <input class="govuk-input" id="organisationsName" name="organisationsName" type="text">
+            </div>
+                    
+        </fieldset>
+
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='whatdoyouwanttodo.html'">
+            Continue
+          </button>
+
+    </div>
+
+  </div>
+
+{% endblock %}

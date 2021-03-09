@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+  
+
+      <h1 class="govuk-heading-xl">
+        New deputy responsible person's <br> business address
+      </h1>
+
+<h3 class="govuk-heading-l" style="margin-bottom:10px;">Postcode</h3>
+<p class="govuk-body" style="margin-bottom:30px;"><b>W139ED</b><a class="govuk-link" style="margin-left:20px;" href="newDeputyAddressSelection.html">Change</a></p>
+
+        <div style="max-width:640px;">
+            <div class="govuk-form-group">
+                <select class="govuk-select" id="selectAddress" name="selectAddress">
+                  <option value="select" selected>5 addresses found</option>
+                  <option value="1">85 Adelaide Road, Ealing, W139ED</option>
+                  <option value="2">86 Adelaide Road, Ealing, W139ED</option>
+                  <option value="3">87 Adelaide Road, Ealing, W139ED</option>
+                  <option value="4">88 Adelaide Road, Ealing, W139ED</option>
+                  <option value="5">89 Adelaide Road, Ealing, W139ED</option>
+                </select>
+              </div>
+            
+
+              <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='newDeputySecurity.html'">
+                Continue
+            </button>
+
+            <div style="margin-bottom:30px;">
+                <a class="govuk-link" href="#">I can't find my address in the list</a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+      
+</div>
+
+<style>
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+    
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+    </style>
+
+{% endblock %}
