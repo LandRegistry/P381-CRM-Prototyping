@@ -4300,11 +4300,62 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 
 
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V1/businessaccountalreadyornot', function(req, res) {
+
+    const alreadyornotChoice = req.session.data['alreadyornot']
+
+    switch (alreadyornotChoice) {
+        case 'yes':
+            res.redirect('/UserResearch/PortalSignup/V1/organisationName');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/PortalSignup/V1/needNetworkServices');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V1/whatdoyouwanttodo', function(req, res) {
 
+    const whatdoyouwanttodoChoice = req.session.data['whatdoyouwanttodo']
 
+    switch (whatdoyouwanttodoChoice) {
+        case 'addAdministrator':
+            res.redirect('/UserResearch/PortalSignup/V1/addAdministrator/');
+            break;
 
+        case 'addDeputyResponsible':
+            res.redirect('/UserResearch/PortalSignup/V1/addDeputyResponsible/');
+            break;
+
+        case 'changeResponsible':
+            res.redirect('/UserResearch/PortalSignup/V1/changeResponsible/');
+            break;
+
+        case 'changeBankDetails':
+            res.redirect('/UserResearch/PortalSignup/V1/changeBankDetails/');
+            break;    
+            
+        case 'applyNetworkServices':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/');
+            break;     
+
+        case 'applyLenderServices':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 
 
