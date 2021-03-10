@@ -14,7 +14,7 @@
   <div class="govuk-grid-row">
 
     <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-3">
-
+      <form action="whatdoyouwanttodoOptions" method="post" class="form">
         <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
               <h1 class="govuk-fieldset__heading">
@@ -23,15 +23,16 @@
             </legend>
           
             <div class="govuk-form-group">
-              <input class="govuk-input" id="organisationsName" name="organisationsName" type="text">
+              <input class="govuk-input" id="organisationsName" name="organisationsName" value="{{ data['organisationsName'] }}"  type="text">
             </div>
                     
+
         </fieldset>
 
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='whatdoyouwanttodo.html'">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
             Continue
           </button>
-
+        </form>
     </div>
 
   </div>

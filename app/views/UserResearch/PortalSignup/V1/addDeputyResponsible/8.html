@@ -1,0 +1,183 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+  
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+        Check your answers before sending your application
+      </h1>
+
+
+      <table class="govuk-table">
+
+        <div  class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-m">Your organisation
+          </h3>
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/UserResearch/PortalSignup/V1/organisationName.html">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          </dl>
+        </div>
+
+        <div class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-m">Deputy responsible person
+          </h3>
+
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['first-name'] }} {{ data['family-name'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="1">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Deputy responsible person's address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          87 Adelaide Road<br>Ealing<br>London<br>{{ data['postcode'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/07/edit-address01">
+            Change<span class="govuk-visually-hidden"> address</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Contact details
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['telephone-number'] }}</p>
+          <p class="govuk-body">{{ data['email'] }}</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/07/edit-contact01">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Receive security credentials by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['receive-type'] }}</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/07/edit-delivery01">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Allow access to variable Direct Debit Key numbers
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['VDD-contact'] }}</p>
+          <p class="govuk-body">{{ data['VDD-contact'] }}</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/07/edit-delivery01">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
+    </div>
+
+
+    <div class="govuk-!-margin-bottom-8 govuk-body">
+      <h3 class="govuk-heading-m" >Application signature
+      </h3>
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Signature uploaded
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['uploaded-signature'] }}
+         {% for feature in data['uploaded-signature'] %}
+          {% else %}
+            <p>No</p>
+          {% endfor %}
+
+
+
+          </p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/07/edit-delivery01">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
+    </div>
+      </dl>
+
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-3">Send your application</h3>
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+
+      <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='9.html'">
+            Accept and send
+        </button>
+      </div>
+      
+    </div>
+
+  </div>
+
+{% endblock %}
