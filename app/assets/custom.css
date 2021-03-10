@@ -104,3 +104,36 @@
 
 }
 
+.text-button {
+    -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-weight: 400;
+font-size: 1.1875rem;
+line-height: 1.31579;
+box-sizing: border-box;
+display: inline-block;
+position: relative;
+width: unset;
+margin-top: 0;
+padding: 8px 0px 7px;
+border: 0px solid transparent;
+border-radius: 0;
+background-color: unset;
+box-shadow: unset;
+text-align: center;
+vertical-align: top;
+cursor: pointer;
+-webkit-appearance: none;
+color: #1d70b8;
+    margin-bottom:0px;
+    vertical-align: unset;
+    text-decoration: underline;;
+}
+
+.text-button:hover {
+background-color: unset;
+color: #003078;
+    margin-bottom:0px;
+    vertical-align: unset;
+    text-decoration: underline;;
+}

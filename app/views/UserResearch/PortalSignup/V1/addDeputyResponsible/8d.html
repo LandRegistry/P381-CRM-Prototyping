@@ -20,24 +20,24 @@
 
 
       <table class="govuk-table">
-
+        <form action="8" method="post" class="form">
         <div  class="govuk-!-margin-bottom-9">
           <h3 class="govuk-heading-m">Your organisation
           </h3>
           <dl class="govuk-summary-list">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Name
-            </dt>
-            <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
             </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="8a">
-                Change<span class="govuk-visually-hidden"> name</span>
-              </a>
-            </dd>
-          </div>
-          </dl>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="8a">
+                  Change<span class="govuk-visually-hidden"> address</span>
+                </a>
+              </dd>
+            </div>
+            </dl>
         </div>
 
         <div class="govuk-!-margin-bottom-9">
@@ -50,27 +50,27 @@
           Name
         </dt>
         <dd class="govuk-summary-list__value">
-          {{ data['first-name'] }} {{ data['family-name'] }}
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8b">
-            Change<span class="govuk-visually-hidden"> name</span>
-          </a>
-        </dd>
+            {{ data['first-name'] }} {{ data['family-name'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="8b">
+              Change<span class="govuk-visually-hidden"> address</span>
+            </a>
+          </dd>
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
             Deputy responsible person's address
         </dt>
         <dd class="govuk-summary-list__value">
-          <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
-            <li>{{ data['address-line-1'] }}</li>
-            <li>{{ data['address-line-2'] }}</li>
-            <li>{{ data['address-town'] }}</li>
-            <li>{{ data['address-county'] }}</li>
-            <li>{{ data['postcode'] }}</li>
-          </ul>
-        </dd>
+            <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+              <li>{{ data['address-line-1'] }}</li>
+              <li>{{ data['address-line-2'] }}</li>
+              <li>{{ data['address-town'] }}</li>
+              <li>{{ data['address-county'] }}</li>
+              <li>{{ data['postcode'] }}</li>
+            </ul>
+          </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="8c">
             Change<span class="govuk-visually-hidden"> address</span>
@@ -82,13 +82,22 @@
           Contact details
         </dt>
         <dd class="govuk-summary-list__value">
-          <p class="govuk-body">{{ data['telephone-number'] }}</p>
-          <p class="govuk-body">{{ data['email'] }}</p>
+
+                <label class="govuk-label" for="email">
+                Email address
+                </label>
+                <input class="govuk-input" id="email" name="email" value="{{ data['email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px; margin-bottom: 20px;">
+
+                <label class="govuk-label" for="telephone-number">
+                    UK telephone number
+                </label>
+                <input class="govuk-input" id="telephone-number" name="telephone-number" value="{{ data['telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px; margin-bottom: 20px;">
+
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8d">
-            Change<span class="govuk-visually-hidden"> contact details</span>
-          </a>
+            <button class="govuk-button text-button" data-module="govuk-button" data-module="govuk-button">
+                Update
+              </button>
         </dd>
       </div>
       <div class="govuk-summary-list__row">
@@ -149,7 +158,7 @@
       </div>
     </div>
       </dl>
-
+    </form>
       </table>
 
 
@@ -185,24 +194,22 @@
     </div>
 
   </div>
-
-<style>
-  .govuk-summary-list__key, .govuk-summary-list__value {
+  <style>
+    .govuk-summary-list__key, .govuk-summary-list__value {
+      vertical-align: middle;
+  }
+  .govuk-summary-list__value > p {
+      margin-bottom: 0;
+  }
+  
+  .govuk-summary-list__actions {
     vertical-align: middle;
-}
-.govuk-summary-list__value > p {
-    margin-bottom: 0;
-}
-
-.govuk-summary-list__actions {
-  vertical-align: middle;
-}
-
-.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-</style>
-
+  }
+  
+  .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+  
+  </style>
 {% endblock %}
