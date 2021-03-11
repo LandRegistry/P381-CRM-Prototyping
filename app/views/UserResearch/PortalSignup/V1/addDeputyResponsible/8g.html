@@ -30,7 +30,11 @@
                 Name
               </dt>
               <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
-            </dd>
+                {% for feature in data['organisationsName'] %}
+                 {% else %}
+                   User Research Ltd
+                 {% endfor %}
+              </dd>
               <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="8a">
                   Change<span class="govuk-visually-hidden"> address</span>
