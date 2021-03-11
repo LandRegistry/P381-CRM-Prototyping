@@ -65,16 +65,9 @@
         <dd class="govuk-summary-list__value">
 
                   <label class="govuk-label" for="address-line-1">
-                    Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                    Building and street
                   </label>
-                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px;">
-              
-
-                  <label class="govuk-label" for="address-line-2">
-                    <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
-                  </label>
-                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" value="{{ data['address-line-2'] }}" style="width: 300px; margin-bottom: 20px;">
-              
+                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px;margin-bottom:20px;">        
 
                   <label class="govuk-label" for="address-town">
                     Town or city
@@ -92,6 +85,11 @@
                     Postcode
                   </label>
                   <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code" value="{{ data['postcode'] }}" style="width: 300px; margin-bottom: 20px;">
+
+                  <label class="govuk-label" for="postcode">
+                    DX address (optional)
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
 
 
         </dd>
@@ -210,21 +208,15 @@
 
   </div>
   <style>
-    .govuk-summary-list__key, .govuk-summary-list__value {
-      vertical-align: middle;
-  }
-  .govuk-summary-list__value > p {
-      margin-bottom: 0;
-  }
-  
-  .govuk-summary-list__actions {
-    vertical-align: middle;
-  }
-  
-  .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
-      padding-top: 15px;
-      padding-bottom: 15px;
-  }
-  
-  </style>
+
+    .govuk-summary-list__value > p {
+        margin-bottom: 0;
+    }
+   
+    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    </style>
 {% endblock %}

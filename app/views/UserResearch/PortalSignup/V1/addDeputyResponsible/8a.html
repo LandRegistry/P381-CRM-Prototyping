@@ -65,10 +65,14 @@
         <dd class="govuk-summary-list__value">
             <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
               <li>{{ data['address-line-1'] }}</li>
-              <li>{{ data['address-line-2'] }}</li>
               <li>{{ data['address-town'] }}</li>
               <li>{{ data['address-county'] }}</li>
               <li>{{ data['postcode'] }}</li>
+              <li style="margin-top:10px;">DX: {{ data['dx-address'] }}
+                {% for feature in data['dx-address'] %}
+                 {% else %}
+                   not provided
+                 {% endfor %}</li>
             </ul>
           </dd>
         <dd class="govuk-summary-list__actions">
@@ -186,21 +190,15 @@
 
   </div>
   <style>
-    .govuk-summary-list__key, .govuk-summary-list__value {
-      vertical-align: middle;
-  }
-  .govuk-summary-list__value > p {
-      margin-bottom: 0;
-  }
-  
-  .govuk-summary-list__actions {
-    vertical-align: middle;
-  }
-  
-  .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
-      padding-top: 15px;
-      padding-bottom: 15px;
-  }
-  
-  </style>
+
+    .govuk-summary-list__value > p {
+        margin-bottom: 0;
+    }
+   
+    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    </style>
 {% endblock %}

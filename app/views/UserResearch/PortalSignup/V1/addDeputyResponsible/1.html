@@ -48,7 +48,7 @@
             </div>
 
 
-            <div class="govuk-form-group" style="margin-bottom:15px;">
+            <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
                 <label class="govuk-label" for="postcode">
                 UK postcode
                 </label>
@@ -58,10 +58,50 @@
                     <button class="govuk-button" data-module="govuk-button">
                         Find address
                     </button>
-                    <a class="govuk-link" href="#">Add address manually</a>
+                    
+                    <a class="govuk-link" href="#" onclick="toggle_visibility('manual-address');">Add address manually</a>
                 </div>
 
             </div>
+
+            <div id="manual-address" style="display:none;">
+
+                <dd class="govuk-summary-list__value">
+            
+                    <label class="govuk-label" for="address-line-1">
+                      Building and street
+                    </label>
+                    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px; margin-bottom: 20px;">        
+            
+                    <label class="govuk-label" for="address-town">
+                      Town or city
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px; margin-bottom: 20px;">
+                
+            
+                    <label class="govuk-label" for="address-county">
+                      County
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px; margin-bottom: 20px;">
+                
+            
+                    <label class="govuk-label" for="postcode">
+                      UK Postcode
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code" value="{{ data['postcode'] }}" style="width: 300px; margin-bottom: 20px;">
+            
+                    <label class="govuk-label" for="postcode">
+                      DX address (optional)
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
+            
+            
+            </dd>
+            
+            </div>
+
+
+
 
         </div>
     </form>
@@ -72,7 +112,23 @@
 
       
 </div>
+
+
+<script type="text/javascript">
+    <!--
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    //-->
+    </script>
+ 
+
 <style>
+
     .govuk-button-group {
         margin-right: -15px;
         -webkit-box-orient: horizontal;
@@ -101,7 +157,9 @@
     margin-right:40px;
 }
 
-
+.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    border-bottom: 0px solid #b1b4b6;
+}
     </style>
 
 
