@@ -24,6 +24,7 @@
 <p class="govuk-body" style="margin-bottom:30px;"><b>{{ data['postcode'] }}</b><a class="govuk-link" style="margin-left:20px;" href="1.html">Change</a></p>
 
         <div style="max-width:640px;">
+          <form action="3" method="post">
             <div class="govuk-form-group">
                 <select class="govuk-select" id="selectAddress" name="selectAddress">
                   <option value="select" selected>5 addresses found</option>
@@ -35,6 +36,39 @@
                 </select>
               </div>
 
+              <div id="content2" style="display:none;">
+
+                <dd class="govuk-summary-list__value" style="padding:0px;">
+            
+                    <label class="govuk-label" for="address-line-1">
+                      Building and street
+                    </label>
+                    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="87 Adelaide Road" style="width: 300px; margin-bottom: 20px;">        
+            
+                    <label class="govuk-label" for="address-town">
+                      Town or city
+                    </label>
+                    <input class="govuk-input" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="Ealing" style="width: 300px; margin-bottom: 20px;">
+                
+            
+                    <label class="govuk-label" for="address-county">
+                      County
+                    </label>
+                    <input class="govuk-input" id="address-county" name="address-county" type="text"value="Middlesex" style="width: 300px; margin-bottom: 20px;">
+                
+            
+                    <label class="govuk-label" for="postcode">
+                      UK Postcode
+                    </label>
+                    <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="W139ED" style="width: 300px; margin-bottom: 20px;">
+
+                </dd>
+            
+                <div>
+                    <button class="govuk-button" type="submit" formaction="3">Continue</button>
+                </div>
+
+            </div>
 
             <div style="margin-bottom:30px;">
                 <a class="govuk-link" href="#">I can't find my address in the list</a>
@@ -47,10 +81,10 @@
               <input class="govuk-input" id="dx-address" name="dx-address" type="text" style="width: 322px;">
           </div>
 
-          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='3.html'">
+          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
             Continue
         </button>
-
+      </form>
         </div>
     </div>
 

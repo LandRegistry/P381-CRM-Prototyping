@@ -78,7 +78,13 @@
                 <li>{{ data['address-line-1'] }}</li>
                 <li>{{ data['address-town'] }}</li>
                 <li>{{ data['address-county'] }}</li>
-                <li>{{ data['postcode'] }}</li>
+ 
+                <li>{{ data['postcode'] }}
+                  {% for feature in data['postcode'] %}
+                   {% else %}
+                   {{ data['postcode2'] }}
+                   {% endfor %}</li>
+    
                 <li style="margin-top:10px;">DX: {{ data['dx-address'] }}
                   {% for feature in data['dx-address'] %}
                    {% else %}
