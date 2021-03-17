@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+  
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Apply for or update a <br>Business e-services account
+      </h1>
+
+
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              Only a responsible person or deputy responsible person can submit this request.
+            </strong>
+          </div>
+
+        <p style="max-width:760px;">Fill in a <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD application form and direct debit mandate</a> (see pages 13 to 15 of the <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD guide</a>) for each account you require.</p>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Add a new deputy responsible person
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="1.html" aria-describedby="eligibility-status">
+                  Attach the document
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+      
+      <div class="govuk-!-margin-bottom-9">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='3'">
+          Continue
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
