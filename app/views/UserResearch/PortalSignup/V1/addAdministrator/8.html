@@ -45,7 +45,7 @@
         </div>
 
         <div class="govuk-!-margin-bottom-9">
-          <h3 class="govuk-heading-m">Primary administrator
+          <h3 class="govuk-heading-m">Primary Administrator
           </h3>
 
       <dl class="govuk-summary-list">
@@ -64,14 +64,20 @@
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-            Primary admin's address
+            Primary Administrator's address
         </dt>
         <dd class="govuk-summary-list__value">
           <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
             <li>{{ data['address-line-1'] }}</li>
             <li>{{ data['address-town'] }}</li>
             <li>{{ data['address-county'] }}</li>
-            <li>{{ data['postcode'] }}</li>
+
+            <li>{{ data['postcode'] }}
+              {% for feature in data['postcode'] %}
+               {% else %}
+               {{ data['postcode2'] }}
+               {% endfor %}</li>
+
             <li style="margin-top:10px;">DX: {{ data['dx-address'] }}
               {% for feature in data['dx-address'] %}
                {% else %}
@@ -112,7 +118,6 @@
           </a>
         </dd>
       </div>
-
     </div>
 
 
@@ -131,18 +136,14 @@
             <p>No</p>
           {% endfor %}
 
-
-
-          </p>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8f">
+          <a class="govuk-link" href="8g">
             Change<span class="govuk-visually-hidden"> delivery</span>
           </a>
         </dd>
       </div>
     </div>
-      </dl>
 
       </table>
 
