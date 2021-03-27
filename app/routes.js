@@ -4343,6 +4343,10 @@ router.post('/UserResearch/PortalSignup/V1/whatdoyouwanttodo', function(req, res
             res.redirect('/UserResearch/PortalSignup/V1/changeBankDetails/');
             break;    
             
+        case 'createVDD':
+            res.redirect('/UserResearch/PortalSignup/V1/createVDD/');
+            break; 
+            
         case 'applyNetworkServices':
             res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/');
             break;     
@@ -4358,8 +4362,66 @@ router.post('/UserResearch/PortalSignup/V1/whatdoyouwanttodo', function(req, res
 })
 
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V2/businessaccountalreadyornot2', function(req, res) {
+
+    const alreadyornotChoice2 = req.session.data['alreadyornot']
+
+    switch (alreadyornotChoice2) {
+        case 'yes':
+            res.redirect('/UserResearch/PortalSignup/V2/2');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/PortalSignup/V2/2b');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V2/whatdoyouwanttodoV2', function(req, res) {
+
+    const whatdoyouwanttodoChoice2 = req.session.data['whatdoyouwanttodo']
+
+    switch (whatdoyouwanttodoChoice2) {
+        case 'addAdministrator':
+            res.redirect('/UserResearch/PortalSignup/V2/addAdministrator/');
+            break;
+
+        case 'addDeputyResponsible':
+            res.redirect('/UserResearch/PortalSignup/V2/addDeputyResponsible/');
+            break;
+
+        case 'changeResponsible':
+            res.redirect('/UserResearch/PortalSignup/V2/changeResponsible/');
+            break;
+
+        case 'changeBankDetails':
+            res.redirect('/UserResearch/PortalSignup/V2/changeBankDetails/');
+            break;    
+            
+        case 'applyNetworkServices':
+            res.redirect('/UserResearch/PortalSignup/V2/applyNetworkServices/');
+            break;     
+
+        case 'createVDD':
+            res.redirect('/UserResearch/PortalSignup/V2/createVDD/');
+            break;
+
+                    case 'changeBankDetails':
+            res.redirect('/UserResearch/PortalSignup/V2/createVDD/');
+            break; 
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 
 

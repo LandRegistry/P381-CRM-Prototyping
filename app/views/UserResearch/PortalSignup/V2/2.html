@@ -1,0 +1,85 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+
+
+        <form class="form" action="whatdoyouwanttodoV2" method="post">
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    What do you want to do?
+                </h1>
+              </legend>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="whatdoyouwanttodo-1" name="whatdoyouwanttodo" type="radio" value="addAdministrator">
+                  <label class="govuk-label govuk-radios__label" for="whatdoyouwanttodo-1">
+                    Add an administrator
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="whatdoyouwanttodo-2" name="whatdoyouwanttodo" type="radio" value="addDeputyResponsible">
+                  <label class="govuk-label govuk-radios__label" for="whatdoyouwanttodo-2">
+                    Add a deputy responsible person
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="whatdoyouwanttodo-3" name="whatdoyouwanttodo" type="radio" value="changeResponsible">
+                    <label class="govuk-label govuk-radios__label" for="whatdoyouwanttodo-3">
+                        Change your responsible person
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="whatdoyouwanttodo-4" name="whatdoyouwanttodo" type="radio" value="createVDD">
+                    <label class="govuk-label govuk-radios__label" for="whatdoyouwanttodo-4">
+                        Create a new variable Direct Debit (VDD) account key number
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="whatdoyouwanttodo-5" name="whatdoyouwanttodo" type="radio" value="changeBankDetails">
+                    <label class="govuk-label govuk-radios__label" for="whatdoyouwanttodo-5">
+                        Change the bank account details of a current variable Direct Debit account
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="whatdoyouwanttodo-6" name="whatdoyouwanttodo" type="radio" value="applyNetworkServices">
+                    <label class="govuk-label govuk-radios__label" for="whatdoyouwanttodo-6">
+                        Apply for Network Services
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="whatdoyouwanttodo-7" name="whatdoyouwanttodo" type="radio" value="applyLenderServices">
+                    <label class="govuk-label govuk-radios__label" for="whatdoyouwanttodo-7">
+                        Apply for Lender Services
+                    </label>
+                  </div>
+
+              </div>
+          
+            </fieldset>
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+  
+        </form>
+    </div>
+
+  </div>
+
+{% endblock %}

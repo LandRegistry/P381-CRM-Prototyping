@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+  
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+        Check your answers before sending your application
+      </h1>
+
+
+      <table class="govuk-table">
+        <form action="5" method="post" class="form">
+        <div  class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-m">Your organisation
+          </h3>
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value"> <input class="govuk-input" id="organisationsName" name="organisationsName" value="{{ data['organisationsName'] }}"  type="text">
+            </dd>
+            <dd class="govuk-summary-list__actions">
+                <button class="govuk-button text-button" data-module="govuk-button" data-module="govuk-button">
+                    Update
+                  </button>
+            </dd>
+          </div>
+          </dl>
+        </div>
+
+        <div class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-m">Point of contact
+          </h3>
+
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['first-name'] }} {{ data['family-name'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="5b">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+
+    </div>
+
+
+    <div class="govuk-!-margin-bottom-8 govuk-body">
+      <h3 class="govuk-heading-m" >Add an existing Variable Direct Debit Key number or create a new one
+      </h3>
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Attached form
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['attachementUploaded'] }}
+         {% for feature in data['attachementUploaded'] %}
+          {% else %}
+            <p>No</p>
+          {% endfor %}
+
+
+
+          </p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="5c">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
+    </div>
+      </dl>
+    </form>
+      </table>
+
+
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-3">Send your application</h3>
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+
+      <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='6.html'">
+            Accept and send
+        </button>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <style>
+
+    .govuk-summary-list__value > p {
+        margin-bottom: 0;
+    }
+   
+    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    </style>
+
+{% endblock %}
