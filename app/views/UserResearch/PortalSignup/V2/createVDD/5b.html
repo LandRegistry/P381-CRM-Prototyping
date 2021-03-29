@@ -55,39 +55,56 @@
         </dt>
         <dd class="govuk-summary-list__value"  style="padding-top: 7px;">
             <label class="govuk-label" for="last-name">
-                First name
+                First name/Given Names
             </label>
             <input class="govuk-input" id="first-name" name="first-name" value="{{ data['first-name'] }}" type="text" style="width: 300px; margin-bottom: 20px;">
             <label class="govuk-label" for="last-name">
-                Surname / Family name
+                Surname/Family name
             </label>
             <input class="govuk-input" id="family-name" name="family-name" value="{{ data['family-name'] }}" type="text" style="width: 300px; margin-bottom: 20px;">
             <label class="govuk-label" for="address-line-1">
                 Building and street
               </label>
-              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px;margin-bottom:20px;">        
+              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="88 Victoria Road" style="width: 300px;margin-bottom:20px;">        
 
               <label class="govuk-label" for="address-town">
                 Town or city
               </label>
-              <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px; margin-bottom: 20px;">
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="Ealing" style="width: 300px; margin-bottom: 20px;">
           
 
               <label class="govuk-label" for="address-county">
                 County
               </label>
-              <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px; margin-bottom: 20px;">
+              <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"value="Middlesex" style="width: 300px; margin-bottom: 20px;">
           
 
               <label class="govuk-label" for="postcode">
-                Postcode
+                UK Postcode
               </label>
-              <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code" value="{{ data['postcode'] }}" style="width: 300px; margin-bottom: 20px;">
+              <input class="govuk-input" id="postcode" name="postcode" type="text" autocomplete="postal-code" value="W139FD" style="width: 300px; margin-bottom: 20px;">
 
               <label class="govuk-label" for="postcode">
                 DX address (optional)
               </label>
-              <input class="govuk-input govuk-input--width-10" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
+              <input class="govuk-input" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="email">
+                Email address
+                </label>
+                <input class="govuk-input" id="email" name="email" value="{{ data['email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="telephone-number">
+                    Telephone number
+                </label>
+                <input class="govuk-input" id="telephone-number" name="telephone-number" value="{{ data['telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+            </div>
+
+
+
 
         </dd>
         <dd class="govuk-summary-list__actions" style="padding-top: 7px;">
@@ -101,7 +118,7 @@
 
 
     <div class="govuk-!-margin-bottom-8 govuk-body">
-      <h3 class="govuk-heading-m" >Add an existing Variable Direct Debit Key number or create a new one
+      <h3 class="govuk-heading-m" >Add an existing variable Direct Debit key number or create a new one
       </h3>
       <dl class="govuk-summary-list">
       <div class="govuk-summary-list__row">

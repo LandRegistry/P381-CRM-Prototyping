@@ -24,14 +24,14 @@
         <div style="">
             <div class="govuk-form-group">
                 <label class="govuk-label" for="first-name">
-                First / Given name(s)
+                First/Given names
                 </label>
                 <input class="govuk-input" id="first-name" name="first-name" value="{{ data['first-name'] }}" type="text" style="width: 300px;">
             </div>
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="last-name">
-                    Surname / Family name
+                    Surname/Family name
                 </label>
                 <input class="govuk-input" id="family-name" name="family-name" value="{{ data['family-name'] }}" type="text" style="width: 300px;">
             </div>
@@ -45,7 +45,7 @@
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="telephone-number">
-                    UK telephone number
+                    Telephone number
                 </label>
                 <input class="govuk-input" id="telephone-number" name="telephone-number" value="{{ data['telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
@@ -100,19 +100,15 @@
                             UK postcode
                             </label>
                         <select class="govuk-select" id="selectAddress" name="selectAddress" style="width: 300px; margin-bottom: 20px;">
-                          <option value="select" selected>5 addresses found</option>
-                          <option value="1">85 Adelaide Road, Ealing</option>
-                          <option value="2">86 Adelaide Road, Ealing</option>
-                          <option value="3">87 Adelaide Road, Ealing</option>
-                          <option value="4">88 Adelaide Road, Ealing</option>
-                          <option value="5">89 Adelaide Road, Ealing</option>
+                          <option value="select" selected>1 address found</option>
+                          <option value="4">88 Victoria Road, Ealing</option>
                         </select>
                         <div>
                         <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a>
                     </div>
                       </div>
         
-                      <div style="display:none;">
+                      <!-- <div style="display:none;">
         
                         <dd class="govuk-summary-list__value" style="padding:0px;">
                     
@@ -143,7 +139,7 @@
                         </dd>
                     
         
-                    </div>
+                    </div> -->
         
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="telephone-number">
