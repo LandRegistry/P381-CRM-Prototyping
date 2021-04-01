@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+      <h1 class="govuk-heading-xl">
+        Organisation details
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              What business type in your organisation?
+            </h2>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-3"></p>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="local-business-type" name="business-type" type="radio" value="local" {{ checked("local-business-type", "Local authority") }}>
+              <label class="govuk-label govuk-radios__label" for="business-type">
+                Local authority
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="other-business-type" name="business-type" type="radio" value="other" {{ checked("other-business-type", "Other") }}>
+              <label class="govuk-label govuk-radios__label" for="business-type">
+                Other
+              </label>
+            </div>
+          </div>
+
+          <p class="govuk-body govuk-!-margin-bottom-7"></p>
+
+          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='4.html'">
+            Continue
+          </button>
+
+        </fieldset>
+      </div>
+
+    </div>
+
+
+
+</div>
+
+<style>
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+    </style>
+
+{% endblock %}

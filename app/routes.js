@@ -82,7 +82,7 @@ router.post('/UserResearch/ContactformQA/Public/public-start-choice', function(r
     }
 })
 
-// Radio buttons Public/option1 "Your enquiry relates to an application in progress or completed" 
+// Radio buttons Public/option1 "Your enquiry relates to an application in progress or completed"
 router.post('/UserResearch/ContactformQA/Public/public-option1-choice', function(req, res) {
 
     const publicOption1Choice = req.session.data['public-option1']
@@ -127,7 +127,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-choice', function
 })
 
 
-// Radio buttons Public/option1-option1 "Register change or create enquiry" 
+// Radio buttons Public/option1-option1 "Register change or create enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option1-choice', function(req, res) {
 
     const publicOption1Option1Choice = req.session.data['public-option1-option1']
@@ -180,7 +180,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option1-choice', 
 })
 
 
-// Radio buttons Public/option1-option2 "Register change or create enquiry" 
+// Radio buttons Public/option1-option2 "Register change or create enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option2-choice', function(req, res) {
 
     const publicOption1Option2Choice = req.session.data['public-option1-option2']
@@ -232,7 +232,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option2-choice', 
     }
 })
 
-// Radio buttons Public/option1-option3 "Register change or create enquiry" 
+// Radio buttons Public/option1-option3 "Register change or create enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option3-choice', function(req, res) {
 
     const publicOption1Option3Choice = req.session.data['public-option1-option3']
@@ -284,7 +284,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option3-choice', 
     }
 })
 
-// Radio buttons Public/option1-option4 "Register change or create enquiry" 
+// Radio buttons Public/option1-option4 "Register change or create enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option4-choice', function(req, res) {
 
     const publicOption1Option4Choice = req.session.data['public-option1-option4']
@@ -337,7 +337,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option4-choice', 
 })
 
 
-// Radio buttons Public/option1-option5 "Official Searches enquiry" 
+// Radio buttons Public/option1-option5 "Official Searches enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option5-choice', function(req, res) {
 
     const publicOption1Option5Choice = req.session.data['public-option1-option5']
@@ -373,7 +373,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option5-choice', 
     }
 })
 
-// Radio buttons Public/option1-option5-alloptions "Find a Property - information held" 
+// Radio buttons Public/option1-option5-alloptions "Find a Property - information held"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option5-alloptions-choice', function(req, res) {
 
     const publicOption1Option5alloptionsChoice = req.session.data['public-option1-option5-alloptions']
@@ -414,7 +414,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option5-alloption
 })
 
 
-// Radio buttons Public/option1-option6 "Official Copies enquiry" 
+// Radio buttons Public/option1-option6 "Official Copies enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option6-choice', function(req, res) {
 
     const publicOption1Option6Choice = req.session.data['public-option1-option6']
@@ -460,7 +460,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option6-choice', 
 
 
 
-// Radio buttons Public/option1-option7 "Official Copies enquiry" 
+// Radio buttons Public/option1-option7 "Official Copies enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option7-choice', function(req, res) {
 
     const publicOption1Option7Choice = req.session.data['public-option1-option7']
@@ -510,7 +510,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option7-choice', 
 
 
 
-// Radio buttons Public/option1-option8 "Search of the Index Map enquiry" 
+// Radio buttons Public/option1-option8 "Search of the Index Map enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option8-choice', function(req, res) {
 
     const publicOption1Option8Choice = req.session.data['public-option1-option8']
@@ -544,7 +544,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option8-choice', 
 
 
 
-// Radio buttons Public/option1-option1-reqnotreceived "Requisition not received" 
+// Radio buttons Public/option1-option1-reqnotreceived "Requisition not received"
 router.post('/UserResearch/ContactformQA/Public/public-option1-option1-reqnotreceived-choice', function(req, res) {
 
     const publicOption1Option1ReqNotChoice = req.session.data['public-option1-option1-reqnotreceived']
@@ -566,7 +566,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option1-option1-reqnotrec
 
 
 
-// Radio buttons Public/option2 "Your enquiry is about a letter received from HM Land Registry" 
+// Radio buttons Public/option2 "Your enquiry is about a letter received from HM Land Registry"
 router.post('/UserResearch/ContactformQA/Public/public-option2-choice', function(req, res) {
 
     const publicOption2Choice = req.session.data['public-option2']
@@ -603,7 +603,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option2-choice', function
 })
 
 
-// Radio buttons Public/option2-option4 "What does the letter header refer to?" 
+// Radio buttons Public/option2-option4 "What does the letter header refer to?"
 router.post('/UserResearch/ContactformQA/Public/public-option2-option4-choice', function(req, res) {
 
     const publicOption2option4Choice = req.session.data['public-option2-option4']
@@ -631,7 +631,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option2-option4-choice', 
     }
 })
 
-// Radio buttons Public/option2-option4-option1 "Does the notice give a deadline to reply?" 
+// Radio buttons Public/option2-option4-option1 "Does the notice give a deadline to reply?"
 router.post('/UserResearch/ContactformQA/Public/public-option2-option4-option1-choice', function(req, res) {
 
     const publicOption2option4option1Choice = req.session.data['public-option2-option4-option1']
@@ -653,7 +653,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option2-option4-option1-c
 
 
 
-// Radio buttons Public/option3 "What do you need help with?" 
+// Radio buttons Public/option3 "What do you need help with?"
 router.post('/UserResearch/ContactformQA/Public/public-option3-choice', function(req, res) {
 
     const publicOption3Choice = req.session.data['public-option3']
@@ -703,7 +703,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-choice', function
 
 
 
-// Radio buttons Public/option3-option3-option1 "Bereavement guide - Registered with HMLR?" 
+// Radio buttons Public/option3-option3-option1 "Bereavement guide - Registered with HMLR?"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Choice = req.session.data['public-option3-option3-option1']
@@ -724,7 +724,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-c
 })
 
 
-// Radio buttons Public/option3-option3-option1-option1 "Bereavement guide - Transfer / assent or sale" 
+// Radio buttons Public/option3-option3-option1-option1 "Bereavement guide - Transfer / assent or sale"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Choice = req.session.data['public-option3-option3-option1-option1']
@@ -745,7 +745,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option1-option1 "Bereavement guide - Joint ownership" 
+// Radio buttons Public/option3-option3-option1-option1-option1 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option1Choice = req.session.data['public-option3-option3-option1-option1-option1']
@@ -765,7 +765,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons Public/option3-option3-option1-option1-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option1Option1Choice = req.session.data['public-option3-option3-option1-option1-option1-option1']
@@ -786,7 +786,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option1-option1-option1-option1 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option1-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option1-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option1Option1Option1Choice = req.session.data['public-option3-option3-option1-option1-option1-option1-option1']
@@ -807,7 +807,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons Public/option3-option3-option1-option1-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option1Option2Choice = req.session.data['public-option3-option3-option1-option1-option1-option2']
@@ -827,7 +827,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option2-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option1Option2Option1Choice = req.session.data['public-option3-option3-option1-option1-option1-option2-option1']
@@ -848,7 +848,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option1-option1-option2-option2 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option1-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option1-option2-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option1Option2Option2Choice = req.session.data['public-option3-option3-option1-option1-option1-option2-option2']
@@ -868,7 +868,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option1-option2 "Bereavement guide - Joint ownership" 
+// Radio buttons Public/option3-option3-option1-option1-option2 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option2Choice = req.session.data['public-option3-option3-option1-option1-option2']
@@ -888,7 +888,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option2-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option2Option1Choice = req.session.data['public-option3-option3-option1-option1-option2-option1']
@@ -909,7 +909,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option1-option2-option2 "Bereavement guide - Relationship to deceased" 
+// Radio buttons Public/option3-option3-option1-option1-option2-option2 "Bereavement guide - Relationship to deceased"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option2-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option2Option2Choice = req.session.data['public-option3-option3-option1-option1-option2-option2']
@@ -929,7 +929,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option1-option2-option2-option2 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option1-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option1-option2-option2-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option1Option2Option2Option2Choice = req.session.data['public-option3-option3-option1-option1-option2-option2-option2']
@@ -950,7 +950,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option2 "Bereavement guide - Joint ownership" 
+// Radio buttons Public/option3-option3-option1-option2 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Choice = req.session.data['public-option3-option3-option1-option2']
@@ -971,7 +971,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option2-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons Public/option3-option3-option1-option2-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option1Choice = req.session.data['public-option3-option3-option1-option2-option1']
@@ -991,7 +991,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option2-option1-option2 "Bereavement guide - Surviving owner intentions" 
+// Radio buttons Public/option3-option3-option1-option2-option1-option2 "Bereavement guide - Surviving owner intentions"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option1Option2Choice = req.session.data['public-option3-option3-option1-option2-option1-option2']
@@ -1011,7 +1011,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option2-option1-option2-option1 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option2-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option1Option2Option1Choice = req.session.data['public-option3-option3-option1-option2-option1-option2-option1']
@@ -1032,7 +1032,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option2-option1-option2-option2 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option2-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option2-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option1Option2Option2Choice = req.session.data['public-option3-option3-option1-option2-option1-option2-option2']
@@ -1052,7 +1052,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option2-option1-option1 "Bereavement guide - Surviving owner intentions" 
+// Radio buttons Public/option3-option3-option1-option2-option1-option1 "Bereavement guide - Surviving owner intentions"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option1Option1Choice = req.session.data['public-option3-option3-option1-option2-option1-option1']
@@ -1072,7 +1072,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option2-option1-option1-option1 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option2-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option1-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option1Option1Choice = req.session.data['public-option3-option3-option1-option2-option1-option1-option1']
@@ -1093,7 +1093,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option2-option1-option1-option2 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option2-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option1-option1-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option1Option2Choice = req.session.data['public-option3-option3-option1-option2-option1-option1-option2']
@@ -1114,7 +1114,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option2-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons Public/option3-option3-option1-option2-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option2Choice = req.session.data['public-option3-option3-option1-option2-option2']
@@ -1135,7 +1135,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 })
 
 
-// Radio buttons Public/option3-option3-option1-option2-option2-option1 "Bereavement guide - Transfer" 
+// Radio buttons Public/option3-option3-option1-option2-option2-option1 "Bereavement guide - Transfer"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option2-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option2Option1Choice = req.session.data['public-option3-option3-option1-option2-option2-option1']
@@ -1155,7 +1155,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
     }
 })
 
-// Radio buttons Public/option3-option3-option1-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option2-option1-option1-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option2Option1Option1Choice = req.session.data['public-option3-option3-option1-option2-option2-option1-option1']
@@ -1177,7 +1177,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 
 
 
-// Radio buttons Public/option3-option3-option1-option2-option2-option1-option2 "Bereavement information" 
+// Radio buttons Public/option3-option3-option1-option2-option2-option1-option2 "Bereavement information"
 router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-option2-option2-option1-option2-choice', function(req, res) {
 
     const publicOption3Option3Option1Option2Option2Option1Option2Choice = req.session.data['public-option3-option3-option1-option2-option2-option1-option2']
@@ -1199,7 +1199,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option3-option3-option1-o
 
 
 
-// Radio buttons Public/option4 "Find a Property enquiry" 
+// Radio buttons Public/option4 "Find a Property enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option4-choice', function(req, res) {
 
     const publicOption4Choice = req.session.data['public-option4']
@@ -1236,7 +1236,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-choice', function
 })
 
 
-// Radio buttons Public/option4-option1 "Find a Property - information held" 
+// Radio buttons Public/option4-option1 "Find a Property - information held"
 router.post('/UserResearch/ContactformQA/Public/public-option4-option1-choice', function(req, res) {
 
     const publicOption4Option1Choice = req.session.data['public-option4-option1']
@@ -1278,7 +1278,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option1-choice', 
 
 
 
-// Radio buttons Public/option4-option2 "Find a Property - Property Search" 
+// Radio buttons Public/option4-option2 "Find a Property - Property Search"
 router.post('/UserResearch/ContactformQA/Public/public-option4-option2-choice', function(req, res) {
 
     const publicOption4Option2Choice = req.session.data['public-option4-option2']
@@ -1320,7 +1320,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option2-choice', 
 
 
 
-// Radio buttons Public/option4-option3 "Find a Property - map enquiry" 
+// Radio buttons Public/option4-option3 "Find a Property - map enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option4-option3-choice', function(req, res) {
 
     const publicOption4Option3Choice = req.session.data['public-option4-option3']
@@ -1357,11 +1357,11 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option3-choice', 
         case 'radius-search':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
             break;
-            
+
         case 'cant-locate':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
             break;
-            
+
         case 'map-enquiry-function':
             res.redirect('/UserResearch/ContactformQA/Public/form2');
             break;
@@ -1374,7 +1374,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option3-choice', 
 })
 
 
-// Radio buttons Public/option4-option4 "Find a Property - fee enquiry" 
+// Radio buttons Public/option4-option4 "Find a Property - fee enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option4-option4-choice', function(req, res) {
 
     const publicOption4Option4Choice = req.session.data['public-option4-option4']
@@ -1411,11 +1411,11 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option4-choice', 
         case 'do-i-get-charged':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
             break;
-            
+
         case 'personal-information':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
             break;
-            
+
         default:
             //This is a catch all for none of the above
             break;
@@ -1423,7 +1423,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option4-choice', 
 })
 
 
-// Radio buttons Public/option4-option5 "Find a Property - map enquiry" 
+// Radio buttons Public/option4-option5 "Find a Property - map enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option4-option5-choice', function(req, res) {
 
     const publicOption4Option5Choice = req.session.data['public-option4-option5']
@@ -1460,11 +1460,11 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option5-choice', 
         case 'do-i-get-charged':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
             break;
-            
+
         case 'personal-information':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
             break;
-            
+
         default:
             //This is a catch all for none of the above
             break;
@@ -1473,7 +1473,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option4-option5-choice', 
 
 
 
-// Radio buttons Public/option5 "Find a Property enquiry" 
+// Radio buttons Public/option5 "Find a Property enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option5-choice', function(req, res) {
 
     const publicOption5Choice = req.session.data['public-option5']
@@ -1510,7 +1510,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-choice', function
 })
 
 
-// Radio buttons Public/option5-option1 "Find a Property - information held" 
+// Radio buttons Public/option5-option1 "Find a Property - information held"
 router.post('/UserResearch/ContactformQA/Public/public-option5-option1-choice', function(req, res) {
 
     const publicOption5Option1Choice = req.session.data['public-option5-option1']
@@ -1542,7 +1542,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option1-choice', 
 
         case 'telephone-number':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;     
+            break;
 
         default:
             //This is a catch all for none of the above
@@ -1553,7 +1553,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option1-choice', 
 
 
 
-// Radio buttons Public/option5-option2 "Find a Property - Property Search" 
+// Radio buttons Public/option5-option2 "Find a Property - Property Search"
 router.post('/UserResearch/ContactformQA/Public/public-option5-option2-choice', function(req, res) {
 
     const publicOption5Option2Choice = req.session.data['public-option5-option2']
@@ -1585,7 +1585,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option2-choice', 
 
         case 'something-else':
             res.redirect('/UserResearch/ContactformQA/Public/form7');
-            break;     
+            break;
 
         default:
             //This is a catch all for none of the above
@@ -1594,7 +1594,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option2-choice', 
 })
 
 
-// Radio buttons Public/option5-option3 "Find a Property - map enquiry" 
+// Radio buttons Public/option5-option3 "Find a Property - map enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option5-option3-choice', function(req, res) {
 
     const publicOption5Option3Choice = req.session.data['public-option5-option3']
@@ -1626,19 +1626,19 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option3-choice', 
 
         case 'which-information':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;   
-            
+            break;
+
         case 'radius-search':
                 res.redirect('/UserResearch/ContactformQA/Public/form6');
-                break; 
+                break;
 
         case 'cannot-locate':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;   
-            
+            break;
+
         case 'something-else':
                 res.redirect('/UserResearch/ContactformQA/Public/form7');
-                break; 
+                break;
 
         default:
             //This is a catch all for none of the above
@@ -1647,7 +1647,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option3-choice', 
 })
 
 
-// Radio buttons Public/option5-option4 "Find a Property - fee enquiry" 
+// Radio buttons Public/option5-option4 "Find a Property - fee enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option5-option4-choice', function(req, res) {
 
     const publicOption5Option4Choice = req.session.data['public-option5-option4']
@@ -1679,11 +1679,11 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option4-choice', 
 
         case 'charged-for-download':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;   
-            
+            break;
+
         case 'personal-information':
                 res.redirect('/UserResearch/ContactformQA/Public/form6');
-                break; 
+                break;
 
 
         default:
@@ -1693,7 +1693,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option4-choice', 
 })
 
 
-// Radio buttons Public/option5-option5 "Find a Property - fee enquiry" 
+// Radio buttons Public/option5-option5 "Find a Property - fee enquiry"
 router.post('/UserResearch/ContactformQA/Public/public-option5-option5-choice', function(req, res) {
 
     const publicOption5Option5Choice = req.session.data['public-option5-option5']
@@ -1725,11 +1725,11 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option5-choice', 
 
         case 'activation-link':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;   
-            
+            break;
+
         case 'password-incorrectly':
                 res.redirect('/UserResearch/ContactformQA/Public/form6');
-                break; 
+                break;
 
         case 'message-account-deleted':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
@@ -1737,11 +1737,11 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option5-choice', 
 
         case 'username-not-acceptable':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;   
-            
+            break;
+
         case 'something-else':
                 res.redirect('/UserResearch/ContactformQA/Public/form7');
-                break; 
+                break;
 
         default:
             //This is a catch all for none of the above
@@ -1750,7 +1750,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option5-choice', 
 })
 
 
-// Radio buttons Public/option5-option6 "Find a Property - download issues" 
+// Radio buttons Public/option5-option6 "Find a Property - download issues"
 router.post('/UserResearch/ContactformQA/Public/public-option5-option6-choice', function(req, res) {
 
     const publicOption5Option6Choice = req.session.data['public-option6-option5']
@@ -1782,11 +1782,11 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option6-choice', 
 
         case 'register-twice':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;   
-            
+            break;
+
         case 'bought-information':
                 res.redirect('/UserResearch/ContactformQA/Public/form6');
-                break; 
+                break;
 
         case 'bought-the-register':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
@@ -1794,19 +1794,19 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option6-choice', 
 
         case 'problem-with-pdf':
             res.redirect('/UserResearch/ContactformQA/Public/form6');
-            break;   
-            
+            break;
+
         case 'obtain-historical':
                 res.redirect('/UserResearch/ContactformQA/Public/form6');
-                break; 
-        
+                break;
+
          case 'buy-a-copy':
                 res.redirect('/UserResearch/ContactformQA/Public/form6');
-                break; 
-        
+                break;
+
          case 'something-else':
                 res.redirect('/UserResearch/ContactformQA/Public/form7');
-                break; 
+                break;
 
         default:
             //This is a catch all for none of the above
@@ -1815,7 +1815,7 @@ router.post('/UserResearch/ContactformQA/Public/public-option5-option6-choice', 
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?" 
+// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-choice', function(req, res) {
 
     const bereavementChoice = req.session.data['bereavement-start-choice']
@@ -1836,7 +1836,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-cho
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1 = req.session.data['bereavement-start-option1-choice']
@@ -1856,7 +1856,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1 = req.session.data['bereavement-start-option1-option1-choice']
@@ -1876,7 +1876,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2 = req.session.data['bereavement-start-option1-option2-choice']
@@ -1896,7 +1896,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-choice']
@@ -1916,7 +1916,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2 = req.session.data['bereavement-start-option1-option1-option2-choice']
@@ -1936,7 +1936,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-choice']
@@ -1956,7 +1956,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option1 = req.session.data['bereavement-start-option1-option2-option2-option1-choice']
@@ -1976,7 +1976,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-option2-choice']
@@ -1997,7 +1997,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -2017,7 +2017,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option2 = req.session.data['bereavement-start-option1-option1-option2-option2-choice']
@@ -2038,7 +2038,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-option1-option1-choice']
@@ -2059,7 +2059,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option2 = req.session.data['bereavement-start-option1-option1-option1-option1-option2-choice']
@@ -2079,7 +2079,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -2099,7 +2099,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option1 = req.session.data['bereavement-start-option1-option2-option1-choice']
@@ -2121,7 +2121,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2 = req.session.data['bereavement-start-option2-choice']
@@ -2142,7 +2142,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1 = req.session.data['bereavement-start-option2-option1-choice']
@@ -2162,7 +2162,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-choice']
@@ -2182,7 +2182,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-option1-choice']
@@ -2202,7 +2202,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option2 = req.session.data['bereavement-start-option2-option1-option1-option2-choice']
@@ -2223,7 +2223,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2 = req.session.data['bereavement-start-option2-option1-option2-choice']
@@ -2243,7 +2243,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option1 = req.session.data['bereavement-start-option2-option1-option2-option1-choice']
@@ -2264,7 +2264,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option2 = req.session.data['bereavement-start-option2-option1-option2-option2-choice']
@@ -2284,7 +2284,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2 = req.session.data['bereavement-start-option2-option2-choice']
@@ -2304,7 +2304,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1 = req.session.data['bereavement-start-option2-option2-option1-choice']
@@ -2324,7 +2324,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-choice']
@@ -2345,7 +2345,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option1 = req.session.data['bereavement-start-option2-option2-option1-option1-choice']
@@ -2365,7 +2365,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option2 = req.session.data['bereavement-start-option2-option2-option1-option2-choice']
@@ -2385,7 +2385,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option1 = req.session.data['bereavement-start-option2-option2-option2-option1-choice']
@@ -2405,7 +2405,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-option2-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-option2-choice']
@@ -2442,7 +2442,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V1/bereavement-start-opt
 // Version 2 Bereavement below
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?" 
+// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-choice', function(req, res) {
 
     const bereavementChoice = req.session.data['bereavement-start-choice']
@@ -2463,7 +2463,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-cho
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1 = req.session.data['bereavement-start-option1-choice']
@@ -2483,7 +2483,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1 = req.session.data['bereavement-start-option1-option1-choice']
@@ -2503,7 +2503,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2 = req.session.data['bereavement-start-option1-option2-choice']
@@ -2523,7 +2523,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-choice']
@@ -2543,7 +2543,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2 = req.session.data['bereavement-start-option1-option1-option2-choice']
@@ -2563,7 +2563,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-choice']
@@ -2583,7 +2583,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option1 = req.session.data['bereavement-start-option1-option2-option2-option1-choice']
@@ -2603,7 +2603,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-option2-choice']
@@ -2624,7 +2624,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -2644,7 +2644,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option2 = req.session.data['bereavement-start-option1-option1-option2-option2-choice']
@@ -2665,7 +2665,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-option1-option1-choice']
@@ -2686,7 +2686,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option2 = req.session.data['bereavement-start-option1-option1-option1-option1-option2-choice']
@@ -2706,7 +2706,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -2726,7 +2726,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option1 = req.session.data['bereavement-start-option1-option2-option1-choice']
@@ -2748,7 +2748,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2 = req.session.data['bereavement-start-option2-choice']
@@ -2769,7 +2769,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1 = req.session.data['bereavement-start-option2-option1-choice']
@@ -2789,7 +2789,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-choice']
@@ -2809,7 +2809,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-option1-choice']
@@ -2829,7 +2829,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option2 = req.session.data['bereavement-start-option2-option1-option1-option2-choice']
@@ -2850,7 +2850,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2 = req.session.data['bereavement-start-option2-option1-option2-choice']
@@ -2870,7 +2870,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option1 = req.session.data['bereavement-start-option2-option1-option2-option1-choice']
@@ -2891,7 +2891,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option2 = req.session.data['bereavement-start-option2-option1-option2-option2-choice']
@@ -2911,7 +2911,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2 = req.session.data['bereavement-start-option2-option2-choice']
@@ -2931,7 +2931,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1 = req.session.data['bereavement-start-option2-option2-option1-choice']
@@ -2951,7 +2951,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-choice']
@@ -2972,7 +2972,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option1 = req.session.data['bereavement-start-option2-option2-option1-option1-choice']
@@ -2992,7 +2992,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option2 = req.session.data['bereavement-start-option2-option2-option1-option2-choice']
@@ -3012,7 +3012,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option1 = req.session.data['bereavement-start-option2-option2-option2-option1-choice']
@@ -3032,7 +3032,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-option2-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-option2-choice']
@@ -3064,7 +3064,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V2/bereavement-start-opt
 
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?" 
+// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-choice', function(req, res) {
 
     const bereavementChoice = req.session.data['bereavement-start-choice']
@@ -3085,7 +3085,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-cho
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1 = req.session.data['bereavement-start-option1-choice']
@@ -3105,7 +3105,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1 = req.session.data['bereavement-start-option1-option1-choice']
@@ -3125,7 +3125,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2 = req.session.data['bereavement-start-option1-option2-choice']
@@ -3145,7 +3145,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-choice']
@@ -3165,7 +3165,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2 = req.session.data['bereavement-start-option1-option1-option2-choice']
@@ -3185,7 +3185,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-choice']
@@ -3205,7 +3205,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option1 = req.session.data['bereavement-start-option1-option2-option2-option1-choice']
@@ -3225,7 +3225,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-option2-choice']
@@ -3246,7 +3246,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -3266,7 +3266,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option2 = req.session.data['bereavement-start-option1-option1-option2-option2-choice']
@@ -3287,7 +3287,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-option1-option1-choice']
@@ -3308,7 +3308,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option2 = req.session.data['bereavement-start-option1-option1-option1-option1-option2-choice']
@@ -3328,7 +3328,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -3348,7 +3348,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option1 = req.session.data['bereavement-start-option1-option2-option1-choice']
@@ -3370,7 +3370,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2 = req.session.data['bereavement-start-option2-choice']
@@ -3391,7 +3391,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1 = req.session.data['bereavement-start-option2-option1-choice']
@@ -3411,7 +3411,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-choice']
@@ -3431,7 +3431,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-option1-choice']
@@ -3451,7 +3451,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option2 = req.session.data['bereavement-start-option2-option1-option1-option2-choice']
@@ -3472,7 +3472,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2 = req.session.data['bereavement-start-option2-option1-option2-choice']
@@ -3492,7 +3492,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option1 = req.session.data['bereavement-start-option2-option1-option2-option1-choice']
@@ -3513,7 +3513,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option2 = req.session.data['bereavement-start-option2-option1-option2-option2-choice']
@@ -3533,7 +3533,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2 = req.session.data['bereavement-start-option2-option2-choice']
@@ -3553,7 +3553,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1 = req.session.data['bereavement-start-option2-option2-option1-choice']
@@ -3573,7 +3573,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-choice']
@@ -3594,7 +3594,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option1 = req.session.data['bereavement-start-option2-option2-option1-option1-choice']
@@ -3614,7 +3614,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option2 = req.session.data['bereavement-start-option2-option2-option1-option2-choice']
@@ -3634,7 +3634,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option1 = req.session.data['bereavement-start-option2-option2-option2-option1-choice']
@@ -3654,7 +3654,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-option2-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-option2-choice']
@@ -3688,7 +3688,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V4/bereavement-start-opt
 
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?" 
+// Radio buttons GuidedAssistance/Bereavement/page2 "Bereavement guide - Registered with HMLR?"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-choice', function(req, res) {
 
     const bereavementChoice = req.session.data['bereavement-start-choice']
@@ -3709,7 +3709,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-cho
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1 "Bereavement guide - Transfer / assent or sale"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1 = req.session.data['bereavement-start-option1-choice']
@@ -3729,7 +3729,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1 = req.session.data['bereavement-start-option1-option1-choice']
@@ -3749,7 +3749,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2 "Bereavement guide - Joint ownership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2 = req.session.data['bereavement-start-option1-option2-choice']
@@ -3769,7 +3769,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-choice']
@@ -3789,7 +3789,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2 = req.session.data['bereavement-start-option1-option1-option2-choice']
@@ -3809,7 +3809,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2 "Bereavement guide - Relationship to deceased"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-choice']
@@ -3829,7 +3829,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option1 = req.session.data['bereavement-start-option1-option2-option2-option1-choice']
@@ -3849,7 +3849,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option2Option2 = req.session.data['bereavement-start-option1-option2-option2-option2-choice']
@@ -3870,7 +3870,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -3890,7 +3890,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option2 = req.session.data['bereavement-start-option1-option1-option2-option2-choice']
@@ -3911,7 +3911,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option1 = req.session.data['bereavement-start-option1-option1-option1-option1-option1-choice']
@@ -3932,7 +3932,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option1Option1Option2 = req.session.data['bereavement-start-option1-option1-option1-option1-option2-choice']
@@ -3952,7 +3952,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option1-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option1Option2Option1 = req.session.data['bereavement-start-option1-option1-option2-option1-choice']
@@ -3972,7 +3972,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption1Option2Option1 = req.session.data['bereavement-start-option1-option2-option1-choice']
@@ -3994,7 +3994,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2 "Bereavement guide - Joint Onwership"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2 = req.session.data['bereavement-start-option2-choice']
@@ -4015,7 +4015,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1 = req.session.data['bereavement-start-option2-option1-choice']
@@ -4035,7 +4035,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-choice']
@@ -4055,7 +4055,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option1-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option1 = req.session.data['bereavement-start-option2-option1-option1-option1-choice']
@@ -4075,7 +4075,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option1-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option1-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option1Option2 = req.session.data['bereavement-start-option2-option1-option1-option2-choice']
@@ -4096,7 +4096,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2 "Bereavement guide - Surviving owner intentions"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2 = req.session.data['bereavement-start-option2-option1-option2-choice']
@@ -4116,7 +4116,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option1-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option1 = req.session.data['bereavement-start-option2-option1-option2-option1-choice']
@@ -4137,7 +4137,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option1-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option1-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option1Option2Option2 = req.session.data['bereavement-start-option2-option1-option2-option2-choice']
@@ -4157,7 +4157,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2 "Bereavement guide - Transfer to beneficiary"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2 = req.session.data['bereavement-start-option2-option2-choice']
@@ -4177,7 +4177,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1 = req.session.data['bereavement-start-option2-option2-option1-choice']
@@ -4197,7 +4197,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2 "Bereavement guide - Transfer"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-choice']
@@ -4218,7 +4218,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
 })
 
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option2-option1-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option1 = req.session.data['bereavement-start-option2-option2-option1-option1-choice']
@@ -4238,7 +4238,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option1-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option2-option1-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option1Option2 = req.session.data['bereavement-start-option2-option2-option1-option2-choice']
@@ -4258,7 +4258,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option1 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option2-option2-option1-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option1 = req.session.data['bereavement-start-option2-option2-option2-option1-choice']
@@ -4278,7 +4278,7 @@ router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-opt
     }
 })
 
-// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information" 
+// Radio buttons GuidedAssistance/Bereavement/page2-option2-option2-option2-option2 "Bereavement information"
 router.post('/UserResearch/GuidedAssistance/Bereavement/V6/bereavement-start-option2-option2-option2-option2-choice', function(req, res) {
 
     const bereavementChoiceOption2Option2Option2Option2 = req.session.data['bereavement-start-option2-option2-option2-option2-choice']
@@ -4341,11 +4341,11 @@ router.post('/UserResearch/PortalSignup/V1/whatdoyouwanttodo', function(req, res
 
         case 'changeBankDetails':
             res.redirect('/UserResearch/PortalSignup/V1/changeBankDetails/');
-            break;    
-            
+            break;
+
         case 'applyNetworkServices':
             res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/');
-            break;     
+            break;
 
         case 'applyLenderServices':
             res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/');
@@ -4357,10 +4357,228 @@ router.post('/UserResearch/PortalSignup/V1/whatdoyouwanttodo', function(req, res
     }
 })
 
+// applyLenderServices radio buttons for legal entity
+router.post('/UserResearch/PortalSignup/V1/applyLenderServices/legalentity', function(req, res) {
+
+    const legalentityChoice= req.session.data['legalentity']
+
+    switch (legalentityChoice) {
+        case 'LimitedCompany':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3a');
+            break;
+
+        case 'SolePractitioner':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3b');
+            break;
+
+        case 'GovernmentDepartment':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3c');
+            break;
+
+        case 'PoliceServices':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3d');
+            break;
+
+        case 'LimitedPartnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3e');
+            break;
+
+        case 'Partnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3f');
+            break;
+
+        case 'LocalAuthority':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3g');
+            break;
+
+        case 'Other':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3h');
+            break;
 
 
 
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
+// applyNetworkServices radio buttons for legal entity
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/legalentity', function(req, res) {
+
+    const legalentityChoice= req.session.data['legalentity']
+
+    switch (legalentityChoice) {
+        case 'LimitedCompany':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3a');
+            break;
+
+        case 'SolePractitioner':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3b');
+            break;
+
+        case 'GovernmentDepartment':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3c');
+            break;
+
+        case 'PoliceServices':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3d');
+            break;
+
+        case 'LimitedPartnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3e');
+            break;
+
+        case 'Partnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3f');
+            break;
+
+        case 'LocalAuthority':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3g');
+            break;
+
+        case 'Other':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3h');
+            break;
+
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for regulated or licensed
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/regulatedorlicensed', function(req, res) {
+
+    const regulatedorlicensedChoice= req.session.data['regulatedorlicensed']
+
+    switch (regulatedorlicensedChoice) {
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/16a');
+            break;
+
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/16b');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/authorisedperson', function(req, res) {
+
+    const authorisedpersonChoice= req.session.data['authorisedperson']
+
+    switch (authorisedpersonChoice) {
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/17a');
+            break;
+
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/17b');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/insurancedetails', function(req, res) {
+
+    const insurancedetailsChoice= req.session.data['insurancedetails']
+
+    switch (insurancedetailsChoice) {
+        case '1':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/19a');
+            break;
+
+        case '2':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/19b');
+            break;
+
+        case '3':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/19c');
+            break;
+
+        case '4':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/19d');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for termination on 19a
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/termination', function(req, res) {
+
+    const terminationChoice= req.session.data['termination']
+
+    switch (terminationChoice) {
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20a');
+            break;
+
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20b');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for termination on 19c
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/termination02', function(req, res) {
+
+    const termination02Choice= req.session.data['termination02']
+
+    switch (termination02Choice) {
+        case '1':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20a');
+            break;
+
+        case '2':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20b');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for termination on 20
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/termination03', function(req, res) {
+
+    const termination03Choice= req.session.data['termination03']
+
+    switch (termination03Choice) {
+        case '1':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20a');
+            break;
+
+        case '2':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20b');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 
 module.exports = router

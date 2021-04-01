@@ -17,7 +17,7 @@
       <h1 class="govuk-heading-xl">
         New responsible person
       </h1>
-      <form action="2" method="post" class="form">
+      <form action="5" method="post" class="form">
 
         <div class="govuk-warning-text">
             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -56,9 +56,11 @@
                 <label class="govuk-label" for="job-role">
                     Role
                 </label>
-                <input class="govuk-input" id="job-role" name="job-role" value="{{ data['job-role'] }}" type="text" style="width: 300px;">
+                <input class="govuk-input govuk-input--width-20" id="job-role" name="job-role" value="{{ data['job-role'] }}" type="text" style="width: 5000px;">
             </div>
 
+
+            <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
             <div class="govuk-form-group">
                 <label class="govuk-label" for="email">
                 Email address
@@ -72,7 +74,7 @@
                 </label>
                 <input class="govuk-input" id="telephone-number" name="telephone-number" value="{{ data['telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
-
+            </div>
 
             <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
                 <label class="govuk-label" for="postcode">
@@ -80,10 +82,10 @@
                 </label>
                 <input class="govuk-input" id="postcode" name="postcode" value="{{ data['postcode'] }}" type="text" style="width: 300px;">
 
-                <p class="govuk-body govuk-!-margin-bottom-3">A paragraph with a margin-bottom override (spacing unit 3).</p
+                <p class="govuk-body govuk-!-margin-bottom-8"></p
 
                 <div class="govuk-button-group" style="padding-top:15px;">
-                    <button class="govuk-button" data-module="govuk-button" href="5.html">
+                    <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='5.html'">
                         Find address
                     </button>
 

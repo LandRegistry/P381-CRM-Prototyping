@@ -15,6 +15,10 @@
 <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
+      <h1 class="govuk-heading-xl">
+        Current responsible person
+      </h1>
+
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -22,6 +26,7 @@
               Has the current responsible person left your organisation?
             </h2>
           </legend>
+          <p class="govuk-body govuk-!-margin-bottom-3"></p>
           <div class="govuk-radios">
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="left-organisation" name="left-organisation-type" type="radio" value="Yes" {{ checked("left-organisation", "Yes") }}>
@@ -37,7 +42,7 @@
             </div>
           </div>
 
-<p class="govuk-body govuk-!-margin-bottom-3">A paragraph with a margin-bottom override (spacing unit 3).</p>
+<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
           <p> If the responsible person has left the organisation and they were also one of your organisation's administrators we will delete their account. </p>
           <p> Please return their security token to us or deposit it in accordance with Waste Electrical and Electronic Equipment (WEEE) environmental legislation. If they were also an authorised user, you should direct one of your organisation's administrators to delete that account. </p>

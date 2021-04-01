@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+      <h1 class="govuk-heading-xl">
+        Your organisation
+      </h1>
+<form class="form" action="termination02" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              Has your organisation or any connected person been subject to a previous termination, notice of termination, intervention or disciplinary proceedings?
+            </h2>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-6">
+            Either select the certificate or complete the details on the next page if any of the circumstances described in Paragraph 7 of Schedule 1 to the LR (NA) Rules applies to the applicant or connected person. </p>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="termination02-1" name="termination02" type="radio" value="1" {{ checked("1") }}>
+              <label class="govuk-label govuk-radios__label" for="termination-1">
+                No, I certify that to my knowledge, paragraph 7 of Schedule 1 to the Land Registration (Network Access) Rules does not apply to the organisation or any connected person.
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="termination02-2" name="termination02" type="radio" value="2" {{ checked("2") }}>
+              <label class="govuk-label govuk-radios__label" for="termination02-2">
+                Yes, details of circumstances described in paragraph 7 of Schedule 1 to the LR (NA) Rules that apply to the organisation or to any connected person are provided
+              </label>
+            </div>
+<p class="govuk-body govuk-!-margin-bottom-8"></p>
+
+            <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+            Why do we need to know this?
+            </span>
+            </summary>
+            <div class="govuk-details__text">
+            If the customer or a connected person as defined in the LR (NA) Rules has been involved in any of these circumstances in the previous 3 years, we will look more carefully at the application. There will not be an absolute bar on the grant of an NAA, but we will consider the circumstances, and assess whether the applicant is likely to comply with the terms of the NAA.
+          </div>
+            </details>
+
+
+<p class="govuk-body govuk-!-margin-bottom-8"></p>
+
+<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='20.html'">
+  Continue
+</button>
+
+        </fieldset>
+      </div>
+
+    </div>
+
+
+
+</div>
+
+<style>
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+    </style>
+
+{% endblock %}
