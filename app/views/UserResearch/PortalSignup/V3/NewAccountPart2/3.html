@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+
+      <form method="post">
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
+            <span class="govuk-caption-l">
+              Application Ref: {{ data["application-reference"] }}
+              <span class="govuk-visually-hidden"> &ndash; </span>
+            </span>
+            Business e-services account
+          </h1>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+
+        <form method="post" class="form">
+        <div style="padding-bottom:50px;width: 100%;display:inline-block;">
+
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h2 class="govuk-heading-m">
+        Which services would you like to add to {{ data["organisation-name"] }} Business e-services account?
+      </h2>
+    </legend>
+    <div id="waste-hint" class="govuk-hint">
+      Select all that apply.
+    </div>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="VDD" name="VDD" type="checkbox" value="VDD">
+        <label class="govuk-label govuk-checkboxes__label" for="VDD">
+          Set up a new variable Direct Debit account (VDD)
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="MOU" name="MOU" type="checkbox" value="MOU">
+        <label class="govuk-label govuk-checkboxes__label" for="MOU">
+          Access to Lender Services (MOU)
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="NAA" name="NAA" type="checkbox" value="NAA">
+        <label class="govuk-label govuk-checkboxes__label" for="NAA">
+          Access to Network Services (NAA)
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+      <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+          <button class="govuk-button" type="submit" formaction="4">Continue</button>
+      </div>
+
+  </div>
+
+{% endblock %}
