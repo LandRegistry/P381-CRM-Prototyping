@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+
+      <form method="post">
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
+            <span class="govuk-caption-l">
+              {{ data["organisation-name"] }}
+              <span class="govuk-visually-hidden"> &ndash; </span>
+            </span>
+            Business e-services account
+          </h1>
+
+
+
+      <form method="post" class="form">
+        <div style="padding-bottom:50px;width: 100%;display:inline-block;">
+
+              <div class="govuk-form-group" style="float: unset;">
+                  <label class="govuk-label" for="application-reference">
+                  Application reference
+                  </label>
+                  <input class="govuk-input" id="application-reference" name="application-reference" value="{{ data['application-reference'] }}" type="text" style="width: 450px;">
+              </div>
+
+      <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+          <button class="govuk-button" type="submit" formaction="3">Continue</button>
+      </div>
+
+      <div class="govuk-!-padding-bottom-3"></div>
+
+    <h2 class="govuk-heading-m">Problems with this page</h2>
+    <a href="#" class="govuk-link">I have forgotten my application reference</a>
+
+    <div class="govuk-!-padding-bottom-2"></div>
+    <a href="#" class="govuk-link">Get help with this page</a>
+
+  </div>
+
+{% endblock %}
