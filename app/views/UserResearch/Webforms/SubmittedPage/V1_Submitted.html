@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters govuk-!-padding-bottom-5" style="max-width:860px;">
+
+
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title" style="padding: 30px 0px;">
+              Information Submitted
+            </h1>
+          </div>
+
+          <p class="govuk-body">We have sent you a confirmation email.</p>
+
+
+        <div class="govuk-body govuk-!-margin-bottom-8 govuk-!-padding-top-4">
+            <h3 class="govuk-heading-m govuk-!-margin-bottom-3">What happens next</h3>
+
+
+            <p>Thank you for getting in touch.</p>
+            <p>We usually reply to online enquiries within the next full working day and are committed to responding within five working days. If we cannot do this, we'll contact you to let you know. We respond to Data Protection Act requests within forty calendar days and Freedom of Information Act requests within twenty working days. </p>
+            <p>If you have not already done so, you may wish to visit <a href="https://www.gov.uk/government/organisations/land-registry" target="_blank">gov.uk/land-registry</a><!-- or our <a href="https://support.landregistry.gov.uk/landregistry" target="_blank">support forum</a>-->.</p>
+      
+
+              <p class="govuk-body">
+                <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+              </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
