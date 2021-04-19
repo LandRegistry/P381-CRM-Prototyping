@@ -4425,4 +4425,27 @@ router.post('/UserResearch/PortalSignup/V2/whatdoyouwanttodoV2', function(req, r
 
 
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/responsible-person-options', function(req, res) {
+
+    const responsiblepersonChoice = req.session.data['responsible-person']
+
+    switch (responsiblepersonChoice) {
+        case 'responsible-person-1':
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/3b');
+            break;
+
+        case 'responsible-person-2':
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/3c');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+
+
 module.exports = router

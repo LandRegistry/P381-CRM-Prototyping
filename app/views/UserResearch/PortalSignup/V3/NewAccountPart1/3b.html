@@ -13,55 +13,48 @@
 <div class="govuk-grid-row govuk-body">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width: 890px;">
 
-     <form action="2b" method="post" class="form">
+
       <h1 class="govuk-heading-xl">
-        Primary administrator details
+        Responsible person's contact details
       </h1>
 
-      <p>Your administrator will create and manage accounts for your organisation's authorised users.</p>
+      <form method="post" class="form">
+        <div style="padding-bottom:0px;width: 100%;display:inline-block;">
 
-
-
-        <div style="display: inline-block;">
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="administrator-first-name">
-                First / Given name(s)
-                </label>
-                <input class="govuk-input" id="administrator-first-name" name="administrator-first-name" value="{{ data['administrator-first-name'] }}" type="text" style="width: 300px;">
-            </div>
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="administrator-family-name">
-                    Surname / Family name
-                </label>
-                <input class="govuk-input" id="administrator-family-name" name="administrator-family-name" value="{{ data['administrator-family-name'] }}" type="text" style="width: 300px;">
-            </div>
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="administrator-email">
+            <div class="govuk-form-group" style="float:left;margin-right:30px;">
+                <label class="govuk-label" for="responsible-person-email">
                 Email address
                 </label>
-                <input class="govuk-input" id="administrator-email" name="administrator-email" value="{{ data['administrator-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
+                <input class="govuk-input" id="responsible-person-email" name="responsible-person-email" value="{{ data['responsible-person-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
             </div>
 
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="administrator-telephone-number">
-                    UK telephone number
+            <div class="govuk-form-group" style="float:left;">
+                <label class="govuk-label" for="responsible-person-telephone-number">
+                    Telephone number
                 </label>
-                <input class="govuk-input" id="administrator-telephone-number" name="administrator-telephone-number" value="{{ data['administrator-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+                <input class="govuk-input" id="responsible-person-telephone-number" name="responsible-person-telephone-number" value="{{ data['responsible-person-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group" style="float:left;">
+                <label class="govuk-label" for="responsible-person-role">
+                    Role within the organisation
+                </label>
+                <input class="govuk-input" id="responsible-person-role" name="responsible-person-role" value="{{ data['responsible-person-role'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
 
         </div>
 
+
+
         <hr>
 
         <div style="display: inline-block;">
-            <h2 class="govuk-heading-l">
-                Is the primary administrator's address the same as the organisation address?
+            <h2 class="govuk-heading-l" style="max-width: 740px;">
+                Is the responsible person's address the same as the organisation address?
             </h2>
 
 
-            <p>The primary administrator address is the business address at which the primary administrator is based at.</p>
+            <p>This is the business address where the responsible person is based</p>
             <div class="govuk-inset-text">
             <h3 class="govuk-heading-s" style="margin-bottom: 5px;">
                 Organisation address:
@@ -101,38 +94,12 @@
 
         <hr>
 
-        <div style="display: inline-block;">
-            <h2 class="govuk-heading-l">
-                How does the primary administrator want to receive their security credentials?
-              </h2>
-             
 
-              <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
-                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                       <div class="govuk-radios govuk-radios--inline">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="credential-email" name="credentials" type="radio" value="credential-email">
-                      <label class="govuk-label govuk-radios__label" for="credential-email">
-                        Email
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="credential-post" name="credentials" type="radio" value="credential-post">
-                      <label class="govuk-label govuk-radios__label" for="credential-post">
-                        Post
-                      </label>
-                    </div>
-                  </div>
-              
-                </fieldset>
-              </div>
-
-
-        </div>
 
         <div>
             <button class="govuk-button" type="submit">Continue</button>
         </div>
+        
     </form>
 
 
@@ -181,10 +148,6 @@
     font-size: 1.1875rem;
     line-height: 1;
 }
-.govuk-form-group {
-    float:left;
-    margin-right:40px;
-}
 
 .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
     border-bottom: 0px solid #b1b4b6;
@@ -194,9 +157,6 @@
     margin-bottom: 30px;
 }
 
-.govuk-heading-xl {
-    margin-bottom: 30px;
-}
 
 .govuk-heading-l {
     margin-bottom: 20px;
@@ -211,9 +171,10 @@ hr {
     margin-bottom: 50px;
 }
 
-.govuk-radios__item {
+.govuk-radios--inline .govuk-radios__item {
 margin-bottom:0px;
 }
+
     </style>
 
 
