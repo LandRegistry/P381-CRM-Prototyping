@@ -10,42 +10,103 @@
 
 {% block content %}
 
-<div class="govuk-grid-row">
-    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
 
 
-      <form method="post">
-          <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
-            <span class="govuk-caption-l">
-              {{ data["organisation-name"] }}
-              <span class="govuk-visually-hidden"> &ndash; </span>
-            </span>
-            Business e-services account
-          </h1>
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
+        <span class="govuk-caption-l">
+          Part 2 of 2
+          <span class="govuk-visually-hidden"> &ndash; </span>
+        </span>
+        Business e-services account
+      </h1>
 
 
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              Only a responsible person or deputy responsible person can submit this request.
+            </strong>
+          </div>
 
-      <form method="post" class="form">
-        <div style="padding-bottom:50px;width: 100%;display:inline-block;">
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Add an existing variable Direct Debit Key number or create a new one (VDD)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="3.html" aria-describedby="eligibility-status">
+                  Variable Direct Debit (VDD) details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <!-- <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="5.html" aria-describedby="eligibility-status">
+                  Attach the document
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Cannot start yet</strong>
+            </li> -->
+          </ul>
+        </li>
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span> Access to Lender Services (MOU)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="8.html" aria-describedby="eligibility-status">
+                  Attach the document
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">3. </span> Access to Network Services (NAA)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="10.html" aria-describedby="eligibility-status">
+                  Business regulatory details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="5.html" aria-describedby="eligibility-status">
+                  Attach the document
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+          </ul>
+        </li>
+      </ol>
 
-              <div class="govuk-form-group" style="float: unset;">
-                  <label class="govuk-label" for="application-reference">
-                  Application reference
-                  </label>
-                  <input class="govuk-input" id="application-reference" name="application-reference" value="{{ data['application-reference'] }}" type="text" style="width: 450px;">
-              </div>
 
-      <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-          <button class="govuk-button" type="submit" formaction="3">Continue</button>
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+      <div class="govuk-!-margin-bottom-9">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
       </div>
 
-      <div class="govuk-!-padding-bottom-3"></div>
-
-    <h2 class="govuk-heading-m">Problems with this page</h2>
-    <a href="#" class="govuk-link">I have forgotten my application reference</a>
-
-    <div class="govuk-!-padding-bottom-2"></div>
-    <a href="#" class="govuk-link">Get help with this page</a>
+    </div>
 
   </div>
 

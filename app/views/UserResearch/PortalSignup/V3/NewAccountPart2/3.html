@@ -10,24 +10,18 @@
 
 {% block content %}
 
-
-
 <div class="govuk-grid-row">
-
-  <div class=" govuk-grid-column-full">
-    <span class="govuk-caption-xl">
-      Part 2 of 2
-    </span>
-    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" style="max-width:860px;">
-      Apply for a Business e-services account
-    </h1>
-  </div>
-
-
-
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
+
       <form method="post">
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
+            <span class="govuk-caption-l">
+              Application Ref: {{ data["application-reference"] }}
+              <span class="govuk-visually-hidden"> &ndash; </span>
+            </span>
+            Business e-services account
+          </h1>
 
         <div class="govuk-!-padding-bottom-5"></div>
 
@@ -38,34 +32,28 @@
   <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h2 class="govuk-heading-m">
-        Which services would you like to add to {{ data["organisation-name"] }} Business e-services account?
+        Does {{ data["organisation-name"] }} have a variable Direct Debit (VDD) account you want to use for Business e-services account?
       </h2>
     </legend>
-    <div id="waste-hint" class="govuk-hint">
-      Select all that apply.
-    </div>
-    <div class="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="VDD" name="VDD" type="checkbox" value="VDD">
-        <label class="govuk-label govuk-checkboxes__label" for="VDD">
-          Set up a new variable Direct Debit account (VDD)
+
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="vdd" name="vdd" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="vdd">
+          Yes
         </label>
       </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="MOU" name="MOU" type="checkbox" value="MOU">
-        <label class="govuk-label govuk-checkboxes__label" for="MOU">
-          Access to Lender Services (MOU)
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="NAA" name="NAA" type="checkbox" value="NAA">
-        <label class="govuk-label govuk-checkboxes__label" for="NAA">
-          Access to Network Services (NAA)
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="no-vdd" name="vdd" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="no-vdd">
+          No
         </label>
       </div>
     </div>
 
   </fieldset>
+</div>
+
 </div>
 
 

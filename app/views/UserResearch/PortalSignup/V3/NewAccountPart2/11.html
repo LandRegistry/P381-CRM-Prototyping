@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:880px;">
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+            Provide more detail
+          </label>
+        </h1>
+        <div id="more-detail-hint" class="govuk-hint">
+          Provide details of circumstances described in paragraph 7 of Schedule 1 of the LR (NA) Rules that apply to the organisation or a connected person. Where more than one circumstance applies, details of each should be provided.
+        </div>
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+      <button class="govuk-button" type="submit" formaction="12">Continue</button>
+  </div>
+
+  {% endblock %}

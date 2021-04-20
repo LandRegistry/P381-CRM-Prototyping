@@ -10,50 +10,49 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:880px;">
-
-
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
-        Attach the memorandum of understanding form.
-      </h1>
-
-      <p class="govuk-body govuk-!-margin-bottom-6">
-        Attach a completed and signed copy of HM Land Registry memorandum of understanding for lenders form.
-      </p>
-
-      <div class="govuk-form-group">
-        <label class="govuk-label form-label-bold" for="file-upload-2">
-          Upload a file
-        </label>
-        <input class="govuk-file-upload" id="file-upload-2" name="file-upload-2" type="file">
-      </div>
-
-      <form action="9" method="post" class="form">
-
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-          <div class="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="uploaded-MOU-yes" name="uploaded-MOU" type="checkbox"  value="Yes" {{ checked("uploaded-MOU", "Yes") }}>
-              <label class="govuk-label govuk-checkboxes__label" for="uploaded-MOU-yes">
-                I have uploaded the Direct Debit application form and the Variable Direct Debit mandate form.
-              </label>
-            </div>
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+		<h1 class="govuk-heading-xl">Insurance details </h1>
+	</div>
+</div>
+<p> All organisations except government departments must have idemnification arragements or be able to show why this is not necessary. 'Indemnifications arrangements' is defined in paragraph 10 of Schedule 1 to the Land Registration LR (NA) Rules. </p>
+<div class="govuk-!-padding-bottom-6"></div>
+<form class="form" action="9" method="post">
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<form class="form" action="" method="post">
+				<div class="govuk-form-group">
+					<fieldset class="govuk-fieldset">
+						<div>
+  <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset"
+        <div class="govuk-radios" id="myRadioGroup">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Q3A" name="question3" type="radio" value="A">
+            <label class="govuk-label govuk-radios__label" for="Q3A"> I certify that the organisation has the indemnification arrangements required by paragraph 2(1) of Schedule 1 to the LR (NA) Rules.
+            </label>
           </div>
-
-        </fieldset>
-      </div>
-
-
-      <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-          <button class="govuk-button" type="submit" formaction="6">Continue</button>
-      </div>
-</form>
-
-
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Q3B" name="question3" type="radio" value="B">
+            <label class="govuk-label govuk-radios__label" for="Q3B"> The organisation is not under an obligation to comply with indemnification arrangements but has insurance that is reasonably equivalent (see paragraph 2(2) of Schedule 1 to the LR (NA) Rules).
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Q3C" name="question3" type="radio" value="C">
+            <label class="govuk-label govuk-radios__label" for="Q3C"> I confirm that the organisation is not required to meet the insurance criterion, as it is a government department.
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="Q3D" name="question3" type="radio" value="D">
+            <label class="govuk-label govuk-radios__label" for="Q3D"> I confirm that the organisation is not under an obligation to comply with indemnification arrangements as defined in paragraph 10 of Schedule 1 to the LR (NA) Rules. It is not practicable to meet the insurance criterion, and it is unnecessary (paragraph 3(2) of Schedule 1 to LR (NA) Rules).
+            </label>
+          </div>
+        </div>
+      </fieldset>
     </div>
+</div>
 
-  </div>
+<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart2/9.html'">Continue</button>
 
-{% endblock %}
+	{% endblock %}

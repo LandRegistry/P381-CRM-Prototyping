@@ -15,28 +15,30 @@
 
 
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
-        Attach the memorandum of understanding form.
+        Attach the: Direct Debit application form and the Variable Direct Debit mandate form
       </h1>
 
+      <p style="max-width:760px;">Fill in a <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD application form and direct debit mandate</a> (see pages 13 to 15 of the <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD guide</a>) for each account you require.</p>
+
       <p class="govuk-body govuk-!-margin-bottom-6">
-        Attach a completed and signed copy of HM Land Registry memorandum of understanding for lenders form.
+        Attach a completed and signed copy of the Direct Debit application form and the Variable Direct Debit mandate form.
       </p>
 
       <div class="govuk-form-group">
-        <label class="govuk-label form-label-bold" for="file-upload-2">
+        <label class="govuk-label form-label-bold" for="file-upload-1">
           Upload a file
         </label>
-        <input class="govuk-file-upload" id="file-upload-2" name="file-upload-2" type="file">
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
       </div>
 
-      <form action="9" method="post" class="form">
+      <form action="2" method="post" class="form">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
           <div class="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="uploaded-MOU-yes" name="uploaded-MOU" type="checkbox"  value="Yes" {{ checked("uploaded-MOU", "Yes") }}>
-              <label class="govuk-label govuk-checkboxes__label" for="uploaded-MOU-yes">
+              <input class="govuk-checkboxes__input" id="uploaded-VDD-yes" name="uploaded-VDD" type="checkbox"  value="Yes" {{ checked("uploaded-VDD", "Yes") }}>
+              <label class="govuk-label govuk-checkboxes__label" for="uploaded-VDD-yes">
                 I have uploaded the Direct Debit application form and the Variable Direct Debit mandate form.
               </label>
             </div>
