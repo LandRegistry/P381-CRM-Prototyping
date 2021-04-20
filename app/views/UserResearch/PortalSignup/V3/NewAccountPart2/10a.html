@@ -15,13 +15,11 @@
 
 
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
-        Attach the: Direct Debit application form and the Variable Direct Debit mandate form
+        Attach the: full Network Access Agreement
       </h1>
-
-      <p style="max-width:760px;">Fill in a <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD application form and direct debit mandate</a> (see pages 13 to 15 of the <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD guide</a>) for each account you require.</p>
-
+      <form class="form" action="12a" method="post">
       <p class="govuk-body govuk-!-margin-bottom-6">
-        Attach a completed and signed copy of the Direct Debit application form and the Variable Direct Debit mandate form.
+        Attach a completed and signed copy of the full Network Access Agreement.
       </p>
 
       <div class="govuk-form-group">
@@ -31,7 +29,7 @@
         <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
       </div>
 
-      <form action="2" method="post" class="form">
+      <form action="12" method="post" class="form">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
@@ -39,7 +37,7 @@
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="uploaded-VDD-yes" name="uploaded-VDD" type="checkbox"  value="Yes" {{ checked("uploaded-VDD", "Yes") }}>
               <label class="govuk-label govuk-checkboxes__label" for="uploaded-VDD-yes">
-                I have uploaded the Direct Debit application form and the Variable Direct Debit mandate form.
+                I'm authorised to make the application on behalf of {{ data["organisation-name"] }}.
               </label>
             </div>
           </div>
@@ -49,7 +47,7 @@
 
 
       <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-          <button class="govuk-button" type="submit" formaction="4a">Continue</button>
+          <button class="govuk-button" type="submit" formaction="12a">Continue</button>
       </div>
 </form>
 
