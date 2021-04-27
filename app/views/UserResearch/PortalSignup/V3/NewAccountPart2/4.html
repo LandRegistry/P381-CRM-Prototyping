@@ -21,8 +21,7 @@
         </span>
         Business e-services account
       </h1>
-
-      <form class="form" action="13" method="post">
+      <form action="3" method="post" class="form">
 
         <div class="govuk-warning-text">
             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -32,71 +31,94 @@
             </strong>
           </div>
 
-      <ol class="app-task-list">
-        <li>
+      <ul class="app-task-list" style="margin-left: -30px">
+        <!-- <li>
           <h2 class="app-task-list__section">
             <span class="app-task-list__section-number">1. </span> Add an existing variable Direct Debit Key number or create a new one (VDD)
           </h2>
           <ul class="app-task-list__items">
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-                <a href="5.html" aria-describedby="eligibility-status">
+                <a href="3.html" aria-describedby="eligibility-status">
                   Variable Direct Debit (VDD) details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="5.html" aria-describedby="eligibility-status">
+                  Attach the document
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Cannot start yet</strong>
+            </li>
+          </ul>
+        </li> -->
+        <li>
+          <!-- <script> var text= document.getElementById("MOU").value
+            if (value=== "MOU") -->
+            {% if (data["MOU"]=='true') %}
+
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number"> </span> Access to Lender Services (MOU)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="3.html" aria-describedby="eligibility-status">
+                  Attach the document
                 </a>
               </span>
               <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
             </li>
           </ul>
+          {% endif %}
+          <!-- </script> -->
         </li>
         <li>
+          {% if (data["NAA"]=='true') %}
           <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">2. </span> Access to Lender Services (MOU)
+            <span class="app-task-list__section-number"> </span> Access to Network Services (NAA)
           </h2>
           <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="5.html" aria-describedby="eligibility-status">
+                  Business regulatory details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
                 <a href="8.html" aria-describedby="eligibility-status">
                   Attach the document
                 </a>
               </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
             </li>
           </ul>
+          {% endif %}
         </li>
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">3. </span> Access to Network Services (NAA)
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="7.html" aria-describedby="eligibility-status">
-                  Business regulatory details
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="10.html" aria-describedby="eligibility-status">
-                  Attach the document
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-          </ul>
-        </li>
-      </ol>
+      </ul>
 
 
       <p class="govuk-body govuk-!-margin-bottom-6">
         By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
       </p>
 
+      {% if (data["NAA"]=='true') %}
       <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-          <button class="govuk-button" type="submit" formaction="13">Continue</button>
+          <button class="govuk-button" type="submit" formaction="5">Continue</button>
       </div>
 
+
+      {% elif (data["MOU"]=='true') %}
+      <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+          <button class="govuk-button" type="submit" formaction="11">Continue</button>
+      </div>
+      {% endif %}
     </div>
 
   </div>

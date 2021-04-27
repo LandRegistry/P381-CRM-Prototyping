@@ -10,57 +10,50 @@
 
 {% block content %}
 
-<div class="govuk-grid-row">
-    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:880px;">
 
 
-      <form class="form" action=vddnumber method="post">
-          <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
-            <span class="govuk-caption-l">
-              Application Ref: {{ data["application-reference"] }}
-              <span class="govuk-visually-hidden"> &ndash; </span>
-            </span>
-            Business e-services account
-          </h1>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Attach the memorandum of understanding form.
+      </h1>
 
-        <div class="govuk-!-padding-bottom-5"></div>
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        Attach a completed and signed copy of HM Land Registry memorandum of understanding for lenders form.
+      </p>
 
-
-        <div style="padding-bottom:50px;width: 100%;display:inline-block;">
-
-          <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-      <h2 class="govuk-heading-m">
-        Does {{ data["organisation-name"] }} have a variable Direct Debit (VDD) account you want to use for Business e-services account?
-      </h2>
-    </legend>
-
-    <div class="govuk-radios govuk-radios--inline">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="vddnumber-01" name="vddnumber" type="radio" value="Yes">
-        <label class="govuk-label govuk-radios__label" for="vddnumber-01">
-          Yes
+      <div class="govuk-form-group">
+        <label class="govuk-label form-label-bold" for="file-upload-2">
+          Upload a file
         </label>
+        <input class="govuk-file-upload" id="file-upload-2" name="file-upload-2" type="file">
       </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="vddnumber-02" name="vddnumber" type="radio" value="No">
-        <label class="govuk-label govuk-radios__label" for="vddnumber-02">
-          No
-        </label>
+
+      <form action="6a" method="post" class="form">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="uploaded-MOU-yes" name="uploaded-MOU" type="checkbox"  value="Yes" {{ checked("uploaded-MOU", "Yes") }}>
+              <label class="govuk-label govuk-checkboxes__label" for="uploaded-MOU-yes">
+                I have uploaded the Direct Debit application form and the Variable Direct Debit mandate form.
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
       </div>
+
+
+      <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+          <button class="govuk-button" type="submit" formaction="4">Continue</button>
+      </div>
+</form>
+
+
     </div>
 
-    <button type="submit" class="govuk-button" data-module="govuk-button">
-        Continue
-      </button>
-
-  </fieldset>
-  </form>
-  </form>
-</div>
-
-</div>
-
+  </div>
 
 {% endblock %}

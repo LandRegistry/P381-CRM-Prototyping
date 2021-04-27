@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+
+      <form class="form" action=vddnumber method="post">
+          <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
+            <span class="govuk-caption-l">
+              Application Ref: {{ data["application-reference"] }}
+              <span class="govuk-visually-hidden"> &ndash; </span>
+            </span>
+            Business e-services account
+          </h1>
+
+        <div class="govuk-!-padding-bottom-5"></div>
+
+
+        <div style="padding-bottom:50px;width: 100%;display:inline-block;">
+
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h2 class="govuk-heading-m">
+        Does {{ data["organisation-name"] }} have a variable Direct Debit (VDD) account you want to use for Business e-services account?
+      </h2>
+    </legend>
+
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="vddnumber-01" name="vddnumber" type="radio" value="Yes">
+        <label class="govuk-label govuk-radios__label" for="vddnumber-01">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="vddnumber-02" name="vddnumber" type="radio" value="No">
+        <label class="govuk-label govuk-radios__label" for="vddnumber-02">
+          No
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+  </fieldset>
+  </form>
+  </form>
+</div>
+
+</div>
+
+
+{% endblock %}

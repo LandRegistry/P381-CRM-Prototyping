@@ -4473,11 +4473,11 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/termination', functio
 
     switch (terminationChoice) {
         case 'No':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/10a');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/8');
             break;
 
         case 'Yes':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/11a');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/9');
             break;
 
         default:
@@ -4486,24 +4486,7 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/termination', functio
     }
 })
 
-router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/termination2', function(req, res) {
 
-    const termination2Choice= req.session.data['termination2']
-
-    switch (termination2Choice) {
-        case 'No':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/10b');
-            break;
-
-        case 'Yes':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/11b');
-            break;
-
-        default:
-            //This is a catch all for none of the above
-            break;
-    }
-})
 
 
 module.exports = router
