@@ -10,104 +10,283 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+		<h1 class="govuk-heading-xl">Business Regulatory details</h1>
+	</div>
+</div>
+<form class="form" action="8a" method="post">
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<form class="form" action="" method="post">
+				<div class="govuk-form-group">
+					<fieldset class="govuk-fieldset">
+						<div>
+							<h3 class="govuk-heading-m">Is your organisation a regulated or licensed body?
+              </h3>
+						</div>
+						<p> An organisation (unless they are a government department) applying for Network Services must be or must employ a person authorised to carry out conveyancing and land registration work under the Legal Services Act 2007, Part 3 and Schedule 2 paragraphs 5 (1) (a) and (b) (the 'relevant reserved instrument activities').</p>
+						<p> This information is required if applying for an NAA. All references to the LR (NA) Rules mean the Land Registration (Network Access) Rules 2008 as amended by Land Registration (Network Access) (Amendment) Rules 2011. </p>
+						<div class="govuk-radios" id="myRadioGroup">
+							<div class="govuk-radios__item">
+								<input class="govuk-radios__input" type="radio" name="question1" value="A" id="Q1A">
+								<label class="govuk-label govuk-radios__label" for="Q1A">Yes</label>
+							</div>
+							<div class="govuk-radios__item">
+								<input class="govuk-radios__input" type="radio" name="question1" value="B" id="Q1B">
+								<label class="govuk-label govuk-radios__label" for="Q1B">No</label>
+							</div>
+							<div class="govuk-grid-row desc" id="question1A">
+								<div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+									<hr style="margin-bottom:25px;">
+									<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                            Who is your organisation's regulator or licensing authority?
+                          </h3>
+													<p> If your organisation is a recognised body or a licensed body, please provide details of your regulator or licensing authority. </p>
+									<div class="govuk-form-group">
+										<fieldset class="govuk-fieldset"
+											<div class="govuk-radios" id="myRadioGroup">
+												<div class="govuk-radios__item">
+													<input class="govuk-radios__input" id="Q2A" name="question2" type="radio" value="A">
+													<label class="govuk-label govuk-radios__label" for="Q2A"> Solicitors Regulation Authority
+													</label>
+												</div>
+												<div class="govuk-radios__item">
+													<input class="govuk-radios__input" id="Q2B" name="question2" type="radio" value="B">
+													<label class="govuk-label govuk-radios__label" for="Q2B"> Council for Licensed Conveyancers
+													</label>
+												</div>
+												<div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+									      <div class="govuk-radios__item">
+									        <input class="govuk-radios__input" id="Other" name="other" type="radio" value="email" data-aria-controls="conditional-other">
+									        <label class="govuk-label govuk-radios__label" for="other">
+									          Other
+									        </label>
+									      </div>
+									      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-other">
+									        <div class="govuk-form-group">
+									          <label class="govuk-label" for="other">
+									            Enter regulator or licensing authority
+									          </label>
+									          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+									      </div
+											<div class="govuk-!-padding-bottom-5"></div>
+											<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart2/8a.html'">Continue</button>
+											</div>
+										</fieldset>
+									</div>
+								</div>
 
+					<div class="govuk-grid-row desc" id="question1B">
+						<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+							<hr style="margin-bottom:25px;">
+							<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+        Does your organisation empoloy an authorised person?
+      </h3>
+			<p> If your organisation is not a recognised body or a licensed body or a government department, you must certify that your organisation employs at least one authorised person, as defined in section 18 of the Legal Services Act 2007, who is entitled to carry on relevant reservced instrument activities and who will carry on or direct and supervise those activities. </p>
+							<div class="govuk-radios" id="myRadioGroup5">
+								<div class="govuk-radios__item">
+									<input class="govuk-radios__input" type="radio" name="question2" value="I" id="Q2I">
+									<label class="govuk-label govuk-radios__label" for="Q2I">Yes</label>
+								</div>
+								<div class="govuk-radios__item">
+									<input class="govuk-radios__input" type="radio" name="question2" value="J" id="Q2J">
+									<label class="govuk-label govuk-radios__label" for="Q2J">No</label>
+								</div>
 
-      <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
-        <span class="govuk-caption-l">
-          Part 2 of 2
-          <span class="govuk-visually-hidden"> &ndash; </span>
-        </span>
-        Business e-services account
-      </h1>
+	<div class="govuk-grid-row desc2" id="question2I">
+		<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+			<hr style="margin-bottom:25px;">
+			<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+        Who is the authorised person regulated or licensed by?
+      </h3>
+						<div class="govuk-form-group">
+							<label class="govuk-label" for="Q4A"></label>
+			  		<input class="govuk-input govuk-input--width-20" id="width-20"
+						<div class="govuk-checkboxes">
 
+		<div class="govuk-!-padding-bottom-6"></div>
 
-        <div class="govuk-warning-text">
-            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-            <strong class="govuk-warning-text__text">
-              <span class="govuk-warning-text__assistive">Warning</span>
-              Only a responsible person or deputy responsible person can submit this request.
-            </strong>
-          </div>
-
-      <ol class="app-task-list">
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Add an existing variable Direct Debit Key number or create a new one (VDD)
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="5.html" aria-describedby="eligibility-status">
-                  Variable Direct Debit (VDD) details
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="8.html" aria-describedby="eligibility-status">
-                  Attach the document
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Access to Lender Services (MOU)
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="8.html" aria-describedby="eligibility-status">
-                  Attach the document
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Access to Network Services (NAA)
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="10.html" aria-describedby="eligibility-status">
-                  Business regulatory details
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="5.html" aria-describedby="eligibility-status">
-                  Attach the document
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
-            </li>
-          </ul>
-        </li>
-      </ol>
-
-
-      <p class="govuk-body govuk-!-margin-bottom-6">
-        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
-      </p>
-
-      <div class="govuk-!-margin-bottom-9">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
-          Continue
-        </button>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="certify" name="certify" type="checkbox" value="check">
+        <label class="govuk-label govuk-checkboxes__label" for="certify">
+          I certify that the applicant is an individual or body who employs, or being a body has among its managers, at least one authorised person who is authorised to carry on the relevant reserved instrument activities and who will carry on or direct and supervise the carrying on of the relevant reserved instrument activities as such employee or manager
+        </label>
       </div>
 
-    </div>
+			<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart2/8a.html'">Continue</button>
 
-  </div>
+</div>
+</div>
+</div>
+</div>
+				<div class="govuk-grid-row desc2" id="question2J">
+					<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+						<hr class="govuk-!-margin-bottom-8">
+						<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+        background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+        padding: 40px 20px;text-align: center;">
+							<h1 style="margin-bottom: 5px;font-size: 45px;">
+          You are not eligible to apply for Network Services
+        </h1>
+						</div>
 
-{% endblock %}
+				<p> You may still be able to apply for our other services. </p>
+
+						<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart2/index.html'">Continue</button>
+					</div>
+				</div>
+		</div>
+	</div>
+	</form>
+	<script>
+		$(document).ready(function() {
+		         $("input[name$='question1']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc").hide();
+		             $("#question1" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question2']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc2").hide();
+		             $("#question2" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question3']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc3").hide();
+		             $("#question3" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question4']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc4").hide();
+		             $("#question4" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question5']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc5").hide();
+		             $("#question5" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question6']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc6").hide();
+		             $("#question6" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question7']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc7").hide();
+		             $("#question7" + test).show();
+		         });
+		     });
+
+
+		     $(document).ready(function() {
+		         $("input[name$='question8']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc8").hide();
+		             $("#question8" + test).show();
+		         });
+		     });
+
+
+		     $(document).ready(function() {
+		         $("input[name$='question9']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc9").hide();
+		             $("#question9" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question10']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc10").hide();
+		             $("#question10" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question11']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc11").hide();
+		             $("#question11" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question12']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc12").hide();
+		             $("#question12" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question13']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc13").hide();
+		             $("#question13" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question14']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc14").hide();
+		             $("#question14" + test).show();
+		         });
+		     });
+	</script>
+	<style>
+		.desc {
+		     display:none;
+		     }
+		     .desc2 {
+		     display:none;
+		     }
+		     .desc3 {
+		     display:none;
+		     }
+		     .desc4 {
+		     display:none;
+		     }
+		     .desc5 {
+		     display:none;
+		     }
+		     .desc6 {
+		     display:none;
+		     }
+	</style>
+
+	{% endblock %}

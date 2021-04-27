@@ -10,104 +10,53 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
-
-
-      <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
-        <span class="govuk-caption-l">
-          Part 2 of 2
-          <span class="govuk-visually-hidden"> &ndash; </span>
-        </span>
-        Business e-services account
-      </h1>
-
-
-        <div class="govuk-warning-text">
-            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-            <strong class="govuk-warning-text__text">
-              <span class="govuk-warning-text__assistive">Warning</span>
-              Only a responsible person or deputy responsible person can submit this request.
-            </strong>
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-full">
+		<h1 class="govuk-heading-xl">Has your organisation or any connected person been subject to a previous termination, notice of termination, intervention or disciplinary proceedings? </h1>
+	</div>
+</div>
+<p> Either select the certificate or complete the details on the next page if any of the circumstances described in Paragraph 7 of Schedule 1 to the LR (NA) Rules applies to the applicant or connected person. </p>
+<div class="govuk-!-padding-bottom-6"></div>
+<form class="form" action="termination" method="post">
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<form class="form" action="" method="post">
+				<div class="govuk-form-group">
+					<fieldset class="govuk-fieldset">
+						<div>
+  <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset"
+        <div class="govuk-radios" id="myRadioGroup">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="termination-01" name="termination" type="radio" value="No">
+            <label class="govuk-label govuk-radios__label" for="termination-01"> No, I certify that to my knowledge,paragraph 7 of Schedule 1 to the Land Registration (Network Access) Rules does not apply to the organisation or any connected person
+            </label>
           </div>
-
-      <ol class="app-task-list">
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Add an existing variable Direct Debit Key number or create a new one (VDD)
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="5.html" aria-describedby="eligibility-status">
-                  Variable Direct Debit (VDD) details
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="8.html" aria-describedby="eligibility-status">
-                  Attach the document
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Access to Lender Services (MOU)
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="5.html" aria-describedby="eligibility-status">
-                  Attach the document
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Access to Network Services (NAA)
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="10.html" aria-describedby="eligibility-status">
-                  Business regulatory details
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="5.html" aria-describedby="eligibility-status">
-                  Attach the document
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
-            </li>
-          </ul>
-        </li>
-      </ol>
-
-
-      <p class="govuk-body govuk-!-margin-bottom-6">
-        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
-      </p>
-
-      <div class="govuk-!-margin-bottom-9">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
-          Continue
-        </button>
-      </div>
-
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="termination-02" name="termination" type="radio" value="Yes">
+            <label class="govuk-label govuk-radios__label" for="termination-02"> Yes, details of circumstance described in paragraph 7 of Schedule 1 to the LR (NA) Rules that apply to the organisation or to a connected person are provided
+            </label>
+          </div>
+        </div>
+      </fieldset>
     </div>
 
+    <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Why do we need to know this?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    If the customer or a connected person as defined in the LA (NR) Rules has been involved in any of these circumstances in the previous 3 years, we will look more carefully at the application. There will not be an absolute bar on the grant of a NAA, but we will consider the circumstances, and assess whether the applicant is likely to comply with the terms of the NAA.
   </div>
+</details>
 
-{% endblock %}
+</div>
+
+<button type="submit" class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+  
+	{% endblock %}
