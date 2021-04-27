@@ -4432,7 +4432,7 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/responsible-person-op
 
     switch (responsiblepersonChoice) {
         case 'responsible-person-1':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/3b');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/3d');
             break;
 
         case 'responsible-person-2':
@@ -4446,6 +4446,28 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/responsible-person-op
 })
 
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/query-contact-options', function(req, res) {
 
+    const querycontactChoice = req.session.data['query-contact']
+
+    switch (querycontactChoice) {
+        case 'query-contact-1':
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/index-5');
+            break;
+
+        case 'query-contact-2':
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/index-5');
+            break;
+
+            case 'query-contact-3':
+                res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/4b');
+                break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 module.exports = router
