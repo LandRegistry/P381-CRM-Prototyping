@@ -61,8 +61,63 @@
         </div>
       
         <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-            <button class="govuk-button" type="submit" formaction="index-2">Continue</button>
+            <button class="govuk-button" type="submit" formaction="index-1">Continue</button>
         </div>
+
+
+
+
+<div>
+               <div class="govuk-form-group">
+                <label class="govuk-label" for="address-line-1">
+                  Building and street
+                </label>
+                <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="88 Victoria Road" style="width: 300px;">        
+
+
+                <div class="govuk-form-group">
+                <label class="govuk-label" for="address-town">
+                  Town or city
+                </label>
+                <input class="govuk-input" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px;">
+                </div>
+
+                <div class="govuk-form-group">
+                <label class="govuk-label" for="address-county">
+                  County
+                </label>
+                <input class="govuk-input" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px;">
+                </div>
+        
+                <div class="govuk-form-group">
+                <label class="govuk-label" for="postcode">
+                  UK Postcode
+                </label>
+                <input class="govuk-input" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px;">
+                </div>                
+
+                <div class="govuk-form-group">
+                <label class="govuk-label" for="dx-address2">
+                    DX address (optional)
+                  </label>
+                  <input class="govuk-input" id="dx-address2" name="dx-address2" type="text" value="{{ data['dx-address2'] }}" style="width: 300px;margin-bottom:20px;">
+                </div>
+              </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </form>
 </div>
 
