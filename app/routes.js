@@ -4387,37 +4387,37 @@ router.post('/UserResearch/PortalSignup/V2/businessaccountalreadyornot2', functi
 
 
 // ContactformQA radio buttons for public or business
-router.post('/UserResearch/PortalSignup/V2/whatdoyouwanttodoV2', function(req, res) {
+router.post('/UserResearch/PortalSignup/V3/whatdoyouwanttodoV2', function(req, res) {
 
     const whatdoyouwanttodoChoice2 = req.session.data['whatdoyouwanttodo']
 
     switch (whatdoyouwanttodoChoice2) {
         case 'addAdministrator':
-            res.redirect('/UserResearch/PortalSignup/V2/addAdministrator/');
+            res.redirect('/UserResearch/PortalSignup/V1/addAdministrator/');
             break;
 
         case 'addDeputyResponsible':
-            res.redirect('/UserResearch/PortalSignup/V2/addDeputyResponsible/');
+            res.redirect('/UserResearch/PortalSignup/V1/addDeputyResponsible/');
             break;
 
         case 'changeResponsible':
-            res.redirect('/UserResearch/PortalSignup/V2/changeResponsible/');
+            res.redirect('/UserResearch/PortalSignup/V1/changeResponsible/');
             break;
 
         case 'changeBankDetails':
-            res.redirect('/UserResearch/PortalSignup/V2/changeBankDetails/');
+            res.redirect('/UserResearch/PortalSignup/V1/changeBankDetails/');
             break;
 
         case 'applyNetworkServices':
-            res.redirect('/UserResearch/PortalSignup/V2/applyNetworkServices/');
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/');
             break;
 
         case 'createVDD':
             res.redirect('/UserResearch/PortalSignup/V2/createVDD/');
             break;
 
-                    case 'changeBankDetails':
-            res.redirect('/UserResearch/PortalSignup/V2/createVDD/');
+        case 'applyLenderServices':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/');
             break;
 
         default:
@@ -4473,13 +4473,38 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/termination', functio
 
     switch (terminationChoice) {
         case 'No':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/8');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/10a');
             break;
 
         case 'Yes':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/9');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/11a');
             break;
 
+        default:
+            //This is a catch all for none of the above
+            break;
+        }
+    })
+
+
+
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/query-contact-options', function(req, res) {
+
+    const querycontactChoice = req.session.data['query-contact']
+
+    switch (querycontactChoice) {
+        case 'query-contact-1':
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/index-5');
+            break;
+
+        case 'query-contact-2':
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/index-5');
+            break;
+
+            case 'query-contact-3':
+                res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/4b');
+                break;
 
         default:
             //This is a catch all for none of the above
@@ -4488,23 +4513,25 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/termination', functio
 })
 
 // ContactformQA radio buttons for public or business
-router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/query-contact-options', function(req, res) {
-    const querycontactChoice = req.session.data['query-contact']
-    switch (querycontactChoice) {
-        case 'query-contact-1':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/index-5');
+router.post('/UserResearch/PortalSignup/V3/businessaccountalreadyornot2', function(req, res) {
+
+    const alreadyornotChoice2 = req.session.data['alreadyornot']
+
+    switch (alreadyornotChoice2) {
+        case 'yes':
+            res.redirect('/UserResearch/PortalSignup/V3/options');
             break;
-        case 'query-contact-2':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/index-5');
+
+        case 'no':
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/');
             break;
-            case 'query-contact-3':
-                res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/4b');
-                break;
+
         default:
             //This is a catch all for none of the above
             break;
     }
 })
+
 
 
 module.exports = router
