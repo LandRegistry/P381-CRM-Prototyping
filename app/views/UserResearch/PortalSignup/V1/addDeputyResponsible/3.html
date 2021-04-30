@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit 
+  GOV.UK Prototype Kit
 {% endblock %}
 
 
@@ -14,7 +14,7 @@
 
 <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
-  
+
 
       <h1 class="govuk-heading-xl">
         New deputy responsible person
@@ -25,9 +25,9 @@
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+            <h3 class="govuk-fieldset__heading-l" style="max-width: 680px;">
               How does the new deputy responsible person want to receive their security credentials?
-            </h2>
+            </h3>
           </legend>
           <div class="govuk-radios">
             <div class="govuk-radios__item">
@@ -49,9 +49,9 @@
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+            <h3 class="govuk-fieldset__heading-l" style="max-width: 680px;">
                 Do you want the new deputy responsible person to have access to all your organisation's variable Direct Debit Key numbers?
-            </h2>
+            </h3>
           </legend>
           <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
             <div class="govuk-radios__item">
@@ -76,11 +76,11 @@
                     Must be 7 digits long
                   </div>
                 <input class="govuk-input govuk-!-width-one-third" id="VDD-Number" name="VDD-Number" value="{{ data['VDD-Number'] }}"  type="tel"></div>
-      
+
             </div>
-            
+
           </div>
-      
+
         </fieldset>
       </div>
 
@@ -97,7 +97,7 @@
     </div>
 
 
-      
+
 </div>
 
 <style>
@@ -118,7 +118,7 @@
     .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
     margin-right: 15px;
 }
-    
+
 .govuk-button-group .govuk-link {
     font-size: 19px;
     font-size: 1.1875rem;

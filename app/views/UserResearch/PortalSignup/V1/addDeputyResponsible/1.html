@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit 
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -12,7 +12,7 @@
 
 <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
-  
+
 
       <h1 class="govuk-heading-xl">
         New deputy responsible person
@@ -47,7 +47,7 @@
                 <input class="govuk-input" id="telephone-number" name="telephone-number" value="{{ data['telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
 
-               
+
 
             <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m" style="margin-bottom:0px;padding-top:30px;">
@@ -62,40 +62,40 @@
                   <div id="content2" style="display:none;">
 
                     <dd class="govuk-summary-list__value" style="padding:0px;">
-                
+
                         <label class="govuk-label" for="address-line-1">
                           Building and street
                         </label>
-                        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px; margin-bottom: 20px;">        
-                
+                        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px; margin-bottom: 20px;">
+
                         <label class="govuk-label" for="address-town">
                           Town or city
                         </label>
                         <input class="govuk-input" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px; margin-bottom: 20px;">
-                    
-                
+
+
                         <label class="govuk-label" for="address-county">
                           County
                         </label>
                         <input class="govuk-input" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px; margin-bottom: 20px;">
-                    
-                
+
+
                         <label class="govuk-label" for="postcode">
                           Postcode
                         </label>
                         <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px; margin-bottom: 20px;">
-                
+
                         <label class="govuk-label" for="dx-address">
                           DX address (optional)
                         </label>
                         <input class="govuk-input govuk-input--width-10" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
-                
-                        
-    
+
+
+
                 </dd>
-                
+
                     <div>
-                        <button class="govuk-button" type="submit" formaction="3">Continue</button>
+                        <button class="govuk-button" type="submit" formaction="/UserResearch/PortalSignup/V1/addDeputyResponsible/2.html">Continue</button>
                     </div>
     
                 </div>
@@ -126,7 +126,7 @@
     </div>
 
 
-      
+
 </div>
 
 
@@ -143,9 +143,9 @@ for (var i=0;i<divs.length;i++)
     }
   }
 onediv.style.display = 'block';
-} 
+}
     </script>
- 
+
 
 <style>
 
@@ -166,14 +166,14 @@ onediv.style.display = 'block';
     .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
     margin-right: 15px;
 }
-    
+
 .govuk-button-group .govuk-link {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1;
 }
 .govuk-form-group {
-    float:left; 
+    float:left;
     margin-right:40px;
 }
 

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit 
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -12,7 +12,7 @@
 
   <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
-  
+
 
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
         Check your answers before sending your application
@@ -36,7 +36,7 @@
                {% endfor %}
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="5a">
+              <a class="govuk-link" href="">
                 Change<span class="govuk-visually-hidden"> name</span>
               </a>
             </dd>
@@ -57,7 +57,7 @@
           {{ data['first-name'] }} {{ data['family-name'] }}
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="5b">
+          <a class="govuk-link" href="">
             Change<span class="govuk-visually-hidden"> name</span>
           </a>
         </dd>
@@ -78,7 +78,7 @@
           <p class="govuk-body">{{ data['uploaded-VDD'] }}
          {% for feature in data['uploaded-VDD'] %}
           {% else %}
-            <p>No</p>
+            <p>Yes</p>
           {% endfor %}
 
 
@@ -86,7 +86,7 @@
           </p>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="5c">
+          <a class="govuk-link" href="">
             Change<span class="govuk-visually-hidden"> delivery</span>
           </a>
         </dd>
@@ -109,7 +109,7 @@
             Accept and send
         </button>
       </div>
-      
+
     </div>
 
   </div>
@@ -119,12 +119,12 @@
     .govuk-summary-list__value > p {
         margin-bottom: 0;
     }
-   
+
     .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    
+
     </style>
 
 {% endblock %}

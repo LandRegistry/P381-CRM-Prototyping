@@ -15,10 +15,10 @@
 		<h1 class="govuk-heading-xl">Business Regulatory details</h1>
 	</div>
 </div>
-<form class="form" action="6" method="post">
+{# <form class="form" action="" method="post"> #}
 	<div class="govuk-grid-row">
 		<div class="govuk-grid-column-full">
-			<form class="form" action="6" method="post">
+			{# <form class="form" action="6" method="post"> #}
 				<div class="govuk-form-group">
 					<fieldset class="govuk-fieldset">
 						<div>
@@ -58,19 +58,19 @@
 												</div>
 												<div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
 									      <div class="govuk-radios__item">
-									        <input class="govuk-radios__input" id="Other" name="other" type="radio" value="email" data-aria-controls="conditional-other">
+									        <input class="govuk-radios__input" id="Q2C" name="question2" type="radio" value="C" data-aria-controls="conditional-other">
 									        <label class="govuk-label govuk-radios__label" for="other">
 									          Other
 									        </label>
                           <div class="govuk-!-padding-bottom-6"></div>
-									      </div>
 									      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-other">
 									        <div class="govuk-form-group">
 									          <label class="govuk-label" for="other">
 									            Enter regulator or licensing authority
 									          </label>
 									          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
-									      </div
+									      </div>
+                      </div>
 											<div class="govuk-!-padding-bottom-9"></div>
 											<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart2/6.html'">Continue</button>
 											</div>
@@ -82,7 +82,7 @@
 						<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
 							<hr style="margin-bottom:25px;">
 							<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
-        Does your organisation empoloy an authorised person?
+        Does your organisation employ an authorised person?
       </h3>
 			<p> If your organisation is not a recognised body or a licensed body or a government department, you must certify that your organisation employs at least one authorised person, as defined in section 18 of the Legal Services Act 2007, who is entitled to carry on relevant reservced instrument activities and who will carry on or direct and supervise those activities. </p>
 							<div class="govuk-radios" id="myRadioGroup5">
@@ -135,12 +135,12 @@
 
 				<p> You may still be able to apply for our other services. </p>
 
-						<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart2/index.html'">Continue</button>
+						<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/index'">Continue</button>
 					</div>
 				</div>
 		</div>
 	</div>
-	</form>
+	{# </form> #}
 	<script>
 		$(document).ready(function() {
 		         $("input[name$='question1']").click(function() {

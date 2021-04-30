@@ -12,19 +12,15 @@
 
   <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full">
-    <span class="govuk-caption-xl">
-      Part 2 of 2
-    </span>
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" style="max-width:860px;">
-      Apply for a Business e-services account
+      Business e-services account
     </h1>
   </div>
 
 
     <div class="govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:800px;">
 
-        <p class="govuk-!-padding-bottom-5">Lorem ipsum refresh text, enable register for Access to network services, lender services or to set up a variable Direct Debit.</p>
-
+        <p class="govuk-!-padding-bottom-5"> You can apply for Network Services as well as Lender Services to be added to your HM Land Registry Business e-services account. </p>
 
 
         <form method="post" class="form">
@@ -45,6 +41,17 @@
                     <input class="govuk-input" id="application-reference" value="{{ data['application-reference']}}" style="width: 450px;">
                 </div>
 
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Where can I find my application reference?
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                      You can find it in your confirmation email from completting your AFS1 Business e-service account.
+                    </div>
+                  </details>
+
                 <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
                     <button class="govuk-button" type="submit" formaction="1">Sign in</button>
                 </div>
@@ -54,16 +61,7 @@
         </form>
 
 
-        <details class="govuk-details" data-module="govuk-details">
-            <summary class="govuk-details__summary">
-              <span class="govuk-details__summary-text">
-                Where can I find my application reference?
-              </span>
-            </summary>
-            <div class="govuk-details__text">
-              At the top of the email you clicked through from to get to this page, is your application reference number, it should start with the letters LR.
-            </div>
-          </details>
+
 
 
     </div>

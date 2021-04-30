@@ -4473,11 +4473,11 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/termination', functio
 
     switch (terminationChoice) {
         case 'No':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/10a');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/8');
             break;
 
         case 'Yes':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/11a');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/9');
             break;
 
         default:
