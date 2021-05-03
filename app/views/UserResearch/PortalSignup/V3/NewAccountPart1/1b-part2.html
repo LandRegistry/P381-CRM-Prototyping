@@ -31,10 +31,35 @@
                 </div>
                 <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
                   <div class="govuk-form-group">
-                    <div id="contact-hint" class="govuk-hint">
-                        (Must be 7 digits long)
-                      </div>
-                    <input class="govuk-input govuk-!-width-one-third" id="VDD-number-entered" name="VDD-number-entered" type="text" spellcheck="false" value="{{ data['VDD-number-entered'] }}"></div>
+
+                    <div style="margin-bottom: 20px;">                      
+                      <label class="govuk-label form-label-bold">
+                      VDD 1
+                    </label>
+                    <input class="govuk-input govuk-!-width-one-third" id="VDD-number1-entered" name="VDD-number1-entered" type="text" spellcheck="false" value="{{ data['VDD-number1-entered'] }}">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                      
+                      
+                      <label class="govuk-label form-label-bold">
+                        VDD 2
+                      </label>
+                      <input class="govuk-input govuk-!-width-one-third" id="VDD-number2-entered" name="VDD-number2-entered" type="text" spellcheck="false" value="{{ data['VDD-number2-entered'] }}">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                      
+                      
+                      <label class="govuk-label form-label-bold">
+                        VDD 3
+                      </label>
+                      <input class="govuk-input govuk-!-width-one-third" id="VDD-number3-entered" name="VDD-number3-entered" type="text" spellcheck="false" value="{{ data['VDD-number3-entered'] }}">
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                    <a href="#">Add more VDD account numbers</a>
+                  </div>
+                    </div>
           
                 </div>
                 <div class="govuk-radios__item">

@@ -240,12 +240,10 @@ GOV.UK Prototype Kit
                             </dt>
                             <dd class="govuk-summary-list__value">
                                 <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
-                                    <li style="margin-top:0px;">{{ data['VDD-number-entered'] }}
-                                    {% for feature in data['VDD-number-entered'] %}
-                                    {% else %}
-                                    No
-                                    {% endfor %}</li>
-                                    </ul>
+                                    <li>{{ data['VDD-number1-entered'] }}</li>
+                                    <li>{{ data['VDD-number2-entered'] }}</li>
+                                    <li>{{ data['VDD-number3-entered'] }}</li>
+                                </ul>
 
                             </dd>
                             <dd class="govuk-summary-list__actions">
