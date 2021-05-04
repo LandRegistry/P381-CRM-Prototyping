@@ -15,46 +15,42 @@
 <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
-
-      <h1 class="govuk-heading-xl" >
-        New responsible person
+      <h1 class="govuk-heading-xl">
+        Organisation details
       </h1>
-
-      <form action="7" method="post" class="form">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h2 class="govuk-fieldset__heading-l" style="max-width: 750px;margin-top:0px;">
-              How does the new deputy responsible person want to receive their security credentials?
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              What business type in your organisation?
             </h2>
           </legend>
+          <p class="govuk-body govuk-!-margin-bottom-3"></p>
           <div class="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="receive-type-email" name="receive-type" type="radio" value="Email" {{ checked("receive-type", "Email") }}>
-              <label class="govuk-label govuk-radios__label" for="receive-type-email">
-                Email
+              <input class="govuk-radios__input" id="local-business-type" name="business-type" type="radio" value="local" {{ checked("local-business-type", "Local authority") }}>
+              <label class="govuk-label govuk-radios__label" for="business-type">
+                Local authority
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="receive-type-post" name="receive-type" type="radio" value="Post" {{ checked("receive-type", "Post") }}>
-              <label class="govuk-label govuk-radios__label" for="receive-type-post">
-                Post
+              <input class="govuk-radios__input" id="other-business-type" name="business-type" type="radio" value="other" {{ checked("other-business-type", "Other") }}>
+              <label class="govuk-label govuk-radios__label" for="business-type">
+                Other
               </label>
             </div>
           </div>
+
+          <p class="govuk-body govuk-!-margin-bottom-7"></p>
+
+          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='4.html'">
+            Continue
+          </button>
+
         </fieldset>
       </div>
-          </div>
 
-      </div>
-
-
-      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='7.html'">
-        Continue
-    </button>
-      </form>
-        </div>
     </div>
 
 

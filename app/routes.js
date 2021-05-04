@@ -4532,6 +4532,231 @@ router.post('/UserResearch/PortalSignup/V3/businessaccountalreadyornot2', functi
     }
 })
 
+// applyLenderServices radio buttons for legal entity
+router.post('/UserResearch/PortalSignup/V1/applyLenderServices/legalentity', function(req, res) {
+
+    const legalentityChoice= req.session.data['legalentity']
+
+    switch (legalentityChoice) {
+        case 'LimitedCompany':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3a');
+            break;
+
+        case 'SolePractitioner':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3b');
+            break;
+
+        case 'GovernmentDepartment':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3c');
+            break;
+
+        case 'PoliceServices':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3d');
+            break;
+
+        case 'LimitedPartnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3e');
+            break;
+
+        case 'Partnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3f');
+            break;
+
+        case 'LocalAuthority':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3g');
+            break;
+
+        case 'Other':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/3h');
+            break;
+
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for termination on 19a
+router.post('/UserResearch/PortalSignup/V1/applyLenderServices/contact', function(req, res) {
+
+    const contactChoice= req.session.data['contact']
+
+    switch (contactChoice) {
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/18');
+            break;
+
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyLenderServices/19');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+
+// applyNetworkServices radio buttons for legal entity
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/legalentity', function(req, res) {
+
+    const legalentityChoice= req.session.data['legalentity']
+
+    switch (legalentityChoice) {
+        case 'LimitedCompany':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3a');
+            break;
+
+        case 'SolePractitioner':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3b');
+            break;
+
+        case 'GovernmentDepartment':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3c');
+            break;
+
+        case 'PoliceServices':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3d');
+            break;
+
+        case 'LimitedPartnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3e');
+            break;
+
+        case 'Partnership':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3f');
+            break;
+
+        case 'LocalAuthority':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3g');
+            break;
+
+        case 'Other':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/3h');
+            break;
+
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for regulated or licensed
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/regulatedorlicensed', function(req, res) {
+
+    const regulatedorlicensedChoice= req.session.data['regulatedorlicensed']
+
+    switch (regulatedorlicensedChoice) {
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/16a');
+            break;
+
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/16b');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/authorisedperson', function(req, res) {
+
+    const authorisedpersonChoice= req.session.data['authorisedperson']
+
+    switch (authorisedpersonChoice) {
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/17a');
+            break;
+
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/17b');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/insurancedetails', function(req, res) {
+
+    const insurancedetailsChoice= req.session.data['insurancedetails']
+
+    switch (insurancedetailsChoice) {
+        case '1':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/19a');
+            break;
+
+        case '2':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/19b');
+            break;
+
+        case '3':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20');
+            break;
+
+        case '4':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/19d');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for termination on 19a
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/termination', function(req, res) {
+
+    const terminationChoice= req.session.data['termination']
+
+    switch (terminationChoice) {
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20a');
+            break;
+
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20b');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for termination on 20
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/termination03', function(req, res) {
+
+    const termination03Choice= req.session.data['termination03']
+
+    switch (termination03Choice) {
+        case '1':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20a');
+            break;
+
+        case '2':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/20b');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
 
 
 module.exports = router
