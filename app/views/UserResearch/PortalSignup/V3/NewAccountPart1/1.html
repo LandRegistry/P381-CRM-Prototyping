@@ -40,8 +40,8 @@
             </div>
 
             <div class="govuk-form-group" >
-                <label class="govuk-label" for="llp-number" style="width: 450px;">
-                Company or limited liability partnership (LLP) registration number (if applicable)
+                <label class="govuk-label" for="llp-number" style="width: 288px;">
+                    Company/LLP registration number (if applicable)
                 </label>
                 <input class="govuk-input" id="llp-number" name="organisation-llp-number" value="{{ data['organisation-llp-number'] }}" type="text" style="width: 300px;">
             </div>
@@ -88,19 +88,26 @@
                         <input class="govuk-input" id="organisation-address-town" name="organisation-address-town" type="text" autocomplete="address-level2" value="{{ data['organisation-address-town'] }}" style="width: 300px;">
                     </div>
                 
-                    <div class="govuk-form-group">
+                        <div class="govuk-form-group">
                         <label class="govuk-label" for="organisation-postcode">
                           Postcode
                         </label>
                         <input class="govuk-input" id="organisation-postcode" name="organisation-postcode" type="text" autocomplete="postal-code" value="{{ data['organisation-postcode'] }}" style="width: 300px;">
-                        </div>                
+                        </div> 
+                        
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="organisation-country">
+                              Country
+                            </label>
+                            <input class="govuk-input" id="organisation-country" name="organisation-country" type="text" autocomplete="country" value="{{ data['organisation-country'] }}" style="width: 300px;">
+                            </div>
 
                         <div class="govuk-form-group">
                         <label class="govuk-label" for="organisation-dx-address">
                             DX address (optional)
                           </label>
                           <input class="govuk-input" id="organisation-dx-address" name="organisation-dx-address" type="text" value="{{ data['organisation-dx-address'] }}" style="width: 300px;margin-bottom:20px;">
-                </div>
+                        </div>
                         
     
                 </dd>

@@ -25,14 +25,14 @@
         <div style="display: inline-block;">
             <div class="govuk-form-group">
                 <label class="govuk-label" for="administrator-first-name">
-                First / Given name(s)
+                First/Given names
                 </label>
                 <input class="govuk-input" id="administrator-first-name" name="administrator-first-name" value="{{ data['administrator-first-name'] }}" type="text" style="width: 300px;">
             </div>
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="administrator-family-name">
-                    Surname / Family name
+                    Surname/Family name
                 </label>
                 <input class="govuk-input" id="administrator-family-name" name="administrator-family-name" value="{{ data['administrator-family-name'] }}" type="text" style="width: 300px;">
             </div>
@@ -71,6 +71,7 @@
                 <li>{{ data['organisation-address-line-1'] }}</li>
                 <li>{{ data['organisation-address-town'] }}</li>
                 <li>{{ data['organisation-postcode'] }}</li>
+                <li>{{ data['organisation-country'] }}</li>
             </ul>
             </div>
 
@@ -121,7 +122,15 @@
                         Postcode
                       </label>
                       <input class="govuk-input" id="administrator-postcode" name="administrator-postcode" type="text" autocomplete="postal-code" value="{{ data['administrator-postcode'] }}" style="width: 300px;">
-                      </div>                
+                      </div>    
+
+                      
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="administrator-country">
+                          Country
+                        </label>
+                        <input class="govuk-input" id="administrator-country" name="administrator-country" type="text" autocomplete="country" value="{{ data['administrator-country'] }}" style="width: 300px;">
+                        </div>   
 
                       <div class="govuk-form-group">
                       <label class="govuk-label" for="administrator-dx-address">
