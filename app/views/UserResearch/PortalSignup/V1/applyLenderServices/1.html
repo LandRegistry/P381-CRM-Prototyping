@@ -14,33 +14,37 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
 
-      <h1 class="govuk-heading-xl">
+      <h1 class="govuk-heading-xl" style="max-width: 725px;">
         Organisation details
       </h1>
-      <form action="2" method="post" class="form">
+
+      <form method="post" class="form">
         <div style="">
             <div class="govuk-form-group">
-                <label class="govuk-label" for="organisationsName">
+                <label class="govuk-label" for="first-name">
                 Organisation name
                 </label>
-                <input class="govuk-input" id=organisationsName" name="organisationsName" value="{{ data['organisationsName'] }}" type="text" style="width: 300px;">
+                <input class="govuk-input" id="organisationsName" name="organisationsName" value="{{ data['organisationsName'] }}" type="text" style="width: 300px;">
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="tradingname">
+                <label class="govuk-label" for="last-name">
                     Organisation trading name (optional)
                 </label>
                 <input class="govuk-input" id="tradingname" name="tradingname" value="{{ data['tradingname'] }}" type="text" style="width: 300px;">
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="companynumber">
-                    Company or limited liability partnership (LLP) registration number (if applicable)
+              <div class="govuk-grid-column-full govuk-!-padding-bottom-5" style="margin-left: -16px">
+                <label class="govuk-label" for="last-name" style="max-width: 300px;">
+                    Company/LLP registration number (if applicable)
                 </label>
                 <input class="govuk-input" id="companynumber" name="companynumber" value="{{ data['companynumber'] }}" type="text" style="width: 300px;">
             </div>
 
+
             <div class="govuk-form-group">
+
                 <label class="govuk-label" for="email">
                 Email address
                 </label>
@@ -55,57 +59,81 @@
             </div>
 
 
+
+
             <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-                <label class="govuk-label" for="postcode">
-                Postcode
-                </label>
-                <input class="govuk-input" id="postcode" name="postcode" value="{{ data['postcode'] }}" type="text" style="width: 300px;">
 
-                <div class="govuk-button-group" style="padding-top:15px;">
-                    <button class="govuk-button" data-module="govuk-button">
-                        Find address
-                    </button>
+                  <div id="content2" style="display:none;">
 
-                    <a class="govuk-link" href="#" onclick="toggle_visibility('manual-address');">Add address manually</a>
+                    <dd class="govuk-summary-list__value" style="padding:0px;">
+
+                        <label class="govuk-label" for="address-line-1">
+                          Building and street
+                        </label>
+                        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px; margin-bottom: 20px;">
+
+                        <label class="govuk-label" for="address-town">
+                          Town or city
+                        </label>
+                        <input class="govuk-input" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px; margin-bottom: 20px;">
+
+
+                        <label class="govuk-label" for="address-county">
+                          County
+                        </label>
+                        <input class="govuk-input" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px; margin-bottom: 20px;">
+
+                        <label class="govuk-label" for="address-country">
+                          Country
+                        </label>
+                        <input class="govuk-input" id="address-country" name="address-country" type="text"value="{{ data['address-country'] }}" style="width: 300px; margin-bottom: 20px;">
+
+
+                        <label class="govuk-label" for="postcode">
+                          Postcode
+                        </label>
+                        <input class="govuk-input" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px; margin-bottom: 20px;">
+
+                        <label class="govuk-label" for="dx-address2">
+                          DX address (optional)
+                        </label>
+                        <input class="govuk-input" id="dx-address2" name="dx-address2" type="text" value="{{ data['dx-address2'] }}" style="width: 300px; margin-bottom: 20px;">
+
+                </dd>
+
+                    <div>
+                        <button class="govuk-button" type="submit" formaction="2">Continue</button>
+                    </div>
+
                 </div>
 
-            </div>
+                <div id="content1" style="display:block;">
 
-            <div id="manual-address" style="display:none;">
+                    <div class="govuk-form-group" >
+                        <label class="govuk-label" for="postcode">
+                        Postcode
+                        </label>
+                        <input class="govuk-input" id="postcode" name="postcode" value="{{ data['postcode'] }}" type="text" style="width: 300px;">
 
-                <dd class="govuk-summary-list__value">
+                        <div class="govuk-button-group" style="padding-top:15px;">
+                            <button class="govuk-button" type="submit" formaction="2">Find address</button>
 
-                    <label class="govuk-label" for="address-line-1">
-                      Building and street
-                    </label>
-                    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px; margin-bottom: 20px;">
+                            <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">Add address manually</a>
+                        </div>
+                    </div>
 
-                    <label class="govuk-label" for="address-town">
-                      Town or city
-                    </label>
-                    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px; margin-bottom: 20px;">
-
-
-                    <label class="govuk-label" for="address-county">
-                      County
-                    </label>
-                    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px; margin-bottom: 20px;">
-
-
-                    <label class="govuk-label" for="postcode">
-                      Postcode
-                    </label>
-                    <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code" value="{{ data['postcode'] }}" style="width: 300px; margin-bottom: 20px;">
-
-                    <label class="govuk-label" for="postcode">
-                      DX address (optional)
-                    </label>
-                    <input class="govuk-input govuk-input--width-10" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="dx-address">
+                            DX address (optional)
+                        </label>
+                        <input class="govuk-input" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
+                    </div>
 
 
-            </dd>
+                </div>
+        </div>
 
-            </div>
+
 
 
 
@@ -122,15 +150,19 @@
 
 
 <script type="text/javascript">
-    <!--
-        function toggle_visibility(id) {
-           var e = document.getElementById(id);
-           if(e.style.display == 'block')
-              e.style.display = 'none';
-           else
-              e.style.display = 'block';
-        }
-    //-->
+function showHide(d)
+{
+var onediv = document.getElementById(d);
+var divs=['content1','content2'];
+for (var i=0;i<divs.length;i++)
+  {
+  if (onediv != document.getElementById(divs[i]))
+    {
+    document.getElementById(divs[i]).style.display='none';
+    }
+  }
+onediv.style.display = 'block';
+}
     </script>
 
 

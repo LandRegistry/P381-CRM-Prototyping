@@ -4757,6 +4757,26 @@ router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/termination03', 
     }
 })
 
+// applyNetworkServices radio buttons for termination on 19a
+router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/contact', function(req, res) {
+
+    const contactChoice= req.session.data['contact']
+
+    switch (contactChoice) {
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/promo2');
+            break;
+
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/22');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 
 module.exports = router

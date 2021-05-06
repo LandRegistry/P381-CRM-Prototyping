@@ -11,41 +11,117 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" ">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
 
 
-        <div class="govuk-panel govuk-panel--confirmation">
-            <h1 class="govuk-panel__title">
-                Application submitted
-            </h1>
-            <div class="govuk-panel__body">
-              Your reference number<br><strong>210317-005375</strong>
-            </div>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+        Check your answers before sending your application
+      </h1>
+
+
+      <table class="govuk-table">
+
+        <div  class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-l">Your organisation
+          </h3>
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
+              {% for feature in data['organisationsName'] %}
+               {% else %}
+                 User Research Ltd
+               {% endfor %}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="6a">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
           </div>
+          </dl>
+        </div>
 
-          <p class="govuk-body">We have sent you a confirmation email.</p>
+        <div class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-l">Point of contact
+          </h3>
+
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['poc-first-name'] }} {{ data['poc-family-name'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+
+    </div>
 
 
-        <div class="govuk-body govuk-!-margin-bottom-8 govuk-!-padding-top-4">
-            <h3 class="govuk-heading-m govuk-!-margin-bottom-3">What happens next</h3>
+    <div class="govuk-!-margin-bottom-8 govuk-body">
+      <h3 class="govuk-heading-l" >Change the bank account details of a current variable Direct Debit account
+      </h3>
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Attached form
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['uploaded-VDD'] }}
+         {% for feature in data['uploaded-VDD'] %}
+          {% else %}
+            <p>Yes</p>
+          {% endfor %}
 
 
-            <p class="govuk-body">
-                We'll review your application.
-              </p>
 
-              <p class="govuk-body">
-                We'll contact you to confirm or reject your application or ask for more information.
-              </p>
+          </p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
+    </div>
+      </dl>
 
-              <p class="govuk-body">
-                <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
-              </p>
+      </table>
 
+      <h3 class="govuk-heading-l govuk-!-margin-bottom-3">Submit application</h3>
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+      <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='7.html'">
+            Confirm and send
+        </button>
       </div>
 
     </div>
 
   </div>
+
+  <style>
+
+    .govuk-summary-list__value > p {
+        margin-bottom: 0;
+    }
+
+    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    </style>
 
 {% endblock %}

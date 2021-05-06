@@ -16,12 +16,18 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
 
-      <form action="4" method="post" class="form">
+      <h1 class="govuk-heading-xl">
+        Future contact
+      </h1>
+
+      <form action="22" method="post" class="form">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h3 class="govuk-heading-xl" style="margin-bottom:10px;">How does the new administrator want to receive their security credentials?</h3>
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              How would you like to be contacted?
+            </h2>
           </legend>
           <div class="govuk-radios">
             <div class="govuk-radios__item">
@@ -36,14 +42,23 @@
                 Post
               </label>
             </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="receive-type-post" name="receive-type" type="radio" value="Post" {{ checked("receive-type", "Post") }}>
+              <label class="govuk-label govuk-radios__label" for="receive-type-post">
+                Telephone
+              </label>
+            </div>
           </div>
         </fieldset>
       </div>
+          </div>
+
+      </div>
 
 
-          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
-            Continue
-        </button>
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='22.html'">
+        Continue
+    </button>
       </form>
         </div>
     </div>
