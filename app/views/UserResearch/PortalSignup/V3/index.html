@@ -15,16 +15,16 @@
 
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
 
-        <h1 class="govuk-heading-xl" style="margin-bottom:30px;">
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-7" >
             Apply for or update a Business <br>e-services account
           </h1>
 
-          <p style="max-width: 770px;">
+          <p class="govuk-!-margin-bottom-7" style="max-width: 770px;">
             Our Business e-services are for organisations that regularly transact with us as part of the conveyancing process to request information from HM Land Registry’s Land Register or to lodge applications to change the register online.
           </p>
 
-          <div class="govuk-body govuk-!-margin-bottom-9" style="max-width: 765px;">
-              <h3 class="govuk-heading-m">Use this service to:</h3>
+          <div class="govuk-body govuk-!-margin-bottom-7" style="max-width: 765px;">
+              <h3 class="govuk-heading-m" style="margin-bottom: 10px;">Use this service to:</h3>
 
               <ul class="govuk-body">
                 <li>apply for access to Information Services - Including Application Enquiry and MapSearch, Land Charges Services and the electronic Document Registration Service (e-DRS)</li>
@@ -36,26 +36,32 @@
           </div>
 
         <form class="form" action="businessaccountalreadyornot2" method="post">
-        <div class="govuk-form-group">
+        <div class="govuk-form-group govuk-!-margin-bottom-7">
             <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                 <h1 class="govuk-fieldset__heading">
                     Does your organisation already have a Business e-services account?
                 </h1>
               </legend>
+
               <div class="govuk-radios govuk-radios--inline">
+
+
+                
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="alreadyornot-1" name="alreadyornot" type="radio" value="yes">
                   <label class="govuk-label govuk-radios__label" for="alreadyornot-1">
                     Yes
                   </label>
                 </div>
+
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="alreadyornot-2" name="alreadyornot" type="radio" value="no">
                   <label class="govuk-label govuk-radios__label" for="alreadyornot-2">
                     No
                   </label>
                 </div>
+
               </div>
           
             </fieldset>

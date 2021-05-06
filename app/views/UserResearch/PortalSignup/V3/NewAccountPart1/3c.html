@@ -23,14 +23,14 @@
 
           <div class="govuk-form-group" style="float:left;margin-right:30px;">
             <label class="govuk-label" for="res-person-first-name">
-            First / Given names
+            First/Given names
             </label>
             <input class="govuk-input" id="res-person-first-name" name="res-person-first-name" value="{{ data['res-person-first-name'] }}" type="text" style="width: 300px;">
         </div>
 
         <div class="govuk-form-group" style="float:left;">
             <label class="govuk-label" for="res-person-family-name">
-                Surname / Family name
+                Surname/Family name
             </label>
             <input class="govuk-input" id="res-person-family-name" name="res-person-family-name" value="{{ data['res-person-family-name'] }}" type="text" style="width: 300px;">
         </div>
@@ -76,10 +76,9 @@
             
             <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
                 <li>{{ data['organisation-address-line-1'] }}</li>
-                <li>{{ data['organisation-address-line-2'] }}</li>
                 <li>{{ data['organisation-address-town'] }}</li>
-                <li>{{ data['organisation-address-county'] }}</li>
                 <li>{{ data['organisation-postcode'] }}</li>
+                <li>{{ data['organisation-country'] }}</li>
             </ul>
             </div>
 
@@ -125,19 +124,22 @@
                         <input class="govuk-input" id="res-person-address-town" name="res-person-address-town" type="text" autocomplete="address-level2" value="{{ data[res-person-'address-town'] }}" style="width: 300px;">
                     </div>
 
-                    <div class="govuk-form-group">
-                        <label class="govuk-label" for="res-person-address-county">
-                          County
-                        </label>
-                        <input class="govuk-input" id="res-person-address-county" name="res-person-address-county" type="text"value="{{ data['res-person-address-county'] }}" style="width: 300px;">
-                    </div>
+
                 
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="res-person-postcode">
                           Postcode
                         </label>
                         <input class="govuk-input" id="res-person-postcode" name="res-person-postcode" type="text" autocomplete="postal-code" value="{{ data['res-person-postcode'] }}" style="width: 300px;">
-                        </div>                
+                        </div>   
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="res-person-country">
+                            Country
+                          </label>
+                          <input class="govuk-input" id="res-person-country" name="res-person-country" type="text" autocomplete="country" value="{{ data['res-person-country'] }}" style="width: 300px;">
+                          </div> 
+                        
 
                         <div class="govuk-form-group">
                         <label class="govuk-label" for="res-person-dx-address">
@@ -281,6 +283,12 @@ hr {
 
 .govuk-radios--inline .govuk-radios__item {
 margin-bottom:0px;
+}
+
+
+.govuk-form-group {
+    float: left;
+    margin-right: 40px;
 }
 
     </style>

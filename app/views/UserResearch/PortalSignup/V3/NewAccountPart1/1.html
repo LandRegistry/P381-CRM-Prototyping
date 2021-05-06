@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit 
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -12,7 +12,7 @@
 
 <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
-  
+
 
       <h1 class="govuk-heading-xl" style="max-width: 725px;">
         Organisation details
@@ -40,10 +40,10 @@
             </div>
 
             <div class="govuk-form-group" >
-                <label class="govuk-label" for="llp-number" style="width: 450px;">
-                Company/LLP registration number (if applicable)
+                <label class="govuk-label" for="llp-number" style="width: 288px;">
+                    Company/LLP registration number (if applicable)
                 </label>
-                <input class="govuk-input" id="llp-number" name="organisation-llp-number" value="{{ data['organisation-llp-number'] }}" type="text" style="width: 300px;">
+                <input class="govuk-input" id="companynumber" name="companynumber" value="{{ data['companynumber'] }}" type="text" style="width: 300px;">
             </div>
 
         </div>
@@ -64,21 +64,21 @@
                 <input class="govuk-input" id="telephone-number" name="organisation-telephone-number" value="{{ data['organisation-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
 
-               
+
 
             <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
 
                   <div id="content2" style="display:none;">
 
                     <div class="govuk-summary-list__value" style="padding:0px;">
-                
-                        
+
+
 
                         <div class="govuk-form-group">
                         <label class="govuk-label" for="organisation-address-line-1">
                           Building and street
                         </label>
-                        <input class="govuk-input" id="organisation-address-line-1" name="organisation-address-line-1" type="text" autocomplete="address-line1" value="{{ data['organisation-address-line-1'] }}" style="width: 300px;">        
+                        <input class="govuk-input" id="organisation-address-line-1" name="organisation-address-line-1" type="text" autocomplete="address-line1" value="{{ data['organisation-address-line-1'] }}" style="width: 300px;">
                 </div>
 
                 <div class="govuk-form-group">
@@ -87,30 +87,37 @@
                         </label>
                         <input class="govuk-input" id="organisation-address-town" name="organisation-address-town" type="text" autocomplete="address-level2" value="{{ data['organisation-address-town'] }}" style="width: 300px;">
                     </div>
-                
-                    <div class="govuk-form-group">
+
+                        <div class="govuk-form-group">
                         <label class="govuk-label" for="organisation-postcode">
                           Postcode
                         </label>
                         <input class="govuk-input" id="organisation-postcode" name="organisation-postcode" type="text" autocomplete="postal-code" value="{{ data['organisation-postcode'] }}" style="width: 300px;">
-                        </div>                
+                        </div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="organisation-country">
+                              Country
+                            </label>
+                            <input class="govuk-input" id="organisation-country" name="organisation-country" type="text" autocomplete="country" value="{{ data['organisation-country'] }}" style="width: 300px;">
+                            </div>
 
                         <div class="govuk-form-group">
                         <label class="govuk-label" for="organisation-dx-address">
                             DX address (optional)
                           </label>
                           <input class="govuk-input" id="organisation-dx-address" name="organisation-dx-address" type="text" value="{{ data['organisation-dx-address'] }}" style="width: 300px;margin-bottom:20px;">
-                </div>
-                        
-    
+                        </div>
+
+
                 </dd>
             </div>
                     <div>
                         <button class="govuk-button" type="submit" formaction="1c">Continue</button>
                     </div>
-    
+
                 </div>
-            
+
                 <div id="content1" style="display:block;">
 
 
@@ -138,7 +145,7 @@
 
 
                 </div>
-        
+
 
 
 
@@ -152,7 +159,7 @@
     </div>
 
 
-      
+
 </div>
 
 
@@ -169,9 +176,9 @@ for (var i=0;i<divs.length;i++)
     }
   }
 onediv.style.display = 'block';
-} 
+}
     </script>
- 
+
 
 <style>
 
@@ -192,14 +199,14 @@ onediv.style.display = 'block';
     .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
     margin-right: 15px;
 }
-    
+
 .govuk-button-group .govuk-link {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1;
 }
 .govuk-form-group {
-    float:left; 
+    float:left;
     margin-right:40px;
 }
 
