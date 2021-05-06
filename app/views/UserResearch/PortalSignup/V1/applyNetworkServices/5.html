@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+
+      <h1 class="govuk-heading-xl">
+        Current responsible person
+      </h1>
+      <form action="6" method="post" class="form">
+        <div style="">
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="first-name">
+                First / Given name(s)
+                </label>
+                <input class="govuk-input" id="first-name" name="first-name" value="{{ data['first-name'] }}" type="text" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="last-name">
+                    Surname / Family name
+                </label>
+                <input class="govuk-input" id="family-name" name="family-name" value="{{ data['family-name'] }}" type="text" style="width: 300px;">
+            </div>
+
+            <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="margin-left: -16px">
+              <div class="govuk-button-group">
+              <button class="govuk-button" data-module="govuk-button" onclick="window.location.href='6.html'">
+                Continue
+              </button>
+              </div>
+
+        </div>
+    </form>
+
+
+    </div>
+
+
+
+</div>
+
+<style>
+
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+.govuk-form-group {
+    float:left;
+    margin-right:40px;
+}
+
+.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    border-bottom: 0px solid #b1b4b6;
+}
+    </style>
+
+
+{% endblock %}

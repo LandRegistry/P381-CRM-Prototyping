@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+      <h1 class="govuk-heading-xl">
+        Your organisation
+      </h1>
+      <form class="form" action="18" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              Who is your organisation's regulator or licensing authority?
+            </h2>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-6">
+            If your organisation is a recognised body or a licensed body, please provide details of your regulator or licensing authority.
+          </p>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="regulator-sra" name="regulator" type="radio" value="SRA" {{ checked("SRA") }}>
+              <label class="govuk-label govuk-radios__label" for="regulator-sra">
+                Solicitors Regulation Authority
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="regulator-clc" name="regulator" type="radio" value="CLC" {{ checked("CLC") }}>
+              <label class="govuk-label govuk-radios__label" for="regulator-clc">
+                Council for Licensed Conveyancers
+              </label>
+            </div>
+            <div class="govuk-radios__item govuk-radios--conditional">
+              <input class="govuk-radios__input" id="regulator-other" name="regulator" type="radio" value="Other" {{ checked("Other") }}>
+              <label class="govuk-label govuk-radios__label" for="regulator-other">
+                Other
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+        <div class="govuk-form-group">
+          <input class="govuk-input govuk-!-width-one-third" id="other" name="other" type="text" spellcheck="false"></div>
+          </div>
+
+<p class="govuk-body govuk-!-margin-bottom-8"></p>
+
+          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='18.html'">
+            Continue
+          </button>
+
+        </fieldset>
+        </form>
+      </div>
+
+    </div>
+
+
+
+</div>
+
+<style>
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+    </style>
+
+{% endblock %}

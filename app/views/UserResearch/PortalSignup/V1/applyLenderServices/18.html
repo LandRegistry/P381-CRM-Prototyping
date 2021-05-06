@@ -16,17 +16,17 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
 
-      <h1 class="govuk-heading-xl" >
-        New responsible person
+      <h1 class="govuk-heading-xl">
+        Future contact
       </h1>
 
-      <form action="7" method="post" class="form">
+      <form action="19" method="post" class="form">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h2 class="govuk-fieldset__heading-l" style="max-width: 750px;margin-top:0px;">
-              How does the new deputy responsible person want to receive their security credentials?
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              How would you like to be contacted?
             </h2>
           </legend>
           <div class="govuk-radios">
@@ -42,6 +42,12 @@
                 Post
               </label>
             </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="receive-type-post" name="receive-type" type="radio" value="Post" {{ checked("receive-type", "Post") }}>
+              <label class="govuk-label govuk-radios__label" for="receive-type-post">
+                Telephone
+              </label>
+            </div>
           </div>
         </fieldset>
       </div>
@@ -50,7 +56,7 @@
       </div>
 
 
-      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='7.html'">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='19.html'">
         Continue
     </button>
       </form>

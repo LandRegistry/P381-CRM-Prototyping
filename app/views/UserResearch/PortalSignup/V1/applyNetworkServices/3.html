@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+      <h1 class="govuk-heading-xl">
+        Organisation details
+      </h1>
+      <form class="form" action="legalentity" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              What is the nature of your legal entity?
+            </h2>
+          </legend>
+          <p class="govuk-body govuk-!-margin-bottom-3"></p>
+          <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                Select the option that reflects your organisation's legal personality, or recognised legal structure. That legal personality, if it is not an individual person, may be a result of statute.
+              </strong>
+            </div>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-01" name="legalentity" type="radio" value="LimitedCompany" {{ checked("LimitedCompany") }}>
+              <label class="govuk-label govuk-radios__label" for="legalentity-01">
+                Limited company/ Public limited company
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-02" name="legalentity" type="radio" value="SolePractitioner" {{ checked("SolePractitioner") }}>
+              <label class="govuk-label govuk-radios__label" for="legalentity-02">
+                Sole practitioner
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-03" name="legalentity" type="radio" value="GovernmentDepartment" {{ checked("GovernmentDepartment") }}>
+              <label class="govuk-label govuk-radios__label" for="legalentity-03">
+                Government department
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-04" name="legalentity" type="radio" value="PoliceServices" {{ checked("PoliceServices") }}>
+              <label class="govuk-label govuk-radios__label" for="legalentity-04">
+                Police and security services
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-05" name="legalentity" type="radio" value="LimitedPartnership" {{ checked("LimitedPartnership") }}>
+              <label class="govuk-label govuk-radios__label" for=legalentity-05">
+                Limited liability partnership/ Limited partnership
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-06" name="legalentity" type="radio" value="Partnership" {{ checked("Partnership") }}>
+              <label class="govuk-label govuk-radios__label" for="legalentity-06">
+                Partnership
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-07" name="legalentity" type="radio" value="LocalAuthority" {{ checked("LocalAuthority") }}>
+              <label class="govuk-label govuk-radios__label" for="legalentity-07">
+                Local authority
+              </label>
+            </div>
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="legalentity-08" name="legalentity" type="radio" value="other" data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-radios__label" for="legalentity-08">
+                Other
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+              <div class="govuk-form-group">
+                <input class="govuk-input govuk-!-width-one-third" id="extratext" name="extratext" type="text" spellcheck="false"></div>
+
+            </div>
+
+          <p class="govuk-body govuk-!-margin-bottom-7
+
+
+          "></p>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </fieldset>
+        </form>
+      </div>
+
+    </div>
+
+
+
+</div>
+
+<style>
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+    </style>
+
+{% endblock %}

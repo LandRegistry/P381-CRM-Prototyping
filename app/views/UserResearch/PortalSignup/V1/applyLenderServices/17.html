@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+      <h1 class="govuk-heading-xl">
+        Future contact
+      </h1>
+
+      <form action="contact" method="post" class="form">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading" style="max-width: 680px;">
+              Would you like to be contacted about future products and services?
+            </h2>
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact-01" name="contact" type="radio" value="Yes" {{ checked("receive-type", "Email") }}>
+              <label class="govuk-label govuk-radios__label" for="contact-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact-02" name="contact" type="radio" value="No" {{ checked("receive-type", "Post") }}>
+              <label class="govuk-label govuk-radios__label" for="contact-no">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+
+          <div class="govuk-body govuk-!-margin-bottom-8">
+              <h3 class="govuk-heading-s govuk-!-margin-bottom-3">Data protection and privacy statement</h3>
+              <p> HM Land Registry will use the data supplied to update you or your organisation on our services. We will not sell your details to any third parties. If you would like further information on our privacy policy please refer to our <a href="www.gov.uk" class="govuk-link">website</a>. </p>
+            </div>
+
+            <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      How do I opt out at a later date?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    Should you wish to opt out of recieving further information from HM Land Registry in the future you may do so in writing to:
+    <p class="govuk-body govuk-!-margin-bottom-5"</p>
+    <ul class="govuk-list">
+      <li>HM Land Registry Data Team</li>
+      <li>HM Land Registry</li>
+      <li>Trafalgar House</li>
+      <li>1 Bedford Park</li>
+      <li>Croydon</li>
+      <li>CR0 2AQ</li>
+  </ul>
+
+  <p> or alternatively email: DataPublication@landregistry.gov.uk </p>
+  </div>
+</details>
+
+      </div>
+
+      <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+      <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='18.html'">
+        Continue
+    </button>
+      </form>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+<style>
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+    </style>
+
+{% endblock %}
