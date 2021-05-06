@@ -16,7 +16,7 @@
 
       <h1 class="govuk-heading-l govuk-!-margin-bottom-3">
         <span class="govuk-caption-l">
-        
+
           <span class="govuk-visually-hidden"> &ndash; </span>
         </span>
         Business e-services account
@@ -92,21 +92,16 @@
             </li>
             <li class="app-task-list__item">
               <span class="app-task-list__task-name">
-                <a href="8.html" aria-describedby="eligibility-status">
+                {# <a href="8.html" aria-describedby="eligibility-status"> #}
                   Attach the document
                 </a>
               </span>
-              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">CANNOT START YET</strong>
             </li>
           </ul>
           {% endif %}
         </li>
       </ul>
-
-
-      <p class="govuk-body govuk-!-margin-bottom-6">
-        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
-      </p>
 
       {% if (data["NAA"]=='true') %}
       <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">

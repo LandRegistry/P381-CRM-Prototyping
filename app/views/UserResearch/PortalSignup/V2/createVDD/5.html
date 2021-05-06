@@ -14,100 +14,56 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
 
 
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
-        Check your answers before sending your application
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Create a new variable Direct Debit (VDD) account key number
       </h1>
 
 
 
-
-        <div  class="govuk-!-margin-bottom-9">
-          <h3 class="govuk-heading-l">Your organisation
-          </h3>
-
-          <dl class="govuk-summary-list">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Name
-            </dt>
-            <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
-              {% for feature in data['organisationsName'] %}
-               {% else %}
-                 User Research Ltd
-               {% endfor %}
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="5a">
-                Change<span class="govuk-visually-hidden"> name</span>
-              </a>
-            </dd>
-          </div>
-          </dl>
-        </div>
-
-        <div class="govuk-!-margin-bottom-9">
-          <h3 class="govuk-heading-l">Point of contact
-          </h3>
-
-      <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name
-        </dt>
-        <dd class="govuk-summary-list__value">
-          {{ data['first-name'] }} {{ data['family-name'] }}
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="5b">
-            Change<span class="govuk-visually-hidden"> name</span>
-          </a>
-        </dd>
+      <div class="govuk-inset-text">
+        Only a responsible person or deputy responsible person can submit this request.
       </div>
+
+      <div class="govuk-body govuk-!-margin-bottom-9" style="max-width: 765px;">
+        <h3 class="govuk-heading-m">Before you start, you will need to:</h3>
+
+        <ul class="govuk-body">
+          <li>read the <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856965/paying-for-hm-land-registry-services-by-variable-direct-debit.pdf" target="_blank">VDD Guide</a></li>
+          <li>download and fill in a <a href="/public/files/FORMS-paying-for-hm-land-registry-services-by-variable-direct-debit.pdf" target="_blank">VDD application form and Direct Debit mandate</a></li>
+      </ul>
 
     </div>
 
-
-    <div class="govuk-!-margin-bottom-8 govuk-body">
-      <h3 class="govuk-heading-l" >Variable Direct Debit key number
-      </h3>
-      <dl class="govuk-summary-list">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-            Attached form
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p class="govuk-body">{{ data['attachementUploaded'] }}
-         {% for feature in data['attachementUploaded'] %}
-          {% else %}
-            <p>No</p>
-          {% endfor %}
-
-
-
-          </p>
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="5c">
-            Change<span class="govuk-visually-hidden"> delivery</span>
-          </a>
-        </dd>
-      </div>
-    </div>
-      </dl>
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            Add an existing variable Direct Debit key number or create a new one
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="1.html" aria-describedby="eligibility-status">
+                  Attach the document
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="3.html" aria-describedby="eligibility-status">
+                  Point of contact details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+          </ul>
+        </li>
+      </ol>
 
 
-
-
-
-      <h3 class="govuk-heading-l govuk-!-margin-bottom-3">Submit application</h3>
-      <p class="govuk-body govuk-!-margin-bottom-6">
-        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
-      </p>
-
-
-      <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='6.html'">
-            Confirm and send
+      <div class="govuk-!-margin-bottom-9">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='6'">
+          Review application
         </button>
       </div>
 
@@ -116,21 +72,8 @@
   </div>
 
   <style>
-
-    .govuk-summary-list__value > p {
-        margin-bottom: 0;
-    }
-
-    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .govuk-heading-l {
-    margin-bottom: 10px;
-    margin-top: 75px;
-}
-
-    </style>
-
+    .app-task-list__items {
+      padding-left: 0px;
+  }
+  </style>
 {% endblock %}

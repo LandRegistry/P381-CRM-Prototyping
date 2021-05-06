@@ -43,7 +43,44 @@
                             Who is your organisation's regulator or licensing authority?
                           </h3>
 													<p> If your organisation is a recognised body or a licensed body, please provide details of your regulator or licensing authority. </p>
-									<div class="govuk-form-group">
+                          <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="Q2A" name="question2" type="radio" value="A"  data-aria-controls="conditional-contact">
+                                  <label class="govuk-label govuk-radios__label" for="Q2A">
+                                    Solicitors Regulation Authority
+                                  </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="Q2B" name="question2" type="radio" value="B" } data-aria-controls="conditional-contact">
+                                  <label class="govuk-label govuk-radios__label" for="Q2B">
+                                    Council for Licensed Conveyancers
+                                  </label>
+                                </div>
+
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="Q2C" name="question2" type="radio" value="C"  data-aria-controls="conditional-contact-2">
+                                  <label class="govuk-label govuk-radios__label" for="Q2C">
+                                    Other
+                                  </label>
+                                </div>
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                                  <div class="govuk-form-group">
+                                    <label class="govuk-label" for="VDD-Number">
+                                        Enter regulator or licensing authority
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-one-third" id="VDD-Number" name="VDD-Number" value="{{ data['VDD-Number'] }}"  type="tel"></div>
+
+                                </div>
+
+                              </div>
+
+                            </fieldset>
+                          </div>
+
+
+									{# <div class="govuk-form-group">
 										<fieldset class="govuk-fieldset"
 											<div class="govuk-radios" id="myRadioGroup">
 												<div class="govuk-radios__item">
@@ -56,10 +93,9 @@
 													<label class="govuk-label govuk-radios__label" for="Q2B"> Council for Licensed Conveyancers
 													</label>
 												</div>
-												<div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-									      <div class="govuk-radios__item">
+									      <div class="govuk-radios__item" >
 									        <input class="govuk-radios__input" id="Q2C" name="question2" type="radio" value="C" data-aria-controls="conditional-other">
-									        <label class="govuk-label govuk-radios__label" for="other">
+									        <label class="govuk-label govuk-radios__label" for="Q2C">
 									          Other
 									        </label>
                           <div class="govuk-!-padding-bottom-6"></div>
@@ -70,7 +106,7 @@
 									          </label>
 									          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
 									      </div>
-                      </div>
+                      </div> #}
 											<div class="govuk-!-padding-bottom-9"></div>
 											<button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart2/6.html'">Continue</button>
 											</div>
