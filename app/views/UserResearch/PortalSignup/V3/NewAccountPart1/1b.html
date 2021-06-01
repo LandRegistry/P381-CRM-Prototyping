@@ -120,13 +120,15 @@
 
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="postcode">
-                            Organisation address
+                            Organisation address - {{ data['organisation-postcode'] }}
                             </label>
                         <select class="govuk-select" id="selectAddress" name="selectAddress" style="width: 300px; margin-bottom: 20px;">
                           <option value="select" selected>No addresses found</option>
                         </select>
-                        <div>
-                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a>
+                        <div style="line-height: 24px;">
+                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a><br>
+                        <a class="govuk-link" href="/UserResearch/PortalSignup/V3/NewAccountPart1/1" style="font-size: 16px;">Search for another postcode</a>
+
                     </div>
                       </div>
 
