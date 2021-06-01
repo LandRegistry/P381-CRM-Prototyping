@@ -1,0 +1,219 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+
+      <h1 class="govuk-heading-xl" style="max-width: 725px;">
+        Organisation details
+      </h1>
+
+
+
+      <form method="post" class="form">
+        <div style="width: 100%;display:inline-block;">
+
+
+
+            <div class="govuk-form-group" >
+                <label class="govuk-label" for="organisation-name">
+                Organisation name
+                </label>
+                <input class="govuk-input" id="organisation-name" name="organisation-name" value="{{ data['organisation-name'] }}" type="text" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group" >
+                <label class="govuk-label" for="organisation-trading-name">
+                Organisation trading name (optional)
+                </label>
+                <input class="govuk-input" id="organisation-trading-name" name="organisation-trading-name" value="{{ data['organisation-trading-name'] }}" type="text" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group" >
+                <label class="govuk-label" for="llp-number" style="width: 288px;">
+                    Company/LLP registration number (if applicable)
+                </label>
+                <input class="govuk-input" id="companynumber" name="companynumber" value="{{ data['companynumber'] }}" type="text" style="width: 300px;">
+            </div>
+
+        </div>
+
+        <div style="padding-bottom:50px;width: 100%;display:inline-block;">
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="email">
+                Email address
+                </label>
+                <input class="govuk-input" id="email" name="organisation-email" value="{{ data['organisation-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="telephone-number">
+                    Telephone number
+                </label>
+                <input class="govuk-input" id="telephone-number" name="organisation-telephone-number" value="{{ data['organisation-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+            </div>
+
+
+
+            <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+
+                  <div id="content2" style="display:none;">
+
+                    <div class="govuk-summary-list__value" style="padding:0px;">
+
+
+
+                        <div class="govuk-form-group">
+                        <label class="govuk-label" for="organisation-address-line-1">
+                          Building and street
+                        </label>
+                        <input class="govuk-input" id="organisation-address-line-1" name="organisation-address-line-1" type="text" autocomplete="address-line1" value="{{ data['organisation-address-line-1'] }}" style="width: 300px;">
+                </div>
+
+                <div class="govuk-form-group">
+                        <label class="govuk-label" for="organisation-address-town">
+                          Town or city
+                        </label>
+                        <input class="govuk-input" id="organisation-address-town" name="organisation-address-town" type="text" autocomplete="address-level2" value="{{ data['organisation-address-town'] }}" style="width: 300px;">
+                    </div>
+
+                        <div class="govuk-form-group">
+                        <label class="govuk-label" for="organisation-postcode">
+                          Postcode
+                        </label>
+                        <input class="govuk-input" id="organisation-postcode" name="organisation-postcode" type="text" autocomplete="postal-code" value="{{ data['organisation-postcode'] }}" style="width: 300px;">
+                        </div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="organisation-country">
+                              Country
+                            </label>
+                            <input class="govuk-input" id="organisation-country" name="organisation-country" type="text" autocomplete="country" value="{{ data['organisation-country'] }}" style="width: 300px;">
+                            </div>
+
+                        <div class="govuk-form-group">
+                        <label class="govuk-label" for="organisation-dx-address">
+                            DX address (optional)
+                          </label>
+                          <input class="govuk-input" id="organisation-dx-address" name="organisation-dx-address" type="text" value="{{ data['organisation-dx-address'] }}" style="width: 300px;margin-bottom:20px;">
+                        </div>
+
+
+                </dd>
+            </div>
+                    <div>
+                        <button class="govuk-button" type="submit" formaction="1c">Continue</button>
+                    </div>
+
+                </div>
+
+                <div id="content1" style="display:block;">
+
+
+
+
+                    <div class="govuk-form-group" >
+                        <label class="govuk-label" for="postcode">
+                        Postcode
+                        </label>
+                        <input class="govuk-input" id="postcode" name="postcode" value="{{ data['organisation-postcode'] }}" type="text" style="width: 300px;">
+
+                        <div class="govuk-button-group" style="padding-top:15px;">
+                            <button class="govuk-button" type="submit" formaction="1b">Find address</button>
+
+                            <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">Add address manually</a>
+                        </div>
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="dx-address">
+                            DX address (optional)
+                        </label>
+                        <input class="govuk-input" id="dx-address" name="dx-address" type="text" value="{{ data['organisation-dx-address'] }}" style="width: 300px;">
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+        </div>
+    </form>
+
+
+    </div>
+
+
+
+</div>
+
+
+<script type="text/javascript">
+function showHide(d)
+{
+var onediv = document.getElementById(d);
+var divs=['content1','content2'];
+for (var i=0;i<divs.length;i++)
+  {
+  if (onediv != document.getElementById(divs[i]))
+    {
+    document.getElementById(divs[i]).style.display='none';
+    }
+  }
+onediv.style.display = 'block';
+}
+    </script>
+
+
+<style>
+
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+.govuk-form-group {
+    float:left;
+    margin-right:40px;
+}
+
+.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    border-bottom: 0px solid #b1b4b6;
+}
+    </style>
+
+
+{% endblock %}

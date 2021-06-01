@@ -4448,6 +4448,26 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/responsible-person-op
     }
 })
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V4/NewAccountPart1/responsible-person-options', function(req, res) {
+
+    const responsiblepersonChoice = req.session.data['responsible-person']
+
+    switch (responsiblepersonChoice) {
+        case 'responsible-person-1':
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/3d');
+            break;
+
+        case 'responsible-person-2':
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/3c');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
 router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/vddnumber', function(req, res) {
 
     const vddnumberChoice= req.session.data['vddnumber']
@@ -4459,6 +4479,25 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/vddnumber', function(
 
         case 'No':
             res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart2/3b');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+router.post('/UserResearch/PortalSignup/V4/NewAccountPart2/vddnumber', function(req, res) {
+
+    const vddnumberChoice= req.session.data['vddnumber']
+
+    switch (vddnumberChoice) {
+        case 'Yes':
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart2/3a');
+            break;
+
+        case 'No':
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart2/3b');
             break;
 
         default:
@@ -4485,6 +4524,25 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/termination', functio
             break;
         }
     })
+
+    router.post('/UserResearch/PortalSignup/V4/NewAccountPart2/termination', function(req, res) {
+
+        const terminationChoice= req.session.data['termination']
+
+        switch (terminationChoice) {
+            case 'No':
+                res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart2/8');
+                break;
+
+            case 'Yes':
+                res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart2/9');
+                break;
+
+            default:
+                //This is a catch all for none of the above
+                break;
+            }
+        })
 
 
 
@@ -4513,6 +4571,30 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/query-contact-options
 })
 
 // ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V4/NewAccountPart1/query-contact-options', function(req, res) {
+
+    const querycontactChoice = req.session.data['query-contact']
+
+    switch (querycontactChoice) {
+        case 'query-contact-1':
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/index-5');
+            break;
+
+        case 'query-contact-2':
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/index-5');
+            break;
+
+            case 'query-contact-3':
+                res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/4b');
+                break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// ContactformQA radio buttons for public or business
 router.post('/UserResearch/PortalSignup/V3/businessaccountalreadyornot2', function(req, res) {
 
     const alreadyornotChoice2 = req.session.data['alreadyornot']
@@ -4531,6 +4613,27 @@ router.post('/UserResearch/PortalSignup/V3/businessaccountalreadyornot2', functi
             break;
     }
 })
+
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V4/businessaccountalreadyornot2', function(req, res) {
+
+    const alreadyornotChoice2 = req.session.data['alreadyornot']
+
+    switch (alreadyornotChoice2) {
+        case 'yes':
+            res.redirect('/UserResearch/PortalSignup/V4/options');
+            break;
+
+        case 'no':
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
 
 // applyLenderServices radio buttons for legal entity
 router.post('/UserResearch/PortalSignup/V1/applyLenderServices/legalentity', function(req, res) {
@@ -4771,6 +4874,25 @@ router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/contact', functi
             res.redirect('/UserResearch/PortalSignup/V1/applyNetworkServices/22');
             break;
 
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+router.post('/UserResearch/PortalSignup/V4/NewAccountPart1/businessaccountsolecontact', function(req, res) {
+
+    const solecontactChoice = req.session.data['solecontact']
+
+    switch (solecontactChoice) {
+        case 'yes':
+            res.redirect("/UserResearch/PortalSignup/V4/NewAccountPart1/index-0");
+            break;
+
+        case 'no':
+            res.redirect("/UserResearch/PortalSignup/V3/NewAccountPart1/");
+            break;
 
         default:
             //This is a catch all for none of the above

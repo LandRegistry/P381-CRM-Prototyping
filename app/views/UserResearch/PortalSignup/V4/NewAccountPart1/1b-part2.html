@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+  
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-7">
+        Provide details of any VDD key numbers you want to use for Business e-services. You may enter more than one key number.
+      </h1>
+
+      <form class="form" action="index-2" method="post">
+
+
+        <div class="govuk-form-group">
+
+            <div style="margin-bottom: 20px;">                      
+              <label class="govuk-label form-label-bold">
+                Variable Direct Debit key number
+            </label>
+                <div class="govuk-hint">
+                    Must be 7 digits long
+    </div>
+            <input class="govuk-input govuk-!-width-one-third" id="VDD-number1-entered" name="VDD-number1-entered" type="text" spellcheck="false" value="{{ data['VDD-number1-entered'] }}">
+            </div>
+
+
+            <div style="margin-bottom: 50px;">
+                <a href="#">Add another</a>
+            </div>
+
+        </div>
+
+
+
+        <h3 class="govuk-heading-l" >Apply for a new variable Direct Debit account</h3>
+      
+        <ul class="govuk-body">
+          <li>read the <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856965/paying-for-hm-land-registry-services-by-variable-direct-debit.pdf" target="_blank">VDD Guide</a></li>
+          <li>download and fill in a <a href="/public/files/FORMS-paying-for-hm-land-registry-services-by-variable-direct-debit.pdf" target="_blank">VDD application form and Direct Debit mandate</a></li>
+      </ul>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label form-label-bold" for="file-upload-1">
+          Upload a file
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+
+      <div class="govuk-body" style="margin-top: 30px;">
+
+          The Direct Debit instruction must be signed by a person authorised by the applicant’s bank to do so.
+
+      </div>
+
+          <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+            <button class="govuk-button" type="submit">Continue</button>
+        </div>
+  
+        </form>
+
+      
+</div>
+
+<script type="text/javascript">
+    <!--
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    //-->
+  
+  
+    $('input[type="radio"]').click(function(){
+        if($(this).attr("value")=="No"){
+            $(".content2").hide('display');
+        }
+        if($(this).attr("value")=="Yes"){
+            $(".content2").show('display');
+  
+        }        
+    });
+  
+  
+    </script>
+
+<style>
+.govuk-body-m, .govuk-body, p {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-xl {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-l {
+    margin-bottom: 20px;
+}
+
+
+</style>
+
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:880px;">
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Attach the: Direct Debit application form and the Variable Direct Debit mandate form
+      </h1>
+
+      <p style="max-width:760px;">Fill in a <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD application form and direct debit mandate</a> (see pages 13 to 15 of the <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services" target="_blank">VDD guide</a>) for each account you require.</p>
+
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        Attach a completed and signed copy of the Direct Debit application form and the Variable Direct Debit mandate form.
+      </p>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label form-label-bold" for="file-upload-1">
+          Upload a file
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+      <form action="2" method="post" class="form">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="uploaded-VDD-yes" name="uploaded-VDD" type="checkbox"  value="Yes" {{ checked("uploaded-VDD", "Yes") }}>
+              <label class="govuk-label govuk-checkboxes__label" for="uploaded-VDD-yes">
+                I have uploaded the Direct Debit application form and the Variable Direct Debit mandate form.
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+          <button class="govuk-button" type="submit" formaction="4a">Continue</button>
+      </div>
+</form>
+
+
+    </div>
+
+  </div>
+
+{% endblock %}

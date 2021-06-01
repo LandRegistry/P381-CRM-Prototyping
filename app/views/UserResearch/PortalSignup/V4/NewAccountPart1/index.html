@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" style="max-width:860px;">
+      Business e-services account application
+    </h1>
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:800px;">
+          <p class="govuk-!-padding-bottom-2">To apply for a Business e-services account, you need to provide details for a primary administrator, responsible person and point-of-contact. A single-point-of-contact can be used for all 3, if required.</p>
+          <p class="govuk-body"> The responsibilities for these roles are listed below.</p>
+
+          <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Role</th>
+      <th scope="col" class="govuk-table__header">Responsibilities</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Primary administrator</th>
+      <td class="govuk-table__cell">Your administrator will create and manage accounts for your organisation's authorised users.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Responsible person</th>
+      <td class="govuk-table__cell">The responsible person will:
+        <ul class="govuk-body">
+          <li>supervise the administrators</li>
+          <li>get access to reports documenting the activities of the administrators</li>
+          <li>access VDD account data</li>
+        </ul>
+          </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Point of contact</th>
+      <td class="govuk-table__cell">We will contact this person if there's a query with your application.</td>
+    </tr>
+  </tbody>
+</table>
+
+<form class="form" action="businessaccountsolecontact" method="post">
+<div class="govuk-form-group govuk-!-margin-bottom-7">
+    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h1 class="govuk-fieldset__heading">
+            Is there a single-point-of-contact for this Business e-services account?
+        </h1>
+      </legend>
+
+      <div class="govuk-radios govuk-radios--inline">
+
+        <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="solecontact-1" name="solecontact" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="solecontact-1">
+                    Yes
+                  </label>
+                </div>
+
+
+        <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="solecontact-2" name="solecontact" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="solecontact-2">
+                    No
+                  </label>
+                </div>
+
+
+      </div>
+
+    </fieldset>
+  </div>
+
+      <div class="govuk-!-margin-bottom-9">
+        <button class="govuk-button" data-module="govuk-button"  onclick="window.location.href='/UserResearch/PortalSignup/V4/NewAccountPart1/index-0'">
+          Continue
+        </button>
+      </div>
+
+</form>
+
+    </div>
+
+  </div>
+
+{% endblock %}

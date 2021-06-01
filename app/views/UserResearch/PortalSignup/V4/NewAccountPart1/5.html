@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <form action="index-6" method="post" class="form">
+
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:880px;">
+  
+        
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Sign your application
+      </h1>
+
+
+      <div class="govuk-body govuk-!-margin-bottom-7" style="max-width: 800px;">
+        <h3 class="govuk-heading-m">Before you sign, check:</h3>
+
+        <ul class="govuk-body dash">
+          <li>you're authorised to make this application on behalf of the organisation</li>
+          <li>the organisation meets the minimum technical specification for equipment and/or software- the minimum technical specification for equipment</li>
+          <li>you have the appropriate IT equipment and security arrangements as set out in the technical manual</li>
+          <li>you accept the terms of the Conditions of Use on the organisation's behalf, as exist at the date of this application, and that it is acknowledged that these may change from time to time</li>
+          <li>the Conditions of Use apply to your access to services other than Network Services, including HM Land Registry's electronic Document Registration Service and Information Services</li>
+          <li>the Network Access Agreement applies to your access (if any) to Network Services</li>
+          <li>this application is signed and dated on behalf of the organisation by a duly authorised person within the organisation such as a company director, company secretary, partner or equivalent</li>
+      </ul>
+
+    </div>
+
+
+
+    <div class="govuk-body govuk-!-margin-bottom-7" style="max-width: 765px;">
+        <h3 class="govuk-heading-m">To sign your application you need to:</h3>
+
+        <ol class="govuk-body">
+          <li>Sign and print your name on a blank white piece of paper using black ink.</li>
+          <li>Date your signature using black ink.</li>
+          <li>Take a photo or scan a copy of the signature, printed name and date.</li>
+          <li>Attach the photo or scanned copy below.</li>
+      </ol>
+
+    </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label form-label-bold" for="file-upload-1">
+          Upload your signature
+        </label>
+        
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+
+
+      
+      <div class=" govuk-grid-column-full" style="padding:0px;">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
+            Continue
+        </button>
+      </div>
+
+
+
+    </div>
+
+</form>
+
+
+  </div>
+
+
+<style>
+ul.dash {
+    list-style: none;
+    margin-left: 0;
+}
+ul.dash > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+</style>
+
+{% endblock %}

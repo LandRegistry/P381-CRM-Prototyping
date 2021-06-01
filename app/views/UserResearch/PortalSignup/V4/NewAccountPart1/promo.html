@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width: 830px;">
+  
+
+      <h1 class="govuk-heading-xl" style="">
+        Would you like to be contacted about future products and services?
+      </h1>
+
+
+      <form method="post" class="form">
+
+
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="promo-hint">
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="promo-options-1" name="promo-options" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="promo-options-1">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="promo-options-2" name="promo-options" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="promo-options-2">
+                    No
+                  </label>
+                </div>
+              </div>
+          
+            </fieldset>
+          </div>
+
+        <p class="govuk-body" style="max-width: 790px;"> <b>Data protection and privacy statement</b><br>HM Land Registry will use the data supplied to update you or your organisation on our services. We will not sell your details to any third parties. If you would like further information on our privacy policy please refer to our <a href=" https://www.gov.uk/government/organisations/land-registry">website</a>.</p>
+
+
+        <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                How do I opt out at a later date?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+                Should you wish to opt out of receiving further information from HM Land Registry in the future you may do so in writing to:<br><br>HM Land Registry Data Team<br>HM Land Registry<br>Trafalgar House<br>1 Bedford Park<br>Croydon CR0 2AQ<br><br>or alternatively email: DataPublication@landregistry.gov.uk
+            </div>
+          </details>
+
+
+
+        <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+            <button class="govuk-button" type="submit" formaction="summary">Continue</button>
+        </div>
+
+
+
+
+</form>
+</div>
+
+
+<style>
+.govuk-body-m, .govuk-body, p {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-xl {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-l {
+    margin-bottom: 20px;
+}
+
+
+
+</style>
+
+
+{% endblock %}
