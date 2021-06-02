@@ -4605,7 +4605,7 @@ router.post('/UserResearch/PortalSignup/V3/businessaccountalreadyornot2', functi
             break;
 
         case 'no':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/');
+            res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/');
             break;
 
         default:
