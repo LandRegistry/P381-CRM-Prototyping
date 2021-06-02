@@ -1405,5 +1405,105 @@
      
    "section_helpful":"yes"
 
+},
+{
+   "words":"What does VDD mean?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"VDD (variable Direct Debit)",
+   "answer":"<span>A variable Direct Debit (VDD) scheme is one where the value being debited varies, as does the frequency of the debit, to accord with the nature of the business involved.<br><br>This differs from a fixed Direct Debit where a schedule, and often the amounts being debited, are decided in advance.<br><br>Due to the nature of payments for HM Land Registry applications, it is not feasible to either debit monthly or preset the value.</span>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a Primary administrator?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Primary administrator",
+   "answer":"<span>Your administrator will create and manage accounts for your organisation's authorised users.</span>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a Point of contact?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Point of contact",
+   "answer":"<span>We will contact this person if there's a query with your application.</span>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
+},
+{
+   "words":"What is a Responsible person?",
+   "subject":"Definition",
+   "tag_definition":"yes",
+   "section_questionanswer":"yes",
+   "question":"Responsible person",
+   "answer":"<span>The responsible person will supervise the administrators, get access to reports documenting the activities of the administrators and access VDD account data.</span>",
+   "section_downloads":"no",
+   "image_downloads":null,
+   "text_downloads":null,
+
+   "section_informationOne":"no",
+   "title_informationOne":null,
+   "text_informationOne":null,
+
+   "section_informationTwo":"no",
+   "title_informationTwo":null,
+   "text_informationTwo":null,
+
+   "section_informationThree":"no",
+   "title_informationThree":null,
+   "text_informationThree":null,
+     
+   "section_helpful":"yes"
 }
   ]

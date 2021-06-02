@@ -46,7 +46,7 @@ const autoCompleteJS = new autoComplete({
       return 0;
   },
 
-  placeHolder: "Keywords, Phrases, Forms, Documents, Service etc...",
+  placeHolder: "Abbreviations, Keywords, Terminology etc...",
   searchEngine: "loose",
   highlight: true,
   threshold: 2,
