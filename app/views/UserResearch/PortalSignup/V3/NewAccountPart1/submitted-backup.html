@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+
+
+        <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-bottom-6">
+          <a href="/UserResearch/PortalSignup/V3/Email1_WithText" style="text-decoration: unset; color:#ffffff !Important;">
+            <h1 class="govuk-panel__title">
+                Application submitted
+            </h1>
+            <div class="govuk-panel__body">
+              Your reference number<br><strong>HDJ2123F</strong>
+            </div>
+          </a>
+          </div>
+
+          <p class="govuk-body">We've sent you a confirmation email.</p>
+
+
+        <div class="govuk-body govuk-!-margin-bottom-8 govuk-!-padding-top-4">
+            <h3 class="govuk-heading-m govuk-!-margin-bottom-3">What you need to know</h3>
+
+            <ul class="govuk-body">
+              <li>your confirmation email contains information to apply for <a href="https://www.gov.uk/guidance/hm-land-registry-network-services" class="govuk-link">Network Services</a> or <a href="https://www.gov.uk/guidance/hm-land-registry-lender-services" class="govuk-link">Lender Services</a></li>
+              <li>you can apply for these services whilst we review your existing application</li>
+              <li>we'll contact you to confirm or reject your application or ask for more information</li>
+
+          </ul>
+
+              <p class="govuk-body govuk-!-padding-top-4">
+                <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+              </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <style>
+    ul.dash {
+        list-style: none;
+        margin-left: 0;
+    }
+    ul.dash > li:before {
+        display: inline-block;
+        content: "-";
+        width: 1em;
+        margin-left: -1em;
+    }
+    
+    li {
+      padding-bottom: 5px;
+    }
+    
+    
+    </style>
+
+{% endblock %}
