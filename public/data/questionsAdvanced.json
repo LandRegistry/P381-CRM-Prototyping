@@ -35,19 +35,19 @@
       "section_downloads":"no",
       "image_downloads":null,
       "text_downloads":null,
-   
+
       "section_informationOne":"yes",
       "title_informationOne":"When a joint owner dies",
       "text_informationOne":"When a joint owner of a property dies, fill in <a target='_blank'  href='https://www.gov.uk/government/publications/deceased-joint-proprietor-djp' target='_blank'>form DJP</a> to remove their name from the register.<br><br>Send the completed form to <a target='_blank'  href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses' target='_blank'>HM Land Registry</a>, along with an official copy of the death certificate.",
-   
+
       "section_informationTwo":"yes",
       "title_informationTwo":"When a sole owner dies",
       "text_informationTwo":"When the sole owner of a property has died, the property is normally transferred to either:<ul><li>the person inheriting the property (known as ‘the beneficiary’)</li><li>a third party, for example someone buying the property</li></ul>",
-   
+
       "section_informationThree":"no",
       "title_informationThree":null,
       "text_informationThree":null,
-      
+
       "section_helpful":"yes"
    },
     {
@@ -72,7 +72,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -93,11 +93,11 @@
        "section_informationTwo":"yes",
        "title_informationTwo":"Fee and address",
        "text_informationTwo":"Send the completed form with the  <a target='_blank'  href='https://www.gov.uk/guidance/land-registry-registration-services-fees' class='govuk-link'>correct fee</a> to our  <a target='_blank'  href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses' class='govuk-link'>standard address</a>.",
- 
+
        "section_informationThree":"yes",
        "title_informationThree":"Video guidance",
        "text_informationThree":"<p>How to complete form (AP1)</p><iframe width='630' height='354' src='https://www.youtube.com/embed/BeWNb8XAn4c' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
-       
+
        "section_helpful":"yes"
     },
     {
@@ -122,7 +122,7 @@
       "section_informationThree":"no",
       "title_informationThree":"",
       "text_informationThree":"",
-      
+
       "section_helpful":"yes"
    },
     {
@@ -148,7 +148,7 @@
       "section_informationThree":"no",
       "title_informationThree":"Video guidance",
       "text_informationThree":"<p>How to complete form (AP1)</p><iframe width='630' height='354' src='https://www.youtube.com/embed/BeWNb8XAn4c' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
-      
+
       "section_helpful":"yes"
    },
     {
@@ -173,7 +173,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -198,7 +198,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -223,7 +223,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -248,7 +248,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -273,7 +273,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -286,7 +286,7 @@
        "section_downloads":"yes",
        "image_downloads":null,
        "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/709859/OC1__2018-05-25_.doc'>OC1 Form</a><span class='downloadSize'>MS Word, 90KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/713414/OC1__2018-05-25_.pdf'>OC1 Form</a><span class='downloadSize'>PDF, 130KB, 3 pages</span></div>",
-   
+
        "section_informationOne":"yes",
        "title_informationOne":"Fees and Address",
        "text_informationOne":"Send the completed form with the  <a target='_blank'  href='https://www.gov.uk/guidance/land-registry-information-services-fees'>correct fee</a> to our  <a target='_blank'  href='https://www.gov.uk/guidance/land-registry-address-for-applications#standard-addresses'>standard address</a>.",
@@ -298,7 +298,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -323,7 +323,7 @@
        "section_informationThree":"no",
        "title_informationThree":null,
        "text_informationThree":null,
-       
+
        "section_helpful":"yes"
     },
     {
@@ -336,7 +336,7 @@
      "section_downloads":"no",
      "image_downloads":null,
      "text_downloads":null,
-  
+
      "section_informationOne":"yes",
      "title_informationOne":"Further information",
      "text_informationOne":"You will hear a list of  <a target='_blank'  href='https://www.gov.uk/guidance/phone-menu-options-for-hm-land-registry'>options</a> when you phone us. Pick the appropriate option to speak to someone to help you with your query.<br><br>Customer support teams are trained in HM Land Registry casework procedures. They refer queries to our case owners only where necessary.",
@@ -348,7 +348,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -361,7 +361,7 @@
      "section_downloads":"no",
      "image_downloads":null,
      "text_downloads":null,
-     
+
      "section_informationOne":"yes",
      "title_informationOne":"Further information",
      "text_informationOne":"Please use our standard addresses, unless:<ul><li>your application is:<ul><li>for Land Charges (including applications for a search of the index of proprietors’ names in form PN1)</li><li>for bankruptcy</li><li>for Agricultural Credits</li><li>the Procurement and Commercial Team</li><li>for Local Land Charges</li><li>to sign up to our Business e-services</li><li>to serve legal proceedings on the Chief Land Registrar</li></ul></li><li>we have told you to send your applications or correspondence to an alternative address</li></ul>",
@@ -373,7 +373,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -398,7 +398,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -411,8 +411,8 @@
      "section_downloads":"yes",
      "image_downloads":null,
      "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816500/COG1__2019-06-24_.doc'>Updating registered owners' contact address</a><span class='downloadSize'>MS Word, 106KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/809992/COG1__2019-06-24_.pdf'>Updating registered owners' contact address</a><span class='downloadSize'>PDF, 451KB, 7 pages</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/810775/Help_protect_yourself_from_property_fraud__English___June_2019_.pdf'>Guidance: help protect yourself from property fraud</a><span class='downloadSize'>PDF, 802KB, 11 pages</span></div>",
-    
-     
+
+
      "section_informationOne":"yes",
      "title_informationOne":"Addresses",
      "text_informationOne":"<details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> Address for members of the public </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry Citizen Centre<br>PO Box 74<br>Gloucester<br>GL14 9BB</p></div></details><details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> Royal Mail address for business customers </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry<br>(Insert the name of your closest office)<br>PO Box 75<br>Gloucester<br>GL14 9BD</p></div></details><details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> DX address for business customers </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry<br>(Insert the name of your closest office)<br>DX 321601<br>Gloucester 33</p><p><span class='govuk-heading-m cardsubtitles'>Offices</span></p><p>Birkenhead<br>Coventry<br>Croydon<br>Durham<br>Gloucester<br>Hull<br>Fylde<br>Leicester<br>Nottingham<br>Peterborough<br>Plymouth<br>Swansea<br>Telford<br>Weymouth</p></div></details>",
@@ -424,7 +424,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
 
   },
@@ -450,7 +450,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -475,7 +475,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -500,7 +500,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -525,7 +525,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -550,7 +550,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -575,7 +575,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -600,7 +600,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -625,7 +625,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -650,7 +650,7 @@
      "section_informationThree":"no",
      "title_informationThree":null,
      "text_informationThree":null,
-       
+
      "section_helpful":"yes"
   },
   {
@@ -663,7 +663,7 @@
     "section_downloads":"yes",
     "image_downloads":null,
     "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/910216/DJP__2020-08-24_.doc'>DJP Form</a><span class='downloadSize'>MS Word, 97KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/910219/DJP__2020-08-24_.pdf'>DJP Form</a><span class='downloadSize'>PDF, 183KB, 2 pages</span></div>",
-    
+
     "section_informationOne":"yes",
     "title_informationOne":"Address",
     "text_informationOne":"Send the completed form to  <a target='_blank'  href='https://www.gov.uk/guidance/hm-land-registry-address-for-applications#standard-addresses'</a> HM Land Registry, along with an official copy of the death certificate.</a>.",
@@ -675,7 +675,7 @@
     "section_informationThree":"no",
     "title_informationThree":null,
     "text_informationThree":null,
-       
+
     "section_helpful":"yes"
   },
   {
@@ -700,7 +700,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -725,7 +725,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -750,7 +750,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -775,7 +775,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -800,7 +800,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -825,7 +825,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -850,7 +850,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -875,7 +875,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -900,7 +900,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -925,7 +925,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -950,7 +950,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -975,7 +975,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1000,7 +1000,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1025,7 +1025,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1050,7 +1050,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1075,7 +1075,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1100,7 +1100,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1117,7 +1117,7 @@
    "section_informationOne":"yes",
    "title_informationOne":"Business customers",
    "text_informationOne":"Business e-services customers can <a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'>check their current applications</a> to HM Land Registry through the portal.<div class='govuk-heading-m cardsubtitlesMedium' style='margin-top:30px;'>Submit an application search</div><a target='_blank'  href='https://eservices.landregistry.gov.uk/eservices/ECHOM_HomepageServices?utm_medium=GOV.UK&utm_source=website&utm_campaign=reply-to-requisition&utm_term=portalguide&utm_content=login-to-portal'>Login to portal</a><ol><li>Enter an HM Land Registry reference or Title Number. Use<ul><li>an HM Land Registry reference to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-details'>Application Details</a>’</li><li>a Title Number to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-list'>Application list</a>’</li></ul></li><li>Select ‘Submit’.</li><li>To view the current average completion times, select the link on the right-hand side.</li><li>To view information about our services, including application quality and speed of service, select the Service Standards data link on the right-hand side.</li></ol><p>Repeat as necessary and once all the required documents have been attached, press submit.</p><img style='margin:30px 0px 0px 0px;width: 100%;' src='/public/images/SearchScreen.png'>",
-   
+
    "section_informationTwo":"no",
    "title_informationTwo":null,
    "text_informationTwo":null,
@@ -1125,7 +1125,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1142,7 +1142,7 @@
    "section_informationOne":"yes",
    "title_informationOne":"Business customers",
    "text_informationOne":"Business e-services customers can <a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry'>check their current applications</a> to HM Land Registry through the portal.<div class='govuk-heading-m cardsubtitlesMedium' style='margin-top:30px;'>Submit an application search</div><a target='_blank'  href='https://eservices.landregistry.gov.uk/eservices/ECHOM_HomepageServices?utm_medium=GOV.UK&utm_source=website&utm_campaign=reply-to-requisition&utm_term=portalguide&utm_content=login-to-portal'>Login to portal</a><ol><li>Enter an HM Land Registry reference or Title Number. Use<ul><li>an HM Land Registry reference to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-details'>Application Details</a>’</li><li>a Title Number to access the ‘<a target='_blank' href='https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry#application-list'>Application list</a>’</li></ul></li><li>Select ‘Submit’.</li><li>To view the current average completion times, select the link on the right-hand side.</li><li>To view information about our services, including application quality and speed of service, select the Service Standards data link on the right-hand side.</li></ol><p>Repeat as necessary and once all the required documents have been attached, press submit.</p><img style='margin:30px 0px 0px 0px;width: 100%;' src='/public/images/SearchScreen.png'>",
-   
+
    "section_informationTwo":"no",
    "title_informationTwo":null,
    "text_informationTwo":null,
@@ -1150,7 +1150,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1175,7 +1175,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1200,7 +1200,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1225,7 +1225,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1250,7 +1250,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1275,7 +1275,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1300,7 +1300,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1325,7 +1325,7 @@
    "section_informationThree":"no",
    "title_informationThree":"",
    "text_informationThree":"",
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1350,7 +1350,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-   
+
    "section_helpful":"yes"
 },
 
@@ -1376,7 +1376,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-   
+
    "section_helpful":"yes"
 },
 {
@@ -1389,8 +1389,8 @@
    "section_downloads":"yes",
    "image_downloads":null,
    "text_downloads":"<div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816500/COG1__2019-06-24_.doc'>Updating registered owners' contact address</a><span class='downloadSize'>MS Word, 106KB</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/809992/COG1__2019-06-24_.pdf'>Updating registered owners' contact address</a><span class='downloadSize'>PDF, 451KB, 7 pages</span></div><div class='downloadItem'><i class='fas fa-file-download' aria-hidden='true'></i> <a target='_blank'  href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/810775/Help_protect_yourself_from_property_fraud__English___June_2019_.pdf'>Guidance: help protect yourself from property fraud</a><span class='downloadSize'>PDF, 802KB, 11 pages</span></div>",
-  
-   
+
+
    "section_informationOne":"yes",
    "title_informationOne":"Addresses",
    "text_informationOne":"<details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> Address for members of the public </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry Citizen Centre<br>PO Box 74<br>Gloucester<br>GL14 9BB</p></div></details><details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> Royal Mail address for business customers </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry<br>(Insert the name of your closest office)<br>PO Box 75<br>Gloucester<br>GL14 9BD</p></div></details><details class='govuk-details' data-module='govuk-details'> <summary class='govuk-details__summary'> <span class='govuk-details__summary-text'> DX address for business customers </span> </summary> <div class='govuk-details__text'> <p>HM Land Registry<br>(Insert the name of your closest office)<br>DX 321601<br>Gloucester 33</p><p><span class='govuk-heading-m cardsubtitles'>Offices</span></p><p>Birkenhead<br>Coventry<br>Croydon<br>Durham<br>Gloucester<br>Hull<br>Fylde<br>Leicester<br>Nottingham<br>Peterborough<br>Plymouth<br>Swansea<br>Telford<br>Weymouth</p></div></details>",
@@ -1402,7 +1402,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 
 },
@@ -1428,7 +1428,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1453,15 +1453,15 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
-   "words":"What is a Point of contact?",
+   "words":"What is a point-of-contact?",
    "subject":"Definition",
    "tag_definition":"yes",
    "section_questionanswer":"yes",
-   "question":"Point of contact",
+   "question":"Point-of-contact",
    "answer":"<span>We will contact this person if there's a query with your application.</span>",
    "section_downloads":"no",
    "image_downloads":null,
@@ -1478,7 +1478,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 },
 {
@@ -1503,7 +1503,7 @@
    "section_informationThree":"no",
    "title_informationThree":null,
    "text_informationThree":null,
-     
+
    "section_helpful":"yes"
 }
   ]
