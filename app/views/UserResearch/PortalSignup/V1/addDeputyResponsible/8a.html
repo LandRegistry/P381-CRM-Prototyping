@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit 
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -12,7 +12,7 @@
 
   <div class="govuk-grid-row">
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
-  
+
 
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
         Check your answers before sending your application
@@ -22,7 +22,7 @@
       <table class="govuk-table">
         <form action="8" method="post" class="form">
         <div  class="govuk-!-margin-bottom-9">
-          <h3 class="govuk-heading-m">Your organisation
+          <h3 class="govuk-heading-m">Organisation's details
           </h3>
           <dl class="govuk-summary-list">
             <div class="govuk-summary-list__row">
@@ -41,7 +41,7 @@
         </div>
 
         <div class="govuk-!-margin-bottom-9">
-          <h3 class="govuk-heading-m">Deputy responsible person
+          <h3 class="govuk-heading-m">Deputy responsible person's
           </h3>
 
       <dl class="govuk-summary-list">
@@ -67,13 +67,13 @@
               <li>{{ data['address-line-1'] }}</li>
               <li>{{ data['address-town'] }}</li>
               <li>{{ data['address-county'] }}</li>
- 
+
               <li>{{ data['postcode'] }}
                 {% for feature in data['postcode'] %}
                  {% else %}
                  {{ data['postcode2'] }}
                  {% endfor %}</li>
-  
+
               <li style="margin-top:10px;">DX: {{ data['dx-address'] }}
                 {% for feature in data['dx-address'] %}
                  {% else %}
@@ -133,12 +133,12 @@
 
 
     <div class="govuk-!-margin-bottom-8 govuk-body">
-      <h3 class="govuk-heading-m" >Application signature
+      <h3 class="govuk-heading-m" >Sign your application
       </h3>
       <dl class="govuk-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-            Signature uploaded
+            Signature attached
         </dt>
         <dd class="govuk-summary-list__value">
           <p class="govuk-body">{{ data['uploaded-signature'] }}
@@ -191,7 +191,7 @@
             Accept and send
         </button>
       </div>
-      
+
     </div>
 
   </div>
@@ -200,11 +200,11 @@
     .govuk-summary-list__value > p {
         margin-bottom: 0;
     }
-   
+
     .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    
+
     </style>
 {% endblock %}

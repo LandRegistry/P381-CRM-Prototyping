@@ -22,8 +22,11 @@
       <table class="govuk-table">
 
         <div  class="govuk-!-margin-bottom-9">
-          <h3 class="govuk-heading-l">Your organisation
+          <h3 class="govuk-heading-l">Organisation's details
           </h3>
+          <button style="float: right;margin-top: -45px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;"/>
+              Print summary
+            </button>
           <dl class="govuk-summary-list">
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
@@ -45,7 +48,7 @@
         </div>
 
         <div class="govuk-!-margin-bottom-9">
-          <h3 class="govuk-heading-l">Primary Administrator
+          <h3 class="govuk-heading-l">Primary administrator's details
           </h3>
 
       <dl class="govuk-summary-list">
@@ -64,7 +67,7 @@
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-            Primary Administrator's address
+            Primary administrator's address
         </dt>
         <dd class="govuk-summary-list__value">
           <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
@@ -122,12 +125,12 @@
 
 
     <div class="govuk-!-margin-bottom-8 govuk-body">
-      <h3 class="govuk-heading-l" >Application signature
+      <h3 class="govuk-heading-l" >Sign your application
       </h3>
       <dl class="govuk-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-            Signature uploaded
+            Signature attached
         </dt>
         <dd class="govuk-summary-list__value">
           <p class="govuk-body">{{ data['uploaded-signature'] }}

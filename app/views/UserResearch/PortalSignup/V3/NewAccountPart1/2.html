@@ -66,7 +66,7 @@
             <h3 class="govuk-heading-s" style="margin-bottom: 5px;">
                 Organisation address:
             </h3>
-            
+
             <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
                 <li>{{ data['organisation-address-line-1'] }}</li>
                 <li>{{ data['organisation-address-town'] }}</li>
@@ -91,7 +91,7 @@
                     </label>
                   </div>
                 </div>
-            
+
               </fieldset>
 
 
@@ -100,14 +100,14 @@
   <div class="content2" style="display:none;padding-top: 30px;">
 
       <div class="govuk-summary-list__value" style="padding:0px;">
-              
-                      
+
+
 
                       <div class="govuk-form-group">
                       <label class="govuk-label" for="administrator-address-line-1">
                         Building and street
                       </label>
-                      <input class="govuk-input" id="administrator-address-line-1" name="administrator-address-line-1" type="text" autocomplete="address-line1" value="{{ data['administrator-address-line-1'] }}" style="width: 300px;">        
+                      <input class="govuk-input" id="administrator-address-line-1" name="administrator-address-line-1" type="text" autocomplete="address-line1" value="{{ data['administrator-address-line-1'] }}" style="width: 300px;">
                           </div>
 
               <div class="govuk-form-group">
@@ -116,21 +116,21 @@
                       </label>
                       <input class="govuk-input" id="administrator-address-town" name="administrator-address-town" type="text" autocomplete="address-level2" value="{{ data[administrator-address-town'] }}" style="width: 300px;">
                   </div>
-              
+
                   <div class="govuk-form-group">
                       <label class="govuk-label" for="administrator-postcode">
                         Postcode
                       </label>
                       <input class="govuk-input" id="administrator-postcode" name="administrator-postcode" type="text" autocomplete="postal-code" value="{{ data['administrator-postcode'] }}" style="width: 300px;">
-                      </div>    
+                      </div>
 
-                      
+
                       <div class="govuk-form-group">
                         <label class="govuk-label" for="administrator-country">
                           Country
                         </label>
                         <input class="govuk-input" id="administrator-country" name="administrator-country" type="text" autocomplete="country" value="{{ data['administrator-country'] }}" style="width: 300px;">
-                        </div>   
+                        </div>
 
                       <div class="govuk-form-group">
                       <label class="govuk-label" for="administrator-dx-address">
@@ -138,11 +138,11 @@
                         </label>
                         <input class="govuk-input" id="administrator-dx-address" name="administrator-dx-address" type="text" value="{{ data['administrator-pdx-address'] }}" style="width: 300px;margin-bottom:20px;">
                       </div>
-                      
-  
+
+
 
               </div>
-  
+
               </div>
               </div>
 
@@ -155,7 +155,7 @@
             <h2 class="govuk-heading-l">
                 How does the primary administrator want to receive their security credentials?
               </h2>
-             
+
 
               <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
                 <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
@@ -173,7 +173,7 @@
                       </label>
                     </div>
                   </div>
-              
+
                 </fieldset>
               </div>
 
@@ -212,7 +212,7 @@
       if($(this).attr("value")=="no"){
           $(".content2").show('display');
 
-      }        
+      }
   });
 
 

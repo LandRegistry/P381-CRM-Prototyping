@@ -14,9 +14,11 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
 
-      <h1 class="govuk-heading-xl" style="max-width: 725px;">
+      <h1 class="govuk-heading-xl" style="max-width: 860px;">
         New administrator
       </h1>
+
+      <div style="display: inline-block;">
 
       <form method="post" class="form">
         <div style="">
@@ -56,37 +58,45 @@
 
                     <dd class="govuk-summary-list__value" style="padding:0px;">
 
+                        <div class="govuk-form-group">
                         <label class="govuk-label" for="address-line-1">
                           Building and street
                         </label>
-                        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px; margin-bottom: 20px;">
+                        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px;">
+                      </div>
 
+                      <div class="govuk-form-group">
                         <label class="govuk-label" for="address-town">
                           Town or city
                         </label>
-                        <input class="govuk-input" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px; margin-bottom: 20px;">
+                        <input class="govuk-input" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px;">
+                      </div>
 
-
-                        <label class="govuk-label" for="address-county">
-                          County
-                        </label>
-                        <input class="govuk-input" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px; margin-bottom: 20px;">
-
+                      <div class="govuk-form-group">
                         <label class="govuk-label" for="address-country">
                           Country
                         </label>
-                        <input class="govuk-input" id="address-country" name="address-country" type="text"value="{{ data['address-country'] }}" style="width: 300px; margin-bottom: 20px;">
+                        <input class="govuk-input" id="address-country" name="address-country" type="text"value="{{ data['address-country'] }}" style="width: 300px;">
+                      </div>
 
-
+                      <div class="govuk-form-group">
                         <label class="govuk-label" for="postcode">
                           Postcode
                         </label>
-                        <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px; margin-bottom: 20px;">
+                        <input class="govuk-input" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px;">
+                      </div>
 
+                      <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-half">
+                      <div class="govuk-form-group">
                         <label class="govuk-label" for="dx-address">
                           DX address (optional)
                         </label>
-                        <input class="govuk-input govuk-input--width-10" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
+                        <input class="govuk-input govuk-input--width-10" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px;">
+                      </div>
+                    </div>
+                  </div>
+
 
 
 
@@ -95,6 +105,7 @@
 
 
                 </div>
+
 
                 <div id="content1" style="display:block;">
 
@@ -111,7 +122,9 @@
                           <option value="4">35 Burnway, Romford</option>
                         </select>
                         <div>
-                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a>
+                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a> <br>
+                        <a class="govuk-link" href="/UserResearch/PortalSignup/V1/addAdministrator/1" style="font-size: 16px;">Search for another postcode</a>
+
                     </div>
                       </div>
 
@@ -158,10 +171,56 @@
 
                 </div>
         </div>
+      </div>
+
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <hr>
+
+      </div>
+    </div>
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+        <div style="display: inline-block; max-width: 890px;">
+            <h2 class="govuk-heading-l">
+                How does the primary administrator want to receive their security credentials?
+              </h2>
+
+
+              <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                  <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="receive-type-email" name="administrator-receive-type" type="radio" value="Email" {{ checked("administrator-receive-type", "Email") }}>
+                      <label class="govuk-label govuk-radios__label" for="receive-type-email">
+                        Email
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="receive-type-post" name="administrator-receive-type" type="radio" value="Post" {{ checked("administrator-receive-type", "Post") }}>
+                      <label class="govuk-label govuk-radios__label" for="receive-type-post">
+                        Post
+                      </label>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
 
 
         <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-          <button class="govuk-button" type="submit" formaction="3">Continue</button>
+          <button class="govuk-button" type="submit" formaction="4">Continue</button>
       </div>
 
 

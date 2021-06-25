@@ -14,7 +14,7 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
 
-      <h1 class="govuk-heading-xl" style="max-width: 725px;">
+      <h1 class="govuk-heading-xl" style="max-width: 860px;">
         New deputy responsible person
       </h1>
 
@@ -111,7 +111,8 @@
                           <option value="4">30 Flat Water Avenue, Stayford</option>
                         </select>
                         <div>
-                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a>
+                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a> <br>
+                        <a class="govuk-link" href="/UserResearch/PortalSignup/V1/addDeputyResponsible/1" style="font-size: 16px;">Search for another postcode</a>
                     </div>
                       </div>
 
@@ -158,10 +159,116 @@
 
                 </div>
         </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <hr>
+
+      <div class="govuk-!-padding-bottom-6"></div>
+
+      {# <div style="display: inline-block; max-width: 890px;"> #}
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h3 class="govuk-heading-l" style="max-width: 860px;">
+              How does the primary administrator want to receive their security credentials?
+            </h3>
+          </legend>
+
+
+            <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
+              <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="receive-type-email" name="administrator-receive-type" type="radio" value="Email" {{ checked("administrator-receive-type", "Email") }}>
+                    <label class="govuk-label govuk-radios__label" for="receive-type-email">
+                      Email
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="receive-type-post" name="administrator-receive-type" type="radio" value="Post" {{ checked("administrator-receive-type", "Post") }}>
+                    <label class="govuk-label govuk-radios__label" for="receive-type-post">
+                      Post
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+    <hr>
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h3 class="govuk-heading-l" style="max-width: 860px;">
+              Do you want the new deputy responsible person to have access to all your organisation's variable Direct Debit Key numbers?
+          </h3>
+        </legend>
+        <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="VDD-contact-yes" name="VDD-contact" type="radio" value="Yes" {{ checked("VDD-contact", "Yes") }} data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="VDD-contact-yes">
+              Yes
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="VDD-contact-no" name="VDD-contact" type="radio" value="No - submit alternate VDD number" {{ checked("VDD-contact", "No") }} data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="VDD-contact-no">
+              No - submit alternate VDD number
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="VDD-Number">
+                  Variable Direct Debit number
+              </label>
+              <div id="contact-hint" class="govuk-hint">
+                  Must be 7 digits long
+                </div>
+              <input class="govuk-input govuk-!-width-full-width" id="VDD-Number" name="VDD-Number" value="{{ data['VDD-Number'] }}"  type="tel"></div>
+              <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="content3">
+                  <div class="govuk-form-group">
+                    <input class="govuk-input govuk-!-width-full-width" id="VDD-Number2" name="VDD-Number" value="{{ data['VDD-Number'] }}"  type="tel"></div>
+                </div>
+
+              </div>
+
+              <div class="govuk-grid-column-full">
+              <a class="govuk-link" href="javascript:showHide('content3');" style="font-size: 16px;">Add another VDD number</a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        </div>
+
+      </fieldset>
+    </div>
 
 
         <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-          <button class="govuk-button" type="submit" formaction="3">Continue</button>
+          <button class="govuk-button" type="submit" formaction="4">Continue</button>
       </div>
 
 
@@ -192,6 +299,22 @@ for (var i=0;i<divs.length;i++)
 onediv.style.display = 'block';
 }
     </script>
+
+    <script type="text/javascript">
+    function showHide(d)
+    {
+    var onediv = document.getElementById(d);
+    var divs=['content3'];
+    for (var i=0;i<divs.length;i++)
+      {
+      if (onediv != document.getElementById(divs[i]))
+        {
+        document.getElementById(divs[i]).style.display='none';
+        }
+      }
+    onediv.style.display = 'block';
+    }
+        </script>
 
 
 <style>
