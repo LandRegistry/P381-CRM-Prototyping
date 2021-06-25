@@ -15,11 +15,11 @@
 
 
       <h1 class="govuk-heading-xl" style="max-width: 725px;">
-        Point of contact
+        Point-of-contact
       </h1>
 
       <div class="govuk-inset-text">
-  This point of contact will be used for correspondence relating to this application for Business e-services
+  This point-of-contact will be used for correspondence relating to this application for Business e-services
 </div>
 
       <form method="post" class="form">
@@ -113,6 +113,13 @@
 
                             <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">Add address manually</a>
                         </div>
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="dx-address">
+                            DX address (optional)
+                        </label>
+                        <input class="govuk-input" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
                     </div>
 
 

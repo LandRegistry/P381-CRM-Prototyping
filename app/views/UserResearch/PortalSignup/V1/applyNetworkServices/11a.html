@@ -14,41 +14,76 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
 
-      <h1 class="govuk-heading-xl" style="max-width: 725px;">
-        Point of contact
+      <h1 class="govuk-heading-xl" style="max-width: 600px;">
+        Point-of-contact's details
       </h1>
-      <div class="govuk-inset-text">
-    This point of contact will be used for correspondence relating to this application for Business e-services
-    </div>
+
+      <p class="govuk-body govuk-!-margin-bottom-6" >
+        This point of contact will be used for correspondence relating to this application for Business e-services
+      </p>
+
 
       <form method="post" class="form">
         <div style="">
+
+
+
+          <div class="govuk-body" style="margin-bottom: 30px;">
+
+        </div>
+
+
+
             <div class="govuk-form-group">
-                <label class="govuk-label" for="poc-first-name">
+
+              <div style="margin-right:15px; float:left;">
+              <label class="govuk-label" for="first-name">
+                Title
+                </label>
+              <select class="govuk-select" style="max-width:150px;"onchange="location = this.value;">
+                <option value="#"></option>
+                <option value="#">Dr</option>
+                <option value="#">Mr</option>
+                <option value="#">Miss</option>
+                <option value="#">Mrs</option>
+                <option value="#">Prof</option>
+                <option value="#">Sir</option>
+                <option value="#">Lord</option>
+                <option value="#">Lady</option>
+                <option value="1-other.html">Other</option>
+              </select>
+            </div>
+
+            <div style=" float:left;">
+                <label class="govuk-label" for="first-name">
                 First/Given names
                 </label>
-                <input class="govuk-input" id="poc-first-name" name="poc-first-name" value="{{ data['poc-first-name'] }}" type="text" style="width: 300px;">
+                <input class="govuk-input" id="first-name" name="first-name" value="{{ data['first-name'] }}" type="text" style="width: 200px;">
+              </div>
+
+
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="poc-family-name">
+                <label class="govuk-label" for="last-name">
                     Surname/Family name
                 </label>
-                <input class="govuk-input" id="poc-family-name" name="poc-family-name" value="{{ data['poc-family-name'] }}" type="text" style="width: 300px;">
+                <input class="govuk-input" id="family-name" name="family-name" value="{{ data['family-name'] }}" type="text" style="width: 300px;">
             </div>
 
+
             <div class="govuk-form-group">
-                <label class="govuk-label" for="poc-email">
+                <label class="govuk-label" for="email">
                 Email address
                 </label>
-                <input class="govuk-input" id="poc-email" name="poc-email" value="{{ data['poc-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
+                <input class="govuk-input" id="email" name="email" value="{{ data['email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
             </div>
 
             <div class="govuk-form-group">
-                <label class="govuk-label" for="poc-telephone-number">
+                <label class="govuk-label" for="telephone-number">
                     Telephone number
                 </label>
-                <input class="govuk-input" id="poc-telephone-number" name="poc-telephone-number" value="{{ data['poc-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+                <input class="govuk-input" id="telephone-number" name="telephone-number" value="{{ data['telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
 
 
@@ -84,18 +119,25 @@
                         <label class="govuk-label" for="postcode">
                           Postcode
                         </label>
-                        <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px; margin-bottom: 20px;">
+                        <input class="govuk-input" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px; margin-bottom: 20px;">
 
-
-
+                        <label class="govuk-label" for="dx-address2">
+                          DX address (optional)
+                        </label>
+                        <input class="govuk-input" id="dx-address2" name="dx-address2" type="text" value="{{ data['dx-address2'] }}" style="width: 300px; margin-bottom: 20px;">
 
                 </dd>
 
-
+                    <div>
+                        <button class="govuk-button" type="submit" formaction="4">Continue</button>
+                    </div>
 
                 </div>
 
                 <div id="content1" style="display:block;">
+
+
+                    <div id="content1" style="display:block;">
 
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="postcode">
@@ -103,14 +145,16 @@
                             </label>
                         <select class="govuk-select" id="selectAddress" name="selectAddress" style="width: 300px; margin-bottom: 20px;">
                           <option value="select" selected>5 address found</option>
-                          <option value="4">16 Holland Drive, Moreview</option>
-                          <option value="4">17 Holland Drive, Moreview</option>
-                          <option value="4">18 Holland Drive, Moreview</option>
-                          <option value="4">19 Holland Drive, Moreview</option>
-                          <option value="4">20 Holland Drive, Moreview</option>
+                          <option value="4">31 Burnway, Romford</option>
+                          <option value="4">32 Burnway, Romford</option>
+                          <option value="4">33 Burnway, Romford</option>
+                          <option value="4">34 Burnway, Romford</option>
+                          <option value="4">35 Burnway, Romford</option>
                         </select>
                         <div>
-                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a>
+                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a> <br>
+                        <a class="govuk-link" href="/UserResearch/PortalSignup/V1/addAdministrator/1" style="font-size: 16px;">Search for another postcode</a>
+
                     </div>
                       </div>
 
@@ -147,17 +191,27 @@
 
                     </div> -->
 
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="telephone-number">
+                            DX address (optional)
+                        </label>
+                        <input class="govuk-input" id="dx-address" name="dx-address" type="text" value="{{ data['dx-address'] }}" style="width: 300px; margin-bottom: 20px;">
+                    </div>
 
+
+                </div>
+        </div>
+      </div>
 
 
                 </div>
         </div>
 
 
-        <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+
+        <div class="govuk-form-group" style="margin-left:15px;width: 100%;">
           <button class="govuk-button" type="submit" formaction="12">Continue</button>
       </div>
-
 
 
         </div>

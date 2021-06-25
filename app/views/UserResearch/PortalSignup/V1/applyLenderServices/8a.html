@@ -15,7 +15,7 @@
 
 
       <h1 class="govuk-heading-xl" style="max-width: 725px;">
-        New responsible person 
+        New responsible person
       </h1>
 
       <div class="govuk-warning-text" style="max-width: 780px;">
@@ -138,7 +138,9 @@
                           <option value="4">15 Clay Road, Long Melford</option>
                         </select>
                         <div>
-                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a>
+                        <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">I can't find my address in the list</a> <br>
+                        <a class="govuk-link" href="/UserResearch/PortalSignup/V1/applyLenderServices/8" style="font-size: 16px;">Search for another postcode</a>
+
                     </div>
                       </div>
 
@@ -181,9 +183,52 @@
                 </div>
         </div>
 
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <hr>
+        </div>
+      </div>
+
+
+        <div class="govuk-!-padding-bottom-6"></div>
+
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+        <div style="display: inline-block; max-width: 890px;">
+            <h2 class="govuk-heading-l">
+                How does the primary administrator want to receive their security credentials?
+              </h2>
+
+
+              <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                  <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="receive-type-email" name="administrator-receive-type" type="radio" value="Email" {{ checked("administrator-receive-type", "Email") }}>
+                      <label class="govuk-label govuk-radios__label" for="receive-type-email">
+                        Email
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="receive-type-post" name="administrator-receive-type" type="radio" value="Post" {{ checked("administrator-receive-type", "Post") }}>
+                      <label class="govuk-label govuk-radios__label" for="receive-type-post">
+                        Post
+                      </label>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+
+        </div>
+      </div>
+    </div>
+
 
         <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-          <button class="govuk-button" type="submit" formaction="9">Continue</button>
+          <button class="govuk-button" type="submit" formaction="10">Continue</button>
       </div>
 
 
