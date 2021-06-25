@@ -29,23 +29,22 @@
 
 
 
-            <div class="govuk-form-group">
+            <div class="govuk-form-group" style="margin-bottom: 10px;">
 
               <div style="margin-right:15px; float:left;">
               <label class="govuk-label" for="first-name">
                 Title
                 </label> 
               <select class="govuk-select" style="max-width:150px;"onchange="location = this.value;">
-                <option value="#"></option>
-                <option value="#">Dr</option>
-                <option value="#">Mr</option>
-                <option value="#">Miss</option>
-                <option value="#">Mrs</option>
-                <option value="#">Prof</option>
-                <option value="#">Sir</option>
-                <option value="#">Lord</option>
-                <option value="#">Lady</option>
-                <option value="1-other.html">Other</option>
+                <option value="1">Dr</option>
+                <option value="1">Mr</option>
+                <option value="1">Miss</option>
+                <option value="1">Mrs</option>
+                <option value="1">Prof</option>
+                <option value="1">Sir</option>
+                <option value="1">Lord</option>
+                <option value="1">Lady</option>
+                <option value="1-other.html" selected>Other</option>
               </select>
             </div>
 
@@ -59,13 +58,16 @@
 
             </div>
 
-            <div class="govuk-form-group">
+            <div class="govuk-form-group" style="margin-bottom: 10px;">
                 <label class="govuk-label" for="last-name">
                     Surname/Family name
                 </label>
                 <input class="govuk-input" id="family-name" name="family-name" value="{{ data['family-name'] }}" type="text" style="width: 300px;">
             </div>
 
+            <div class="govuk-form-group" style="width:100%;">
+                <input class="govuk-input" id="salutation-other" name="salutation-other" value="{{ data['salutation-other'] }}" type="text" style="width: 300px;">
+            </div>
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="email">
