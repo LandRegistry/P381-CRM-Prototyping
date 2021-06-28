@@ -18,16 +18,42 @@
         Who should we contact if there's a query with this application?
       </h1>
 
-<p>This point of contact will be used for correspondence relating to this application for Business e-services</p>
+      <div class="govuk-inset-text">
+        This point-of-contact will be used for correspondence relating to this application for Business e-services
+      </div>
 
       <form method="post" class="form">
         <div style="">
+
             <div class="govuk-form-group">
+
+                <div style="margin-right:15px; float:left;">
                 <label class="govuk-label" for="first-name">
-                First/Given names
-                </label>
-                <input class="govuk-input" id="first-name" name="first-name" value="{{ data['first-name'] }}" type="text" style="width: 300px;">
-            </div>
+                  Title
+                  </label> 
+                <select class="govuk-select" style="max-width:150px;"onchange="location = this.value;">
+                  <option value="#"></option>
+                  <option value="#">Dr</option>
+                  <option value="#">Mr</option>
+                  <option value="#">Miss</option>
+                  <option value="#">Mrs</option>
+                  <option value="#">Prof</option>
+                  <option value="#">Sir</option>
+                  <option value="#">Lord</option>
+                  <option value="#">Lady</option>
+                  <option value="1-other.html">Other</option>
+                </select>
+              </div>
+  
+              <div style=" float:left;">
+                  <label class="govuk-label" for="first-name">
+                  First/Given names
+                  </label> 
+                  <input class="govuk-input" id="first-name" name="first-name" value="{{ data['first-name'] }}" type="text" style="width: 200px;">
+                </div>
+  
+  
+              </div>
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="last-name">

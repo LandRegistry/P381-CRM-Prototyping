@@ -15,10 +15,10 @@
 
 
       <h1 class="govuk-heading-xl">
-        Responsible person's contact details
+        Point-of-contact's (POC) details
       </h1>
 
-      <form method="post" class="form" action="3d">
+      <form method="post" class="form" action="index-5">
         <div style="padding-bottom:0px;width: 100%;display:inline-block;">
 
           <div class="govuk-form-group" style="margin-right:30px;">
@@ -72,12 +72,6 @@
                 <input class="govuk-input" id="res-person-telephone-number" name="res-person-telephone-number" value="{{ data['res-person-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
 
-            <div class="govuk-form-group" style="float:left;">
-                <label class="govuk-label" for="res-person-role">
-                    Role within the organisation
-                </label>
-                <input class="govuk-input" id="res-person-role" name="res-person-role" value="{{ data['res-person-role'] }}" type="tel" autocomplete="tel" style="width: 300px;">
-            </div>
 
         </div>
 
@@ -87,11 +81,9 @@
 
         <div style="display: inline-block;">
             <h2 class="govuk-heading-l" style="max-width: 740px;">
-                Is the responsible person's address the same as the organisation address?
+                Is the point-of-contact's address the same as the organisation address?
             </h2>
 
-
-            <p>This is the business address where the responsible person is based</p>
             <div class="govuk-inset-text">
             <h3 class="govuk-heading-s" style="margin-bottom: 5px;">
                 Organisation address:
@@ -187,34 +179,7 @@
 
         <hr>
 
-        <div style="display: inline-block;">
-            <h2 class="govuk-heading-l" style="max-width: 700px;">
-                How does the primary administrator want to receive their security credentials?
-              </h2>
-             
 
-              <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
-                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                       <div class="govuk-radios govuk-radios--inline">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="credential-email" name="credentials" type="radio" value="credential-email">
-                      <label class="govuk-label govuk-radios__label" for="credential-email">
-                        Email
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="credential-post" name="credentials" type="radio" value="credential-post">
-                      <label class="govuk-label govuk-radios__label" for="credential-post">
-                        Post
-                      </label>
-                    </div>
-                  </div>
-              
-                </fieldset>
-              </div>
-
-
-        </div>
 
         <div>
             <button class="govuk-button" type="submit">Continue</button>
