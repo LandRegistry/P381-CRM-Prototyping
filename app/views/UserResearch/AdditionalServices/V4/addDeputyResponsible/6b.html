@@ -20,31 +20,27 @@
 
 
       <table class="govuk-table">
-
+        <form action="6" method="post" class="form">
         <div  class="govuk-!-margin-bottom-9">
           <h3 class="govuk-heading-l">Organisation's details
           </h3>
           <button style="float: right;margin-top: -60px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;"/>
               Print summary
             </button>
-          <dl class="govuk-summary-list">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Name
-            </dt>
-            <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
-              {% for feature in data['organisationsName'] %}
-               {% else %}
-                 User Research Ltd
-               {% endfor %}
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="8a">
-                Change<span class="govuk-visually-hidden"> name</span>
-              </a>
-            </dd>
-          </div>
-          </dl>
+            <dl class="govuk-summary-list">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                    Name
+                  </dt>
+                  <dd class="govuk-summary-list__value"> <input class="govuk-input" id="organisationsName" name="organisationsName" value="{{ data['organisationsName'] }}"  type="text">
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                      <button class="govuk-button text-button" data-module="govuk-button" data-module="govuk-button">
+                          Update
+                        </button>
+                  </dd>
+                </div>
+                </dl>
         </div>
 
         <div class="govuk-!-margin-bottom-9">
@@ -60,7 +56,7 @@
           {{ data['first-name'] }} {{ data['family-name'] }}
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8b">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> name</span>
           </a>
         </dd>
@@ -74,22 +70,35 @@
             <li>{{ data['address-line-1'] }}</li>
             <li>{{ data['address-town'] }}</li>
             <li>{{ data['address-county'] }}</li>
-
-            <li>{{ data['postcode'] }}
-              {% for feature in data['postcode'] %}
-               {% else %}
-               {{ data['postcode2'] }}
-               {% endfor %}</li>
-
-            <li style="margin-top:10px;">DX: {{ data['dx-address'] }}
-              {% for feature in data['dx-address'] %}
-               {% else %}
-                 not provided
-               {% endfor %}</li>
+            <li>{{ data['postcode'] }}</li>
           </ul>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8c">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> address</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            DX Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+            <li style="margin-top:10px;">DX number: {{ data['dx-number'] }}
+              {% for feature in data['dx-number'] %}
+               {% else %}
+                 not provided
+               {% endfor %}</li>
+               <li style="margin-top:10px;">DX exchange: {{ data['dx-exchange'] }}
+                {% for feature in data['dx-exchange'] %}
+                 {% else %}
+                   not provided
+                 {% endfor %}</li>
+          </ul>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> address</span>
           </a>
         </dd>
@@ -103,7 +112,7 @@
           <p class="govuk-body">{{ data['email'] }}</p>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8d">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> contact details</span>
           </a>
         </dd>
@@ -116,7 +125,7 @@
           <p class="govuk-body">{{ data['receive-type'] }}</p>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8e">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> delivery</span>
           </a>
         </dd>
@@ -131,7 +140,7 @@
           <p class="govuk-body">{{ data['VDD-Number'] }}</p>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8f">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> delivery</span>
           </a>
         </dd>
@@ -159,30 +168,15 @@
           </p>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="8g">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> delivery</span>
           </a>
         </dd>
       </div>
     </div>
       </dl>
-
+    </form>
       </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -195,7 +189,7 @@
 <div class="govuk-!-padding-bottom-6"></div>
 
       <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='9.html'">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='7.html'">
             Confirm and send
         </button>
       </div>

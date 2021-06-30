@@ -13,6 +13,7 @@
 {% block content %}
 
 <div class="govuk-grid-row">
+
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
       <div class="govuk-form-group">
@@ -22,29 +23,57 @@
               Has the current responsible person left your organisation?
             </h1>
           </legend>
-          <div class="govuk-radios">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="left-organisation" name="left-organisation-type" type="radio" value="Yes" {{ checked("left-organisation", "Yes") }}>
-              <label class="govuk-label govuk-radios__label" for="left-organisation">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="left-organisation" name="left-organisation-type" type="radio" value="No" {{ checked("left-organisation", "No") }}>
-              <label class="govuk-label govuk-radios__label" for="left-organisation">
-                No
-              </label>
-            </div>
-          </div>
+          <form action="3" method="post" class="form">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="left-organisation-hint">
+                <div class="govuk-radios govuk-radios--inline">
+             <div class="govuk-radios__item">
+               <input class="govuk-radios__input" id="left-organisation" name="left-organisation" type="radio" value="yes">
+               <label class="govuk-label govuk-radios__label" for="left-organisation">
+                 Yes
+               </label>
+             </div>
+             <div class="govuk-radios__item">
+               <input class="govuk-radios__input" id="left-organisation-2" name="left-organisation" type="radio" value="no">
+               <label class="govuk-label govuk-radios__label" for="left-organisation-2">
+                 No
+               </label>
+             </div>
+           </div>
+    
+         </fieldset>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <p class="govuk-body govuk-!-margin-bottom-9"></p>
 
           <p  style="max-width: 850px;"> If the responsible person has left the organisation and they were also one of your organisation's administrators we will delete their account. </p>
           <p style="max-width: 850px;"> Please return their security token to us or deposit it in accordance with Waste Electrical and Electronic Equipment (WEEE) environmental legislation. If they were also an authorised user, you should direct one of your organisation's administrators to delete that account. </p>
 
-          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='3.html'">
-            Continue
-          </button>
+          <div class=" govuk-grid-column-full" style="padding:0px;">
+            <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
+                Continue
+            </button>
+          </div>
 
         </fieldset>
       </div>
