@@ -11,71 +11,41 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
 
 
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
-        Apply for or update a <br>Business e-services account
-      </h1>
-
-
-        <div class="govuk-warning-text">
-            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-            <strong class="govuk-warning-text__text">
-              <span class="govuk-warning-text__assistive">Warning</span>
-              Only a responsible person or deputy responsible person can submit this request.
-            </strong>
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+                Application submitted
+            </h1>
+            <div class="govuk-panel__body">
+              Your reference number<br><strong>210310-003252</strong>
+            </div>
           </div>
 
-        <div class="govuk-body govuk-!-margin-bottom-8">
-            <h3 class="govuk-heading-s govuk-!-margin-bottom-3">The deputy responsible person will:</h3>
+          <p class="govuk-body">We have sent you a confirmation email.</p>
 
-            <ul class="govuk-body">
-              <li>supervise the administrators</li>
-              <li>get access to reports documenting the activities of the administrators</li>
-              <li>access VDD account data</li>
-          </ul>
 
-      </div>
+        <div class="govuk-body govuk-!-margin-bottom-8 govuk-!-padding-top-4">
+            <h3 class="govuk-heading-m govuk-!-margin-bottom-3">What happens next</h3>
 
-      <ol class="app-task-list">
-        <li>
-          <h2 class="app-task-list__section">
-             Add a new deputy responsible person
-          </h2>
-          <ul class="app-task-list__items" style="margin-bottom:30px;">
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="4.html" aria-describedby="eligibility-status">
-                    Add the new deputy responsible person's details
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                <a href="6.html" aria-describedby="read-declaration-status">
-                    Sign your application
-                </a>
-              </span>
-              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
-            </li>
-          </ul>
-        </li>
-      </ol>
 
-      <div class="govuk-!-margin-bottom-9">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='8'">
-          Review application
-        </button>
+            <p class="govuk-body">
+                We'll review your application.
+              </p>
+
+              <p class="govuk-body">
+                We'll contact you to confirm or reject your application or ask for more information.
+              </p>
+
+              <p class="govuk-body">
+                <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+              </p>
+
       </div>
 
     </div>
 
   </div>
-  <style>
-    .app-task-list__items {
-      padding-left: 0px;
-  }
-  </style>
+
 {% endblock %}

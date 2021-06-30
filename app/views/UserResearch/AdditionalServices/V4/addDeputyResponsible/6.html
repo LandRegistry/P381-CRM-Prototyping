@@ -14,65 +14,205 @@
     <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
 
 
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
-        Sign your application
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+        Check your answers before sending your application
       </h1>
 
-      <div class="govuk-body govuk-!-margin-bottom-7">
-        <h3 class="govuk-heading-m">Before you sign, check:</h3>
 
-        <ul class="govuk-body dash">
-          <li>you're authorised to make this application on behalf of the organisation</li>
-          <li>the organisation meets the <a href="https://www.gov.uk/government/publications/technical-manual/technical-manual-version-121#systems-requirements" target="_blank">minimum technical specification</a> for equipment and/or software- the minimum technical specification for equipment</li>
-          <li>you have the appropriate IT equipment and security arrangements as set out in the <a href="https://www.gov.uk/government/publications/code-of-practice-hm-land-registry-business-e-services" target="_blank">technical manual</a></li>
-          <li>you accept the terms of the <a href="https://www.gov.uk/government/publications/conditions-of-use-hm-land-registry-business-e-services" target="_blank">Conditions of Use</a> on the organisation's behalf, as exist at the date of this application, and that it is acknowledged that these may change from time to time</li>
-          <li>this application is signed and dated on behalf of the organisation by a duly authorised person within the organisation such as a company director, company secretary, partner or equivalent</li>
-      </ul>
+      <table class="govuk-table">
 
+        <div  class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-l">Organisation's details
+          </h3>
+          <button style="float: right;margin-top: -60px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;"/>
+              Print summary
+            </button>
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value"> {{ data['organisationsName'] }}
+              {% for feature in data['organisationsName'] %}
+               {% else %}
+                 User Research Ltd
+               {% endfor %}
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="6b">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          </dl>
+        </div>
+
+        <div class="govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-l">Deputy responsible person's details
+          </h3>
+
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['first-name'] }} {{ data['family-name'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Deputy responsible person's address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+            <li>{{ data['address-line-1'] }}</li>
+            <li>{{ data['address-town'] }}</li>
+            <li>{{ data['address-county'] }}</li>
+            <li>{{ data['postcode'] }}</li>
+          </ul>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> address</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            DX Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+            <li style="margin-top:10px;">DX number: {{ data['dx-number'] }}
+              {% for feature in data['dx-number'] %}
+               {% else %}
+                 not provided
+               {% endfor %}</li>
+               <li style="margin-top:10px;">DX exchange: {{ data['dx-exchange'] }}
+                {% for feature in data['dx-exchange'] %}
+                 {% else %}
+                   not provided
+                 {% endfor %}</li>
+          </ul>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> address</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Contact details
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['telephone-number'] }}</p>
+          <p class="govuk-body">{{ data['email'] }}</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Receive security credentials by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['receive-type'] }}</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Allow access to variable Direct Debit Key numbers
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['VDD-contact'] }}</p>
+          <p class="govuk-body">{{ data['VDD-Number'] }}</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
     </div>
 
 
+    <div class="govuk-!-margin-bottom-8 govuk-body">
+      <h3 class="govuk-heading-l" >Sign your application
+      </h3>
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            Signature attached
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">{{ data['uploaded-signature'] }}
+         {% for feature in data['uploaded-signature'] %}
+          {% else %}
+            <p>Yes</p>
+          {% endfor %}
 
 
-    <div class="govuk-body govuk-!-margin-bottom-7" style="max-width: 765px;">
-      <h3 class="govuk-heading-m">We can only accept your application if you have followed these steps:</h3>
 
-      <ol class="govuk-body">
-        <li>Sign and print your name on a blank white piece of paper using black ink.</li>
-        <li>Date your signature using black ink.</li>
-        <li>Take a photo or scan a copy of the signature, printed name and date.</li>
-        <li>Attach the photo or scanned copy below.</li>
-    </ol>
-
-  </div>
-
-  <div class="govuk-warning-text" style="margin-bottom:40px;">
-    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-    <strong class="govuk-warning-text__text">
-      <span class="govuk-warning-text__assistive">Warning</span>
-      Your application will be rejected if you do not follow these steps.
-    </strong>
-  </div>
-  
-      <div class="govuk-form-group">
-        <label class="govuk-label form-label-bold" for="file-upload-1">
-          Upload your signature
-        </label>
-        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+          </p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
       </div>
+    </div>
+      </dl>
 
-      <form action="7" method="post" class="form">
+      </table>
 
-      <div class=" govuk-grid-column-full" style="padding:30px 0px 0px 0px;">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
-            Continue
+
+
+
+      <h3 class="govuk-heading-l govuk-!-margin-bottom-3">Submit application</h3>
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+      <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='7.html'">
+            Confirm and send
         </button>
       </div>
-</form>
-
 
     </div>
 
   </div>
+
+  <style>
+
+    .govuk-summary-list__value > p {
+        margin-bottom: 0;
+    }
+
+    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    </style>
 
 {% endblock %}
