@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Sign your application
+      </h1>
+
+      <div class="govuk-body govuk-!-margin-bottom-7">
+        <h3 class="govuk-heading-m">Before you sign, check:</h3>
+
+        <ul class="govuk-body dash">
+          <li>you're authorised to make this application on behalf of the organisation</li>
+          <li>the organisation meets the <a href="https://www.gov.uk/government/publications/technical-manual/technical-manual-version-121#systems-requirements" target="_blank">minimum technical specification</a> for equipment and/or software- the minimum technical specification for equipment</li>
+          <li>you have the appropriate IT equipment and security arrangements as set out in the <a href="https://www.gov.uk/government/publications/code-of-practice-hm-land-registry-business-e-services" target="_blank">technical manual</a></li>
+          <li>you accept the terms of the <a href="https://www.gov.uk/government/publications/conditions-of-use-hm-land-registry-business-e-services" target="_blank">Conditions of Use</a> on the organisation's behalf, as exist at the date of this application, and that it is acknowledged that these may change from time to time</li>
+          <li>this application is signed and dated on behalf of the organisation by a duly authorised person within the organisation such as a company director, company secretary, partner or equivalent</li>
+      </ul>
+
+    </div>
+
+
+
+
+    <div class="govuk-body govuk-!-margin-bottom-7" style="max-width: 765px;">
+      <h3 class="govuk-heading-m">We can only accept your application if you have followed these steps:</h3>
+
+      <ol class="govuk-body">
+        <li>Sign and print your name on a blank white piece of paper using black ink.</li>
+        <li>Date your signature using black ink.</li>
+        <li>Take a photo or scan a copy of the signature, printed name and date.</li>
+        <li>Attach the photo or scanned copy below.</li>
+    </ol>
+
+  </div>
+
+  <div class="govuk-warning-text" style="margin-bottom:40px;">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>
+      Your application will be rejected if you do not follow these steps.
+    </strong>
+  </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label form-label-bold" for="file-upload-1">
+          Upload your signature
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+      <form action="14" method="post" class="form">
+
+      <div class=" govuk-grid-column-full" style="padding:30px 0px 0px 0px;">
+        <button class="govuk-button" href="14.html" data-module="govuk-button" data-module="govuk-button" >
+            Continue
+        </button>
+      </div>
+</form>
+
+
+    </div>
+
+  </div>
+
+{% endblock %}
