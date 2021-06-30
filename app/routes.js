@@ -4365,6 +4365,9 @@ router.post('/UserResearch/PortalSignup/V1/whatdoyouwanttodo', function(req, res
 })
 
 
+
+
+
 // ContactformQA radio buttons for public or business
 router.post('/UserResearch/PortalSignup/V2/businessaccountalreadyornot2', function(req, res) {
 
@@ -4426,6 +4429,47 @@ router.post('/UserResearch/PortalSignup/V3/whatdoyouwanttodoV2', function(req, r
     }
 })
 
+
+
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/AdditionalServices/V4/whatdoyouwanttodoV2', function(req, res) {
+
+    const whatdoyouwanttodoChoice2 = req.session.data['whatdoyouwanttodo']
+
+    switch (whatdoyouwanttodoChoice2) {
+        case 'addAdministrator':
+            res.redirect('/UserResearch/AdditionalServices/V4/addAdministrator/');
+            break;
+
+        case 'addDeputyResponsible':
+            res.redirect('/UserResearch/AdditionalServices/V4/addDeputyResponsible/');
+            break;
+
+        case 'changeResponsible':
+            res.redirect('/UserResearch/AdditionalServices/V4/changeResponsible/');
+            break;
+
+        case 'changeBankDetails':
+            res.redirect('/UserResearch/AdditionalServices/V4/changeBankDetails/');
+            break;
+
+        case 'applyNetworkServices':
+            res.redirect('/UserResearch/AdditionalServices/V4/applyNetworkServices/');
+            break;
+
+        case 'createVDD':
+            res.redirect('/UserResearch/AdditionalServices/V4/createVDD/');
+            break;
+
+        case 'applyLenderServices':
+            res.redirect('/UserResearch/AdditionalServices/V4/applyLenderServices/');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 
 // ContactformQA radio buttons for public or business

@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Apply for or update a <br>Business e-services account
+      </h1>
+
+
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              Only a responsible person or deputy responsible person can submit this request.
+            </strong>
+          </div>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            Add a new responsible person's details
+          </h2>
+          <ul class="app-task-list__items" style="margin-bottom:30px;">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="4.html" aria-describedby="eligibility-status">
+                    Add current responsible person's details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="4.html" aria-describedby="eligibility-status">
+                    Add new deputy responsible person's details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="6.html" aria-describedby="read-declaration-status">
+                    Sign your application
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+
+      <div class="govuk-!-margin-bottom-9">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='10'">
+          Review application
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+  <style>
+    .app-task-list__items {
+      padding-left: 0px;
+  }
+  </style>
+{% endblock %}

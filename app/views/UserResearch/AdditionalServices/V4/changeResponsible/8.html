@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Sign your application
+      </h1>
+
+      <p class="govuk-body govuk-!-margin-bottom-6">
+        This application must be signed and dated on behalf of the organisation by the existing responsible person or a duly authorised person within the organisation such as a company director, company secretary, partner or equivalent.
+      </p>
+
+
+      <div class="govuk-body govuk-!-margin-bottom-7" style="max-width: 765px;">
+        <h3 class="govuk-heading-m">We can only accept your application if you have followed these steps:</h3>
+
+        <ol class="govuk-body">
+          <li>Sign and print your name on a blank white piece of paper using black ink.</li>
+          <li>Date your signature using black ink.</li>
+          <li>Take a photo or scan a copy of the signature, printed name and date.</li>
+          <li>Attach the photo or scanned copy below.</li>
+      </ol>
+
+    </div>
+
+    <div class="govuk-warning-text" style="margin-bottom:40px;">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        Your application will be rejected if you do not follow these steps.
+      </strong>
+    </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label form-label-bold" for="file-upload-1">
+          Upload your signature
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+      <form action="9" method="post" class="form">
+
+      <div class=" govuk-grid-column-full" style="padding:30px 0px 0px 0px;">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" >
+            Continue
+        </button>
+      </div>
+</form>
+
+
+    </div>
+
+  </div>
+
+{% endblock %}

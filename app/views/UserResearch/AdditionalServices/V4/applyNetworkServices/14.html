@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:860px;">
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Apply for or update a <br>Business e-services account
+      </h1>
+
+
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              Only a responsible person or deputy responsible person can submit this request.
+            </strong>
+          </div>
+
+      <ol class="app-task-list" style="margin-left: -30px">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number"></span> Complete your digital cover letter (AFS2)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="1.html" aria-describedby="eligibility-status">
+                    Tell us about your organisation
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="5.html" aria-describedby="read-declaration-status">
+                    Confirm existing responsible person details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="8.html" aria-describedby="read-declaration-status">
+                    Nominate a new responsible person
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="11.html" aria-describedby="read-declaration-status">
+                    Add your point of contact
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="13.html" aria-describedby="read-declaration-status">
+                    Sign your application
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag" id="list-convictions-status">Completed</strong>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <ol class="app-task-list" style="margin-left: -30px">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number"></span> Access to Network Services (NAA)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="15.html" aria-describedby="eligibility-status">
+                    Tell us more about your organisation
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+
+<div class="govuk-!-margin-bottom-9"></div>
+      <div class="govuk-!-margin-bottom-9">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='15'">
+          Continue
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
