@@ -20,7 +20,7 @@
 
 
       <table class="govuk-table">
-
+        <form action="5" method="post" class="form">
         <div  class="govuk-!-margin-bottom-9">
           <h3 class="govuk-heading-l">Organisation's details
           </h3>
@@ -35,10 +35,10 @@
               <dd class="govuk-summary-list__value"> <input class="govuk-input" id="organisationsName" name="organisationsName" value="{{ data['organisationsName'] }}"  type="text">
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="6">
-                  Update<span class="govuk-visually-hidden"> name</span>
-                </a>
-              </dd>
+                <button class="govuk-button text-button" data-module="govuk-button" data-module="govuk-button">
+                    Update
+                  </button>
+            </dd>
             </div>
             </dl>
         </div>
@@ -57,7 +57,7 @@
           {{ data['poc-first-name'] }} {{ data['poc-family-name'] }}
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> name</span>
           </a>
         </dd>
@@ -86,14 +86,14 @@
           </p>
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="">
+          <a class="govuk-link" href="#">
             Change<span class="govuk-visually-hidden"> delivery</span>
           </a>
         </dd>
       </div>
     </div>
       </dl>
-
+    </form>
       </table>
 
       <h3 class="govuk-heading-l govuk-!-margin-bottom-3">Submit application</h3>
@@ -102,7 +102,7 @@
       </p>
 
       <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
-        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='7.html'">
+        <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='6.html'">
             Confirm and send
         </button>
       </div>
