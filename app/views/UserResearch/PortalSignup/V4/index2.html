@@ -1,0 +1,170 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+
+      <img style="height:60px;" class="govuk-!-margin-bottom-6" src="/public/images/Logo-HMLR-Expanded.png">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" >
+            Apply for or update a Business <br>e-services account
+          </h1>
+
+          <p class="govuk-!-margin-bottom-9">
+            Our Business e-services are for organisations that regularly transact with us as part of the conveyancing process to request information from HM Land Registry’s Land Register or to lodge applications to change the register online.
+          </p>
+
+
+
+
+
+
+          <div class="govuk-form-group govuk-!-margin-bottom-9">
+            <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Select from one of the following options:
+                </h1>
+              </legend>
+
+              <div class="govuk-radios">
+
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+                  <label class="govuk-label govuk-radios__label" for="sign-in">
+                    Standard account
+                  </label>
+                  <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                    <p class="govuk-!-margin-bottom-2" style="max-width: 770px;">
+                      Applying for a standard account will allow access to services such as:
+                    </p>
+                    <ul class="govuk-body">
+                      <li>Application Enquiry</li>
+                      <li>MapSearch</li>
+                      <li>Land Charges Services</li>
+                      <li>electronic Document Registration Service (e-DRS)</li>
+                  </ul>
+                  </div>
+                </div>
+
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                  <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                    Advanced account
+                  </label>
+                  <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                    <p class="govuk-!-margin-bottom-2" style="max-width: 770px;">
+                      Applying for an advanced account, if applicable, will allow you to access:
+                    </p>
+                    <ul class="govuk-body">
+                      <li><a href="https://www.gov.uk/guidance/hm-land-registry-network-services">Network Services</a> - available to legal services providers, such as solicitors and licensed conveyancers</li>
+                      <li><a href="https://www.gov.uk/guidance/hm-land-registry-lender-services">Lender Services</a> - available for lenders and third-party agents that sometimes act on their behalf</li>
+                  </ul>
+
+                  </div>
+                </div>
+
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="sign-in-3" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-3-item-hint">
+                  <label class="govuk-label govuk-radios__label" for="sign-in-3">
+                    Add additional services or personel to an existing account
+                  </label>
+                  <!-- <div id="sign-in-3-item-hint" class="govuk-hint govuk-radios__hint">
+                    <p class="govuk-!-margin-bottom-3" style="max-width: 770px;">
+                      Applying for an advanced account, will allow you to access (if applicable):
+                    </p>
+                    <ul class="govuk-body">
+                      <li>Network Services - available to legal services providers, such as solicitors and licensed conveyancers</li>
+                      <li>Lender Services - available for lenders and third-party agents that sometimes act on their behalf</li>
+                  </ul>
+                  </div> -->
+                </div>
+
+
+              </div>
+          
+            </fieldset>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <button type="submit" class="govuk-button govuk-button--start" data-module="govuk-button">
+            Start now
+            <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+          </button>
+  
+
+    </div>
+
+  </div>
+
+
+<style>
+
+  .govuk-label {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.govuk-radios__item {
+  margin-bottom: 30px;
+}
+
+.govuk-fieldset__legend--l {
+  margin-bottom: 30px;
+}
+
+</style>
+
+{% endblock %}
