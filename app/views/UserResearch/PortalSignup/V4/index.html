@@ -15,57 +15,149 @@
 
     <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
 
-        <h1 class="govuk-heading-xl govuk-!-margin-bottom-7" >
+      <img style="height:60px;" class="govuk-!-margin-bottom-6" src="/public/images/Logo-HMLR-Expanded.png">
+
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" >
             Apply for or update a Business <br>e-services account
           </h1>
 
-          <p class="govuk-!-margin-bottom-7" style="max-width: 770px;">
+          <p class="govuk-!-margin-bottom-9">
             Our Business e-services are for organisations that regularly transact with us as part of the conveyancing process to request information from HM Land Registry’s Land Register or to lodge applications to change the register online.
           </p>
 
-          <div class="govuk-body govuk-!-margin-bottom-7" style="max-width: 765px;">
-              <h3 class="govuk-heading-m" style="margin-bottom: 10px;">Use this service to:</h3>
 
-              <ul class="govuk-body">
-                <li>apply for access to Information Services - Including Application Enquiry and MapSearch, Land Charges Services and the electronic Document Registration Service (e-DRS)</li>
-                <li>apply for access to Network Services - available to legal services providers, such as solicitors and licensed conveyancers</li>
-                <li>apply for access to Lender Services - available for lenders and third party agents that sometimes act on their behalf</li>
-                <li>update account details for organisations that already have a Business e-services account</li>
-            </ul>
 
-          </div>
-
-        <form class="form" action="businessaccountalreadyornot2" method="post">
-        <div class="govuk-form-group govuk-!-margin-bottom-7">
-            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                    Does your organisation already have a Business e-services account?
+                  Select from one of the following options:
                 </h1>
               </legend>
 
-              <div class="govuk-radios govuk-radios--inline">
-
-
-                
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="alreadyornot-1" name="alreadyornot" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="alreadyornot-1">
-                    Yes
+                  <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                  <label class="govuk-label govuk-radios__label" for="contact">
+                    Standard account
                   </label>
+                  <div id="contact-item-hint" class="govuk-hint govuk-radios__hint">
+                    <p class="govuk-!-margin-bottom-2" style="max-width: 770px;">
+                      Applying for a standard account will allow access to services such as:
+                    </p>
+                    <ul class="govuk-body">
+                      <li>Application Enquiry</li>
+                      <li>MapSearch</li>
+                      <li>Land Charges Services</li>
+                      <li>electronic Document Registration Service (e-DRS)</li>
+                  </ul>
                 </div>
-
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="alreadyornot-2" name="alreadyornot" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="alreadyornot-2">
-                    No
-                  </label>
-                </div>
-
               </div>
+
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                  <div class="govuk-form-group">
+
+                    <label class="govuk-label govuk-radios__label" for="contact">
+                      Before you start, you will need:
+                    </label>
+                    <div id="contact-item-hint" class="govuk-hint govuk-radios__hint">
+                      <ul class="govuk-body">
+                        <li>to have read and understood your obligations in the <a href="https://www.gov.uk/government/publications/conditions-of-use-hm-land-registry-business-e-services/conditions-of-use-portal-and-business-gateway">Conditions of Use (COU)</a></li>
+                        <li>the name and contact details for your organisation, administrators,<br> responsible person and point of contact</li>
+                        <li>an existing variable Direct Debit (VDD) key number for your organisation or<br> if you don’t have one, fill in a <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services">VDD application form and direct debit mandate</a> <br>(see pages 13 to 15 of the VDD guide) for each account you require</li>
+                        <li>the ability to scan or take a photo and upload a signature</li>
+                        <li>the ability to scan and upload a VDD form</li>
+                    </ul>
+
+                  </div>
+          
+                </div>
+              </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                    Advanced account
+                  </label>
+                  <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                    <p class="govuk-!-margin-bottom-2" style="max-width: 770px;">
+                      Applying for an advanced account, if applicable, will allow you to access:
+                    </p>
+                    <ul class="govuk-body">
+                      <li><a href="https://www.gov.uk/guidance/hm-land-registry-network-services">Network Services</a> - available to legal services providers, such as solicitors and licensed conveyancers</li>
+                      <li><a href="https://www.gov.uk/guidance/hm-land-registry-lender-services">Lender Services</a> - available for lenders and third-party agents that sometimes act on their behalf</li>
+                  </ul>
+
+                  </div>
+                </div>
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                  <div class="govuk-form-group">
+
+                    <label class="govuk-label govuk-radios__label" for="contact">
+                      Before you start, you will need:
+                    </label>
+                    <div id="contact-item-hint" class="govuk-hint govuk-radios__hint">
+                      <ul class="govuk-body">
+                        <li>to have read and understood your obligations in the <a href="https://www.gov.uk/government/publications/conditions-of-use-hm-land-registry-business-e-services/conditions-of-use-portal-and-business-gateway">Conditions of Use (COU)</a></li>
+                        <li>the name and contact details for your organisation, administrators,<br> responsible person and point of contact</li>
+                        <li>an existing variable Direct Debit (VDD) key number for your organisation or<br> if you don’t have one, fill in a <a href="https://www.gov.uk/government/publications/set-up-a-variable-direct-debit-to-pay-for-hm-land-registry-services">VDD application form and direct debit mandate</a> <br>(see pages 13 to 15 of the VDD guide) for each account you require</li>
+                        <li>a completed and signed paper copy of the <a href="https://www.gov.uk/government/publications/hm-land-registry-network-access-agreement">Network Access Agreement<br> (NAA)</a>, if applying for Network Services</li>
+                        <li>a completed and signed paper copy of the <a href="https://www.gov.uk/government/publications/hm-land-registry-memorandum-of-understanding-for-lenders">Memorandum of Understanding <br>(MOU)</a>, if applying for Lender Services</li>
+                        <li>the ability to scan or take a photo and upload a signature</li>
+                        <li>the ability to scan and upload an NAA, VDD and MOU form, if applicable</li>
+                    </ul>
+
+                  </div>
+                  </div>
+          
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                  <label class="govuk-label govuk-radios__label" for="contact-3">
+                    Add additional services or personel to an existing account
+                  </label>
+                  <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                    <p class="govuk-!-margin-bottom-2" style="max-width: 770px;">
+                      This will allow you to:
+                    </p>
+                    <ul class="govuk-body">
+                      <li>Add an administrator</li>
+                      <li>Add a deputy responsible person</li>
+                      <li>Change your responsible person</li>
+                      <li>Create a new variable Direct Debit (VDD) account key number</li>
+                      <li>Change the bank account details of a current variable Direct Debit account</li>
+                      <li>Apply for Network Services</li>
+                      <li>Apply for Lender Services</li>
+                  </ul>
+
+                  </div>
+                </div>
+
           
             </fieldset>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <button type="submit" class="govuk-button govuk-button--start" data-module="govuk-button">
             Start now
@@ -73,9 +165,38 @@
               <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
           </button>
   
-        </form>
+
     </div>
 
   </div>
+
+
+<style>
+
+  .govuk-label {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.govuk-radios__item {
+  margin-top: 50px;
+  margin-bottom:0px;
+}
+
+.govuk-fieldset__legend--l {
+  margin-bottom: 0px;
+}
+
+
+<!-- .govuk-radios__conditional {
+  margin-left: 0px;
+  border-left: 0px solid #b1b4b6;
+  margin-top: 25px;
+  border-bottom: 1px solid #b1b4b6;
+  padding-bottom: 25px;
+} -->
+
+</style>
 
 {% endblock %}
