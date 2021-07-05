@@ -84,13 +84,9 @@
             <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
               <li>{{ data['address-line-1'] }}</li>
               <li>{{ data['address-town'] }}</li>
-              <li>{{ data['address-county'] }}</li>
+              <li>{{ data['address-country'] }}</li>
               <li>{{ data['postcode'] }}</li>
-              <li style="margin-top:10px;">DX: {{ data['dx-address'] }}
-                {% for feature in data['dx-address'] %}
-                 {% else %}
-                   not provided
-                 {% endfor %}</li>
+
             </ul>
           </dd>
           <dd class="govuk-summary-list__actions">
@@ -99,6 +95,33 @@
             </a>
           </dd>
           </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                DX Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+                <li style="margin-top:10px;">DX number: {{ data['dx-number'] }}
+                  {% for feature in data['dx-number'] %}
+                   {% else %}
+                     not provided
+                   {% endfor %}</li>
+                   <li style="margin-top:10px;">DX exchange: {{ data['dx-exchange'] }}
+                    {% for feature in data['dx-exchange'] %}
+                     {% else %}
+                       not provided
+                     {% endfor %}</li>
+              </ul>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+
+
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               Contact details
@@ -130,7 +153,7 @@
               Name
             </dt>
             <dd class="govuk-summary-list__value">
-              {{ data['new-first-name'] }} {{ data['new-family-name'] }}
+              {{ data['new-responsible-first-name'] }} {{ data['new-responsible-family-name'] }}
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="">
@@ -144,15 +167,10 @@
           </dt>
           <dd class="govuk-summary-list__value">
             <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
-              <li>{{ data['new-address-line-1'] }}</li>
-              <li>{{ data['new-address-town'] }}</li>
-              <li>{{ data['new-address-county'] }}</li>
-              <li>{{ data['new-postcode'] }}</li>
-              <li style="margin-top:10px;">DX: {{ data['new-dx-address'] }}
-                {% for feature in data['new-dx-address'] %}
-                 {% else %}
-                   not provided
-                 {% endfor %}</li>
+              <li>{{ data['new-responsible-address-line-1'] }}</li>
+              <li>{{ data['new-responsible-address-town'] }}</li>
+              <li>{{ data['new-responsible-address-country'] }}</li>
+              <li>{{ data['new-responsible-postcode'] }}</li>
             </ul>
           </dd>
           <dd class="govuk-summary-list__actions">
@@ -161,13 +179,39 @@
             </a>
           </dd>
           </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                DX Address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+                <li style="margin-top:10px;">DX number: {{ data['new-responsible-dx-number'] }}
+                  {% for feature in data['new-responsible-dx-number'] %}
+                   {% else %}
+                     not provided
+                   {% endfor %}</li>
+                   <li style="margin-top:10px;">DX exchange: {{ data['new-responsible-dx-exchange'] }}
+                    {% for feature in data['new-responsible-dx-exchange'] %}
+                     {% else %}
+                       not provided
+                     {% endfor %}</li>
+              </ul>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               Contact details
             </dt>
             <dd class="govuk-summary-list__value">
-              <p class="govuk-body">{{ data['new-telephone-number'] }}</p>
-              <p class="govuk-body">{{ data['new-email'] }}</p>
+              <p class="govuk-body">{{ data['new-responsible-telephone-number'] }}</p>
+              <p class="govuk-body">{{ data['new-responsible-email'] }}</p>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="">
@@ -180,7 +224,7 @@
               Receive security credentials by
             </dt>
             <dd class="govuk-summary-list__value">
-              <p class="govuk-body">{{ data['new-receive-type'] }}</p>
+              <p class="govuk-body">{{ data['new-responsible-receive-type'] }}</p>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="">

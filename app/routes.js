@@ -4866,6 +4866,56 @@ router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/insurancedetails
     }
 })
 
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/AdditionalServices/V4/applyNetworkServices/insurancedetails', function(req, res) {
+
+    const insurancedetailsChoice= req.session.data['insurancedetails']
+
+    switch (insurancedetailsChoice) {
+        case '1':
+            res.redirect('19');
+            break;
+
+        case '2':
+            res.redirect('19c');
+            break;
+
+        case '3':
+            res.redirect('19');
+            break;
+
+        case '4':
+            res.redirect('19b');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/AdditionalServices/V4/applyNetworkServices/termination', function(req, res) {
+
+    const terminationChoice= req.session.data['termination']
+
+    switch (terminationChoice) {
+        case 'No':
+            res.redirect('20a');
+            break;
+
+        case 'Yes':
+            res.redirect('20b');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
 // applyNetworkServices radio buttons for termination on 19a
 router.post('/UserResearch/PortalSignup/V1/applyNetworkServices/termination', function(req, res) {
 

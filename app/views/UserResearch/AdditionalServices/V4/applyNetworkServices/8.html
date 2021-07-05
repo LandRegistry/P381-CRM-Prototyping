@@ -39,18 +39,42 @@
 
             <form method="post" class="form">
               <div style="">
-                  <div class="govuk-form-group">
-                      <label class="govuk-label" for="first-name">
-                      First/Given names
-                      </label>
-                      <input class="govuk-input" id="first-name" name="first-name" value="{{ data['first-name'] }}" type="text" style="width: 300px;">
-                  </div>
 
+                <div class="govuk-form-group">
+      
+                  <div style="margin-right:15px; float:left;">
+                  <label class="govuk-label" for="first-name">
+                    Title
+                    </label> 
+                  <select class="govuk-select" style="max-width:150px;"onchange="location = this.value;">
+                    <option value="#"></option>
+                    <option value="#">Dr</option>
+                    <option value="#">Mr</option>
+                    <option value="#">Miss</option>
+                    <option value="#">Mrs</option>
+                    <option value="#">Prof</option>
+                    <option value="#">Sir</option>
+                    <option value="#">Lord</option>
+                    <option value="#">Lady</option>
+                    <option value="1-other.html">Other</option>
+                  </select>
+                </div>
+      
+                <div style=" float:left;">
+                    <label class="govuk-label" for="new-responsible-first-name">
+                    First/Given names
+                    </label> 
+                    <input class="govuk-input" id="new-responsible-first-name" name="new-responsible-first-name" value="{{ data['new-responsible-first-name'] }}" type="text" style="width: 200px;">
+                  </div>
+      
+      
+                </div>
+      
                   <div class="govuk-form-group">
-                      <label class="govuk-label" for="last-name">
+                      <label class="govuk-label" for="new-responsible-family-name">
                           Surname/Family name
                       </label>
-                      <input class="govuk-input" id="family-name" name="family-name" value="{{ data['family-name'] }}" type="text" style="width: 300px;">
+                      <input class="govuk-input" id="new-responsible-family-name" name="new-responsible-family-name" value="{{ data['new-responsible-family-name'] }}" type="text" style="width: 300px;">
                   </div>
 
                   <div class="govuk-form-group">
@@ -58,95 +82,120 @@
                       <label class="govuk-label" for="last-name" style="max-width: 300px;">
                           Role
                       </label>
-                      <input class="govuk-input" id="role" name="role" value="{{ data['role'] }}" type="text" style="width: 300px;">
+                      <input class="govuk-input" id="new-responsible-role" name="new-responsible-role" value="{{ data['new-responsible-role'] }}" type="text" style="width: 300px;">
                   </div>
 
 
                   <div class="govuk-form-group">
 
-                      <label class="govuk-label" for="email">
+                      <label class="govuk-label" for="new-responsible-email">
                       Email address
                       </label>
-                      <input class="govuk-input" id="email" name="email" value="{{ data['email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
+                      <input class="govuk-input" id="new-responsible-email" name="new-responsible-email" value="{{ data['new-responsible-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
                   </div>
 
                   <div class="govuk-form-group">
-                      <label class="govuk-label" for="telephone-number">
+                      <label class="govuk-label" for="new-responsible-telephone-number">
                           Telephone number
                       </label>
-                      <input class="govuk-input" id="telephone-number" name="telephone-number" value="{{ data['telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+                      <input class="govuk-input" id="new-responsible-telephone-number" name="new-responsible-telephone-number" value="{{ data['new-responsible-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
                   </div>
 
 
 
 
-                  <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
-
-                        <div id="content2" style="display:none;">
-
-                          <dd class="govuk-summary-list__value" style="padding:0px;">
-
-                              <label class="govuk-label" for="address-line-1">
-                                Building and street
-                              </label>
-                              <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="{{ data['address-line-1'] }}" style="width: 300px; margin-bottom: 20px;">
-
-                              <label class="govuk-label" for="address-town">
-                                Town or city
-                              </label>
-                              <input class="govuk-input" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="{{ data['address-town'] }}" style="width: 300px; margin-bottom: 20px;">
 
 
-                              <label class="govuk-label" for="address-county">
-                                County
-                              </label>
-                              <input class="govuk-input" id="address-county" name="address-county" type="text"value="{{ data['address-county'] }}" style="width: 300px; margin-bottom: 20px;">
-
-                              <label class="govuk-label" for="address-country">
-                                Country
-                              </label>
-                              <input class="govuk-input" id="address-country" name="address-country" type="text"value="{{ data['address-country'] }}" style="width: 300px; margin-bottom: 20px;">
-
-
-                              <label class="govuk-label" for="postcode">
-                                Postcode
-                              </label>
-                              <input class="govuk-input" id="postcode" name="postcode2" type="text" autocomplete="postal-code" value="{{ data['postcode2'] }}" style="width: 300px; margin-bottom: 20px;">
-
-                              <label class="govuk-label" for="dx-address2">
-                                DX address (optional)
-                              </label>
-                              <input class="govuk-input" id="dx-address2" name="dx-address2" type="text" value="{{ data['dx-address2'] }}" style="width: 300px; margin-bottom: 20px;">
-
-                      </dd>
-
-                          <div>
-                              <button class="govuk-button" type="submit" formaction="8a">Continue</button>
-                          </div>
-
-                      </div>
-
-                      <div id="content1" style="display:block;">
-
-                          <div class="govuk-form-group" >
-                              <label class="govuk-label" for="postcode">
-                              Postcode
-                              </label>
-                              <input class="govuk-input" id="postcode" name="postcode" value="{{ data['postcode'] }}" type="text" style="width: 300px;">
-
-                              <div class="govuk-button-group" style="padding-top:15px;">
-                                  <button class="govuk-button" type="submit" formaction="8a">Find address</button>
-
-                                  <a class="govuk-link" href="javascript:showHide('content2');" style="font-size: 16px;">Add address manually</a>
-                              </div>
-                          </div>
-
-
-
-                      </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="new-responsible-address-line-1">
+                      Building and street
+                    </label>
+                    <input class="govuk-input" id="new-responsible-address-line-1" name="new-responsible-address-line-1" type="text" autocomplete="address-line1" value="{{ data['new-responsible-address-line-1'] }}" style="width: 300px;">
+                  </div>
+      
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="new-responsible-address-town">
+                      Town or city
+                    </label>
+                    <input class="govuk-input" id="new-responsible-address-town" name="new-responsible-address-town" type="text" autocomplete="address-level2" value="{{ data['new-responsible-address-town'] }}" style="width: 300px;">
+                  </div>
+      
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="new-responsible-address-country">
+                      Country
+                    </label>
+                    <input class="govuk-input" id="new-responsible-address-country" name="new-responsible-address-country" type="text"value="{{ data['new-responsible-address-country'] }}" style="width: 300px;">
+                  </div>
+      
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="new-responsible-postcode">
+                      Postcode
+                    </label>
+                    <input class="govuk-input" id="new-responsible-postcode" name="new-responsible-postcode" type="text" autocomplete="postal-code" value="{{ data['new-responsible-postcode'] }}" style="width: 300px;">
+                  </div>
+      
+      
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="new-responsible-number">
+                        DX number (optional)
+                    </label>
+                    <input class="govuk-input" id="new-responsible-dx-number" name="new-responsible-dx-number" type="text" value="{{ data['new-responsible-dx-number'] }}" style="width: 300px; margin-bottom: 20px;">
+                </div>
+      
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="new-responsible-dx-exchange">
+                      DX exchange (optional)
+                  </label>
+                  <input class="govuk-input" id="new-responsible-dx-exchange" name="new-responsible-dx-exchange" type="text" value="{{ data['new-responsible-dx-exchange'] }}" style="width: 300px; margin-bottom: 20px;">
               </div>
+      
 
 
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <hr>
+        
+              </div>
+            </div>
+        
+                <div class="govuk-!-padding-bottom-6"></div>
+
+
+              <div style="display: inline-block; max-width: 890px;">
+                <h2 class="govuk-heading-l">
+                    How does the responsible person want to receive their security credentials?
+                  </h2>
+    
+    
+                  <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
+                    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                      <div class="govuk-radios govuk-radios--inline">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="new-responsible-receive-type-email" name="new-responsible-receive-type" type="radio" value="Email" {{ checked("new-responsible-receive-type", "Email") }}>
+                          <label class="govuk-label govuk-radios__label" for="new-responsible-receive-type-email">
+                            Email
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="new-responsible-receive-type-post" name="new-responsible-receive-type" type="radio" value="Post" {{ checked("new-responsible-receive-type", "Post") }}>
+                          <label class="govuk-label govuk-radios__label" for="new-responsible-receive-type-post">
+                            Post
+                          </label>
+                        </div>
+                      </div>
+    
+                    </fieldset>
+                  </div>
+    
+    
+         
+
+      
+      
+              <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+                <button class="govuk-button" type="submit" formaction="10">Continue</button>
+            </div>
+      
 
 
 
