@@ -4659,18 +4659,22 @@ router.post('/UserResearch/PortalSignup/V3/businessaccountalreadyornot2', functi
 })
 
 // ContactformQA radio buttons for public or business
-router.post('/UserResearch/PortalSignup/V4/businessaccountalreadyornot2', function(req, res) {
+router.post('/UserResearch/PortalSignup/V4/businessaccountalreadyornot3', function(req, res) {
 
-    const alreadyornotChoice2 = req.session.data['alreadyornot']
+    const alreadyornotChoice3 = req.session.data['alreadyornot']
 
-    switch (alreadyornotChoice2) {
-        case 'yes':
-            res.redirect('/UserResearch/PortalSignup/V4/options');
-            break;
-
-        case 'no':
+    switch (alreadyornotChoice3) {
+        case 'standard':
             res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/');
             break;
+
+        case 'advanced':
+            res.redirect('/UserResearch/PortalSignup/V4/AdvancedAccount/');
+            break;
+
+            case 'extra':
+                res.redirect('/UserResearch/AdditionalServices/V4/options');
+                break;
 
         default:
             //This is a catch all for none of the above
