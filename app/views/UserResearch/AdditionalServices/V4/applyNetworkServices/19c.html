@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:880px;">
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--xl" for="more-detail">
+            Insurance details
+          </label>
+        </h1>
+        <form class="form" action="12a" method="post">
+        <div id="more-detail-hint" class="govuk-hint">
+          Give the details of the insurance that is reasonably equivalent.
+        </div>
+        
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="name-of-insured">
+              Name of insured
+            </label>
+            <input class="govuk-input" id="name-of-insured" name="name-of-insured" type="text" autocomplete="address-line1" value="{{ data['name-of-insured'] }}" style="width: 300px;">
+          </div>
+        
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="name-of-insurer">
+              Name of insurer
+            </label>
+            <input class="govuk-input" id="name-of-insurer" name="name-of-insurer" type="text" autocomplete="address-line1" value="{{ data['name-of-insurer'] }}" style="width: 300px;">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="minimum-level-of-cover">
+              Minimum level of cover
+            </label>
+            <input class="govuk-input" id="minimum-level-of-cover" name="minimum-level-of-cover" type="text" autocomplete="address-line1" value="{{ data['minimum-level-of-cover'] }}" style="width: 300px;">
+          </div>
+
+        
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+      <button class="govuk-button" type="submit" formaction="19">Continue</button>
+  </div>
+
+<style>
+    .govuk-form-group {
+    float: left;
+    margin-right: 40px;
+}
+
+.govuk-main-wrapper {
+    min-height: 430px;
+}
+
+</style>
+
+
+  {% endblock %}
