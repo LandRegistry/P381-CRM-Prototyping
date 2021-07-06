@@ -44,10 +44,10 @@
           </div>
 
           <div style=" float:left;">
-              <label class="govuk-label" for="first-name">
+              <label class="govuk-label" for="administrator-first-name">
               First/Given names
               </label> 
-              <input class="govuk-input" id="first-name" name="first-name" value="{{ data['administrator-first-name'] }}" type="text" style="width: 200px;">
+              <input class="govuk-input" id="administrator-first-name" name="administrator-first-name" value="{{ data['administrator-first-name'] }}" type="text" style="width: 200px;">
             </div>
 
 
@@ -155,13 +155,20 @@
                         <input class="govuk-input" id="administrator-country" name="administrator-country" type="text" autocomplete="country" value="{{ data['administrator-country'] }}" style="width: 300px;">
                         </div>
 
-                      <div class="govuk-form-group">
-                      <label class="govuk-label" for="administrator-dx-address">
-                          DX address (optional)
-                        </label>
-                        <input class="govuk-input" id="administrator-dx-address" name="administrator-dx-address" type="text" value="{{ data['administrator-pdx-address'] }}" style="width: 300px;margin-bottom:20px;">
-                      </div>
 
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="administrator-dx-number">
+                              DX number (optional)
+                          </label>
+                          <input class="govuk-input" id="administrator-dx-number" name="administrator-dx-number" type="text" value="{{ data['administrator-dx-number'] }}" style="width: 300px; margin-bottom: 20px;">
+                      </div>
+          
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="administrator-dx-exchange">
+                            DX exchange (optional)
+                        </label>
+                        <input class="govuk-input" id="administrator-dx-exchange" name="administrator-dx-exchange" type="text" value="{{ data['administrator-dx-exchange'] }}" style="width: 300px; margin-bottom: 20px;">
+                    </div>
 
 
               </div>

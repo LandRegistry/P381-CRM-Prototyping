@@ -13,6 +13,7 @@ GOV.UK Prototype Kit
         </h1>
 
         <table class="govuk-table">
+        <form action="summary" method="post" class="form"> 
             <!-- Organisation's details -->       
             <div class="">
                 <h3 class="govuk-heading-l">Organisation's details
@@ -21,19 +22,24 @@ GOV.UK Prototype Kit
                     Print summary
                   </button>
                 <dl class="govuk-summary-list">
+                        
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Organisation name
                     </dt>
-                    <dd class="govuk-summary-list__value">
-                        {{ data['organisation-name'] }}
+
+                    <dd class="govuk-summary-list__value"> 
+                        <input class="govuk-input" id="organisation-name" name="organisation-name" value="{{ data['organisation-name'] }}"  style="width: 300px;">
+       
                     </dd>
-                    <dd class="govuk-summary-list__actions">
-                        <a class="govuk-link" href="summary-org-name.html">
-                        Change<span class="govuk-visually-hidden"> name</span>
-                        </a>
-                    </dd>
+                        <dd class="govuk-summary-list__actions">
+                            <button class="govuk-button text-button" data-module="govuk-button">
+                                Update
+                            </button>
+                        </dd>
                 </div>
+            
+
                 <div class="govuk-summary-list__row">
                     <dt class="govuk-summary-list__key">
                         Organisation trading name (optional)
@@ -285,6 +291,7 @@ GOV.UK Prototype Kit
                     </dd>
                 </div>
             </div>
+        </form>
         </table>
 
             <!-- Sign your application -->

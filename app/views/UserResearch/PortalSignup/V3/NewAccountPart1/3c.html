@@ -42,10 +42,10 @@
           </div>
 
           <div style=" float:left;">
-              <label class="govuk-label" for="first-name">
+              <label class="govuk-label" for="res-person-first-name">
               First/Given names
               </label> 
-              <input class="govuk-input" id="first-name" name="first-name" value="{{ data['res-person-first-name'] }}" type="text" style="width: 200px;">
+              <input class="govuk-input" id="res-person-first-name" name="res-person-first-name" value="{{ data['res-person-first-name'] }}" type="text" style="width: 200px;">
             </div>
 
 
@@ -164,14 +164,20 @@
                           </div> 
                         
 
-                        <div class="govuk-form-group">
-                        <label class="govuk-label" for="res-person-dx-address">
-                            DX address (optional)
-                          </label>
-                          <input class="govuk-input" id="res-person-dx-address" name="res-person-dx-address" type="text" value="{{ data['res-person-dx-address'] }}" style="width: 300px;margin-bottom:20px;">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="res-person-dx-number">
+                                DX number (optional)
+                            </label>
+                            <input class="govuk-input" id="res-person-dx-number" name="res-person-dx-number" type="text" value="{{ data['res-person-dx-number'] }}" style="width: 300px; margin-bottom: 20px;">
                         </div>
-                        
-    
+            
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="res-person-dx-exchange">
+                              DX exchange (optional)
+                          </label>
+                          <input class="govuk-input" id="res-person-dx-exchange" name="res-person-dx-exchange" type="text" value="{{ data['res-person-dx-exchange'] }}" style="width: 300px; margin-bottom: 20px;">
+                      </div>
+  
 
                 </div>
     
