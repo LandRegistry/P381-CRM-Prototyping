@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full">
+
+
+      <img style="height:60px;" class="govuk-!-margin-bottom-6" src="/public/images/Logo-HMLR-Expanded.png">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6" style="max-width:860px;">
+      Apply for an Advanced Business e-services account
+    </h1>
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:740px;">
+          <p class="govuk-!-padding-bottom-5">Complete the AFS1 digital application, Memorandum of Understanding and Network Access Agreement form to apply for access to HM Land Registry Advanced Business e-services.</p>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            Complete your application
+          </h2>
+          <ul class="app-task-list__items" style="padding-left:0px;">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="1.html" aria-describedby="eligibility-status">
+                  Tell us about your organisation
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="1b-part2.html" aria-describedby="eligibility-status">
+                  Setup variable Direct Debit (VDD)
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="2.html" aria-describedby="eligibility-status">
+                  Add your account administrators
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="3.html" aria-describedby="eligibility-status">
+                  Add your responsible persons
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="4.html" aria-describedby="eligibility-status">
+                  Add your point of contact
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="4.html" aria-describedby="eligibility-status">
+                  Add your business regulatory details
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="4.html" aria-describedby="eligibility-status">
+                  Attach the Network Access Agreement form (NAA)
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="4.html" aria-describedby="eligibility-status">
+                  Attach the Memorandum of Understanding form (MOU)
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="5.html" aria-describedby="eligibility-status">
+                  Sign your application
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+
+
+
+      <div class="govuk-!-margin-bottom-9">
+        <button class="govuk-button" data-module="govuk-button"  onclick="window.location.href='/UserResearch/PortalSignup/V3/NewAccountPart1/1'">
+          Continue
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
