@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row govuk-body">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width: 890px;">
+
+     <form method="post" action="query-contact-options" class="form">
+      <h1 class="govuk-heading-xl">
+        Who should we contact if there's a query with your application?
+      </h1>
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="query-contact-1" name="query-contact" type="radio" value="query-contact-1">
+              <label class="govuk-label govuk-radios__label" for="query-contact-1">
+                Primary Administrator -  {{ data['administrator-first-name'] }} {{ data['administrator-family-name'] }}
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="query-contact-2" name="query-contact" type="radio" value="query-contact-2">
+              <label class="govuk-label govuk-radios__label" for="query-contact-2">
+                Responsible Person -  {{ data['res-person-first-name'] }} {{ data['res-person-family-name'] }}
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="query-contact-3" name="query-contact" type="radio" value="query-contact-3">
+                <label class="govuk-label govuk-radios__label" for="query-contact-3">
+                  Someone else
+                </label>
+              </div>
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+        <div>
+            <button class="govuk-button" type="submit">Continue</button>
+        </div>
+        
+    </form>
+
+
+    </div>
+
+
+
+</div>
+
+
+<script type="text/javascript">
+    <!--
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    //-->
+    </script>
+
+
+<style>
+
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    border-bottom: 0px solid #b1b4b6;
+}
+
+.govuk-body-m, .govuk-body, p {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-xl {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-l {
+    margin-bottom: 20px;
+}
+
+p + .govuk-heading-s {
+    padding-top:0px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+    </style>
+
+
+{% endblock %}

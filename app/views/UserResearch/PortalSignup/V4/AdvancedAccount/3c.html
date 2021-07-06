@@ -1,0 +1,326 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row govuk-body">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width: 890px;">
+
+
+      <h1 class="govuk-heading-xl">
+        Responsible person's contact details
+      </h1>
+
+      <form method="post" class="form" action="3d">
+        <div style="padding-bottom:0px;width: 100%;display:inline-block;">
+
+          <div class="govuk-form-group" style="margin-right:30px;">
+
+            <div style="margin-right:15px; float:left;">
+            <label class="govuk-label" for="first-name">
+              Title
+              </label> 
+            <select class="govuk-select" style="max-width:150px;"onchange="location = this.value;">
+              <option value="#"></option>
+              <option value="#">Dr</option>
+              <option value="#">Mr</option>
+              <option value="#">Miss</option>
+              <option value="#">Mrs</option>
+              <option value="#">Prof</option>
+              <option value="#">Sir</option>
+              <option value="#">Lord</option>
+              <option value="#">Lady</option>
+              <option value="1-other.html">Other</option>
+            </select>
+          </div>
+
+          <div style=" float:left;">
+              <label class="govuk-label" for="res-person-first-name">
+              First/Given names
+              </label> 
+              <input class="govuk-input" id="res-person-first-name" name="res-person-first-name" value="{{ data['res-person-first-name'] }}" type="text" style="width: 200px;">
+            </div>
+
+
+          </div>
+
+        <div class="govuk-form-group" style="float:left;">
+            <label class="govuk-label" for="res-person-family-name">
+                Surname/Family name
+            </label>
+            <input class="govuk-input" id="res-person-family-name" name="res-person-family-name" value="{{ data['res-person-family-name'] }}" type="text" style="width: 300px;">
+        </div>
+
+            <div class="govuk-form-group" style="float:left;margin-right:30px;">
+                <label class="govuk-label" for="res-person-email">
+                Email address
+                </label>
+                <input class="govuk-input" id="res-person-email" name="res-person-email" value="{{ data['res-person-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group" style="float:left;">
+                <label class="govuk-label" for="res-person-telephone-number">
+                    Telephone number
+                </label>
+                <input class="govuk-input" id="res-person-telephone-number" name="res-person-telephone-number" value="{{ data['res-person-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+            </div>
+
+            <div class="govuk-form-group" style="float:left;">
+                <label class="govuk-label" for="res-person-role">
+                    Role within the organisation
+                </label>
+                <input class="govuk-input" id="res-person-role" name="res-person-role" value="{{ data['res-person-role'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+            </div>
+
+        </div>
+
+
+
+        <hr>
+
+        <div style="display: inline-block;">
+            <h2 class="govuk-heading-l" style="max-width: 740px;">
+                Is the responsible person's address the same as the organisation address?
+            </h2>
+
+
+            <p>This is the business address where the responsible person is based</p>
+            <div class="govuk-inset-text">
+            <h3 class="govuk-heading-s" style="margin-bottom: 5px;">
+                Organisation address:
+            </h3>
+            
+            <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+                <li>{{ data['organisation-address-line-1'] }}</li>
+                <li>{{ data['organisation-address-town'] }}</li>
+                <li>{{ data['organisation-postcode'] }}</li>
+                <li>{{ data['organisation-country'] }}</li>
+            </ul>
+            </div>
+
+            <div class="govuk-form-group" style="float:unset;">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                       <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="changed-name">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        No
+                      </label>
+                    </div>
+                  </div>
+              
+                </fieldset>
+
+
+
+
+    <div class="content2" style="display:none;padding-top: 30px;">
+
+        <div class="govuk-summary-list__value" style="padding:0px;">
+                
+                        
+
+                        <div class="govuk-form-group">
+                        <label class="govuk-label" for="res-person-address-line-1">
+                          Building and street
+                        </label>
+                        <input class="govuk-input" id="res-person-address-line-1" name="res-person-address-line-1" type="text" autocomplete="address-line1" value="{{ data['res-person-address-line-1'] }}" style="width: 300px;">        
+                            </div>
+
+                <div class="govuk-form-group">
+                        <label class="govuk-label" for="res-person-address-town">
+                          Town or city
+                        </label>
+                        <input class="govuk-input" id="res-person-address-town" name="res-person-address-town" type="text" autocomplete="address-level2" value="{{ data[res-person-'address-town'] }}" style="width: 300px;">
+                    </div>
+
+
+                
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="res-person-postcode">
+                          Postcode
+                        </label>
+                        <input class="govuk-input" id="res-person-postcode" name="res-person-postcode" type="text" autocomplete="postal-code" value="{{ data['res-person-postcode'] }}" style="width: 300px;">
+                        </div>   
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="res-person-country">
+                            Country
+                          </label>
+                          <input class="govuk-input" id="res-person-country" name="res-person-country" type="text" autocomplete="country" value="{{ data['res-person-country'] }}" style="width: 300px;">
+                          </div> 
+                        
+
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="res-person-dx-number">
+                                DX number (optional)
+                            </label>
+                            <input class="govuk-input" id="res-person-dx-number" name="res-person-dx-number" type="text" value="{{ data['res-person-dx-number'] }}" style="width: 300px; margin-bottom: 20px;">
+                        </div>
+            
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="res-person-dx-exchange">
+                              DX exchange (optional)
+                          </label>
+                          <input class="govuk-input" id="res-person-dx-exchange" name="res-person-dx-exchange" type="text" value="{{ data['res-person-dx-exchange'] }}" style="width: 300px; margin-bottom: 20px;">
+                      </div>
+  
+
+                </div>
+    
+                </div>
+
+
+
+
+              </div>
+
+        </div>
+
+
+        <hr>
+
+        <div style="display: inline-block;">
+            <h2 class="govuk-heading-l" style="max-width: 700px;">
+                How does the primary administrator want to receive their security credentials?
+              </h2>
+             
+
+              <div class="govuk-form-group" style="float:unset;margin-bottom:50px;">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                       <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="credential-email" name="credentials" type="radio" value="credential-email">
+                      <label class="govuk-label govuk-radios__label" for="credential-email">
+                        Email
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="credential-post" name="credentials" type="radio" value="credential-post">
+                      <label class="govuk-label govuk-radios__label" for="credential-post">
+                        Post
+                      </label>
+                    </div>
+                  </div>
+              
+                </fieldset>
+              </div>
+
+
+        </div>
+
+        <div>
+            <button class="govuk-button" type="submit">Continue</button>
+        </div>
+        
+    </form>
+
+
+    </div>
+
+
+
+</div>
+
+
+<script type="text/javascript">
+    <!--
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+    //-->
+
+
+    $('input[type="radio"]').click(function(){
+        if($(this).attr("value")=="yes"){
+            $(".content2").hide('display');
+        }
+        if($(this).attr("value")=="no"){
+            $(".content2").show('display');
+
+        }        
+    });
+
+
+    </script>
+
+
+<style>
+
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+.govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    border-bottom: 0px solid #b1b4b6;
+}
+
+.govuk-body-m, .govuk-body, p {
+    margin-bottom: 30px;
+}
+
+
+.govuk-heading-l {
+    margin-bottom: 20px;
+}
+
+p + .govuk-heading-s {
+    padding-top:0px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.govuk-radios--inline .govuk-radios__item {
+margin-bottom:0px;
+}
+
+
+.govuk-form-group {
+    float: left;
+    margin-right: 40px;
+}
+
+    </style>
+
+
+{% endblock %}

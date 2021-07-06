@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:940px;">
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--xl" for="more-detail">
+            Provide details of why it is not practicable to meet the insurance criterion and why it is unnecessary
+          </label>
+        </h1>
+        <form class="form" action="12a" method="post">
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-form-group" style="margin-bottom:15px;width: 100%;">
+      <button class="govuk-button" type="submit" formaction="6b">Continue</button>
+  </div>
+
+  {% endblock %}
