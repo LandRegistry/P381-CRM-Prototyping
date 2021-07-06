@@ -4479,7 +4479,7 @@ router.post('/UserResearch/PortalSignup/V3/NewAccountPart1/responsible-person-op
 
     switch (responsiblepersonChoice) {
         case 'responsible-person-1':
-            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/3d');
+            res.redirect('/UserResearch/PortalSignup/V3/NewAccountPart1/3e');
             break;
 
         case 'responsible-person-2':

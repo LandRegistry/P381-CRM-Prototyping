@@ -42,34 +42,34 @@
           </div>
 
           <div style=" float:left;">
-              <label class="govuk-label" for="first-name">
+              <label class="govuk-label" for="poc-first-name">
               First/Given names
               </label> 
-              <input class="govuk-input" id="first-name" name="first-name" value="{{ data['res-person-first-name'] }}" type="text" style="width: 200px;">
+              <input class="govuk-input" id="poc-first-name" name="poc-first-name" value="{{ data['poc-first-name'] }}" type="text" style="width: 200px;">
             </div>
 
 
           </div>
 
         <div class="govuk-form-group" style="float:left;">
-            <label class="govuk-label" for="res-person-family-name">
+            <label class="govuk-label" for="poc-family-name">
                 Surname/Family name
             </label>
-            <input class="govuk-input" id="res-person-family-name" name="res-person-family-name" value="{{ data['res-person-family-name'] }}" type="text" style="width: 300px;">
+            <input class="govuk-input" id="poc-family-name" name="poc-family-name" value="{{ data['poc-family-name'] }}" type="text" style="width: 300px;">
         </div>
 
             <div class="govuk-form-group" style="float:left;margin-right:30px;">
-                <label class="govuk-label" for="res-person-email">
+                <label class="govuk-label" for="poc-email">
                 Email address
                 </label>
-                <input class="govuk-input" id="res-person-email" name="res-person-email" value="{{ data['res-person-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
+                <input class="govuk-input" id="poc-email" name="poc-email" value="{{ data['poc-email'] }}" spellcheck="false" aria-describedby="email-hint" autocomplete="email" style="width: 300px;">
             </div>
 
             <div class="govuk-form-group" style="float:left;">
-                <label class="govuk-label" for="res-person-telephone-number">
+                <label class="govuk-label" for="poc-telephone-number">
                     Telephone number
                 </label>
-                <input class="govuk-input" id="res-person-telephone-number" name="res-person-telephone-number" value="{{ data['res-person-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
+                <input class="govuk-input" id="poc-telephone-number" name="poc-telephone-number" value="{{ data['poc-telephone-number'] }}" type="tel" autocomplete="tel" style="width: 300px;">
             </div>
 
 
@@ -126,43 +126,50 @@
                         
 
                         <div class="govuk-form-group">
-                        <label class="govuk-label" for="res-person-address-line-1">
+                        <label class="govuk-label" for="poc-address-line-1">
                           Building and street
                         </label>
-                        <input class="govuk-input" id="res-person-address-line-1" name="res-person-address-line-1" type="text" autocomplete="address-line1" value="{{ data['res-person-address-line-1'] }}" style="width: 300px;">        
+                        <input class="govuk-input" id="poc-address-line-1" name="poc-address-line-1" type="text" autocomplete="address-line1" value="{{ data['poc-address-line-1'] }}" style="width: 300px;">        
                             </div>
 
                 <div class="govuk-form-group">
-                        <label class="govuk-label" for="res-person-address-town">
+                        <label class="govuk-label" for="poc-address-town">
                           Town or city
                         </label>
-                        <input class="govuk-input" id="res-person-address-town" name="res-person-address-town" type="text" autocomplete="address-level2" value="{{ data[res-person-'address-town'] }}" style="width: 300px;">
+                        <input class="govuk-input" id="poc-address-town" name="poc-address-town" type="text" autocomplete="address-level2" value="{{ data[poc-'address-town'] }}" style="width: 300px;">
                     </div>
 
 
                 
                     <div class="govuk-form-group">
-                        <label class="govuk-label" for="res-person-postcode">
+                        <label class="govuk-label" for="poc-postcode">
                           Postcode
                         </label>
-                        <input class="govuk-input" id="res-person-postcode" name="res-person-postcode" type="text" autocomplete="postal-code" value="{{ data['res-person-postcode'] }}" style="width: 300px;">
+                        <input class="govuk-input" id="poc-postcode" name="poc-postcode" type="text" autocomplete="postal-code" value="{{ data['poc-postcode'] }}" style="width: 300px;">
                         </div>   
 
                         <div class="govuk-form-group">
-                          <label class="govuk-label" for="res-person-country">
+                          <label class="govuk-label" for="poc-country">
                             Country
                           </label>
-                          <input class="govuk-input" id="res-person-country" name="res-person-country" type="text" autocomplete="country" value="{{ data['res-person-country'] }}" style="width: 300px;">
+                          <input class="govuk-input" id="poc-country" name="poc-country" type="text" autocomplete="country" value="{{ data['poc-country'] }}" style="width: 300px;">
                           </div> 
                         
 
-                        <div class="govuk-form-group">
-                        <label class="govuk-label" for="res-person-dx-address">
-                            DX address (optional)
-                          </label>
-                          <input class="govuk-input" id="res-person-dx-address" name="res-person-dx-address" type="text" value="{{ data['res-person-dx-address'] }}" style="width: 300px;margin-bottom:20px;">
+                          <div class="govuk-form-group">
+                            <label class="govuk-label" for="poc-dx-number">
+                                DX number (optional)
+                            </label>
+                            <input class="govuk-input" id="poc-dx-number" name="poc-dx-number" type="text" value="{{ data['poc-dx-number'] }}" style="width: 300px; margin-bottom: 20px;">
                         </div>
-                        
+            
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="poc-dx-exchange">
+                              DX exchange (optional)
+                          </label>
+                          <input class="govuk-input" id="poc-dx-exchange" name="poc-dx-exchange" type="text" value="{{ data['poc-dx-exchange'] }}" style="width: 300px; margin-bottom: 20px;">
+                      </div>
+  
     
 
                 </div>
