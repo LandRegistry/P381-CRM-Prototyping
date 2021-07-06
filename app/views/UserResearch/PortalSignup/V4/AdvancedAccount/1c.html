@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit 
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+  
+
+      <h1 class="govuk-heading-xl" style="">
+        What is the nature of your legal entity?
+      </h1>
+
+      <p>Select the option that reflects your organisation's legal personality, or recognised legal structure. <br>That legal personality if it is not an individual person, may be a result of statue.</p>
+
+      <div class="govuk-body" style="margin-bottom: 30px;">
+        <select class="govuk-select" id="sort" onchange="location = this.value;">
+                <option value="#">Please select an option</option>
+                <option value="1c-option3.html">Government department</option>
+                <option value="1c-option1.html">Limited company/Public limited company</option>
+                <option value="1c-option5.html">Limited liability partnerships (LLP)/Limited partnership</option>
+                <option value="1c-option7.html">Local authority</option>
+                <option value="1c-option6.html">Partnership</option>
+                <option value="1c-option4.html">Police and security services</option>
+                <option value="1c-option2.html">Sole practitioner</option>
+                <option value="1c-option8.html">Other</option>
+        </select>
+    </div>
+
+
+
+
+      
+</div>
+
+
+<style>
+.govuk-body-m, .govuk-body, p {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-xl {
+    margin-bottom: 30px;
+}
+
+.govuk-heading-l {
+    margin-bottom: 20px;
+}
+
+
+</style>
+
+
+{% endblock %}

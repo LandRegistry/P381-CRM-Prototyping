@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+      <h1 class="govuk-heading-xl">
+        Insurance details
+      </h1>
+<form class="form" action="insurancedetails" method="post">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+
+          <p class="govuk-body govuk-!-margin-bottom-6">
+            All organisations except government departments must have indemnification arrangements or be able to show why this is not necessary. 'Indemnification arrangements’ is defined in paragraph 10 of Schedule 1 to the Land Registration LR (NA) Rules.  </p>
+
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="insurancedetails-1" name="insurancedetails" type="radio" value="1" {{ checked("1") }}>
+              <label class="govuk-label govuk-radios__label" for="insurancedetails-1">
+                I certify that the organisation has the indemnification arrangements required by paragraph 2(1) of Schedule 1 to the LR (NA) Rules.
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="insurancedetails-2" name="insurancedetails" type="radio" value="2" {{ checked("2") }}>
+              <label class="govuk-label govuk-radios__label" for="insurancedetails-2">
+                The organisation is not under obligation to comply with indemnification arrangements but has insurance that is reasonably equivalent (see paragraph 2(2) of Schedule 1 to the LR (NA) Rules).
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="insurancedetails-3" name="insurancedetails" type="radio" value="3" {{ checked("3") }}>
+              <label class="govuk-label govuk-radios__label" for="insurancedetails-3">
+                I confirm that the organisation is not required to meet the insurance criterion, as it is a government department.</label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="insurancedetails-4" name="insurancedetails" type="radio" value="4" {{ checked("4") }}>
+              <label class="govuk-label govuk-radios__label" for="insurancedetails-4">
+                I confirm that the organisation is not under an obligation to comply with indeminifcation arrangments as defined in paragraph 10 of Schedule 1 to the LR (NA) Rules. It is not practicable to meet the insurance criterion, and it is unnecessary (paragraph 3(2) of Schedule 1 to LR (NA) Rules).  </label>
+            </div>
+          </div>
+
+<p class="govuk-body govuk-!-margin-bottom-8"></p>
+
+          <button class="govuk-button" data-module="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+
+        </fieldset>
+      </div>
+
+    </div>
+
+
+
+</div>
+
+<style>
+    .govuk-button-group {
+        margin-right: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        display: flex;
+    }
+
+    .govuk-button-group .govuk-button, .govuk-button-group .govuk-link {
+    margin-right: 15px;
+}
+
+.govuk-button-group .govuk-link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1;
+}
+
+    </style>
+
+{% endblock %}

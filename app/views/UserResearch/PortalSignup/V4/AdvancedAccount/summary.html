@@ -1,0 +1,368 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+{% block content %}
+<div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5" style="max-width:900px;">
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+            Check your answers before sending <br>your application
+        </h1>
+
+        <table class="govuk-table">
+            <!-- Organisation's details -->
+            <div class="">
+                <h3 class="govuk-heading-l">Organisation's details
+                </h3>
+                <button style="float: right;margin-top: -45px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;"/>
+                    Print summary
+                  </button>
+                <dl class="govuk-summary-list">
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Organisation name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        {{ data['organisation-name'] }}
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="summary-org-name.html">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Organisation trading name (optional)
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        {{ data['organisation-trading-name'] }}
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> address</span>
+                        </a>
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Company/LLP registration number <br>(if applicable)
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        {{ data['organisation-llp-number'] }}
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> address</span>
+                        </a>
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Organisation's address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+                       <li>{{ data['organisation-address-line-1'] }}</li>
+                       <li>{{ data['organisation-address-town'] }}</li>
+                        <li>{{ data['organisation-postcode'] }}</li>
+                        <li>{{ data['organisation-country'] }}</li>
+                    </ul>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> address</span>
+                        </a>
+                    </dd>
+                </div>
+
+
+
+
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        DX Address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+                        <li style="margin-top:10px;">DX number: {{ data['organisation-dx-number'] }}
+                          {% for feature in data['organisation-dx-number'] %}
+                           {% else %}
+                             not provided
+                           {% endfor %}</li>
+                           <li style="margin-top:10px;">DX exchange: {{ data['organisation-dx-exchange'] }}
+                            {% for feature in data['organisation-dx-exchange'] %}
+                             {% else %}
+                               not provided
+                             {% endfor %}</li>
+                      </ul>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> address</span>
+                      </a>
+                    </dd>
+                  </div>
+
+
+
+                  <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Contact details
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                      <p class="govuk-body">{{ data['organisation-telephone-number'] }}</p>
+                      <p class="govuk-body">{{ data['organisation-email'] }}</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                      </a>
+                    </dd>
+                  </div>
+
+
+
+            </div>
+            <!-- Primary administrator's details -->
+            <div class="">
+                <h3 class="govuk-heading-l">Primary administrator's details
+                </h3>
+                <dl class="govuk-summary-list">
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        {{ data['administrator-first-name'] }} {{ data['administrator-family-name'] }}
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Primary Administrator's address
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+                            <li>{{ data['administrator-address-line-1'] }}</li>
+                            <li>{{ data['administrator-address-town'] }}</li>
+                            <li>{{ data['administrator-postcode'] }}</li>
+                            <li>{{ data['administrator-country'] }}</li>
+                        </ul>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> address</span>
+                        </a>
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Contact details
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['administrator-telephone-number'] }}</p>
+                        <p class="govuk-body">{{ data['administrator-email'] }}</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> contact details</span>
+                        </a>
+                    </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Receive security credentials by
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        <p class="govuk-body">{{ data['administrator-receive-type'] }}</p>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> delivery</span>
+                        </a>
+                    </dd>
+                </div>
+            </div>
+            <!-- Responsible persons details -->
+            <div class="">
+                <h3 class="govuk-heading-l">Responsible person's details
+                </h3>
+                <dl class="govuk-summary-list">
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        {{ data['res-person-first-name'] }} {{ data['res-person-family-name'] }}
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+            </div>
+            <!-- Point of contact -->
+            <div class="">
+                <h3 class="govuk-heading-l">Point of contact
+                </h3>
+                <dl class="govuk-summary-list">
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Name
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        {{ data['administrator-first-name'] }} {{ data['administrator-family-name'] }}
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+            </div>
+            <!-- Variable Direct Debit -->
+            <div class="">
+                <h3 class="govuk-heading-l">Variable Direct Debit
+                </h3>
+                <dl class="govuk-summary-list">
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                            Existing VDD submitted
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            <ul style="list-style-type: none;padding-inline-start: 0px;margin-top:0px;">
+                                <li>{{ data['VDD-number1-entered'] }}</li>
+                                <li>{{ data['VDD-number2-entered'] }}</li>
+                                <li>{{ data['VDD-number3-entered'] }}</li>
+                            </ul>
+
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="#">
+                            Change<span class="govuk-visually-hidden"> name</span>
+                            </a>
+                        </dd>
+                    </div>
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        VDD Mandate attached
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        Not attached
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+            </div>
+            <!-- Sign your application -->
+            <div class="">
+                <h3 class="govuk-heading-l">Sign your application
+                </h3>
+                <dl class="govuk-summary-list" style="margin-bottom:0px;">
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Signature attached
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        Yes
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+            </div>
+            <!-- Apply for Network Services -->
+            <div class="">
+                <h3 class="govuk-heading-l">Access to network services
+                </h3>
+                <dl class="govuk-summary-list" style="margin-bottom:0px;">
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Network access agreement
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        Complete
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+            </div>
+            <!-- Apply for Network Services -->
+            <div class="">
+                <h3 class="govuk-heading-l">Access to lender services
+                </h3>
+                <dl class="govuk-summary-list" style="margin-bottom:0px;">
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                        Memorandum of understanding
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        Complete
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                        <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> name</span>
+                        </a>
+                    </dd>
+                </div>
+            </div>
+        </table>
+
+            <!-- Sign your application -->
+            <div class="">
+                <h3 class="govuk-heading-l">Submit application
+                </h3>
+                <p class="govuk-body govuk-!-margin-bottom-6">
+                    By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.
+                </p>
+
+                <div class=" govuk-grid-column-full" style="padding:0px 0px 0px 0px;">
+                    <button class="govuk-button" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='submitted.html'">
+                    Confirm and send
+                    </button>
+                </div>
+                </div>
+            </div>
+
+
+    </div>
+</div>
+<style>
+    .govuk-summary-list__value > p {
+    margin-bottom: 0;
+    }
+    .govuk-summary-list__key, .govuk-summary-list__value, .govuk-summary-list__actions {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+    .govuk-summary-list__key {
+    width: 60%;
+    }
+    .govuk-heading-l {
+    margin-bottom: 10px;
+    margin-top: 75px;
+    }
+
+    .govuk-table {
+    margin-bottom: 0px;
+}
+
+</style>
+{% endblock %}

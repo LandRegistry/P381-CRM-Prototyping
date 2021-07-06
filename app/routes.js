@@ -4512,6 +4512,26 @@ router.post('/UserResearch/PortalSignup/V4/NewAccountPart1/responsible-person-op
     }
 })
 
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V4/AdvancedAccount/responsible-person-options', function(req, res) {
+
+    const responsiblepersonChoice = req.session.data['responsible-person']
+
+    switch (responsiblepersonChoice) {
+        case 'responsible-person-1':
+            res.redirect('/UserResearch/PortalSignup/V4/AdvancedAccount/3d');
+            break;
+
+        case 'responsible-person-2':
+            res.redirect('/UserResearch/PortalSignup/V4/AdvancedAccount/3c');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
 router.post('/UserResearch/PortalSignup/V3/NewAccountPart2/vddnumber', function(req, res) {
 
     const vddnumberChoice= req.session.data['vddnumber']
@@ -4630,6 +4650,30 @@ router.post('/UserResearch/PortalSignup/V4/NewAccountPart1/query-contact-options
 
             case 'query-contact-3':
                 res.redirect('/UserResearch/PortalSignup/V4/NewAccountPart1/4b');
+                break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// ContactformQA radio buttons for public or business
+router.post('/UserResearch/PortalSignup/V4/AdvancedAccount/query-contact-options', function(req, res) {
+
+    const querycontactChoice = req.session.data['query-contact']
+
+    switch (querycontactChoice) {
+        case 'query-contact-1':
+            res.redirect('/UserResearch/PortalSignup/V4/AdvancedAccount/index-5');
+            break;
+
+        case 'query-contact-2':
+            res.redirect('/UserResearch/PortalSignup/V4/AdvancedAccount/index-5');
+            break;
+
+            case 'query-contact-3':
+                res.redirect('/UserResearch/PortalSignup/V4/AdvancedAccount/4b');
                 break;
 
         default:
@@ -4894,6 +4938,33 @@ router.post('/UserResearch/AdditionalServices/V4/applyNetworkServices/insuranced
     }
 })
 
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/PortalSignup/V4/AdvancedAccount/insurancedetails', function(req, res) {
+
+    const insurancedetailsChoice= req.session.data['insurancedetails']
+
+    switch (insurancedetailsChoice) {
+        case '1':
+            res.redirect('6b');
+            break;
+
+        case '2':
+            res.redirect('6d');
+            break;
+
+        case '3':
+            res.redirect('6b');
+            break;
+
+        case '4':
+            res.redirect('6c');
+            break;
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
 
 // applyNetworkServices radio buttons for does your organisaion employ an authorised person?
 router.post('/UserResearch/AdditionalServices/V4/applyNetworkServices/termination', function(req, res) {
@@ -4907,6 +4978,27 @@ router.post('/UserResearch/AdditionalServices/V4/applyNetworkServices/terminatio
 
         case 'Yes':
             res.redirect('20b');
+            break;
+
+
+        default:
+            //This is a catch all for none of the above
+            break;
+    }
+})
+
+// applyNetworkServices radio buttons for does your organisaion employ an authorised person?
+router.post('/UserResearch/PortalSignup/V4/AdvancedAccount/termination', function(req, res) {
+
+    const terminationChoice= req.session.data['termination']
+
+    switch (terminationChoice) {
+        case 'No':
+            res.redirect('7');
+            break;
+
+        case 'Yes':
+            res.redirect('6e');
             break;
 
 
