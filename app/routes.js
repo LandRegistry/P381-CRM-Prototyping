@@ -4994,7 +4994,7 @@ router.post('/UserResearch/PortalSignup/V4/AdvancedAccount/termination', functio
 
     switch (terminationChoice) {
         case 'No':
-            res.redirect('7');
+            res.redirect('index-7');
             break;
 
         case 'Yes':
