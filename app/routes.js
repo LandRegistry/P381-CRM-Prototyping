@@ -4973,7 +4973,7 @@ router.post('/UserResearch/AdditionalServices/V4/applyNetworkServices/terminatio
 
     switch (terminationChoice) {
         case 'No':
-            res.redirect('20a');
+            res.redirect('20');
             break;
 
         case 'Yes':
