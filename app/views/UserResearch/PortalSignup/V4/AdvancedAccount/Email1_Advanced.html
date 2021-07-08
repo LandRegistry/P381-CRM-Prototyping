@@ -1,0 +1,160 @@
+
+{% extends "layout.html" %}
+
+
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+
+<div id="emailHeader">
+    <img class="imgHeader" src="/public/images/Email1_WithText_01.jpg">
+</div>
+
+<div id="emailInboxAndContent">
+
+    <div id="emailInbox" style="float:left;">
+        <img class="imgInbox" src="/public/images/Email1_WithText_02.jpg">
+    </div>
+
+    <div id="emailInfoAndText" style="float:left;">
+
+        <div id="emailInfo">
+            <img class="imgInfo" src="/public/images/Email1_WithText_04b.jpg">
+        </div>
+
+        <div id="emailText" style="max-width: 800px;">
+
+
+            <div style="background: #00703c;width: 300px;padding: 10px;text-align: center;margin-bottom: 20px;">
+
+                <p class="govuk-body" style="margin-bottom: 0px;color: #fff;">
+                    Your application reference number is 
+                </p>
+                    
+                <p class="govuk-body" style="margin-bottom: 0px;color: #fff;font-weight: 600;font-size: 24px;">
+                    HDJ2123F 
+                </p>
+                    
+            </div>
+
+            <p class="govuk-body" style="margin-bottom:20px;">
+                We have received your application for a HM Land Registry advanced Business e-services account.
+            </p>
+
+
+
+
+            <p class="govuk-body under_subtitle">
+                We will send you a new confirmation email once your application has been processed.
+            </p>
+
+
+
+            <p class="govuk-body" style="margin-top:50px;">
+                Please don't reply to this email. <a href="#">You can find contact details on our website</a>. 
+            </p>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+    </div>
+
+  </div>
+
+  <style>
+    .govuk-width-container {
+    max-width: 1743px !Important;
+    margin: auto;
+}
+
+.imgHeader {
+    width:100%;
+}
+
+.imgInbox {
+    width:557px;
+}
+
+#emailInfoAndText {
+    width:calc(100% - 557px);
+}
+
+.imgInfo {
+    width:100%;
+}
+
+.govuk-header {
+    border-bottom: 0px solid #ffffff;
+
+}
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+    padding-top: 0px;
+}
+
+.govuk-main-wrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+.govuk-template__body {
+    margin: 0;
+    background-color: #000000;
+}
+
+.govuk-header__container {
+    border-bottom: 0px solid #1d70b8;
+}
+
+.govuk-body, p {
+    font-size: 16px;
+    /* font-size: 1.1875rem; */
+    line-height: 1.31579;
+}
+
+.maintitle {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 44px;
+    margin-bottom: 25px;
+    max-width: 650px;
+    margin-top: 10px;
+	}
+
+    .subtitleMax {
+		font-weight:bold;
+		font-size:24px;
+		margin-bottom:0px;
+		margin-top:40px;
+	}
+
+
+
+.subtitle {
+		font-weight:bold;
+		font-size:19px;
+		margin-bottom:0px;
+		margin-top:20px;
+	}
+
+.under_subtitle {
+	margin-top:5px;
+}
+
+
+
+</style>
+
+{% endblock %}
