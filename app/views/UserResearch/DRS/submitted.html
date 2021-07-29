@@ -1,0 +1,143 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class=" govuk-grid-column-full govuk-!-padding-bottom-5">
+
+
+        <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-bottom-6">
+            <h1 class="govuk-panel__title" style="margin-bottom: 0px;">
+                Application submitted
+            </h1>
+            <div class="govuk-panel__body" style="padding:25px;">
+              Your reference number<br><strong>HDJ2123F</strong>
+            </div>
+            <div class="govuk-panel__body">
+              Your priority date and time<br><strong>13:24:29 on 29/07/2021</strong>
+            </div>
+
+          </div>
+
+          <p class="govuk-body">We've sent you a confirmation email.</p>
+
+<div style="display:block; height:70px;margin-top: -50px;">
+          <button style="float:right;"  class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;">
+            Print all summaries
+          </button>
+
+        </div>
+
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                    Application One
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                
+                <button style="float: right;margin-top: -15px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;">
+                  Print summary
+                </button>
+
+                <img src="/public/images/Application.png">
+
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                    Application Two
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                
+                <button style="float: right;margin-top: -15px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;">
+                  Print summary
+                </button>
+                
+                
+                <img src="/public/images/Application.png">
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                    Application Three
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                
+                <button style="float: right;margin-top: -15px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;">
+                  Print summary
+                </button>
+                
+                <img src="/public/images/Application.png">
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                    Application Four
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+
+                <button style="float: right;margin-top: -15px; margin-bottom: 0;" class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.print();return false;">
+                  Print summary
+                </button>
+
+                <img src="/public/images/Application.png">
+              </div>
+            </div>
+          </div>
+
+
+
+          <p style="padding-top: 30px;" class="govuk-body">If you would like check on the status of your applications, you can visit <a href="#">View My Applications</a>.</p>
+
+          <p class="govuk-body">
+            <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+          </p>
+
+    </div>
+
+  </div>
+
+  <style>
+    ul.dash {
+        list-style: none;
+        margin-left: 0;
+    }
+    ul.dash > li:before {
+        display: inline-block;
+        content: "-";
+        width: 1em;
+        margin-left: -1em;
+    }
+    
+    li {
+      padding-bottom: 5px;
+    }
+    
+    
+    </style>
+
+{% endblock %}
