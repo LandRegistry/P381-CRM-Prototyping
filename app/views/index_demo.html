@@ -1,0 +1,382 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+<style>
+  .js-enabled .govuk-accordion__section-content {
+    padding-bottom: 40px;
+  }
+
+  nav {
+    display: block;
+}
+
+  .app-navigation {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.app-navigation {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+.app-width-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px;
+}
+
+.app-navigation__list {
+    position: relative;
+    left: -15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app-navigation__list-item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 50px;
+    padding: 0 15px;
+    float: left;
+    line-height: 50px;
+}
+
+.govuk-link--no-underline:not(:hover):not(:active) {
+    text-decoration: none;
+}
+
+.govuk-link--no-visited-state:link {
+    color: #1d70b8;
+}
+
+.govuk-link, .app-prose-scope a {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: underline;
+    text-decoration-thickness: max(1px, .0625rem);
+    text-underline-offset: .1em;
+}
+
+.app-navigation__link {
+    font-weight: 700;
+}
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+    padding-top: 0px;
+}
+
+.app-navigation__list-item--current {
+    border-bottom: 4px solid #1d70b8;
+}
+
+.full-width-main {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.full-width-sub {
+    margin:auto;
+    max-width:960px;
+}
+
+  </style>
+
+<nav class="app-navigation govuk-clearfix full-width-main">
+    <div class="full-width-sub">
+    <ul class="app-navigation__list app-width-container">
+      
+      <li class="app-navigation__list-item">
+        <a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link" href="/index_demo" data-topnav="Get started">Get started</a>
+      </li>
+      
+      <li class="app-navigation__list-item">
+        <a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link" href="/styles/" data-topnav="Styles">Styles</a>
+      </li>
+      
+      <li class="app-navigation__list-item app-navigation__list-item--current">
+        <a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link" href="/components/" data-topnav="Components">Components</a>
+      </li>
+      
+      <li class="app-navigation__list-item">
+        <a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link" href="/patterns/" data-topnav="Patterns">Patterns</a>
+      </li>
+      
+      <li class="app-navigation__list-item">
+        <a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link" href="/community/" data-topnav="Community">Community</a>
+      </li>
+      
+    </ul>
+    </div>
+</nav>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h1 class="govuk-heading-xl">
+        P381 User Research
+      </h1>
+      <p>
+        This is where prototypes for the P381 CRM project will be developed.
+      </p>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Contact Form (Q&A)
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top: 0px;">
+
+
+            <h3 class="govuk-heading-s" style="margin-bottom:5px;">Member of public user journey</h3>
+            <p><a href="/UserResearch/ContactformQA/Public/contactqahome.html" target="_blank">Version 1.0</a> - Form clickthrough<br>
+              <a href="/UserResearch/ContactformQA/Options/Wiki/V1/contactqahome.html" target="_blank">Version 1.0</a> - Wiki Option A - Homepage link text<br>
+              <a href="/UserResearch/ContactformQA/Options/Wiki/V2/contactqahome.html" target="_blank">Version 1.1</a> - Wiki Option B - Homepage link buttons<br>
+              <a href="/UserResearch/ContactformQA/Options/Search/contactqahome.html" target="_blank">Version 1.0</a> - Search</p>
+
+              <h3 class="govuk-heading-s" style="margin-bottom:5px;">Search prototypes</h3>
+              <p><a href="/UserResearch/ContactformQA/Options/Search/search-prototype.html" target="_blank">Version 1.0</a> - Dropdown questions list that's searchable<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype2.html" target="_blank">Version 2.0</a> - Searches a database and returns a question and answer<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype3.html" target="_blank">Version 3.0</a> - Searches a database and returns a question and answer - Layout 2<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype4.html" target="_blank">Version 4.0</a> - Searches a database and returns a question and answer - Layout 3<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype5.html" target="_blank">Version 5.0</a> - Searches a database and returns a question and answer - Layout 4 - Category options<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype6.html" target="_blank">Version 6.0</a> - Smart search - With suggested content sections<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype7.html" target="_blank">Version 7.0</a> - Smart search - Without suggested sections<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype8.html" target="_blank">Version 8.0</a> - Smart search - Simple Google style<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype9.html" target="_blank">Version 9.0</a> - Smart search - With voice<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype10.html" target="_blank">Version 10.0</a> - Smart search - With voice and improved layouts<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype10B.html" target="_blank">Version 10.1</a> - Smart search - With voice and improved layouts + FAQ Section<br>
+                <a href="/UserResearch/ContactformQA/Options/Search/search-prototype11.html" target="_blank">Version 11.0</a> - Smart search - GDS Design with Voice<br></p>
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">User Research Links</h3>
+                <p>
+
+                  <a href="/UserResearch/ContactformQA/Options/UR/Option1/lrhome.html" target="_blank">Option 1</a> As is - LR Homepage, LR Contact Page, GDS Style Smart Search<br>
+                  <a href="/UserResearch/ContactformQA/Options/UR/Option2/lrhome.html" target="_blank">Option 2</a> Modified - LR Homepage, LR Contact Page, GDS Style Smart Search (<a href="/UserResearch/ContactformQA/Options/Search/search-prototype11.html" target="_blank">Direct</a>)<br>
+                  <a href="/UserResearch/ContactformQA/Options/Search/search-prototype10.html" target="_blank">Option 3</a> Google style smart search with Voice and alternate layouts (<a href="/UserResearch/ContactformQA/Options/Search/search-prototype10.html" target="_blank">Direct</a>)<br>
+                  <a href="https://www.gov.uk/government/organisations/land-registry" target="_blank">Option 4</a> Live Homepage (<a href="https://help.landregistry.gov.uk/app/contactus_general" target="_blank">Direct</a>)<br>
+                  </p>
+
+
+
+
+          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Guided Assistance
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top: 0px;">
+              <p class='govuk-body'>The live version of these forms is linked to from the <a href="https://www.gov.uk/guidance/contact-hm-land-registry" target="_blank">LR contact page</a>.<p>
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Update property records when someone has died</h3>
+                <p><a href="/UserResearch/GuidedAssistance/Bereavement/V1/" target="_blank">Version 1.0</a><br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V2/" target="_blank">Version 2.0</a> - Start page updated, questions/titles updated<br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V3/" target="_blank">Version 3.0</a> - Alternate user journey design<br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V4/" target="_blank">Version 4.0</a> - Updated title - word descriptions added - summary page title and layout updated<br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V5/" target="_blank">Version 5.0</a> - Updated content in the single page layout<br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V6/" target="_blank">Version 6.0</a> - Multi page option with summary page update<br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V7/" target="_blank">Version 7.0</a> - Single page with green CTA<br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V8/" target="_blank">Version 8.0</a> - Updates after user research<br>
+                  <a href="/UserResearch/GuidedAssistance/Bereavement/V9/" target="_blank">Version 9.0</a> - **Recommended Version**
+                </p>
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Change your contact address on property records</h3>
+                <p><a href="/UserResearch/GuidedAssistance/AddressUpdate/V1/" target="_blank">Version 1.0</a><br>
+                  <a href="/UserResearch/GuidedAssistance/AddressUpdate/V2/" target="_blank">Version 2.0</a> - Start page updated<br>
+                  <a href="/UserResearch/GuidedAssistance/AddressUpdate/V3/" target="_blank">Version 3.0</a> - Updated title - start page registry text added - "Don't know" option removed<br>
+                  <a href="/UserResearch/GuidedAssistance/AddressUpdate/V4/" target="_blank">Version 4.0</a> - **Recommended Version**</p>
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Change your name on property records</h3>
+                <p><a href="/UserResearch/GuidedAssistance/PropertyRecord/V1/" target="_blank">Version 1.0</a><br>
+                  <a href="/UserResearch/GuidedAssistance/PropertyRecord/V2/" target="_blank">Version 2.0</a> - Start page updated<br>
+                  <a href="/UserResearch/GuidedAssistance/PropertyRecord/V3/" target="_blank">Version 3.0</a> - Updated title - start page registry text added - "Don't know" option removed<br>
+                  <a href="/UserResearch/GuidedAssistance/PropertyRecord/V4/" target="_blank">Version 4.0</a> - **Recommended Version**</p>
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Deal with common boundary matters</h3>
+                <p><a href="/UserResearch/GuidedAssistance/CommonBoundary/V1/" target="_blank">Version 1.0</a><br>
+                  <a href="/UserResearch/GuidedAssistance/CommonBoundary/V2/" target="_blank">Version 2.0</a> - Start page updated, fewer options, "Show more content" buttons removed, content re-ordered<br>
+                  <a href="/UserResearch/GuidedAssistance/CommonBoundary/V3/" target="_blank">Version 3.0</a> - Updated title - start page boundary text added - previously removed options added back<br>
+                  <a href="/UserResearch/GuidedAssistance/CommonBoundary/V4/" target="_blank">Version 4.0</a> - New layout - under construction<br>
+                  <a href="/UserResearch/GuidedAssistance/CommonBoundary/V5/" target="_blank">Version 5.0</a> - Updates after user research<br>
+                  <a href="/UserResearch/GuidedAssistance/CommonBoundary/V6/" target="_blank">Version 6.0</a> - **Recommended Version**</p></p>
+                </div>
+          </div>
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Web Forms
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top: 0px;">
+              <p class='govuk-body'>The new forms use the same form fields, but introduce a consistent GDS based design update.<p>
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Managed Services</h3>
+                <p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_Managed_Services" target="_blank">Live Version</a> accessed from <a href="https://www.gov.uk/government/publications/application-for-application-management-service-ams1" target="_blank">here</a><br>
+                  <a href="/UserResearch/Webforms/ManagedServices/V1.html" target="_blank">Version 1.0</a> - Form updated with GDS design components<br>
+                </p>
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Customer complaints feedback</h3>
+                <p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_feedback" target="_blank">Live Version</a> accessed from <a href="https://www.gov.uk/government/organisations/land-registry/about/complaints-procedure" target="_blank">here</a><br>
+                  <a href="/UserResearch/Webforms/Feedback/V1.html" target="_blank">Version 1.0</a> - Form updated with GDS design components<br>
+                </p>
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Change a sales record</h3>
+                <p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_changesales/" target="_blank">Live Version</a> accessed from <a href="https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads" target="_blank">here</a><br>
+                  <a href="/UserResearch/Webforms/Salesrecord/V1.html" target="_blank">Version 1.0</a> - Form updated with GDS design components<br>
+                </p>
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Large scale application (Bulk)</h3>
+                <p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_LargeScaleApplication" target="_blank">Live Version</a> accessed from <a href="https://www.gov.uk/government/publications/large-scale-applications-and-calculation-of-fees/practice-guide-33-large-scale-applications-and-calculation-of-fees" target="_blank">here</a><br>
+                  <a href="/UserResearch/Webforms/Largescale/V1.html" target="_blank">Version 1.0</a> - Form updated with GDS design components<br>
+                </p>
+
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Data Services Contact Form</h3>
+                <p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_comm_services/" target="_blank">Live Version</a><br>
+                  <a href="/UserResearch/Webforms/DataServices/V1.html" target="_blank">Version 1.0</a> - Form updated with GDS design components<br>
+                </p>
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;">Welsh Contact Us</h3>
+
+                  <div class="govuk-warning-text" style="margin-bottom:0px;">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                      <span class="govuk-warning-text__assistive">Warning</span>
+                      Only use the design style from this form, not the logic used to present different options. <br>Take that information from the live version.
+                    </strong>
+                  </div><p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_general_enq_w/" target="_blank">Live Version</a> accessed from <a href="https://www.gov.uk/guidance/contact-hm-land-registry.cy" target="_blank">here (main LR contact page whilst viewed in Welsh)</a><br>
+                  <a href="/UserResearch/Webforms/WelshContact/V1.html" target="_blank">Version 1.0</a> - Form updated with GDS design components<br>
+                </p>
+
+                </div>
+          </div>
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Business e-Services (Portal Sign-Up)
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1" style="padding-top: 0px;">
+              <p class='govuk-body'>This user research and prototyping looks at the journey a user takes when tryign to signup to the portal.<p>
+
+                <p>
+                  <a href="https://help.landregistry.gov.uk/app/contactus_Apply_Business_eservices" target="_blank">Live Version</a> - This is the existing live build being used at the moment<br>
+                  <a href="https://digital-asf1.herokuapp.com/iteration1/start" target="_blank">Old Prototype</a> - This is a close comparison to the Live Version - <b>Username:</b> hmlr <b>Password:</b> asf1<br></p>
+
+
+
+<hr>
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;padding-top: 20px;">User Research Prototypes</h3>
+
+                  <p>
+                    <a href="/UserResearch/PortalSignup/V4/index2" target="_blank">Version 4.0</a> - <b>NEW</b> - Start page <br><br>
+
+                    <a href="/UserResearch/PortalSignup/V4/NewAccountPart1/" target="_blank">Version 4.0</a> - <b>NEW</b> - Standard account - Includes Micro AFS1 option<br>
+                    <a href="/UserResearch/PortalSignup/V3/Email1_WithText" target="_blank">Version 4.0</a> - <b>NEW</b> - Standard account - Email<br>
+                    <a href="/UserResearch/PortalSignup/V4/AdvancedAccount/" target="_blank">Version 4.0</a> - <b>NEW</b> - Advanced account<br>
+                    <a href="/UserResearch/PortalSignup/V4/AdvancedAccount/Email1_Advanced.html" target="_blank">Version 4.0</a> - <b>NEW</b> - Advanced account Email<br><br>
+
+
+                    <a href="/UserResearch/AdditionalServices/V4/options" target="_blank">Version 4.0</a> - <b>NEW</b> - Additional services for existing accounts<br>
+                  <a href="/UserResearch/AdditionalServices/V4/addAdministrator/" target="_blank">Version 4.0</a> - <b>NEW</b> - Add an administrator<br>
+                  <a href="/UserResearch/AdditionalServices/V4/addDeputyResponsible/" target="_blank">Version 4.0</a> - <b>NEW</b> - Add a deputy responsible person<br>
+                  <a href="/UserResearch/AdditionalServices/V4/changeResponsible/" target="_blank">Version 4.0</a> - <b>NEW</b> - Change your responsible person<br>
+                  <a href="/UserResearch/AdditionalServices/V4/createVDD/" target="_blank">Version 4.0</a> - <b>NEW</b> - Create new VDD<br>
+                  <a href="/UserResearch/AdditionalServices/V4/changeBankDetails/" target="_blank">Version 4.0</a> - <b>NEW</b> - Change the bank account details of current VDD account<br>
+                  <a href="/UserResearch/AdditionalServices/V4/applyNetworkServices/" target="_blank">Version 4.0</a> - <b>NEW</b> - Apply for Network Services<br>
+                  <a href="/UserResearch/AdditionalServices/V4/applyLenderServices/" target="_blank">Version 4.0</a> - <b>NEW</b> - Apply for Lender Services<br>
+
+                </p>
+
+
+
+                <hr>
+
+
+
+                <h3 class="govuk-heading-s" style="margin-bottom:5px;padding-top: 20px;">Top level ideas that were discussed during the initial review of the live version</h3>
+                <ul class='govuk-body'>
+                  <li>Updating the homepage to reflect the Guided Assistance UR - e.g. moving the start now button underneath the "Before you start" information </li>
+                  <li>Adding the ability to create a basic account (Username/Password) to enable Users to <b>save their progress</b> - as applying is complicated and there could be many delays/hurdles for the User to overcome</li>
+                  <li>Helping to set expectations - this would require relocating the summary page of what's been completed, to closer in the User's journey</li>
+                  <li>Grouping form fields where possible - this would enable the User to take fewer steps during signup</li>
+                  <li>Improving the UX by linking out to all forms/documents that are mentioned</li>
+                </ul>
+
+                </div>
+          </div>
+
+    </div>
+  </div>
+
+{% endblock %}
